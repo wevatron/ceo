@@ -64,6 +64,14 @@ return [
             'url' => env('AWS_URL'),
         ],
 
+        #Usar Protocolo FTP Crediciales FTP.Storage
+        'Grakaja' => [
+        'driver' => 'ftp',
+        'host' => 'ftp.grakaja.com',
+        'username' => 'u170643748.ceo',
+        'password' => 'M1c301.1',
+        ],
+    
     ],
 
 ];
