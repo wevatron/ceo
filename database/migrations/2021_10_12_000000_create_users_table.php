@@ -16,11 +16,26 @@ class CreateUsersTable extends Migration
         Schema::create('users', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name');
+            $table->string('apellido_paterno')->nullable();
+            $table->string('apellido_materno')->nullable();
+            $table->string('curp')->nullable();
+            $table->string('rfc')->nullable();
+            $table->string('foto')->nullable();
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->rememberToken();
             $table->timestamps();
+
+            
+
+            $table->integer('tipo_usuario_id')->unsigned();
+            $table->integer('municipio_id')->unsigned();
+            $table->integer('giro_negocio_id')->unsigned();
+
+            $table->foreign('tipo_usuario_id')->references('id')->on('c_tipo_usuarios');
+            $table->foreign('municipio_id')->references('id')->on('c_municipios');
+            $table->foreign('giro_negocio_id')->references('id')->on('c_giro_negocios');
         });
     }
 

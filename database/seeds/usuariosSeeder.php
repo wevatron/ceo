@@ -12,7 +12,15 @@ class usuariosSeeder extends Seeder
     public function run()
     {
         DB::table("users")->insert([
-            'name' => "David Barrita",
+            'name' => "David",
+            'apellido_paterno' => "Barrita",
+            'apellido_materno' => "Etc",
+            'curp' => "Etc",
+            'rfc' => "Etc",
+            'foto' => "Etc",
+            'tipo_usuario_id' => 1,
+            'municipio_id' => 1,
+            'giro_negocio_id' => 1,
             'email' => "barrita@rr.com",
             'email_verified_at' => now(),
             'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
