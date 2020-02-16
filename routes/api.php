@@ -73,3 +73,5 @@ Route::resource('c_universidads', 'C_universidadAPIController');
 Route::resource('c_tipo_eventos', 'C_tipo_eventoAPIController');
 
 Route::resource('c_municipios', 'C_municipioAPIController');
+
+Route::resource('c_estados', 'C_estadoAPIController');

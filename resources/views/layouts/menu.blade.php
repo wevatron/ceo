@@ -4,9 +4,9 @@
 </li>
 
 
-<li class="{{ Request::is('tPersonas*') ? 'active' : '' }}">
-    <a href="{{ route('tPersonas.index') }}"><i class="fa fa-edit"></i><span>Personas</span></a>
-</li>
+{{-- <li class="{{ Request::is('tPersonas*') ? 'active' : '' }}">
+    <a href="{{ route('tPersonas.index') }}"><i class="fa fa-edit"></i><span>Tabla de usuarios</span></a>
+</li> --}}
 
 
 <li class="{{ Request::is('cGiroNegocios*') ? 'active' : '' }}">
@@ -15,19 +15,19 @@
 
 
 <li class="{{ Request::is('cTipoUsuarios*') ? 'active' : '' }}">
-    <a href="{{ route('cTipoUsuarios.index') }}"><i class="fa fa-edit"></i><span>Usuarios</span></a>
+    <a href="{{ route('cTipoUsuarios.index') }}"><i class="fa fa-edit"></i><span>Catálogo tipo usuarios</span></a>
 </li>
 
 <li class="{{ Request::is('cUniversidads*') ? 'active' : '' }}">
-    <a href="{{ route('cUniversidads.index') }}"><i class="fa fa-edit"></i><span>Universidades</span></a>
+    <a href="{{ route('cUniversidads.index') }}"><i class="fa fa-edit"></i><span>Catálogo de universidades</span></a>
 </li>
 
 <li class="{{ Request::is('cTipoEventos*') ? 'active' : '' }}">
-    <a href="{{ route('cTipoEventos.index') }}"><i class="fa fa-edit"></i><span>Catalogo de Eventos</span></a>
+    <a href="{{ route('cTipoEventos.index') }}"><i class="fa fa-edit"></i><span>Catálogo de Eventos</span></a>
 </li>
 
 
 <li class="{{ Request::is('cMunicipios*') ? 'active' : '' }}">
-    <a href="{{ route('cMunicipios.index') }}"><i class="fa fa-edit"></i><span>Catalogo de Municipios</span></a>
+    <a href="{{ route('cMunicipios.index') }}"><i class="fa fa-edit"></i><span>Catálogo de Municipios</span></a>
 </li>
 

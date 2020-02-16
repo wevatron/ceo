@@ -12,10 +12,26 @@ class tipoUsuarioSeed extends Seeder
     public function run()
     {
         //
+
+        DB::table("c_tipo_usuarios")->insert([
+            'valor' => 'root',
+            'descripcion' => 'Root'    
+        ]);
+
+        DB::table("c_tipo_usuarios")->insert([
+            'valor' => 'administrador',
+            'descripcion' => 'Administrador'    
+        ]);
+
+        DB::table("c_tipo_usuarios")->insert([
+            'valor' => 'Otros',
+            'descripcion' => 'Otros'
+            
+        ]);
+
         DB::table("c_tipo_usuarios")->insert([
             'valor' => 'Emprendimiento',
-            'descripcion' => 'Emprendedor'
-            
+            'descripcion' => 'Emprendedor'    
         ]);
         DB::table("c_tipo_usuarios")->insert([
             'valor' => 'Empresariales',
@@ -31,11 +47,7 @@ class tipoUsuarioSeed extends Seeder
             'valor' => 'Maestros',
             'descripcion' => 'Maestro'
         ]);
-        DB::table("c_tipo_usuarios")->insert([
-            'valor' => 'Otros',
-            'descripcion' => 'Otros'
-            
-        ]);
+        
 
     }
 }

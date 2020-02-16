@@ -29,9 +29,9 @@ class CreateUsersTable extends Migration
 
             
 
-            $table->integer('tipo_usuario_id')->unsigned();
-            $table->integer('municipio_id')->unsigned();
-            $table->integer('giro_negocio_id')->unsigned();
+            $table->integer('tipo_usuario_id')->default(1)->unsigned();
+            $table->integer('municipio_id')->default(1)->unsigned();
+            $table->integer('giro_negocio_id')->default(1)->unsigned();
 
             $table->foreign('tipo_usuario_id')->references('id')->on('c_tipo_usuarios');
             $table->foreign('municipio_id')->references('id')->on('c_municipios');
