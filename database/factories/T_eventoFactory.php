@@ -9,8 +9,9 @@ $factory->define(T_evento::class, function (Faker $faker) {
 
     return [
         'nombre_evento' => $faker->word,
+        'descripcion_evento' => $faker->word,
         'cupo' => $faker->randomDigitNotNull,
-        'url_img' => $faker->imageUrl(512, 240, 'food'),
+        'url_img' => null,
         'tipo_evento_id' => $faker->numberBetween(1,2),
         'created_at' => $faker->date('Y-m-d H:i:s'),
         'updated_at' => $faker->date('Y-m-d H:i:s')

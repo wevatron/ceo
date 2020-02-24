@@ -16,8 +16,9 @@ class CreateTEventosTable extends Migration
         Schema::create('t_eventos', function (Blueprint $table) {
             $table->increments('id');
             $table->string('nombre_evento');
+            $table->string('descripcion_evento');
             $table->integer('cupo');
-            $table->string('url_img');
+            $table->string('url_img')->nullable();
             $table->integer('tipo_evento_id')->unsigned();
             $table->timestamps();
             $table->softDeletes();

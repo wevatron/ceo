@@ -3,6 +3,11 @@
     {!! Form::label('nombre_evento', 'Nombre Evento:') !!}
     {!! Form::text('nombre_evento', null, ['class' => 'form-control']) !!}
 </div>
+<!-- Nombre Evento Field -->
+<div class="form-group col-sm-6">
+    {!! Form::label('descripcion_evento', 'Descripcion Evento:') !!}
+    {!! Form::text('descripcion_evento', null, ['class' => 'form-control']) !!}
+</div>
 
 <!-- Url Img Field -->
 <div class="form-group col-sm-12 col-lg-12" >

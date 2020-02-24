@@ -32,7 +32,7 @@ class T_eventoController extends AppBaseController
      */
     public function index(Request $request)
     {
-        $tEventos = T_evento::paginate(20);
+        $tEventos = T_evento::orderBy('id','desc')->paginate(20);
 
         return view('t_eventos.index')
             ->with('tEventos', $tEventos);
@@ -68,7 +68,7 @@ class T_eventoController extends AppBaseController
             $ruta = Storage::disk('Grakaja')->put('fotoEvento',$request->file('url_img'));
 
             $tEvento->fill([
-                'url_img'=>$ruta
+                'url_img'=>'http://grakaja.com/ceo/'.$ruta
             ])->save();
             
         }
@@ -145,7 +145,7 @@ class T_eventoController extends AppBaseController
             //Guardar Img Nuevo
             $ruta = Storage::disk('Grakaja')->put('fotoEvento',$request->file('url_img'));
             $tEvento->fill([
-                'url_img'=>$ruta
+                'url_img'=>'http://grakaja.com/ceo/'.$ruta
             ])->save();
         }
 

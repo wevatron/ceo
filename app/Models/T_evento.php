@@ -30,6 +30,7 @@ class T_evento extends Model
 
     public $fillable = [
         'nombre_evento',
+        'descripcion_evento',
         'cupo',
         'url_img',
         'tipo_evento_id',
@@ -45,6 +46,7 @@ class T_evento extends Model
     protected $casts = [
         'id' => 'integer',
         'nombre_evento' => 'string',
+        'descripcion_evento' => 'string',
         'cupo' => 'integer',
         'url_img' => 'string',
         'tipo_evento_id' => 'integer',
@@ -59,13 +61,16 @@ class T_evento extends Model
      */
     public static $rules = [
         'nombre_evento' => 'required',
+        'descripcion_evento' => 'required',
         'cupo' => 'required',
         'tipo_evento_id' => 'required'
     ];
 
-    public function MunicipoEvento()
-    {
-        #  
-        return $this->hasOne('App\Models\C_tipo_evento','id','tipo_evento_id');
+    public function scopeBuscar($query, $nombre_evento)
+	{
+		return $query->where('nombre_evento','like', "%$nombre_evento%");
     }
+    
+
+
 }
