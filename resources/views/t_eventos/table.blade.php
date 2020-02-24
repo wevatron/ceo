@@ -14,7 +14,7 @@
             <tr>
                 <td>{{ $tEvento->nombre_evento }}</td>
             <td>{{ $tEvento->cupo }}</td>
-            <td><img width="70px" src="http://ceo.grakaja.com/{{$tEvento->url_img}}" alt=""></td>
+            <td><img width="70px" src="{{$tEvento->url_img}}" alt=""></td>
             <td>{{ $tEvento->MunicipoEvento->descripcion }}</td>
                 <td>
                     {!! Form::open(['route' => ['tEventos.destroy', $tEvento->id], 'method' => 'delete']) !!}
@@ -29,4 +29,5 @@
         @endforeach
         </tbody>
     </table>
+    {{$tEventos->render()}}
 </div>

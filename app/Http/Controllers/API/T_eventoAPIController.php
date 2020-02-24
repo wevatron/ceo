@@ -34,11 +34,7 @@ class T_eventoAPIController extends AppBaseController
      */
     public function index(Request $request)
     {
-        $tEventos = $this->tEventoRepository->all(
-            $request->except(['skip', 'limit']),
-            $request->get('skip'),
-            $request->get('limit')
-        );
+        $tEventos = T_evento::paginate(10);
 
         return $this->sendResponse($tEventos->toArray(), 'T Eventos retrieved successfully');
     }

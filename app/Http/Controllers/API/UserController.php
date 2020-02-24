@@ -14,13 +14,13 @@ public $successStatus = 200;
      * @return \Illuminate\Http\Response 
      */ 
     public function login(){ 
-        if(Auth::attempt(['email' => request('email'), 'password' => request('password')])){ 
+        if(Auth::attempt(['email' => request('username'), 'password' => request('password')])){ 
             $user = Auth::user(); 
-            $success['token'] =  $user->createToken('MyApp')-> accessToken; 
+            $success['access_token'] =  $user->createToken('MyApp')-> accessToken; 
             return response()->json(['success' => $success], $this-> successStatus); 
         } 
         else{ 
-            return response()->json(['error'=>'Unauthorised'], 401); 
+            return response()->json(['errorLogin'=>'Usuario no encontrado'], 401); 
         } 
     }
 /** 

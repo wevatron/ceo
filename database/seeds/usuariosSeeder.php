@@ -27,5 +27,21 @@ class usuariosSeeder extends Seeder
             'remember_token' => Str::random(10),
             'created_at'=> '2018-01-01' // En un seeder siempre pasar la fecha 
         ]); 
+        DB::table("users")->insert([
+            'name' => "David",
+            'apellido_paterno' => "Barrita",
+            'apellido_materno' => "Etc",
+            'curp' => "Etc",
+            'rfc' => "Etc",
+            'foto' => "Etc",
+            'tipo_usuario_id' => 1,
+            'municipio_id' => 1,
+            'giro_negocio_id' => 1,
+            'email' => "lalo@gg.com",
+            'email_verified_at' => now(),
+            'password' => bcrypt('eduardo1.1'), // password
+            'remember_token' => Str::random(10),
+            'created_at'=> '2018-01-01' // En un seeder siempre pasar la fecha 
+        ]); 
     }
 }

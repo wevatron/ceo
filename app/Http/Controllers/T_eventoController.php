@@ -10,6 +10,7 @@ use Illuminate\Http\Request;
 use Flash;
 use Response;
 use App\Models\C_tipo_evento;
+use App\Models\T_evento;
 use Illuminate\Support\Facades\Storage;
 
 class T_eventoController extends AppBaseController
@@ -31,7 +32,7 @@ class T_eventoController extends AppBaseController
      */
     public function index(Request $request)
     {
-        $tEventos = $this->tEventoRepository->all();
+        $tEventos = T_evento::paginate(20);
 
         return view('t_eventos.index')
             ->with('tEventos', $tEventos);
