@@ -31,3 +31,11 @@
     <a href="{{ route('cMunicipios.index') }}"><i class="fa fa-edit"></i><span>Catálogo de Municipios</span></a>
 </li>
 
+{{-- <li class="{{ Request::is('tImagenes*') ? 'active' : '' }}">
+    <a href="{{ route('tImagenes.index') }}"><i class="fa fa-edit"></i><span>T Imagenes</span></a>
+</li> --}}
+
+<li class="{{ Request::is('tLikes*') ? 'active' : '' }}">
+    <a href="{{ route('tLikes.index') }}"><i class="fa fa-edit"></i><span>T Likes</span></a>
+</li>
+

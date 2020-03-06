@@ -4,19 +4,9 @@ namespace App\Models;
 
 use Eloquent as Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use App\Models\C_tipo_evento;
+use App\Models\T_imagenes;
 
-/**
- * Class T_evento
- * @package App\Models
- * @version February 5, 2020, 1:05 am UTC
- *
- * @property string nombre_evento
- * @property integer cupo
- * @property string url_img
- * @property integer tipo_evento_id
- * @property integer taller_id
- * @property integer empresa_id
- */
 class T_evento extends Model
 {
     use SoftDeletes;
@@ -31,6 +21,10 @@ class T_evento extends Model
     public $fillable = [
         'nombre_evento',
         'descripcion_evento',
+        'nombre_conferencista',
+        'cargo',
+        'empresa',
+        'bio',
         'cupo',
         'url_img',
         'tipo_evento_id',
@@ -47,6 +41,10 @@ class T_evento extends Model
         'id' => 'integer',
         'nombre_evento' => 'string',
         'descripcion_evento' => 'string',
+        'nombre_conferencista' => 'string',
+        'cargo' => 'string',
+        'empresa' => 'string',
+        'bio' => 'string',
         'cupo' => 'integer',
         'url_img' => 'string',
         'tipo_evento_id' => 'integer',
@@ -62,13 +60,27 @@ class T_evento extends Model
     public static $rules = [
         'nombre_evento' => 'required',
         'descripcion_evento' => 'required',
+        'nombre_conferencista' =>'required',
+        'cargo' =>'required',
+        'empresa' =>'required',
+        'bio' =>'required',
         'cupo' => 'required',
         'tipo_evento_id' => 'required'
     ];
 
+    public function TipoEvento()
+    {
+        return $this->hasOne(C_tipo_evento::class,'id','tipo_evento_id');
+    }
+
     public function scopeBuscar($query, $nombre_evento)
 	{
 		return $query->where('nombre_evento','like', "%$nombre_evento%");
+    }
+
+    public function Imagenes()
+    {
+        return $this->hasMany(T_imagenes::class,'t_evento_id','id');
     }
     
 

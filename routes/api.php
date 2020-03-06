@@ -29,3 +29,5 @@ Route::resource('c_tipo_eventos', 'C_tipo_eventoAPIController')->middleware('aut
 Route::resource('c_municipios', 'C_municipioAPIController')->middleware('auth:api');
 
 Route::resource('c_estados', 'C_estadoAPIController')->middleware('auth:api');
+
+Route::resource('t_likes', 'T_likeAPIController')->middleware('auth:api');;

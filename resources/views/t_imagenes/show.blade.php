@@ -3,15 +3,15 @@
 @section('content')
     <section class="content-header">
         <h1>
-            Evento: {{$tEvento->nombre_evento}}
+            Imagenes
         </h1>
     </section>
     <div class="content">
         <div class="box box-primary">
             <div class="box-body">
                 <div class="row" style="padding-left: 20px">
-                    @include('t_eventos.show_fields')
-                    <a href="{{ route('tEventos.index') }}" class="btn btn-default">Regresar</a>
+                    @include('t_imagenes.show_fields')
+                    <a href="{{ route('tImagenes.index') }}" class="btn btn-default">Back</a>
                 </div>
             </div>
         </div>

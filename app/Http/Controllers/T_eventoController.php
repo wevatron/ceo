@@ -11,7 +11,10 @@ use Flash;
 use Response;
 use App\Models\C_tipo_evento;
 use App\Models\T_evento;
+use App\Models\T_imagenes;
 use Illuminate\Support\Facades\Storage;
+use App\ImageModel;
+use Image;
 
 class T_eventoController extends AppBaseController
 {
@@ -62,16 +65,9 @@ class T_eventoController extends AppBaseController
         $input = $request->all();
 
         $tEvento = $this->tEventoRepository->create($input);
+        
 
-        if($request->file('url_img')){
-                // Metodo para guardar en el storage;
-            $ruta = Storage::disk('Grakaja')->put('fotoEvento',$request->file('url_img'));
 
-            $tEvento->fill([
-                'url_img'=>'http://grakaja.com/ceo/'.$ruta
-            ])->save();
-            
-        }
 
         Flash::success('T Evento saved successfully.');
 
@@ -88,14 +84,15 @@ class T_eventoController extends AppBaseController
     public function show($id)
     {
         $tEvento = $this->tEventoRepository->find($id);
-
+        $tImagenes = T_imagenes::where('t_evento_id','=',$id)->get();
+       
         if (empty($tEvento)) {
             Flash::error('T Evento not found');
 
             return redirect(route('tEventos.index'));
         }
 
-        return view('t_eventos.show')->with('tEvento', $tEvento);
+        return view('t_eventos.show',compact('tEvento','tImagenes'));
     }
 
     /**
@@ -114,7 +111,7 @@ class T_eventoController extends AppBaseController
 
             return redirect(route('tEventos.index'));
         }
-        return view('t_eventos.edit',compact('tEvento','tipo_eventos'));
+        return view('t_eventos.edit',compact('tEvento','tipo_eventos','id'));
     }
 
     /**
@@ -127,27 +124,10 @@ class T_eventoController extends AppBaseController
      */
     public function update($id, UpdateT_eventoRequest $request)
     {
+        $input = $request->all();
         $tEvento = $this->tEventoRepository->find($id);
         // Guardar la variable viaje
-        $imagenVieja = $tEvento->url_img; 
-        if (empty($tEvento)) {
-            Flash::error('No Encontrado');
-
-            return redirect(route('tEventos.index'));
-        }
-        // Guarda Todo Execepto url_img
-        $tEvento = $this->tEventoRepository->update($request->except(['url_img']), $id);
-
-        // Revisiar si estan mandando un archivo. 
-        if($request->file('url_img')){
-            //Borrar Img Anterior
-            Storage::disk('Grakaja')->delete($imagenVieja);
-            //Guardar Img Nuevo
-            $ruta = Storage::disk('Grakaja')->put('fotoEvento',$request->file('url_img'));
-            $tEvento->fill([
-                'url_img'=>'http://grakaja.com/ceo/'.$ruta
-            ])->save();
-        }
+        $tEvento = $this->tEventoRepository->update($input, $id);
 
         Flash::success('T Evento updated successfully.');
 

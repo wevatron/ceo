@@ -34,9 +34,9 @@ class T_eventoAPIController extends AppBaseController
      */
     public function index(Request $request)
     {
-        $tEventos = T_evento::Buscar($request->busca)->orderBy('id','desc')->paginate(10);
+        $tEventos = T_evento::Buscar($request->busca)->with('Imagenes')->orderBy('id','desc')->paginate(10);
 
-        return $this->sendResponse($tEventos->toArray(), 'T Eventos retrieved successfully');
+        return $this->sendResponse($tEventos->toArray(), 'Eventos retrieved successfully');
     }
 
     /**
@@ -67,8 +67,8 @@ class T_eventoAPIController extends AppBaseController
     public function show($id)
     {
         /** @var T_evento $tEvento */
-        $tEvento = $this->tEventoRepository->find($id);
-
+       // $tEvento = $this->tEventoRepository->find($id);
+        $tEvento = T_evento::with('Imagenes')->find($id);
         if (empty($tEvento)) {
             return $this->sendError('T Evento not found');
         }

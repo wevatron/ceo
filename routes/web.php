@@ -19,49 +19,14 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
-Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-
-
-
-
-
-
-
-
-
-
-
-
 
 Route::resource('cHorarios', 'C_horarioController');
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 Route::resource('cGiroNegocios', 'C_giro_negocioController');
-
-
-
-
-
-
-
-
-
-
 
 Route::resource('tEventos', 'T_eventoController');
 
@@ -86,3 +51,9 @@ Route::resource('cMunicipios', 'C_municipioController');
 Route::resource('cMunicipios', 'C_municipioController');
 
 Route::resource('cMunicipios', 'C_municipioController');
+
+Route::resource('tImagenes', 'T_imagenesController');
+
+Route::resource('tLikes', 'T_likeController');
+
+Route::resource('tLikes', 'T_likeController');
