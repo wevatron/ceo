@@ -34,11 +34,12 @@ class T_likeAPIController extends AppBaseController
      */
     public function index(Request $request)
     {
-        $tLikes = $this->tLikeRepository->all(
-            $request->except(['skip', 'limit']),
-            $request->get('skip'),
-            $request->get('limit')
-        );
+        $evento = 0;
+        if ($request->evento) {
+                $evento = $request->evento;
+        }
+        $tLikes = T_like::where('t_evento_id','=',$evento)
+        ->get();
 
         return $this->sendResponse($tLikes->toArray(), 'T Likes retrieved successfully');
     }
