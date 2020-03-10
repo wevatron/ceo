@@ -9,6 +9,7 @@ use App\Http\Controllers\AppBaseController;
 use Illuminate\Http\Request;
 use Flash;
 use Response;
+use App\Models\T_boleto;
 
 class T_personaController extends AppBaseController
 {
@@ -55,7 +56,6 @@ class T_personaController extends AppBaseController
     public function store(CreateT_personaRequest $request)
     {
         $input = $request->all();
-
         $tPersona = $this->tPersonaRepository->create($input);
 
         Flash::success('T Persona saved successfully.');
@@ -73,14 +73,17 @@ class T_personaController extends AppBaseController
     public function show($id)
     {
         $tPersona = $this->tPersonaRepository->find($id);
-
+        
+        $tEventos = T_boleto::where('usuario_id','=',$tPersona->id)
+        ->with('Eventos')->paginate(10);
+       
         if (empty($tPersona)) {
             Flash::error('No Encontrado');
 
             return redirect(route('tPersonas.index'));
         }
 
-        return view('t_personas.show')->with('tPersona', $tPersona);
+        return view('t_personas.show',compact('tPersona','tEventos'));
     }
 
     /**

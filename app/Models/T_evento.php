@@ -26,6 +26,7 @@ class T_evento extends Model
         'empresa',
         'bio',
         'cupo',
+        'cupoFake',
         'url_img',
         'tipo_evento_id',
         'taller_id',
@@ -46,6 +47,7 @@ class T_evento extends Model
         'empresa' => 'string',
         'bio' => 'string',
         'cupo' => 'integer',
+        'cupoFake' => 'integer',
         'url_img' => 'string',
         'tipo_evento_id' => 'integer',
         'taller_id' => 'integer',
@@ -64,6 +66,7 @@ class T_evento extends Model
         'cargo' =>'required',
         'empresa' =>'required',
         'bio' =>'required',
+        'cupoFake' =>'required',
         'cupo' => 'required',
         'tipo_evento_id' => 'required'
     ];

@@ -4,9 +4,9 @@
 </li>
 
 
-{{-- <li class="{{ Request::is('tPersonas*') ? 'active' : '' }}">
+<li class="{{ Request::is('tPersonas*') ? 'active' : '' }}">
     <a href="{{ route('tPersonas.index') }}"><i class="fa fa-edit"></i><span>Tabla de usuarios</span></a>
-</li> --}}
+</li>
 
 
 <li class="{{ Request::is('cGiroNegocios*') ? 'active' : '' }}">
@@ -37,5 +37,9 @@
 
 <li class="{{ Request::is('tLikes*') ? 'active' : '' }}">
     <a href="{{ route('tLikes.index') }}"><i class="fa fa-edit"></i><span>T Likes</span></a>
+</li>
+
+<li class="{{ Request::is('tBoletos*') ? 'active' : '' }}">
+    <a href="{{ route('tBoletos.index') }}"><i class="fa fa-edit"></i><span>T Boletos</span></a>
 </li>
 

@@ -12,7 +12,7 @@ class eventoSeeder extends Seeder
      */
     public function run()
     {
-        factory(T_evento::class,150)->create();
+       // factory(T_evento::class,150)->create();
         DB::table('t_eventos')->insert([
         'nombre_evento' => 'Taller de realidad aumentada',
         'descripcion_evento' => 'Taller para contruir una app desde el inicio',
@@ -23,6 +23,7 @@ class eventoSeeder extends Seeder
 
         A lo largo de este TALLER se desgranarán las claves del éxito de la tecnología de Realidad Aumentada en el sector educativo. En especial, en aquellos casos en los que se integra junto a conceptos como el storytelling, la gamificación y las inteligencias múltiples.',
         'cupo' => 30,
+        'cupoFake' => 35,
         'tipo_evento_id' => 1,
         'created_at' => date('Y-m-d H:i:s'),
         'updated_at' => date('Y-m-d H:i:s')

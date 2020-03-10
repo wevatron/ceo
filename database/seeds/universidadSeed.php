@@ -13,6 +13,9 @@ class universidadSeed extends Seeder
     {
         //
         DB::table("c_universidads")->insert([
+            'descripcion' => 'Ninguna'
+        ]);
+        DB::table("c_universidads")->insert([
             'descripcion' => 'Universidad Tecnologica de los Valles Centrales de Oaxaca'
         ]);
         DB::table("c_universidads")->insert([

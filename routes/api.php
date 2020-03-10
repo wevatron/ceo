@@ -31,3 +31,5 @@ Route::resource('c_municipios', 'C_municipioAPIController')->middleware('auth:ap
 Route::resource('c_estados', 'C_estadoAPIController')->middleware('auth:api');
 
 Route::resource('t_likes', 'T_likeAPIController')->middleware('auth:api');;
+
+Route::resource('t_boletos', 'T_boletoAPIController');

@@ -13,6 +13,9 @@ class giroNegocioSeed extends Seeder
     {
         //
         DB::table("c_giro_negocios")->insert([
+            'descripcion' => 'Ninguno'
+        ]);
+        DB::table("c_giro_negocios")->insert([
             'descripcion' => 'Productos'
         ]);
         DB::table("c_giro_negocios")->insert([

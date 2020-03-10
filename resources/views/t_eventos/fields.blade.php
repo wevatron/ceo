@@ -16,17 +16,21 @@
     {!! Form::label('cargo', 'Cargo:') !!}
     {!! Form::text('cargo', null, ['class' => 'form-control']) !!}
 </div>
-<div class="form-group col-sm-3">
+<div class="form-group col-sm-4">
     {!! Form::label('empresa', 'Empresa:') !!}
     {!! Form::text('empresa', null, ['class' => 'form-control']) !!}
 </div>
-<div class="form-group col-sm-3 col-lg-3">
-    {!! Form::label('Cupo', 'Cupo:') !!}
+<div class="form-group col-sm-2 col-lg-2">
+    {!! Form::label('cupo', 'Cupo:') !!}
     {!! Form::text('cupo', null, ['class' => 'form-control']) !!}
+</div>
+<div class="form-group col-sm-2 col-lg-2">
+    {!! Form::label('cupoFake', 'Cupo Fake:') !!}
+    {!! Form::text('cupoFake', null, ['class' => 'form-control']) !!}
 </div>
 
 <!-- Tipo Evento Id Field -->
-<div class="form-group col-sm-6">
+<div class="form-group col-sm-4">
     {!! Form::label('tipo_evento_id', 'Tipo Evento Id:') !!}
     {!! Form::select('tipo_evento_id', $tipo_eventos, null, ['class' => 'form-control']) !!}
 </div>

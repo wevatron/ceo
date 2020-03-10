@@ -9,6 +9,7 @@
         <th>Empresa</th>
         <th>Biografia</th>
         <th>Cupo</th>
+        <th>CupoFake</th>
         <th>Tipo de Evento </th>
                 <th colspan="3">Acción</th>
             </tr>
@@ -23,6 +24,7 @@
                 <td>{{ substr($tEvento->empresa,0,12).".." }}</td>
                 <td>{{ substr($tEvento->bio,0,12).".." }}</td>
                 <td>{{ $tEvento->cupo }}</td>
+                <td>{{ $tEvento->cupoFake }}</td>
                 <td>{{ $tEvento->TipoEvento->descripcion }}</td>
                 <td>
                     {!! Form::open(['route' => ['tEventos.destroy', $tEvento->id], 'method' => 'delete']) !!}

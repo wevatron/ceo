@@ -2,44 +2,34 @@
 
 namespace App\Models;
 
+
 use Eloquent as Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-/**
- * Class T_persona
- * @package App\Models
- * @version February 5, 2020, 3:01 am UTC
- *
- * @property string nombre
- * @property string apellido
- * @property string curp
- * @property string rfc
- * @property integer universidad_id
- * @property integer tipo_usuario_id
- * @property integer municipio_id
- * @property integer giro_negocio_id
- * @property integer evento_id
- */
 class T_persona extends Model
 {
-    use SoftDeletes;
 
-    public $table = 't_personas';
+    public $table = 'users';
     
 
     protected $dates = ['deleted_at'];
+    public $timestamps = false;
 
 
 
     public $fillable = [
-        'nombre',
+        'name',
         'apellido',
         'curp',
         'rfc',
+        'apellido_paterno',
+        'apellido_materno',
         'universidad_id',
         'tipo_usuario_id',
         'municipio_id',
+        'municipio',
         'giro_negocio_id',
+        'universidad_id',
         'evento_id'
     ];
 
@@ -76,5 +66,21 @@ class T_persona extends Model
         'evento_id' => 'required'
     ];
 
+    public function Universidad()
+    {
+        return $this->hasOne(C_universidad::class,'id');
+    }
+    public function TipoUsuario()
+    {
+        return $this->hasOne(C_tipo_usuario::class,'id');
+    }
+    public function Municipio()
+    {
+        return $this->hasOne(C_municipio::class,'id');
+    }
+    public function Giro()
+    {
+        return $this->hasOne(C_giro_negocio::class,'id');
+    }
     
 }

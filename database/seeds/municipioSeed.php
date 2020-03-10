@@ -13,6 +13,9 @@ class municipioSeed extends Seeder
     {
         //
         DB::table("c_municipios")->insert([
+            'descripcion' => 'ninguno'
+        ]);
+        DB::table("c_municipios")->insert([
             'descripcion' => 'Ejutla de Crespo Oaxaca'
         ]);
         DB::table("c_municipios")->insert([

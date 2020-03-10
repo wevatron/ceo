@@ -3,28 +3,29 @@
         <thead>
             <tr>
                 <th>Nombre</th>
-        <th>Apellido</th>
-        <th>Curp</th>
-        <th>Rfc</th>
-        <th>Universidad</th>
-        <th>Tipo de Usuario</th>
-        <th>Municipio</th>
-        <th>Giro Negocio</th>
-        <th>Evento</th>
+                <th>Apellido parterno</th>
+                <th>Apellido materno</th>
+                <th>Curp</th>
+                <th>Rfc</th>
+                <th>Universidad</th>
+                <th>Tipo de Usuario</th>
+                <th>Municipio</th>
+                <th>Giro Negocio</th>
                 <th colspan="3">Acción</th>
             </tr>
         </thead>
         <tbody>
         @foreach($tPersonas as $tPersona)
             <tr>
-                <td>{{ $tPersona->nombre }}</td>
-            <td>{{ $tPersona->apellido }}</td>
+                <td>{{ $tPersona->name }}</td>
+            <td>{{ $tPersona->apellido_paterno }}</td>
+            <td>{{ $tPersona->apellido_materno }}</td>
             <td>{{ $tPersona->curp }}</td>
             <td>{{ $tPersona->rfc }}</td>
-            <td>{{ $tPersona->universidad_id }}</td>
-            <td>{{ $tPersona->tipo_usuario_id }}</td>
-            <td>{{ $tPersona->municipio_id }}</td>
-            <td>{{ $tPersona->giro_negocio_id }}</td>
+            <td>{{ $tPersona->Universidad->descripcion }}</td>
+            <td>{{ $tPersona->TipoUsuario->descripcion }}</td>
+            <td>{{ $tPersona->Municipio->descripcion }}</td>
+            <td>{{ $tPersona->Giro->descripcion }}</td>
             <td>{{ $tPersona->evento_id }}</td>
                 <td>
                     {!! Form::open(['route' => ['tPersonas.destroy', $tPersona->id], 'method' => 'delete']) !!}
