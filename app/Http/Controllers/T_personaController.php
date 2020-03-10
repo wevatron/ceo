@@ -10,6 +10,7 @@ use Illuminate\Http\Request;
 use Flash;
 use Response;
 use App\Models\T_boleto;
+use App\Models\T_like;
 
 class T_personaController extends AppBaseController
 {
@@ -57,6 +58,7 @@ class T_personaController extends AppBaseController
     {
         $input = $request->all();
         $tPersona = $this->tPersonaRepository->create($input);
+        $like = 
 
         Flash::success('T Persona saved successfully.');
 
@@ -76,6 +78,10 @@ class T_personaController extends AppBaseController
         
         $tEventos = T_boleto::where('usuario_id','=',$tPersona->id)
         ->with('Eventos')->paginate(10);
+        $numBoletos = count($tEventos);
+        $likes =T_like::where('usuario_id','=',$tPersona->id)->count();
+
+     //   dd(count($tEventos));
        
         if (empty($tPersona)) {
             Flash::error('No Encontrado');
@@ -83,7 +89,7 @@ class T_personaController extends AppBaseController
             return redirect(route('tPersonas.index'));
         }
 
-        return view('t_personas.show',compact('tPersona','tEventos'));
+        return view('t_personas.show',compact('tPersona','tEventos','numBoletos','likes'));
     }
 
     /**

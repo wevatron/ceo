@@ -18,10 +18,10 @@ class tipoEventosSeed extends Seeder
         DB::table("c_tipo_eventos")->insert([
             'descripcion' => 'Conferencia'
         ]);
-        DB::table("c_municipios")->insert([
+        DB::table("c_tipo_eventos")->insert([
            'descripcion' => 'Magistral' 
         ]);
-        DB::table("c_municipios")->insert([
+        DB::table("c_tipo_eventos")->insert([
             'descripcion' => 'Panoramico'
         ]);
     }

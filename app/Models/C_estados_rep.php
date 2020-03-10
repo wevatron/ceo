@@ -5,23 +5,18 @@ namespace App\Models;
 use Eloquent as Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-/**
- * Class C_municipio
- * @package App\Models
- * @version February 5, 2020, 11:51 pm UTC
- *
- * @property string descripcion
- */
-class C_municipio extends Model
+class C_estados_rep extends Model
 {
- 
-    public $table = 'c_municipios';
-    public $timestamps = false;
+
+    public $table = 'c_estados_reps';
+    
+    public $timestamps =false;
+
 
 
     public $fillable = [
-        'nombre',
-        'reps_id'
+        'clave',
+        'nombre'
     ];
 
     /**
@@ -31,7 +26,7 @@ class C_municipio extends Model
      */
     protected $casts = [
         'id' => 'integer',
-        'reps_id' => 'integer',
+        'clave' => 'string',
         'nombre' => 'string'
     ];
 
@@ -41,13 +36,9 @@ class C_municipio extends Model
      * @var array
      */
     public static $rules = [
+        'clave' => 'required',
         'nombre' => 'required'
     ];
-
-    public function Estado()
-    {
-        $this->hasOne(C_estados_rep::class,'id');
-    }
 
     
 }

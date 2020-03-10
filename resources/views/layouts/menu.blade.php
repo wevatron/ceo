@@ -43,3 +43,7 @@
     <a href="{{ route('tBoletos.index') }}"><i class="fa fa-edit"></i><span>T Boletos</span></a>
 </li>
 
+<li class="{{ Request::is('cEstadosReps*') ? 'active' : '' }}">
+    <a href="{{ route('cEstadosReps.index') }}"><i class="fa fa-edit"></i><span>C Estados Reps</span></a>
+</li>
+

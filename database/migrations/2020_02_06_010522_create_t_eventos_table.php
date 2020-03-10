@@ -23,7 +23,9 @@ class CreateTEventosTable extends Migration
             $table->string('bio',800);
             $table->integer('cupo');
             $table->integer('cupoFake');
-            //$table->string('url_img')->nullable();
+            $table->date('fecha');
+            $table->time('inicio');
+            $table->time('fin');
             $table->integer('tipo_evento_id')->unsigned();
             $table->timestamps();
             $table->softDeletes();

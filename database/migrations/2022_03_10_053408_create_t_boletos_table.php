@@ -17,7 +17,7 @@ class CreateTBoletosTable extends Migration
             $table->increments('id');
             $table->integer('t_evento_id')->unsigned();
             $table->integer('usuario_id')->unsigned();
-            $table->integer('dislike');
+            $table->integer('dislike')->default(0);
             $table->timestamps();
             $table->softDeletes();
             $table->foreign('t_evento_id')->references('id')->on('t_eventos');

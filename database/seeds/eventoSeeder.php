@@ -20,9 +20,11 @@ class eventoSeeder extends Seeder
         'cargo' => 'Director',
         'empresa' => 'Edyno estudio',
         'bio' => 'La integración de las nuevas tecnologías en el aula es una realidad incuestionable. Pero, aunque la oferta de soluciones tecnológicas es cada vez mayor, muchos profesionales se sienten inseguros a la hora de utilizar este contenido para responder a las necesidades de su programación educativa.
-
         A lo largo de este TALLER se desgranarán las claves del éxito de la tecnología de Realidad Aumentada en el sector educativo. En especial, en aquellos casos en los que se integra junto a conceptos como el storytelling, la gamificación y las inteligencias múltiples.',
         'cupo' => 30,
+        'fecha' => date('Y-m-d'),
+        'inicio' => date('H:i:s'),
+        'fin' => date('H:i:s'),
         'cupoFake' => 35,
         'tipo_evento_id' => 1,
         'created_at' => date('Y-m-d H:i:s'),

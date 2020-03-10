@@ -30,9 +30,27 @@
                         <td>{{ $tPersona->rfc }}</td>
                         <td>{{ $tPersona->Universidad->descripcion }}</td>
                         <td>{{ $tPersona->TipoUsuario->descripcion }}</td>
-                        <td>{{ $tPersona->Municipio->descripcion }}</td>
+                        <td>{{ $tPersona->Municipio->nombre }}</td>
                         <td>{{ $tPersona->Giro->descripcion }}</td>
                         <td>{{ $tPersona->evento_id }}</td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+            <table class="table" id="tPersonas-table">
+                <thead>
+                    <tr>
+                        <th>Numero de Eventos</th>
+                        <th>Numero de likes</th>
+                        <th>Numero de vinculaciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>{{$numBoletos}}</td>
+                        <td>{{$likes}}</td>
+                        <td>0</td>
                     </tr>
                 </tbody>
             </table>
@@ -58,21 +76,19 @@
                     </tr>
                 </thead>
                 <tbody>
-                @foreach($tEventos as $tEve)
-                    @foreach($tEve->eventos as $tEvento)
+                @foreach($tEventos as $tEvento)
                     <tr>
-                        <td>{{ substr($tEvento->nombre_evento,0,12).".." }}</td>
-                        <td>{{ substr($tEvento->descripcion_evento,0,12).".." }}</td>
-                        <td>{{ substr($tEvento->nombre_conferencista,0,12).".." }}</td>
-                        <td>{{ substr($tEvento->cargo,0,12).".." }}</td>
-                        <td>{{ substr($tEvento->empresa,0,12).".." }}</td>
-                        <td>{{ substr($tEvento->bio,0,12).".." }}</td>
-                        <td>{{ $tEvento->cupo }}</td>
-                        <td>{{ $tEvento->cupoFake }}</td>
-                        <td>{{ $tEvento->TipoEvento->descripcion }}</td>
+                        <td>{{ substr($tEvento->Eventos->nombre_evento,0,12).".." }}</td>
+                        <td>{{ substr($tEvento->Eventos->descripcion_evento,0,12).".." }}</td>
+                        <td>{{ substr($tEvento->Eventos->nombre_conferencista,0,12).".." }}</td>
+                        <td>{{ substr($tEvento->Eventos->cargo,0,12).".." }}</td>
+                        <td>{{ substr($tEvento->Eventos->empresa,0,12).".." }}</td>
+                        <td>{{ substr($tEvento->Eventos->bio,0,12).".." }}</td>
+                        <td>{{ $tEvento->Eventos->cupo }}</td>
+                        <td>{{ $tEvento->Eventos->cupoFake }}</td>
+                        <td>{{ $tEvento->Eventos->TipoEvento->descripcion }}</td>
                 
                     </tr>
-                    @endforeach
                 @endforeach
                 </tbody>
             </table>

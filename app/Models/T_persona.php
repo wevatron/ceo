@@ -76,7 +76,7 @@ class T_persona extends Model
     }
     public function Municipio()
     {
-        return $this->hasOne(C_municipio::class,'id');
+        return $this->hasOne(C_municipio::class,'id','municipio_id');
     }
     public function Giro()
     {

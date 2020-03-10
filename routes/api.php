@@ -33,3 +33,5 @@ Route::resource('c_estados', 'C_estadoAPIController')->middleware('auth:api');
 Route::resource('t_likes', 'T_likeAPIController')->middleware('auth:api');;
 
 Route::resource('t_boletos', 'T_boletoAPIController');
+
+Route::resource('c_estados_reps', 'C_estados_repAPIController');

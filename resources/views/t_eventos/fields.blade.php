@@ -12,25 +12,59 @@
     {!! Form::label('nombre_conferencista', 'Nombre del conferencista:') !!}
     {!! Form::text('nombre_conferencista', null, ['class' => 'form-control']) !!}
 </div>
+<div class="form-group col-sm-2">
+    {!! Form::label('fecha', 'fecha:') !!}
+    {!! Form::text('fecha', null, ['class' => 'form-control','id'=>'fecha_de_inicio']) !!}
+</div>
+<div class="form-group col-sm-2">
+    {!! Form::label('inicio', 'inicio:') !!}
+    {!! Form::text('inicio', null, ['class' => 'form-control','id'=>'inicio']) !!}
+</div>
+
+@section('scripts')
+    
+    <script type="text/javascript">
+
+        $('#fecha_de_inicio').datetimepicker({
+            format: 'YY-mm-DD',
+            useCurrent: false
+        })
+
+        $('#inicio').datetimepicker({
+            format: 'HH:mm:ss',
+            useCurrent: false
+        })
+
+        $('#fin').datetimepicker({
+            format: 'HH:mm:ss',
+            useCurrent: false
+        })
+    </script>
+@endsection
+
+<div class="form-group col-sm-2">
+    {!! Form::label('fin', 'fin:') !!}
+    {!! Form::text('fin', null, ['class' => 'form-control','id'=>'fin']) !!}
+</div>
 <div class="form-group col-sm-6">
     {!! Form::label('cargo', 'Cargo:') !!}
     {!! Form::text('cargo', null, ['class' => 'form-control']) !!}
 </div>
-<div class="form-group col-sm-4">
+<div class="form-group col-sm-6">
     {!! Form::label('empresa', 'Empresa:') !!}
     {!! Form::text('empresa', null, ['class' => 'form-control']) !!}
 </div>
-<div class="form-group col-sm-2 col-lg-2">
+<div class="form-group col-sm-3 col-lg-3">
     {!! Form::label('cupo', 'Cupo:') !!}
     {!! Form::text('cupo', null, ['class' => 'form-control']) !!}
 </div>
-<div class="form-group col-sm-2 col-lg-2">
+<div class="form-group col-sm-3 col-lg-3">
     {!! Form::label('cupoFake', 'Cupo Fake:') !!}
     {!! Form::text('cupoFake', null, ['class' => 'form-control']) !!}
 </div>
 
 <!-- Tipo Evento Id Field -->
-<div class="form-group col-sm-4">
+<div class="form-group col-sm-6">
     {!! Form::label('tipo_evento_id', 'Tipo Evento Id:') !!}
     {!! Form::select('tipo_evento_id', $tipo_eventos, null, ['class' => 'form-control']) !!}
 </div>

@@ -11,21 +11,23 @@ class municipioSeed extends Seeder
      */
     public function run()
     {
-        //
-        DB::table("c_municipios")->insert([
-            'descripcion' => 'ninguno'
+
+        $estados = DB::connection('estados')->table('c_municipios')->get();
+
+       foreach ($estados as $estado) {
+        DB::connection('mysql')->table('c_municipios')->insert([
+            'id' => $estado->id,
+            'reps_id' => $estado->c_estados_id,
+            'clave' => $estado->clave,
+            'nombre' => $estado->nombre
         ]);
-        DB::table("c_municipios")->insert([
-            'descripcion' => 'Ejutla de Crespo Oaxaca'
-        ]);
-        DB::table("c_municipios")->insert([
-            'descripcion' => 'Ocotlan'
-        ]);
-        DB::table("c_municipios")->insert([
-           'descripcion' => 'Zimatlan' 
-        ]);
-        DB::table("c_municipios")->insert([
-            'descripcion' => 'San Pablo Huixtepec'
-        ]);
+       }
+
+       DB::connection('mysql')->table('c_municipios')->insert([
+        'reps_id' => 33,
+        'clave' => 'foraneo',
+        'nombre' => 'foraneo'
+    ]);
+
     }
 }

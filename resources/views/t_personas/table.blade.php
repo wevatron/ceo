@@ -18,15 +18,15 @@
         @foreach($tPersonas as $tPersona)
             <tr>
                 <td>{{ $tPersona->name }}</td>
-            <td>{{ $tPersona->apellido_paterno }}</td>
-            <td>{{ $tPersona->apellido_materno }}</td>
-            <td>{{ $tPersona->curp }}</td>
-            <td>{{ $tPersona->rfc }}</td>
-            <td>{{ $tPersona->Universidad->descripcion }}</td>
-            <td>{{ $tPersona->TipoUsuario->descripcion }}</td>
-            <td>{{ $tPersona->Municipio->descripcion }}</td>
-            <td>{{ $tPersona->Giro->descripcion }}</td>
-            <td>{{ $tPersona->evento_id }}</td>
+                <td>{{ $tPersona->apellido_paterno }}</td>
+                <td>{{ $tPersona->apellido_materno }}</td>
+                <td>{{ $tPersona->curp }}</td>
+                <td>{{ $tPersona->rfc }}</td>
+                <td>{{ $tPersona->Universidad->descripcion }}</td>
+                <td>{{ $tPersona->TipoUsuario->descripcion }}</td>
+                <td>{{ $tPersona->Municipio->nombre }}</td>
+                <td>{{ $tPersona->Giro->descripcion }}</td>
+                <td>{{ $tPersona->evento_id }}</td>
                 <td>
                     {!! Form::open(['route' => ['tPersonas.destroy', $tPersona->id], 'method' => 'delete']) !!}
                     <div class='btn-group'>

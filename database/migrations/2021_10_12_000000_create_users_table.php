@@ -30,8 +30,8 @@ class CreateUsersTable extends Migration
 
             
 
-            $table->integer('tipo_usuario_id')->default(1)->unsigned();
-            $table->integer('municipio_id')->default(1)->unsigned();
+            $table->integer('tipo_usuario_id')->default(3)->unsigned();
+            $table->integer('municipio_id')->default(2458)->unsigned();
             $table->integer('giro_negocio_id')->default(1)->unsigned();
             $table->integer('universidad_id')->default(1)->unsigned();
             //$table->integer('estado_id')->default(1)->unsigned();

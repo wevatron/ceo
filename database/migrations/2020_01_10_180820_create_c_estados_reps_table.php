@@ -3,7 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 
-class CreateCMunicipiosTable extends Migration
+class CreateCEstadosRepsTable extends Migration
 {
 
     /**
@@ -13,12 +13,11 @@ class CreateCMunicipiosTable extends Migration
      */
     public function up()
     {
-        Schema::create('c_municipios', function (Blueprint $table) {
+        Schema::create('c_estados_reps', function (Blueprint $table) {
             $table->increments('id');
             $table->string('clave');
             $table->string('nombre');
-            $table->integer('reps_id')->unsigned();
-            $table->foreign('reps_id')->references('id')->on('c_estados_reps');
+            $table->softDeletes();
         });
     }
 
@@ -29,6 +28,6 @@ class CreateCMunicipiosTable extends Migration
      */
     public function down()
     {
-        Schema::drop('c_municipios');
+        Schema::drop('c_estados_reps');
     }
 }
