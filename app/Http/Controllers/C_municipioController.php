@@ -29,7 +29,7 @@ class C_municipioController extends AppBaseController
      */
     public function index(Request $request)
     {
-        $cMunicipios = $this->cMunicipioRepository->all();
+        $cMunicipios = $this->cMunicipioRepository->paginate(20);
 
         return view('c_municipios.index')
             ->with('cMunicipios', $cMunicipios);

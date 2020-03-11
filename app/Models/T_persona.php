@@ -29,8 +29,7 @@ class T_persona extends Model
         'municipio_id',
         'municipio',
         'giro_negocio_id',
-        'universidad_id',
-        'evento_id'
+        'universidad_id'
     ];
 
     /**
@@ -47,8 +46,7 @@ class T_persona extends Model
         'universidad_id' => 'integer',
         'tipo_usuario_id' => 'integer',
         'municipio_id' => 'integer',
-        'giro_negocio_id' => 'integer',
-        'evento_id' => 'integer'
+        'giro_negocio_id' => 'integer'
     ];
 
     /**
@@ -62,17 +60,16 @@ class T_persona extends Model
         'universidad_id' => 'required',
         'tipo_usuario_id' => 'required',
         'municipio_id' => 'required',
-        'giro_negocio_id' => 'required',
-        'evento_id' => 'required'
+        'giro_negocio_id' => 'required'
     ];
 
     public function Universidad()
     {
-        return $this->hasOne(C_universidad::class,'id');
+        return $this->hasOne(C_universidad::class,'id','universidad_id');
     }
     public function TipoUsuario()
     {
-        return $this->hasOne(C_tipo_usuario::class,'id');
+        return $this->hasOne(C_tipo_usuario::class,'id','tipo_usuario_id');
     }
     public function Municipio()
     {
@@ -80,7 +77,7 @@ class T_persona extends Model
     }
     public function Giro()
     {
-        return $this->hasOne(C_giro_negocio::class,'id');
+        return $this->hasOne(C_giro_negocio::class,'id','giro_negocio_id');
     }
     
 }

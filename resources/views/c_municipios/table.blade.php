@@ -9,7 +9,7 @@
         <tbody>
         @foreach($cMunicipios as $cMunicipio)
             <tr>
-                <td>{{ $cMunicipio->descripcion }}</td>
+                <td>{{ $cMunicipio->nombre }}</td>
                 <td>
                     {!! Form::open(['route' => ['cMunicipios.destroy', $cMunicipio->id], 'method' => 'delete']) !!}
                     <div class='btn-group'>
@@ -23,4 +23,5 @@
         @endforeach
         </tbody>
     </table>
+    {{$cMunicipios->render()}}
 </div>

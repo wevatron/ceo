@@ -25,6 +25,9 @@ class T_evento extends Model
         'cargo',
         'empresa',
         'bio',
+        'fecha',
+        'inicio',
+        'fin',
         'cupo',
         'cupoFake',
         'url_img',
@@ -90,6 +93,10 @@ class T_evento extends Model
     public function Imagenes()
     {
         return $this->hasMany(T_imagenes::class,'t_evento_id','id');
+    }
+    public function Like()
+    {
+        return $this->hasOne(T_like::class,'t_evento_id','id');
     }
     
 

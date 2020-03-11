@@ -39,6 +39,7 @@ class T_boleto extends Model
     protected $casts = [
         'id' => 'integer',
         't_evento_id' => 'integer',
+        'dislike' => 'integer',
         'usuario_id' => 'integer'
     ];
 

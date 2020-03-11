@@ -79,7 +79,7 @@ class T_imagenesController extends AppBaseController
             $mime= $fieldFile->getClientOriginalExtension();
             $imageName = time().".".$mime;
 
-            $image = Image::make($fieldFile)->resize(600, 300);
+            $image = Image::make($fieldFile)->resize(600, 360);
                 // Metodo para guardar en el storage;
              
                 $ruta =   Storage::disk('Grakaja')->put("fotoEvento/".$imageName, (string) $image->encode());

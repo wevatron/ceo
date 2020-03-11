@@ -5,6 +5,7 @@ namespace App\Http\Controllers\API;
 use App\Http\Requests\API\CreateT_eventoAPIRequest;
 use App\Http\Requests\API\UpdateT_eventoAPIRequest;
 use App\Models\T_evento;
+use App\Models\T_boleto;
 use App\Repositories\T_eventoRepository;
 use Illuminate\Http\Request;
 use App\Http\Controllers\AppBaseController;
@@ -34,7 +35,8 @@ class T_eventoAPIController extends AppBaseController
      */
     public function index(Request $request)
     {
-        $tEventos = T_evento::Buscar($request->busca)->with('Imagenes')->orderBy('id','desc')->paginate(10);
+        $tEventos = T_evento::Buscar($request->busca)->with('Imagenes','Like')
+        ->orderBy('id','desc')->paginate(10);
 
         return $this->sendResponse($tEventos->toArray(), 'Eventos retrieved successfully');
     }
@@ -64,11 +66,21 @@ class T_eventoAPIController extends AppBaseController
      *
      * @return Response
      */
-    public function show($id)
+    public function show($id,Request $r)
     {
+        if(!isset($r->us)){
+            $r->us = 0;
+        }
         /** @var T_evento $tEvento */
        // $tEvento = $this->tEventoRepository->find($id);
         $tEvento = T_evento::with('Imagenes')->find($id);
+        $boleto = T_boleto::whereRaw("t_evento_id = $id and usuario_id = $r->us")->get();
+        $boletos = T_boleto::whereRaw("t_evento_id = $id")->get();
+        $tEvento->usados = count($boletos);
+        $tEvento->cupoRestante = $tEvento->cupo - count($boletos) ;
+        if($boleto){
+            $tEvento->mio = 1;
+        }
         if (empty($tEvento)) {
             return $this->sendError('T Evento not found');
         }

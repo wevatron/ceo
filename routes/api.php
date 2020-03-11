@@ -1,12 +1,13 @@
 <?php
 
 use Illuminate\Http\Request;
+use App\Models\T_persona;
 
 Route::post('login', 'UserController@login');
 Route::post('register', 'UserController@register');
 
 Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
+    return T_persona::with('Municipio','TipoUsuario','Universidad','Giro')->find($request->user()->id);
 });
 
 
