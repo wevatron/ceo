@@ -74,7 +74,7 @@ class T_evento extends Model
         'fecha' => 'required',
         'inicio' => 'required',
         'fin' => 'required',
-        'bio' =>'required',
+        'bio' =>'required|max:800',
         'cupoFake' =>'required',
         'cupo' => 'required',
         'tipo_evento_id' => 'required'

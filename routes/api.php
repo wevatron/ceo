@@ -11,6 +11,8 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 
+Route::resource('qr', 'qrController');
+
 Route::resource('c_roles', 'C_roleAPIController')->middleware('auth:api');
 
 Route::resource('c_horarios', 'C_horarioAPIController')->middleware('auth:api');

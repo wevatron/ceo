@@ -26,17 +26,17 @@
     <script type="text/javascript">
 
         $('#fecha_de_inicio').datetimepicker({
-            format: 'YY-mm-DD',
+            format: 'YYYY-MM-DD',
             useCurrent: false
         })
 
         $('#inicio').datetimepicker({
-            format: 'HH:mm:ss',
+            format: 'HH:mm',
             useCurrent: false
         })
 
         $('#fin').datetimepicker({
-            format: 'HH:mm:ss',
+            format: 'HH:mm',
             useCurrent: false
         })
     </script>
