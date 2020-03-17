@@ -53,5 +53,10 @@ class T_like extends Model
         'dislike' => 'required'
     ];
 
+    public function Evento()
+    {
+        return $this->hasOne(T_evento::class,'id','t_evento_id');
+    }
+
     
 }

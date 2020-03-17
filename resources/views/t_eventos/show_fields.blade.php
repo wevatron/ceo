@@ -27,14 +27,6 @@
             </tr>
         </tbody>
     </table>
-
-    <div class="text-center" style="margin-top: 50px;">
-        <h3>Laravel QR Code Example</h3>
-    
-        {!! QrCode::size(300)->generate('MyNotePaper'); !!}
-    
-        <p>MyNotePaper</p>
-    </div>
 </div>
 <section class="content-header">
     <h1 class="pull-left">Imagenes</h1>

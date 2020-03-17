@@ -18,7 +18,7 @@ class usuariosSeeder extends Seeder
             'curp' => "Etc",
             'rfc' => "Etc",
             'foto' => "Etc",
-            'tipo_usuario_id' => 1,
+            'tipo_usuario_id' => 2,
             'municipio_id' => 2458,
             'giro_negocio_id' => 1,
             'email' => "barrita@rr.com",

@@ -12,7 +12,7 @@ class municipioSeed extends Seeder
     public function run()
     {
 
-        $estados = DB::connection('estados')->table('c_municipios')->get();
+        //$estados = DB::connection('estados')->table('c_municipios')->get();
 
     //    foreach ($estados as $estado) {
     //     DB::connection('mysql')->table('c_municipios')->insert([

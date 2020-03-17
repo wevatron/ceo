@@ -75,12 +75,12 @@ class T_eventoAPIController extends AppBaseController
        // $tEvento = $this->tEventoRepository->find($id);
         $tEvento = T_evento::with('Imagenes')->find($id);
         $boleto = T_boleto::whereRaw("t_evento_id = $id and usuario_id = $r->us")->get();
-        $boletos = T_boleto::whereRaw("t_evento_id = $id")->get();
+        $boletos = T_boleto::whereRaw("t_evento_id = $id and estado_id = 1")->get();
         $tEvento->usados = count($boletos);
         $tEvento->cupoRestante = $tEvento->cupo - count($boletos) ;
-        if($boleto){
-            $tEvento->mio = 1;
-        }
+  
+        $tEvento->mio = count($boleto);
+        
         if (empty($tEvento)) {
             return $this->sendError('T Evento not found');
         }

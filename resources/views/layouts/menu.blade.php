@@ -47,3 +47,7 @@
     <a href="{{ route('cEstadosReps.index') }}"><i class="fa fa-edit"></i><span>C Estados Reps</span></a>
 </li>
 
+<li class="{{ Request::is('estados*') ? 'active' : '' }}">
+    <a href="{{ route('estados.index') }}"><i class="fa fa-edit"></i><span>Estados</span></a>
+</li>
+

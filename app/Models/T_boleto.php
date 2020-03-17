@@ -28,6 +28,7 @@ class T_boleto extends Model
     public $fillable = [
         't_evento_id',
         'usuario_id',
+        'estado_id',
         'dislike'
     ];
 
@@ -40,6 +41,7 @@ class T_boleto extends Model
         'id' => 'integer',
         't_evento_id' => 'integer',
         'dislike' => 'integer',
+        'estado_id' => 'integer',
         'usuario_id' => 'integer'
     ];
 
@@ -51,11 +53,16 @@ class T_boleto extends Model
     public static $rules = [
         't_evento_id' => 'required',
         'usuario_id' => 'required',
+        'estado_id' => 'required',
         'dislike' => 'required'
     ];
 
     public function Eventos()
     {
         return $this->hasOne(T_evento::class,'id','t_evento_id');
+    }
+    public function Estado()
+    {
+        return $this->hasOne(Estado::class,'id','estado_id');
     }
 }

@@ -33,8 +33,10 @@ Route::resource('c_municipios', 'C_municipioAPIController')->middleware('auth:ap
 
 Route::resource('c_estados', 'C_estadoAPIController')->middleware('auth:api');
 
-Route::resource('t_likes', 'T_likeAPIController')->middleware('auth:api');;
+Route::resource('t_likes', 'T_likeAPIController')->middleware('auth:api');
 
-Route::resource('t_boletos', 'T_boletoAPIController');
+Route::resource('t_boletos', 'T_boletoAPIController');//->middleware('auth:api');
 
 Route::resource('c_estados_reps', 'C_estados_repAPIController');
+
+Route::resource('estados', 'EstadoAPIController');

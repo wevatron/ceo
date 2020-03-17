@@ -61,3 +61,5 @@ Route::resource('tLikes', 'T_likeController');
 Route::resource('tBoletos', 'T_boletoController');
 
 Route::resource('cEstadosReps', 'C_estados_repController');
+
+Route::resource('estados', 'EstadoController');

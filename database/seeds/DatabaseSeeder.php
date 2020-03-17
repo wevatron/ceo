@@ -13,6 +13,7 @@ class DatabaseSeeder extends Seeder
     {
         $this->call(universidadSeed::class);
         $this->call(estadosSeeder::class);
+        $this->call(estadoSeeder::class);
         $this->call(giroNegocioSeed::class);
         $this->call(municipioSeed::class);
         $this->call(tipoEventosSeed::class);
