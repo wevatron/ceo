@@ -67,8 +67,14 @@ class T_imagenesController extends AppBaseController
         $input = $request->all();
 
         $tImagenes = $this->tImagenesRepository->create($input);
+        $x=1920;
+        $y=1080;
 
         Flash::success('T Imagenes saved successfully.');
+        if ($request->tipo == 2) {
+            $x=1280;
+            $y=1024;
+        }
 
         if($request->file('url_img')){
             // $this.validate($request,[
@@ -79,7 +85,7 @@ class T_imagenesController extends AppBaseController
             $mime= $fieldFile->getClientOriginalExtension();
             $imageName = time().".".$mime;
 
-            $image = Image::make($fieldFile)->resize(600, 360);
+            $image = Image::make($fieldFile)->resize($x, $y);
                 // Metodo para guardar en el storage;
              
                 $ruta =   Storage::disk('Grakaja')->put("fotoEvento/".$imageName, (string) $image->encode());
