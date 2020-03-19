@@ -38,10 +38,10 @@ class T_likeAPIController extends AppBaseController
         if ($request->us) {
                 $us = $request->us;
         }
-        $tLikes = T_like::with('Evento')->where('usuario_id','=',$us)
+        $tLikes = T_like::with('Evento')->whereRaw("usuario_id =  $us and dislike = 1")
         ->get();
 
-        return $this->sendResponse($tLikes->toArray(), 'T Likes retrieved successfully');
+        return $this->sendResponse($tLikes->toArray(), 'Likes retrieved successfully');
     }
 
     /**
