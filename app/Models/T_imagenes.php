@@ -27,6 +27,7 @@ class T_imagenes extends Model
     public $fillable = [
         'descripcion',
         'url_img',
+        'relacion',
         't_evento_id'
     ];
 
@@ -39,6 +40,7 @@ class T_imagenes extends Model
         'id' => 'integer',
         'descripcion' => 'string',
         'url_img' => 'string',
+        'relacion' => 'integer',
         't_evento_id' => 'integer'
     ];
 
@@ -50,6 +52,7 @@ class T_imagenes extends Model
     public static $rules = [
         'descripcion' => 'required',
         'url_img' => 'required',
+        'relacion' => 'required',
         't_evento_id' => 'required'
     ];
 

@@ -3,11 +3,7 @@
     {!! Form::label('nombre_evento', 'Nombre Evento:') !!}
     {!! Form::text('nombre_evento', null, ['class' => 'form-control']) !!}
 </div>
-<!-- Nombre Evento Field -->
-<div class="form-group col-sm-6">
-    {!! Form::label('descripcion_evento', 'Descripcion Evento:') !!}
-    {!! Form::text('descripcion_evento', null, ['class' => 'form-control']) !!}
-</div>
+
 <div class="form-group col-sm-6">
     {!! Form::label('nombre_conferencista', 'Nombre del conferencista:') !!}
     {!! Form::text('nombre_conferencista', null, ['class' => 'form-control']) !!}
@@ -46,11 +42,11 @@
     {!! Form::label('fin', 'fin:') !!}
     {!! Form::text('fin', null, ['class' => 'form-control','id'=>'fin']) !!}
 </div>
-<div class="form-group col-sm-6">
+<div class="form-group col-sm-3">
     {!! Form::label('cargo', 'Cargo:') !!}
     {!! Form::text('cargo', null, ['class' => 'form-control']) !!}
 </div>
-<div class="form-group col-sm-6">
+<div class="form-group col-sm-3">
     {!! Form::label('empresa', 'Empresa:') !!}
     {!! Form::text('empresa', null, ['class' => 'form-control']) !!}
 </div>
@@ -68,7 +64,13 @@
     {!! Form::label('tipo_evento_id', 'Tipo Evento Id:') !!}
     {!! Form::select('tipo_evento_id', $tipo_eventos, null, ['class' => 'form-control']) !!}
 </div>
-<div class="form-group col-sm-12">
+<!-- Nombre Evento Field -->
+<div class="form-group col-sm-6">
+    {!! Form::label('descripcion_evento', 'Descripcion Evento:') !!}
+    {!! Form::textarea('descripcion_evento', null, ['class' => 'form-control']) !!}
+</div>
+
+<div class="form-group col-sm-6">
     {!! Form::label('bio', 'Biografia del ponente:') !!}
     {!! Form::textarea('bio', null, ['class' => 'form-control']) !!}
 </div>

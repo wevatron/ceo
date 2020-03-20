@@ -18,6 +18,7 @@ class CreateTImagenesTable extends Migration
             $table->string('descripcion');
             $table->string('url_img');
             $table->integer('t_evento_id')->unsigned();
+            $table->integer('relacion')->default(1);
             $table->timestamps();
             $table->softDeletes();
             $table->foreign('t_evento_id')->references('id')->on('t_eventos');

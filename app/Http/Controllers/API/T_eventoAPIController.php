@@ -80,6 +80,10 @@ class T_eventoAPIController extends AppBaseController
         $tEvento->cupoRestante = $tEvento->cupo - count($boletos) ;
   
         $tEvento->mio = count($boleto);
+        if ($tEvento->mio > 0) {
+            $tEvento->mioId = $boleto[0]->id;
+        }
+        
         
         if (empty($tEvento)) {
             return $this->sendError('T Evento not found');

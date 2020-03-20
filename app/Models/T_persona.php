@@ -38,15 +38,17 @@ class T_persona extends Model
      * @var array
      */
     protected $casts = [
-        'id' => 'integer',
-        'nombre' => 'string',
-        'apellido' => 'string',
-        'curp' => 'string',
-        'rfc' => 'string',
-        'universidad_id' => 'integer',
-        'tipo_usuario_id' => 'integer',
-        'municipio_id' => 'integer',
-        'giro_negocio_id' => 'integer'
+        'name'=>'string',
+        'email'=>'string',
+        'password'=>'string',
+        'apellido_paterno'=>'string',
+        'apellido_materno'=>'string',
+        'curp'=>'string',
+        'rfc'=>'string',
+        'universidad_id'=>'integer',
+        'tipo_usuario_id'=>'integer',
+        'municipio_id'=>'integer',
+        'giro_negocio_id'=>'integer'
     ];
 
     /**
@@ -55,9 +57,7 @@ class T_persona extends Model
      * @var array
      */
     public static $rules = [
-        'nombre' => 'required',
-        'apellido' => 'required',
-        'universidad_id' => 'required',
+        'name' => 'required',
         'tipo_usuario_id' => 'required',
         'municipio_id' => 'required',
         'giro_negocio_id' => 'required'

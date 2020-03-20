@@ -11,6 +11,7 @@
             <th>Biografia</th>
             <th>Cupo</th>
             <th>Tipo de Evento </th>
+            <th>Acciones </th>
         </thead>
         <tbody>
             <tr>
@@ -23,6 +24,12 @@
                 <td>{{ substr($tEvento->bio,0,12).".." }}</td>
                 <td>{{ $tEvento->cupo }}</td>
                 <td>{{ $tEvento->TipoEvento->descripcion }}</td>
+                <td>
+                    <div class='btn-group'>
+                        <a href="{{ route('tEventos.edit', [$tEvento->id]) }}" class='btn btn-primary btn-s'><i class="glyphicon glyphicon-edit"></i> Editar</a>
+                    </div>
+                   
+                </td>
            
             </tr>
         </tbody>

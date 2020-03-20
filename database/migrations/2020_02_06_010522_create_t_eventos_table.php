@@ -16,7 +16,7 @@ class CreateTEventosTable extends Migration
         Schema::create('t_eventos', function (Blueprint $table) {
             $table->increments('id');
             $table->string('nombre_evento');
-            $table->string('descripcion_evento');
+            $table->string('descripcion_evento',800);
             $table->string('nombre_conferencista');
             $table->string('cargo');
             $table->string('empresa');

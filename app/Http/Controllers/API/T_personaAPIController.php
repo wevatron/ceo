@@ -89,8 +89,9 @@ class T_personaAPIController extends AppBaseController
      *
      * @return Response
      */
-    public function update($id, UpdateT_personaAPIRequest $request)
+    public function update($id, Request $request)
     {
+   
         $input = $request->all();
 
         /** @var T_persona $tPersona */

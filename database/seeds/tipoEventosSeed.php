@@ -19,7 +19,7 @@ class tipoEventosSeed extends Seeder
             'descripcion' => 'Conferencia'
         ]);
         DB::table("c_tipo_eventos")->insert([
-           'descripcion' => 'Magistral' 
+           'descripcion' => 'Otro' 
         ]);
         DB::table("c_tipo_eventos")->insert([
             'descripcion' => 'Panoramico'

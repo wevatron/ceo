@@ -71,9 +71,13 @@ class T_imagenesController extends AppBaseController
         $y=1080;
 
         Flash::success('T Imagenes saved successfully.');
-        if ($request->tipo == 2) {
+        if ($request->relacion == 1) {
             $x=1280;
             $y=1024;
+        }
+        else {
+            $x=1100;
+            $y=1600;
         }
 
         if($request->file('url_img')){

@@ -10,6 +10,15 @@
     {!! Form::select('t_evento_id', $eventos, null, ['class' => 'form-control']) !!}
 </div>
 
+<!-- T Evento Id Field -->
+<div class="form-group col-sm-6">
+    {!! Form::label('relacion', 'Tipo de banner:') !!}
+    {!! Form::select('relacion', [
+        '1'=>'Banner 1920 x 1080',
+        '2'=>'Banner 1100 x 1600'
+        ] , null, ['class' => 'form-control']) !!}
+</div>
+
 <!-- Url Img Field -->
 <div class="form-group col-sm-12 col-lg-12" >
     {!! Form::label('url_img', 'Url Img:') !!}

@@ -28,7 +28,7 @@ class estadoSeeder extends Seeder
         'accion' => 'ninguno'
     ]);
     DB::connection('mysql')->table('estados')->insert([
-        'descripcion' => 'ancelado',
+        'descripcion' => 'Cancelado',
         'accion' => 'ninguno'
     ]);
     DB::connection('mysql')->table('estados')->insert([
