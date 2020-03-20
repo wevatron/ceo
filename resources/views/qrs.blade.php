@@ -11,6 +11,7 @@
 
 {!! QrCode::size(300)->generate($boleto->id); !!}
 
+<h5>{{$boleto->id}}</h5>
 <h5>{{$boleto->Eventos->descripcion_evento}}</h5>
 <p>{{$boleto->Eventos->empresa}}</p>
 </div>

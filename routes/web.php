@@ -20,46 +20,46 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index');
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@index')->name('home')->middleware('auth');
 
-Route::resource('cHorarios', 'C_horarioController');
-
-
-
-Route::resource('cGiroNegocios', 'C_giro_negocioController');
-
-Route::resource('tEventos', 'T_eventoController');
+Route::resource('cHorarios', 'C_horarioController')->middleware('auth');
 
 
 
-Route::resource('tPersonas', 'T_personaController');
+Route::resource('cGiroNegocios', 'C_giro_negocioController')->middleware('auth');
+
+Route::resource('tEventos', 'T_eventoController')->middleware('auth');
 
 
 
-Route::resource('cGiroNegocios', 'C_giro_negocioController');
+Route::resource('tPersonas', 'T_personaController')->middleware('auth');
 
 
 
-Route::resource('cTipoUsuarios', 'C_tipo_usuarioController');
+Route::resource('cGiroNegocios', 'C_giro_negocioController')->middleware('auth');
 
-Route::resource('cUniversidads', 'C_universidadController');
 
-Route::resource('cTipoEventos', 'C_tipo_eventoController');
 
-Route::resource('cMunicipios', 'C_municipioController');
+Route::resource('cTipoUsuarios', 'C_tipo_usuarioController')->middleware('auth');
 
-Route::resource('cMunicipios', 'C_municipioController');
+Route::resource('cUniversidads', 'C_universidadController')->middleware('auth');
 
-Route::resource('cMunicipios', 'C_municipioController');
+Route::resource('cTipoEventos', 'C_tipo_eventoController')->middleware('auth');
 
-Route::resource('tImagenes', 'T_imagenesController');
+Route::resource('cMunicipios', 'C_municipioController')->middleware('auth');
 
-Route::resource('tLikes', 'T_likeController');
+Route::resource('cMunicipios', 'C_municipioController')->middleware('auth');
 
-Route::resource('tLikes', 'T_likeController');
+Route::resource('cMunicipios', 'C_municipioController')->middleware('auth');
 
-Route::resource('tBoletos', 'T_boletoController');
+Route::resource('tImagenes', 'T_imagenesController')->middleware('auth');
 
-Route::resource('cEstadosReps', 'C_estados_repController');
+Route::resource('tLikes', 'T_likeController')->middleware('auth');
 
-Route::resource('estados', 'EstadoController');
+Route::resource('tLikes', 'T_likeController')->middleware('auth');
+
+Route::resource('tBoletos', 'T_boletoController')->middleware('auth');
+
+Route::resource('cEstadosReps', 'C_estados_repController')->middleware('auth');
+
+Route::resource('estados', 'EstadoController')->middleware('auth');

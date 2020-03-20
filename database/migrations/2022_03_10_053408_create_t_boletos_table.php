@@ -25,6 +25,7 @@ class CreateTBoletosTable extends Migration
             $table->foreign('usuario_id')->references('id')->on('users');
             $table->foreign('estado_id')->references('id')->on('estados');
         });
+        DB::update("ALTER TABLE t_boletos AUTO_INCREMENT = 100000;");
     }
 
     /**
