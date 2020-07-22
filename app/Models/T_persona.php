@@ -45,6 +45,7 @@ class T_persona extends Model
         'apellido_materno'=>'string',
         'curp'=>'string',
         'rfc'=>'string',
+        'municipio'=>'string',
         'universidad_id'=>'integer',
         'tipo_usuario_id'=>'integer',
         'municipio_id'=>'integer',

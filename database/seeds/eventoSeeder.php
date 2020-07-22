@@ -12,142 +12,227 @@ class eventoSeeder extends Seeder
      */
     public function run()
     {
-       // factory(T_evento::class,150)->create();
-        // DB::table('t_eventos')->insert([
-        // 'nombre_evento' => 'Taller de realidad aumentada',
-        // 'descripcion_evento' => 'Taller para contruir una app desde el inicio',
-        // 'nombre_conferencista' => 'Manuel Eduardo Benitez Flores',
-        // 'cargo' => 'Director',
-        // 'empresa' => 'Edyno estudio',
-        // 'bio' => 'La integración de las nuevas tecnologías en el aula es una realidad incuestionable. Pero, aunque la oferta de soluciones tecnológicas es cada vez mayor, muchos profesionales se sienten inseguros a la hora de utilizar este contenido para responder a las necesidades de su programación educativa.
-        // A lo largo de este TALLER se desgranarán las claves del éxito de la tecnología de Realidad Aumentada en el sector educativo. En especial, en aquellos casos en los que se integra junto a conceptos como el storytelling, la gamificación y las inteligencias múltiples.',
-        // 'cupo' => 30,
-        // 'fecha' => date('Y-m-d'),
-        // 'inicio' => date('H:i:s'),
-        // 'fin' => date('H:i:s'),
-        // 'cupoFake' => 35,
-        // 'tipo_evento_id' => 1,
-        // 'created_at' => date('Y-m-d H:i:s'),
-        // 'updated_at' => date('Y-m-d H:i:s')
-        // ]);
-        // DB::table('t_eventos')->insert([
-        // 'nombre_evento' => 'Taller de branding',
-        // 'descripcion_evento' => 'Taller para contruir una app desde el inicio',
-        // 'nombre_conferencista' => 'Manuel Eduardo Benitez Flores',
-        // 'cargo' => 'Director',
-        // 'empresa' => 'Edyno estudio',
-        // 'bio' => 'La integración de las nuevas tecnologías en el aula es una realidad incuestionable. Pero, aunque la oferta de soluciones tecnológicas es cada vez mayor, muchos profesionales se sienten inseguros a la hora de utilizar este contenido para responder a las necesidades de su programación educativa.
-        // A lo largo de este TALLER se desgranarán las claves del éxito de la tecnología de Realidad Aumentada en el sector educativo. En especial, en aquellos casos en los que se integra junto a conceptos como el storytelling, la gamificación y las inteligencias múltiples.',
-        // 'cupo' => 30,
-        // 'fecha' => date('Y-m-d'),
-        // 'inicio' => date('H:i:s'),
-        // 'fin' => date('H:i:s'),
-        // 'cupoFake' => 35,
-        // 'tipo_evento_id' => 1,
-        // 'created_at' => date('Y-m-d H:i:s'),
-        // 'updated_at' => date('Y-m-d H:i:s')
-        // ]);
-        // DB::table('t_eventos')->insert([
-        // 'nombre_evento' => 'Taller apps ios y android',
-        // 'descripcion_evento' => 'Taller para contruir una app desde el inicio',
-        // 'nombre_conferencista' => 'Manuel Eduardo Benitez Flores',
-        // 'cargo' => 'Director',
-        // 'empresa' => 'Edyno estudio',
-        // 'bio' => 'La integración de las nuevas tecnologías en el aula es una realidad incuestionable. Pero, aunque la oferta de soluciones tecnológicas es cada vez mayor, muchos profesionales se sienten inseguros a la hora de utilizar este contenido para responder a las necesidades de su programación educativa.
-        // A lo largo de este TALLER se desgranarán las claves del éxito de la tecnología de Realidad Aumentada en el sector educativo. En especial, en aquellos casos en los que se integra junto a conceptos como el storytelling, la gamificación y las inteligencias múltiples.',
-        // 'cupo' => 30,
-        // 'fecha' => date('Y-m-d'),
-        // 'inicio' => date('H:i:s'),
-        // 'fin' => date('H:i:s'),
-        // 'cupoFake' => 35,
-        // 'tipo_evento_id' => 1,
-        // 'created_at' => date('Y-m-d H:i:s'),
-        // 'updated_at' => date('Y-m-d H:i:s')
-        // ]);
-        // DB::table('t_eventos')->insert([
-        // 'nombre_evento' => 'Taller de finanzas ',
-        // 'descripcion_evento' => 'Taller para contruir una app desde el inicio',
-        // 'nombre_conferencista' => 'Manuel Eduardo Benitez Flores',
-        // 'cargo' => 'Director',
-        // 'empresa' => 'Edyno estudio',
-        // 'bio' => 'La integración de las nuevas tecnologías en el aula es una realidad incuestionable. Pero, aunque la oferta de soluciones tecnológicas es cada vez mayor, muchos profesionales se sienten inseguros a la hora de utilizar este contenido para responder a las necesidades de su programación educativa.
-        // A lo largo de este TALLER se desgranarán las claves del éxito de la tecnología de Realidad Aumentada en el sector educativo. En especial, en aquellos casos en los que se integra junto a conceptos como el storytelling, la gamificación y las inteligencias múltiples.',
-        // 'cupo' => 30,
-        // 'fecha' => date('Y-m-d'),
-        // 'inicio' => date('H:i:s'),
-        // 'fin' => date('H:i:s'),
-        // 'cupoFake' => 35,
-        // 'tipo_evento_id' => 1,
-        // 'created_at' => date('Y-m-d H:i:s'),
-        // 'updated_at' => date('Y-m-d H:i:s')
-        // ]);
-        // DB::table('t_eventos')->insert([
-        // 'nombre_evento' => 'Conferencia de Facebook',
-        // 'descripcion_evento' => 'Taller para contruir una app desde el inicio',
-        // 'nombre_conferencista' => 'Manuel Eduardo Benitez Flores',
-        // 'cargo' => 'Director',
-        // 'empresa' => 'Edyno estudio',
-        // 'bio' => 'La integración de las nuevas tecnologías en el aula es una realidad incuestionable. Pero, aunque la oferta de soluciones tecnológicas es cada vez mayor, muchos profesionales se sienten inseguros a la hora de utilizar este contenido para responder a las necesidades de su programación educativa.
-        // A lo largo de este TALLER se desgranarán las claves del éxito de la tecnología de Realidad Aumentada en el sector educativo. En especial, en aquellos casos en los que se integra junto a conceptos como el storytelling, la gamificación y las inteligencias múltiples.',
-        // 'cupo' => 30,
-        // 'fecha' => date('Y-m-d'),
-        // 'inicio' => date('H:i:s'),
-        // 'fin' => date('H:i:s'),
-        // 'cupoFake' => 35,
-        // 'tipo_evento_id' => 2,
-        // 'created_at' => date('Y-m-d H:i:s'),
-        // 'updated_at' => date('Y-m-d H:i:s')
-        // ]);
-        // DB::table('t_eventos')->insert([
-        // 'nombre_evento' => 'Conferencia de Google',
-        // 'descripcion_evento' => 'Taller para contruir una app desde el inicio',
-        // 'nombre_conferencista' => 'Manuel Eduardo Benitez Flores',
-        // 'cargo' => 'Director',
-        // 'empresa' => 'Edyno estudio',
-        // 'bio' => 'La integración de las nuevas tecnologías en el aula es una realidad incuestionable. Pero, aunque la oferta de soluciones tecnológicas es cada vez mayor, muchos profesionales se sienten inseguros a la hora de utilizar este contenido para responder a las necesidades de su programación educativa.
-        // A lo largo de este TALLER se desgranarán las claves del éxito de la tecnología de Realidad Aumentada en el sector educativo. En especial, en aquellos casos en los que se integra junto a conceptos como el storytelling, la gamificación y las inteligencias múltiples.',
-        // 'cupo' => 30,
-        // 'fecha' => date('Y-m-d'),
-        // 'inicio' => date('H:i:s'),
-        // 'fin' => date('H:i:s'),
-        // 'cupoFake' => 35,
-        // 'tipo_evento_id' => 2,
-        // 'created_at' => date('Y-m-d H:i:s'),
-        // 'updated_at' => date('Y-m-d H:i:s')
-        // ]);
-        // DB::table('t_eventos')->insert([
-        // 'nombre_evento' => 'Conferencia de logiteck',
-        // 'descripcion_evento' => 'Taller para contruir una app desde el inicio',
-        // 'nombre_conferencista' => 'Manuel Eduardo Benitez Flores',
-        // 'cargo' => 'Director',
-        // 'empresa' => 'Edyno estudio',
-        // 'bio' => 'La integración de las nuevas tecnologías en el aula es una realidad incuestionable. Pero, aunque la oferta de soluciones tecnológicas es cada vez mayor, muchos profesionales se sienten inseguros a la hora de utilizar este contenido para responder a las necesidades de su programación educativa.
-        // A lo largo de este TALLER se desgranarán las claves del éxito de la tecnología de Realidad Aumentada en el sector educativo. En especial, en aquellos casos en los que se integra junto a conceptos como el storytelling, la gamificación y las inteligencias múltiples.',
-        // 'cupo' => 30,
-        // 'fecha' => date('Y-m-d'),
-        // 'inicio' => date('H:i:s'),
-        // 'fin' => date('H:i:s'),
-        // 'cupoFake' => 35,
-        // 'tipo_evento_id' => 2,
-        // 'created_at' => date('Y-m-d H:i:s'),
-        // 'updated_at' => date('Y-m-d H:i:s')
-        // ]);
-        // DB::table('t_eventos')->insert([
-        // 'nombre_evento' => 'Conferencia de Hanna',
-        // 'descripcion_evento' => 'Taller para contruir una app desde el inicio',
-        // 'nombre_conferencista' => 'Manuel Eduardo Benitez Flores',
-        // 'cargo' => 'Director',
-        // 'empresa' => 'Edyno estudio',
-        // 'bio' => 'La integración de las nuevas tecnologías en el aula es una realidad incuestionable. Pero, aunque la oferta de soluciones tecnológicas es cada vez mayor, muchos profesionales se sienten inseguros a la hora de utilizar este contenido para responder a las necesidades de su programación educativa.
-        // A lo largo de este TALLER se desgranarán las claves del éxito de la tecnología de Realidad Aumentada en el sector educativo. En especial, en aquellos casos en los que se integra junto a conceptos como el storytelling, la gamificación y las inteligencias múltiples.',
-        // 'cupo' => 30,
-        // 'fecha' => date('Y-m-d'),
-        // 'inicio' => date('H:i:s'),
-        // 'fin' => date('H:i:s'),
-        // 'cupoFake' => 35,
-        // 'tipo_evento_id' => 2,
-        // 'created_at' => date('Y-m-d H:i:s'),
-        // 'updated_at' => date('Y-m-d H:i:s')
-        // ]);
+       
+        DB::table('t_eventos')->insert([
+        'nombre_evento' => 'Taller de branding',
+        'descripcion_evento' => 'Taller para contruir una app desde el inicio',
+        'nombre_conferencista' => 'Manuel Eduardo Benitez Flores',
+        'cargo' => 'Director',
+        'empresa' => 'Edyno estudio',
+        'bio' => 'Diferenciarse es hoy cada vez más difícil,2​ ya que los costes de los productos son 
+        similares. Por ello, la clave de los negocios está en el branding, es decir, en el poder de
+         la marca como elemento diferenciador. Para Tom Peters, declarado «gurú de gurúes» por 
+         The Economist y la revista Fortune,3​ lo que constituye la diferenciación parte precisamente 
+         de los intangibles de una empresa: valor, credibilidad y singularidad de una marca. 
+         Así lo explica en el libro que publicó bajo el título El meollo del branding. A partir de 
+         su teoría de «las tres leyes físicas del marketing» ―beneficios patentes, un motivo ',
+        'cupo' => 30,
+        'fecha' => "2020-09-26 00:00:00",
+        'inicio' => "10:00:00",
+        'fin' => "11:00:00",
+        'cupoFake' => 35,
+        'tipo_evento_id' => 1,
+        'created_at' => date('Y-m-d H:i:s'),
+        'updated_at' => date('Y-m-d H:i:s')
+        ]);
+        DB::table('t_eventos')->insert([
+        'nombre_evento' => 'Taller finanzas',
+        'descripcion_evento' => 'Taller para contruir una app desde el inicio',
+        'nombre_conferencista' => 'Manuel Eduardo Benitez Flores',
+        'cargo' => 'Director',
+        'empresa' => 'Edyno estudio',
+        'bio' => 'Diferenciarse es hoy cada vez más difícil,2​ ya que los costes de los productos son 
+        similares. Por ello, la clave de los negocios está en el branding, es decir, en el poder de
+         la marca como elemento diferenciador. Para Tom Peters, declarado «gurú de gurúes» por 
+         The Economist y la revista Fortune,3​ lo que constituye la diferenciación parte precisamente 
+         de los intangibles de una empresa: valor, credibilidad y singularidad de una marca. 
+         Así lo explica en el libro que publicó bajo el título El meollo del branding. A partir de 
+         su teoría de «las tres leyes físicas del marketing» ―beneficios patentes, un motivo ',
+        'cupo' => 30,
+        'fecha' => "2020-09-26 00:00:00",
+        'inicio' => "10:00:00",
+        'fin' => "11:00:00",
+        'cupoFake' => 35,
+        'tipo_evento_id' => 1,
+        'created_at' => date('Y-m-d H:i:s'),
+        'updated_at' => date('Y-m-d H:i:s')
+        ]);
+        DB::table('t_eventos')->insert([
+        'nombre_evento' => 'Taller de pitch',
+        'descripcion_evento' => 'Taller para contruir una app desde el inicio',
+        'nombre_conferencista' => 'Manuel Eduardo Benitez Flores',
+        'cargo' => 'Director',
+        'empresa' => 'Edyno estudio',
+        'bio' => 'Diferenciarse es hoy cada vez más difícil,2​ ya que los costes de los productos son 
+        similares. Por ello, la clave de los negocios está en el branding, es decir, en el poder de
+         la marca como elemento diferenciador. Para Tom Peters, declarado «gurú de gurúes» por 
+         The Economist y la revista Fortune,3​ lo que constituye la diferenciación parte precisamente 
+         de los intangibles de una empresa: valor, credibilidad y singularidad de una marca. 
+         Así lo explica en el libro que publicó bajo el título El meollo del branding. A partir de 
+         su teoría de «las tres leyes físicas del marketing» ―beneficios patentes, un motivo ',
+        'cupo' => 30,
+        'fecha' => "2020-09-26 00:00:00",
+        'inicio' => "10:00:00",
+        'fin' => "11:00:00",
+        'cupoFake' => 35,
+        'tipo_evento_id' => 1,
+        'created_at' => date('Y-m-d H:i:s'),
+        'updated_at' => date('Y-m-d H:i:s')
+        ]);
+        DB::table('t_eventos')->insert([
+        'nombre_evento' => 'Taller de redes sociales',
+        'descripcion_evento' => 'Taller para contruir una app desde el inicio',
+        'nombre_conferencista' => 'Manuel Eduardo Benitez Flores',
+        'cargo' => 'Director',
+        'empresa' => 'Edyno estudio',
+        'bio' => 'Diferenciarse es hoy cada vez más difícil,2​ ya que los costes de los productos son 
+        similares. Por ello, la clave de los negocios está en el branding, es decir, en el poder de
+         la marca como elemento diferenciador. Para Tom Peters, declarado «gurú de gurúes» por 
+         The Economist y la revista Fortune,3​ lo que constituye la diferenciación parte precisamente 
+         de los intangibles de una empresa: valor, credibilidad y singularidad de una marca. 
+         Así lo explica en el libro que publicó bajo el título El meollo del branding. A partir de 
+         su teoría de «las tres leyes físicas del marketing» ―beneficios patentes, un motivo ',
+        'cupo' => 30,
+        'fecha' => "2020-09-26 00:00:00",
+        'inicio' => "10:00:00",
+        'fin' => "11:00:00",
+        'cupoFake' => 35,
+        'tipo_evento_id' => 1,
+        'created_at' => date('Y-m-d H:i:s'),
+        'updated_at' => date('Y-m-d H:i:s')
+        ]);
+        DB::table('t_eventos')->insert([
+        'nombre_evento' => 'Networking',
+        'descripcion_evento' => 'Taller para contruir una app desde el inicio',
+        'nombre_conferencista' => 'Manuel Eduardo Benitez Flores',
+        'cargo' => 'Director',
+        'empresa' => 'Edyno estudio',
+        'bio' => 'Diferenciarse es hoy cada vez más difícil,2​ ya que los costes de los productos son 
+        similares. Por ello, la clave de los negocios está en el branding, es decir, en el poder de
+         la marca como elemento diferenciador. Para Tom Peters, declarado «gurú de gurúes» por 
+         The Economist y la revista Fortune,3​ lo que constituye la diferenciación parte precisamente 
+         de los intangibles de una empresa: valor, credibilidad y singularidad de una marca. 
+         Así lo explica en el libro que publicó bajo el título El meollo del branding. A partir de 
+         su teoría de «las tres leyes físicas del marketing» ―beneficios patentes, un motivo ',
+        'cupo' => 30,
+        'fecha' => "2020-09-26 00:00:00",
+        'inicio' => "10:00:00",
+        'fin' => "11:00:00",
+        'cupoFake' => 35,
+        'tipo_evento_id' => 1,
+        'created_at' => date('Y-m-d H:i:s'),
+        'updated_at' => date('Y-m-d H:i:s')
+        ]);
+        DB::table('t_eventos')->insert([
+        'nombre_evento' => 'Taller de branding',
+        'descripcion_evento' => 'Taller para contruir una app desde el inicio',
+        'nombre_conferencista' => 'Manuel Eduardo Benitez Flores',
+        'cargo' => 'Director',
+        'empresa' => 'Edyno estudio',
+        'bio' => 'Diferenciarse es hoy cada vez más difícil,2​ ya que los costes de los productos son 
+        similares. Por ello, la clave de los negocios está en el branding, es decir, en el poder de
+         la marca como elemento diferenciador. Para Tom Peters, declarado «gurú de gurúes» por 
+         The Economist y la revista Fortune,3​ lo que constituye la diferenciación parte precisamente 
+         de los intangibles de una empresa: valor, credibilidad y singularidad de una marca. 
+         Así lo explica en el libro que publicó bajo el título El meollo del branding. A partir de 
+         su teoría de «las tres leyes físicas del marketing» ―beneficios patentes, un motivo ',
+        'cupo' => 30,
+        'fecha' => "2020-09-26 00:00:00",
+        'inicio' => "10:00:00",
+        'fin' => "11:00:00",
+        'cupoFake' => 35,
+        'tipo_evento_id' => 1,
+        'created_at' => date('Y-m-d H:i:s'),
+        'updated_at' => date('Y-m-d H:i:s')
+        ]);
+        DB::table('t_eventos')->insert([
+        'nombre_evento' => 'Taller naranja',
+        'descripcion_evento' => 'Taller para contruir una app desde el inicio',
+        'nombre_conferencista' => 'Manuel Eduardo Benitez Flores',
+        'cargo' => 'Director',
+        'empresa' => 'Edyno estudio',
+        'bio' => 'Diferenciarse es hoy cada vez más difícil,2​ ya que los costes de los productos son 
+        similares. Por ello, la clave de los negocios está en el branding, es decir, en el poder de
+         la marca como elemento diferenciador. Para Tom Peters, declarado «gurú de gurúes» por 
+         The Economist y la revista Fortune,3​ lo que constituye la diferenciación parte precisamente 
+         de los intangibles de una empresa: valor, credibilidad y singularidad de una marca. 
+         Así lo explica en el libro que publicó bajo el título El meollo del branding. A partir de 
+         su teoría de «las tres leyes físicas del marketing» ―beneficios patentes, un motivo ',
+        'cupo' => 30,
+        'fecha' => "2020-09-27 00:00:00",
+        'inicio' => "10:00:00",
+        'fin' => "11:00:00",
+        'cupoFake' => 35,
+        'tipo_evento_id' => 1,
+        'created_at' => date('Y-m-d H:i:s'),
+        'updated_at' => date('Y-m-d H:i:s')
+        ]);
+        DB::table('t_eventos')->insert([
+        'nombre_evento' => 'Taller ventas',
+        'descripcion_evento' => 'Taller para contruir una app desde el inicio',
+        'nombre_conferencista' => 'Manuel Eduardo Benitez Flores',
+        'cargo' => 'Director',
+        'empresa' => 'Edyno estudio',
+        'bio' => 'Diferenciarse es hoy cada vez más difícil,2​ ya que los costes de los productos son 
+        similares. Por ello, la clave de los negocios está en el branding, es decir, en el poder de
+         la marca como elemento diferenciador. Para Tom Peters, declarado «gurú de gurúes» por 
+         The Economist y la revista Fortune,3​ lo que constituye la diferenciación parte precisamente 
+         de los intangibles de una empresa: valor, credibilidad y singularidad de una marca. 
+         Así lo explica en el libro que publicó bajo el título El meollo del branding. A partir de 
+         su teoría de «las tres leyes físicas del marketing» ―beneficios patentes, un motivo ',
+        'cupo' => 30,
+        'fecha' => "2020-09-27 00:00:00",
+        'inicio' => "10:00:00",
+        'fin' => "11:00:00",
+        'cupoFake' => 35,
+        'tipo_evento_id' => 1,
+        'created_at' => date('Y-m-d H:i:s'),
+        'updated_at' => date('Y-m-d H:i:s')
+        ]);
+        DB::table('t_eventos')->insert([
+        'nombre_evento' => 'Taller de xx',
+        'descripcion_evento' => 'Taller para contruir una app desde el inicio',
+        'nombre_conferencista' => 'Manuel Eduardo Benitez Flores',
+        'cargo' => 'Director',
+        'empresa' => 'Edyno estudio',
+        'bio' => 'Diferenciarse es hoy cada vez más difícil,2​ ya que los costes de los productos son 
+        similares. Por ello, la clave de los negocios está en el branding, es decir, en el poder de
+         la marca como elemento diferenciador. Para Tom Peters, declarado «gurú de gurúes» por 
+         The Economist y la revista Fortune,3​ lo que constituye la diferenciación parte precisamente 
+         de los intangibles de una empresa: valor, credibilidad y singularidad de una marca. 
+         Así lo explica en el libro que publicó bajo el título El meollo del branding. A partir de 
+         su teoría de «las tres leyes físicas del marketing» ―beneficios patentes, un motivo ',
+        'cupo' => 30,
+        'fecha' => "2020-09-27 00:00:00",
+        'inicio' => "10:00:00",
+        'fin' => "11:00:00",
+        'cupoFake' => 35,
+        'tipo_evento_id' => 1,
+        'created_at' => date('Y-m-d H:i:s'),
+        'updated_at' => date('Y-m-d H:i:s')
+        ]);
+        DB::table('t_eventos')->insert([
+        'nombre_evento' => 'Taller de marketing',
+        'descripcion_evento' => 'Taller para contruir una app desde el inicio',
+        'nombre_conferencista' => 'Manuel Eduardo Benitez Flores',
+        'cargo' => 'Director',
+        'empresa' => 'Edyno estudio',
+        'bio' => 'Diferenciarse es hoy cada vez más difícil,2​ ya que los costes de los productos son 
+        similares. Por ello, la clave de los negocios está en el branding, es decir, en el poder de
+         la marca como elemento diferenciador. Para Tom Peters, declarado «gurú de gurúes» por 
+         The Economist y la revista Fortune,3​ lo que constituye la diferenciación parte precisamente 
+         de los intangibles de una empresa: valor, credibilidad y singularidad de una marca. 
+         Así lo explica en el libro que publicó bajo el título El meollo del branding. A partir de 
+         su teoría de «las tres leyes físicas del marketing» ―beneficios patentes, un motivo ',
+        'cupo' => 30,
+        'fecha' => "2020-09-28 00:00:00",
+        'inicio' => "10:00:00",
+        'fin' => "11:00:00",
+        'cupoFake' => 35,
+        'tipo_evento_id' => 1,
+        'created_at' => date('Y-m-d H:i:s'),
+        'updated_at' => date('Y-m-d H:i:s')
+        ]);
+      
     }
 }

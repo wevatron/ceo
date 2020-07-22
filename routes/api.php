@@ -7,7 +7,7 @@ Route::post('login', 'UserController@login');
 Route::post('register', 'UserController@register');
 
 Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return T_persona::with('Municipio','TipoUsuario','Universidad','Giro')->find($request->user()->id);
+    return T_persona::with('Municipio','TipoUsuario','Universidad','Giro')->find(1);
 });
 
 
@@ -21,7 +21,7 @@ Route::resource('c_giro_negocios', 'C_giro_negocioAPIController')->middleware('a
 
 Route::resource('t_eventos', 'T_eventoAPIController')->middleware('auth:api');
 
-Route::resource('t_personas', 'T_personaAPIController');//->middleware('auth:api');
+Route::resource('t_personas', 'T_personaAPIController')->middleware('auth:api');
 
 Route::resource('c_tipo_usuarios', 'C_tipo_usuarioAPIController')->middleware('auth:api');
 
@@ -29,7 +29,7 @@ Route::resource('c_universidads', 'C_universidadAPIController')->middleware('aut
 
 Route::resource('c_tipo_eventos', 'C_tipo_eventoAPIController')->middleware('auth:api');
 
-Route::resource('c_municipios', 'C_municipioAPIController')->middleware('auth:api');
+Route::resource('c_municipios', 'C_municipioAPIController');
 
 //Route::resource('c_estados', 'C_estadoAPIController')->middleware('auth:api');
 

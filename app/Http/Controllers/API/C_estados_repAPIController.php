@@ -34,13 +34,9 @@ class C_estados_repAPIController extends AppBaseController
      */
     public function index(Request $request)
     {
-        $cEstadosReps = $this->cEstadosRepRepository->all(
-            $request->except(['skip', 'limit']),
-            $request->get('skip'),
-            $request->get('limit')
-        );
-
-        return $this->sendResponse($cEstadosReps->toArray(), 'C Estados Reps retrieved successfully');
+        $cEstadosReps = C_estados_rep::get();
+        return $cEstadosReps;
+        //return $this->sendResponse($cEstadosReps->toArray(), 'C Estados Reps retrieved successfully');
     }
 
     /**

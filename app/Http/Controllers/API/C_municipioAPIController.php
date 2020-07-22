@@ -34,13 +34,8 @@ class C_municipioAPIController extends AppBaseController
      */
     public function index(Request $request)
     {
-        $cMunicipios = $this->cMunicipioRepository->all(
-            $request->except(['skip', 'limit']),
-            $request->get('skip'),
-            $request->get('limit')
-        );
-
-        return $this->sendResponse($cMunicipios->toArray(), 'C Municipios retrieved successfully');
+        $municipios = C_municipio::where('reps_id','=',$request->mun)->get();
+        return $municipios;
     }
 
     /**

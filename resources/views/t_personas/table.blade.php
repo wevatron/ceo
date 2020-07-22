@@ -7,7 +7,7 @@
                 <th>Apellido materno</th>
                 <th>Curp</th>
                 <th>Rfc</th>
-                <th>Universidad</th>
+                {{-- <th>Universidad</th> --}}
                 <th>Tipo de Usuario</th>
                 <th>Municipio</th>
                 <th>Giro Negocio</th>
@@ -22,7 +22,7 @@
                 <td>{{ $tPersona->apellido_materno }}</td>
                 <td>{{ $tPersona->curp }}</td>
                 <td>{{ $tPersona->rfc }}</td>
-                <td>{{ $tPersona->Universidad->descripcion }}</td>
+                {{-- <td>{{ $tPersona->Universidad->descripcion }}</td> --}}
                 <td>{{ $tPersona->TipoUsuario->descripcion }}</td>
                 <td>{{ $tPersona->Municipio->nombre }}</td>
                 <td>{{ $tPersona->Giro->descripcion }}</td>

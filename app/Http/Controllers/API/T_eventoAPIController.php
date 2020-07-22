@@ -35,8 +35,7 @@ class T_eventoAPIController extends AppBaseController
      */
     public function index(Request $request)
     {
-        $tEventos = T_evento::Buscar($request->busca)->with('Imagenes','Like')
-        ->orderBy('id','desc')->paginate(10);
+        $tEventos = T_evento::Buscar($request->busca)->get();
 
         return $this->sendResponse($tEventos->toArray(), 'Eventos retrieved successfully');
     }

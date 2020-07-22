@@ -85,9 +85,9 @@ class T_evento extends Model
         return $this->hasOne(C_tipo_evento::class,'id','tipo_evento_id');
     }
 
-    public function scopeBuscar($query, $nombre_evento)
+    public function scopeBuscar($query, $fecha)
 	{
-		return $query->where('nombre_evento','like', "%$nombre_evento%");
+		return $query->where('fecha','=', "$fecha");
     }
 
     public function Imagenes()

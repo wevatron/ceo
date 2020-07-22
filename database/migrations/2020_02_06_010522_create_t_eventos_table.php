@@ -21,11 +21,11 @@ class CreateTEventosTable extends Migration
             $table->string('cargo');
             $table->string('empresa');
             $table->string('bio',800);
-            $table->integer('cupo');
-            $table->integer('cupoFake');
-            $table->date('fecha');
-            $table->time('inicio');
-            $table->time('fin');
+            $table->integer('cupo')->nullable();
+            $table->integer('cupoFake')->nullable();
+            $table->date('fecha')->nullable();
+            $table->time('inicio')->nullable();
+            $table->time('fin')->nullable();
             $table->integer('tipo_evento_id')->unsigned();
             $table->timestamps();
             $table->softDeletes();

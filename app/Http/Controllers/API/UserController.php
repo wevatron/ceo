@@ -47,6 +47,7 @@ public $successStatus = 200;
             'password' => 'required|min:8', 
             'c_password' => 'required|same:password', 
         ],$messages);
+        
 if ($validator->fails()) { 
             return response()->json(['error'=>$validator->errors()], 401);            
         }
@@ -55,6 +56,7 @@ $input = $request->all();
         $user = User::create($input); 
         $success['access_token'] =  $user->createToken('MyApp')->accessToken; 
         $success['name'] =  $user->name;
+        $success['demas'] =  $request->all();
 return response()->json(['success'=>$success], 200); 
     }
 /** 

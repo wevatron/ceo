@@ -24,10 +24,9 @@ class User extends Authenticatable
         'apellido_materno',
         'curp',
         'rfc',
-        'universidad_id',
         'tipo_usuario_id',
         'municipio_id',
-        'giro_negocio_id'
+        'edad'
     ];
 
     /**
