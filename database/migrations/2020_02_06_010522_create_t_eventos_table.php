@@ -21,8 +21,7 @@ class CreateTEventosTable extends Migration
             $table->string('cargo');
             $table->string('empresa');
             $table->string('bio',800);
-            $table->integer('cupo')->nullable();
-            $table->integer('cupoFake')->nullable();
+            $table->string('url',800)->nullable();
             $table->date('fecha')->nullable();
             $table->time('inicio')->nullable();
             $table->time('fin')->nullable();
@@ -30,6 +29,11 @@ class CreateTEventosTable extends Migration
             $table->timestamps();
             $table->softDeletes();
             $table->foreign('tipo_evento_id')->references('id')->on('c_tipo_eventos');
+
+            $table->string('facebook')->nullable();
+            $table->string('instagram')->nullable();
+            $table->string('twitter')->nullable();
+            $table->string('youtube')->nullable();
         });
         DB::update("ALTER TABLE t_eventos AUTO_INCREMENT = 100000;");
     }

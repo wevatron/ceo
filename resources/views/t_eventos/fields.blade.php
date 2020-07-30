@@ -50,20 +50,7 @@
     {!! Form::label('empresa', 'Empresa:') !!}
     {!! Form::text('empresa', null, ['class' => 'form-control']) !!}
 </div>
-<div class="form-group col-sm-3 col-lg-3">
-    {!! Form::label('cupo', 'Cupo:') !!}
-    {!! Form::text('cupo', null, ['class' => 'form-control']) !!}
-</div>
-<div class="form-group col-sm-3 col-lg-3">
-    {!! Form::label('cupoFake', 'Cupo Fake:') !!}
-    {!! Form::text('cupoFake', null, ['class' => 'form-control']) !!}
-</div>
 
-<!-- Tipo Evento Id Field -->
-<div class="form-group col-sm-6">
-    {!! Form::label('tipo_evento_id', 'Tipo Evento Id:') !!}
-    {!! Form::select('tipo_evento_id', $tipo_eventos, null, ['class' => 'form-control']) !!}
-</div>
 <!-- Nombre Evento Field -->
 <div class="form-group col-sm-6">
     {!! Form::label('descripcion_evento', 'Descripcion Evento:') !!}
@@ -73,6 +60,37 @@
 <div class="form-group col-sm-6">
     {!! Form::label('bio', 'Biografia del ponente:') !!}
     {!! Form::textarea('bio', null, ['class' => 'form-control']) !!}
+</div>
+
+<!-- Tipo Evento Id Field -->
+<div class="form-group col-sm-6">
+    {!! Form::label('tipo_evento_id', 'Tipo Evento Id:') !!}
+    {!! Form::select('tipo_evento_id', $tipo_eventos, null, ['class' => 'form-control']) !!}
+</div>
+
+<div class="form-group col-sm-6">
+    {!! Form::label('url', 'Url del streaming de youtube:') !!}
+    {!! Form::text('url', null, ['class' => 'form-control']) !!}
+</div>
+
+<div class="form-group col-sm-6">
+    {!! Form::label('facebook', 'Facebook ponente : (Opcional)') !!}
+    {!! Form::text('facebook', null, ['class' => 'form-control']) !!}
+</div>
+
+<div class="form-group col-sm-6">
+    {!! Form::label('instagram', 'Instagram ponente : (Opcional)') !!}
+    {!! Form::text('instagram', null, ['class' => 'form-control']) !!}
+</div>
+
+<div class="form-group col-sm-6">
+    {!! Form::label('twitter', 'Twitter ponente : (Opcional)') !!}
+    {!! Form::text('twitter', null, ['class' => 'form-control']) !!}
+</div>
+
+<div class="form-group col-sm-6">
+    {!! Form::label('youtube', 'Youtube ponente : (Opcional)') !!}
+    {!! Form::text('youtube', null, ['class' => 'form-control']) !!}
 </div>
 
 <!-- Url Img Field -->

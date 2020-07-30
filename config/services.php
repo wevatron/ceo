@@ -44,4 +44,9 @@ return [
         ],
     ],
 
+    'onesignal' => [
+        'app_id' => 'f8eb18dd-d187-4530-bd87-a2fdcbb1543e',
+        'rest_api_key' => 'ZmEyMGZkYzgtNDcyMC00MWExLTg5ODktYmI2MmE0NDc1OTk2'
+    ],
+
 ];

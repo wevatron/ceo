@@ -10,6 +10,7 @@ use App\Repositories\T_eventoRepository;
 use Illuminate\Http\Request;
 use App\Http\Controllers\AppBaseController;
 use Response;
+use Flash;
 
 /**
  * Class T_eventoController
@@ -57,31 +58,15 @@ class T_eventoAPIController extends AppBaseController
         return $this->sendResponse($tEvento->toArray(), 'T Evento saved successfully');
     }
 
-    /**
-     * Display the specified T_evento.
-     * GET|HEAD /tEventos/{id}
-     *
-     * @param int $id
-     *
-     * @return Response
-     */
     public function show($id,Request $r)
     {
         if(!isset($r->us)){
             $r->us = 0;
         }
-        /** @var T_evento $tEvento */
+       
        // $tEvento = $this->tEventoRepository->find($id);
         $tEvento = T_evento::with('Imagenes')->find($id);
-        $boleto = T_boleto::whereRaw("t_evento_id = $id and usuario_id = $r->us")->get();
-        $boletos = T_boleto::whereRaw("t_evento_id = $id and estado_id = 1")->get();
-        $tEvento->usados = count($boletos);
-        $tEvento->cupoRestante = $tEvento->cupo - count($boletos) ;
   
-        $tEvento->mio = count($boleto);
-        if ($tEvento->mio > 0) {
-            $tEvento->mioId = $boleto[0]->id;
-        }
         
         
         if (empty($tEvento)) {

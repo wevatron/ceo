@@ -24,11 +24,9 @@ public $successStatus = 200;
             return response()->json(['errorLogin'=>'Usuario no encontrado'], 401); 
         } 
     }
-/** 
-     * Register api 
-     * 
-     * @return \Illuminate\Http\Response 
-     */ 
+
+           
+
     public function register(Request $request) 
     { 
         $messages = [
@@ -56,8 +54,10 @@ $input = $request->all();
         $user = User::create($input); 
         $success['access_token'] =  $user->createToken('MyApp')->accessToken; 
         $success['name'] =  $user->name;
+        $success['usuario'] =  $user->id;
         $success['demas'] =  $request->all();
-return response()->json(['success'=>$success], 200); 
+
+        return response()->json(['success'=>$success], 200); 
     }
 /** 
      * details api 

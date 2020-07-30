@@ -96,7 +96,7 @@ class T_personaAPIController extends AppBaseController
 
         /** @var T_persona $tPersona */
         $tPersona = $this->tPersonaRepository->find($id);
-
+        
         if (empty($tPersona)) {
             return $this->sendError('T Persona not found');
         }

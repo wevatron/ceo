@@ -72,8 +72,8 @@ class T_imagenesController extends AppBaseController
 
         Flash::success('T Imagenes saved successfully.');
         if ($request->relacion == 1) {
-            $x=1280;
-            $y=1024;
+            $x=1920;
+            $y=1080;
         }
         else {
             $x=1100;
@@ -97,7 +97,7 @@ class T_imagenesController extends AppBaseController
            
 
             $tImagenes->fill([
-                'url_img'=>'http://grakaja.com/ceo/fotoEvento/'.$imageName
+                'url_img'=>'http://somosrino.org/storageCeo/fotoEvento/'.$imageName
             ])->save();
             
         }
@@ -179,7 +179,7 @@ class T_imagenesController extends AppBaseController
             //Guardar Img Nuevo
             $ruta = Storage::disk('Grakaja')->put('fotoEvento',$request->file('url_img'));
             $tImagenes->fill([
-                'url_img'=>'http://grakaja.com/ceo/'.$ruta
+                'url_img'=>'http://somosrino.org/storageCeo/fotoEvento/'.$ruta
             ])->save();
         }
 

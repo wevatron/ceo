@@ -26,7 +26,9 @@ class User extends Authenticatable
         'rfc',
         'tipo_usuario_id',
         'municipio_id',
-        'edad'
+        'estado_id',
+        'edad',
+        'sexo'
     ];
 
     /**

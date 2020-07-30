@@ -19,7 +19,6 @@ class T_persona extends Model
 
     public $fillable = [
         'name',
-        'apellido',
         'curp',
         'rfc',
         'apellido_paterno',
@@ -27,9 +26,12 @@ class T_persona extends Model
         'universidad_id',
         'tipo_usuario_id',
         'municipio_id',
-        'municipio',
+        'estado_id',
         'giro_negocio_id',
-        'universidad_id'
+        'universidad_id',
+        'edad',
+        'sexo',
+        'email'
     ];
 
     /**
@@ -45,11 +47,14 @@ class T_persona extends Model
         'apellido_materno'=>'string',
         'curp'=>'string',
         'rfc'=>'string',
-        'municipio'=>'string',
+        'municipio_id'=>'int',
+        'estado_id'=>'int',
         'universidad_id'=>'integer',
         'tipo_usuario_id'=>'integer',
         'municipio_id'=>'integer',
-        'giro_negocio_id'=>'integer'
+        'giro_negocio_id'=>'integer',
+        'sexo'=>'integer',
+        'edad'=>'string'
     ];
 
     /**
@@ -61,7 +66,12 @@ class T_persona extends Model
         'name' => 'required',
         'tipo_usuario_id' => 'required',
         'municipio_id' => 'required',
-        'giro_negocio_id' => 'required'
+        'estado_id' => 'required',
+        'giro_negocio_id' => 'required',
+        'apellido_paterno'=>'required',
+        'edad'=>'required',
+        'sexo'=>'required',
+        'apellido_materno'=>'required'
     ];
 
     public function Universidad()

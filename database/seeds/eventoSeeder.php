@@ -26,11 +26,9 @@ class eventoSeeder extends Seeder
          de los intangibles de una empresa: valor, credibilidad y singularidad de una marca. 
          Así lo explica en el libro que publicó bajo el título El meollo del branding. A partir de 
          su teoría de «las tres leyes físicas del marketing» ―beneficios patentes, un motivo ',
-        'cupo' => 30,
         'fecha' => "2020-09-26 00:00:00",
         'inicio' => "10:00:00",
         'fin' => "11:00:00",
-        'cupoFake' => 35,
         'tipo_evento_id' => 1,
         'created_at' => date('Y-m-d H:i:s'),
         'updated_at' => date('Y-m-d H:i:s')
@@ -48,11 +46,9 @@ class eventoSeeder extends Seeder
          de los intangibles de una empresa: valor, credibilidad y singularidad de una marca. 
          Así lo explica en el libro que publicó bajo el título El meollo del branding. A partir de 
          su teoría de «las tres leyes físicas del marketing» ―beneficios patentes, un motivo ',
-        'cupo' => 30,
         'fecha' => "2020-09-26 00:00:00",
         'inicio' => "10:00:00",
         'fin' => "11:00:00",
-        'cupoFake' => 35,
         'tipo_evento_id' => 1,
         'created_at' => date('Y-m-d H:i:s'),
         'updated_at' => date('Y-m-d H:i:s')
@@ -70,11 +66,9 @@ class eventoSeeder extends Seeder
          de los intangibles de una empresa: valor, credibilidad y singularidad de una marca. 
          Así lo explica en el libro que publicó bajo el título El meollo del branding. A partir de 
          su teoría de «las tres leyes físicas del marketing» ―beneficios patentes, un motivo ',
-        'cupo' => 30,
         'fecha' => "2020-09-26 00:00:00",
         'inicio' => "10:00:00",
         'fin' => "11:00:00",
-        'cupoFake' => 35,
         'tipo_evento_id' => 1,
         'created_at' => date('Y-m-d H:i:s'),
         'updated_at' => date('Y-m-d H:i:s')
@@ -92,11 +86,9 @@ class eventoSeeder extends Seeder
          de los intangibles de una empresa: valor, credibilidad y singularidad de una marca. 
          Así lo explica en el libro que publicó bajo el título El meollo del branding. A partir de 
          su teoría de «las tres leyes físicas del marketing» ―beneficios patentes, un motivo ',
-        'cupo' => 30,
         'fecha' => "2020-09-26 00:00:00",
         'inicio' => "10:00:00",
         'fin' => "11:00:00",
-        'cupoFake' => 35,
         'tipo_evento_id' => 1,
         'created_at' => date('Y-m-d H:i:s'),
         'updated_at' => date('Y-m-d H:i:s')
@@ -114,11 +106,9 @@ class eventoSeeder extends Seeder
          de los intangibles de una empresa: valor, credibilidad y singularidad de una marca. 
          Así lo explica en el libro que publicó bajo el título El meollo del branding. A partir de 
          su teoría de «las tres leyes físicas del marketing» ―beneficios patentes, un motivo ',
-        'cupo' => 30,
         'fecha' => "2020-09-26 00:00:00",
         'inicio' => "10:00:00",
         'fin' => "11:00:00",
-        'cupoFake' => 35,
         'tipo_evento_id' => 1,
         'created_at' => date('Y-m-d H:i:s'),
         'updated_at' => date('Y-m-d H:i:s')
@@ -136,11 +126,9 @@ class eventoSeeder extends Seeder
          de los intangibles de una empresa: valor, credibilidad y singularidad de una marca. 
          Así lo explica en el libro que publicó bajo el título El meollo del branding. A partir de 
          su teoría de «las tres leyes físicas del marketing» ―beneficios patentes, un motivo ',
-        'cupo' => 30,
         'fecha' => "2020-09-26 00:00:00",
         'inicio' => "10:00:00",
         'fin' => "11:00:00",
-        'cupoFake' => 35,
         'tipo_evento_id' => 1,
         'created_at' => date('Y-m-d H:i:s'),
         'updated_at' => date('Y-m-d H:i:s')
@@ -158,11 +146,9 @@ class eventoSeeder extends Seeder
          de los intangibles de una empresa: valor, credibilidad y singularidad de una marca. 
          Así lo explica en el libro que publicó bajo el título El meollo del branding. A partir de 
          su teoría de «las tres leyes físicas del marketing» ―beneficios patentes, un motivo ',
-        'cupo' => 30,
         'fecha' => "2020-09-27 00:00:00",
         'inicio' => "10:00:00",
         'fin' => "11:00:00",
-        'cupoFake' => 35,
         'tipo_evento_id' => 1,
         'created_at' => date('Y-m-d H:i:s'),
         'updated_at' => date('Y-m-d H:i:s')
@@ -180,11 +166,9 @@ class eventoSeeder extends Seeder
          de los intangibles de una empresa: valor, credibilidad y singularidad de una marca. 
          Así lo explica en el libro que publicó bajo el título El meollo del branding. A partir de 
          su teoría de «las tres leyes físicas del marketing» ―beneficios patentes, un motivo ',
-        'cupo' => 30,
         'fecha' => "2020-09-27 00:00:00",
         'inicio' => "10:00:00",
         'fin' => "11:00:00",
-        'cupoFake' => 35,
         'tipo_evento_id' => 1,
         'created_at' => date('Y-m-d H:i:s'),
         'updated_at' => date('Y-m-d H:i:s')
@@ -202,11 +186,9 @@ class eventoSeeder extends Seeder
          de los intangibles de una empresa: valor, credibilidad y singularidad de una marca. 
          Así lo explica en el libro que publicó bajo el título El meollo del branding. A partir de 
          su teoría de «las tres leyes físicas del marketing» ―beneficios patentes, un motivo ',
-        'cupo' => 30,
         'fecha' => "2020-09-27 00:00:00",
         'inicio' => "10:00:00",
         'fin' => "11:00:00",
-        'cupoFake' => 35,
         'tipo_evento_id' => 1,
         'created_at' => date('Y-m-d H:i:s'),
         'updated_at' => date('Y-m-d H:i:s')
@@ -224,11 +206,9 @@ class eventoSeeder extends Seeder
          de los intangibles de una empresa: valor, credibilidad y singularidad de una marca. 
          Así lo explica en el libro que publicó bajo el título El meollo del branding. A partir de 
          su teoría de «las tres leyes físicas del marketing» ―beneficios patentes, un motivo ',
-        'cupo' => 30,
         'fecha' => "2020-09-28 00:00:00",
         'inicio' => "10:00:00",
         'fin' => "11:00:00",
-        'cupoFake' => 35,
         'tipo_evento_id' => 1,
         'created_at' => date('Y-m-d H:i:s'),
         'updated_at' => date('Y-m-d H:i:s')

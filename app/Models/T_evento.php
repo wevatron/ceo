@@ -28,11 +28,14 @@ class T_evento extends Model
         'fecha',
         'inicio',
         'fin',
-        'cupo',
-        'cupoFake',
+        'url',
         'url_img',
         'tipo_evento_id',
         'taller_id',
+        'facebook',
+        'instagram',
+        'youtube',
+        'twitter',
         'empresa_id'
     ];
 
@@ -51,12 +54,15 @@ class T_evento extends Model
         'bio' => 'string',
         'fecha' => 'string',
         'inicio' => 'string',
+        'url' => 'string',
         'fin' => 'string',
-        'cupo' => 'integer',
-        'cupoFake' => 'integer',
         'url_img' => 'string',
         'tipo_evento_id' => 'integer',
         'taller_id' => 'integer',
+        'facebook'=>'string',
+        'instagram'=>'string',
+        'youtube'=>'string',
+        'twitter'=>'string',
         'empresa_id' => 'integer'
     ];
 
@@ -75,8 +81,6 @@ class T_evento extends Model
         'inicio' => 'required',
         'fin' => 'required',
         'bio' =>'required|max:800',
-        'cupoFake' =>'required',
-        'cupo' => 'required',
         'tipo_evento_id' => 'required'
     ];
 

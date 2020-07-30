@@ -128,6 +128,7 @@ class T_eventoController extends AppBaseController
         $tEvento = $this->tEventoRepository->find($id);
         // Guardar la variable viaje
         
+        
         $tEvento = $this->tEventoRepository->update($input, $id);
 
         Flash::success('T Evento updated successfully.');

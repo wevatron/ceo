@@ -63,3 +63,6 @@ Route::resource('tBoletos', 'T_boletoController')->middleware('auth');
 Route::resource('cEstadosReps', 'C_estados_repController')->middleware('auth');
 
 Route::resource('estados', 'EstadoController')->middleware('auth');
+
+
+Route::get('notificaciones', 'notificaciones@notificarEvento')->name('notificaciones')->middleware('auth');

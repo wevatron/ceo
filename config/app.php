@@ -161,6 +161,7 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
+        Ladumor\OneSignal\OneSignalServiceProvider::class,
 
         /*
          * Package Service Providers...
@@ -235,6 +236,7 @@ return [
         'Html'      => Collective\Html\HtmlFacade::class,
         'Flash'     => Laracasts\Flash\Flash::class,
         'QrCode' => SimpleSoftwareIO\QrCode\Facades\QrCode::class,
+        'OneSignal' => \Ladumor\OneSignal\OneSignal::class,
 
     ],
 
