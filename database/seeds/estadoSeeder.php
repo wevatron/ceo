@@ -20,21 +20,14 @@ class estadoSeeder extends Seeder
     //     ]);
     //    }
     DB::connection('mysql')->table('estados')->insert([
-        'descripcion' => 'Activo',
+        'descripcion' => 'Bazar',
         'accion' => 'ninguno'
     ]);
     DB::connection('mysql')->table('estados')->insert([
-        'descripcion' => 'Inactivo',
+        'descripcion' => 'Aprende',
         'accion' => 'ninguno'
     ]);
-    DB::connection('mysql')->table('estados')->insert([
-        'descripcion' => 'Cancelado',
-        'accion' => 'ninguno'
-    ]);
-    DB::connection('mysql')->table('estados')->insert([
-        'descripcion' => 'Canjeado',
-        'accion' => 'ninguno'
-    ]);
+   
 
     }
 }

@@ -74,6 +74,9 @@ class T_imagenesController extends AppBaseController
         if ($request->relacion == 1) {
             $x=1920;
             $y=1080;
+        }else if($request->relacion == 3){
+            $x=1000;
+            $y=1000;
         }
         else {
             $x=1100;

@@ -73,14 +73,11 @@ class T_evento extends Model
      */
     public static $rules = [
         'nombre_evento' => 'required',
-        'descripcion_evento' => 'required',
-        'nombre_conferencista' =>'required',
-        'cargo' =>'required',
-        'empresa' =>'required',
-        'fecha' => 'required',
-        'inicio' => 'required',
-        'fin' => 'required',
-        'bio' =>'required|max:800',
+        'descripcion_evento' => 'max:253',
+        'nombre_conferencista' =>'max:253',
+        'cargo' =>'max:253',
+        'empresa' =>'max:253',
+        'bio' =>'max:800',
         'tipo_evento_id' => 'required'
     ];
 
@@ -91,7 +88,7 @@ class T_evento extends Model
 
     public function scopeBuscar($query, $fecha)
 	{
-		return $query->where('fecha','=', "$fecha");
+		return $query->where('tipo_evento_id','=', "$fecha");
     }
 
     public function Imagenes()

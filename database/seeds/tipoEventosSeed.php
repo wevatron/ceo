@@ -13,16 +13,13 @@ class tipoEventosSeed extends Seeder
     {
         //
         DB::table("c_tipo_eventos")->insert([
-            'descripcion' => 'Talleres'
-        ]);
-        DB::table("c_tipo_eventos")->insert([
             'descripcion' => 'Conferencia'
         ]);
         DB::table("c_tipo_eventos")->insert([
-           'descripcion' => 'Otro' 
+            'descripcion' => 'Paneles'
         ]);
         DB::table("c_tipo_eventos")->insert([
-            'descripcion' => 'Panoramico'
+            'descripcion' => 'Aliados'
         ]);
     }
 }

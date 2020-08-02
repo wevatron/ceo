@@ -12,7 +12,7 @@
         "inView": false
     },
     {
-        "name": "nombre_evento",
+        "name": "nombre",
         "dbType": "string",
         "htmlType": "text",
         "validations": "required",
@@ -24,9 +24,9 @@
         "inView": true
     },
     {
-        "name": "cupo",
-        "dbType": "integer",
-        "htmlType": "integer",
+        "name": "descripcion",
+        "dbType": "string",
+        "htmlType": "text",
         "validations": "required",
         "searchable": true,
         "fillable": true,
@@ -36,10 +36,70 @@
         "inView": true
     },
     {
-        "name": "url_img",
+        "name": "video",
         "dbType": "string",
-        "htmlType": "textarea",
-        "validations": null,
+        "htmlType": "text",
+        "validations": "required",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "facebook",
+        "dbType": "string",
+        "htmlType": "text",
+        "validations": "required",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "instagram",
+        "dbType": "string",
+        "htmlType": "text",
+        "validations": "required",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "youtube",
+        "dbType": "string",
+        "htmlType": "text",
+        "validations": "required",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "twitter",
+        "dbType": "string",
+        "htmlType": "text",
+        "validations": "required",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "web",
+        "dbType": "string",
+        "htmlType": "text",
+        "validations": "required",
         "searchable": true,
         "fillable": true,
         "primary": false,
@@ -48,8 +108,8 @@
         "inView": true
     },
     { 
-        "name": "tipo_evento_id",
-        "dbType": "integer:unsigned:foreign,c_giro_negocio,id",
+        "name": "c_categorias_id",
+        "dbType": "integer:unsigned:foreign,c_categorias,id",
         "htmlType": "select",
         "validations": "required",
         "searchable": true,

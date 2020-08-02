@@ -16,11 +16,11 @@ class CreateTEventosTable extends Migration
         Schema::create('t_eventos', function (Blueprint $table) {
             $table->increments('id');
             $table->string('nombre_evento');
-            $table->string('descripcion_evento',800);
-            $table->string('nombre_conferencista');
-            $table->string('cargo');
-            $table->string('empresa');
-            $table->string('bio',800);
+            $table->string('descripcion_evento',800)->nullable();
+            $table->string('nombre_conferencista')->nullable();
+            $table->string('cargo')->nullable();
+            $table->string('empresa')->nullable();
+            $table->string('bio',800)->nullable();
             $table->string('url',800)->nullable();
             $table->date('fecha')->nullable();
             $table->time('inicio')->nullable();

@@ -5,6 +5,7 @@
         <th>Nombre Evento</th>
         <th>Descripcion de evento</th>
         <th>Nombre del conforencista</th>
+        <th>Nombre del conforencista</th>
         <th>Tipo de Evento </th>
                 <th colspan="3">Acción</th>
             </tr>
@@ -15,6 +16,7 @@
                 <td>{{ $tEvento->nombre_evento }}</td>
                 <td>{{ $tEvento->descripcion_evento }}</td>
                 <td>{{ substr($tEvento->nombre_conferencista,0,45).".." }}</td>
+                <td>{{ $tEvento->TipoEvento->descripcion }}</td>
                 <td>
                     {!! Form::open(['route' => ['tEventos.destroy', $tEvento->id], 'method' => 'delete']) !!}
                     <div class='btn-group'>

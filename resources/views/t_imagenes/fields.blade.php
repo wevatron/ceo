@@ -15,7 +15,8 @@
     {!! Form::label('relacion', 'Tipo de banner:') !!}
     {!! Form::select('relacion', [
         '1'=>'Banner 1920 x 1080',
-        '2'=>'Banner 1100 x 1600'
+        '2'=>'Banner 1100 x 1600',
+        '3'=>'Banner 1000 x 1000'
         ] , null, ['class' => 'form-control']) !!}
 </div>
 

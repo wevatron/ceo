@@ -40,3 +40,15 @@ Route::resource('t_boletos', 'T_boletoAPIController');//->middleware('auth:api')
 Route::resource('c_estados_reps', 'C_estados_repAPIController');
 
 //Route::resource('estados', 'EstadoAPIController');
+
+Route::resource('c_categorias', 'C_categoriaAPIController');
+
+Route::resource('t_bazars', 'T_bazarAPIController');
+
+
+
+Route::resource('t_imagen_bazars', 'T_imagen_bazarAPIController');
+
+Route::resource('t_aprendes', 'T_aprendeAPIController');
+
+Route::resource('c_categoria_aprendes', 'C_categoria_aprendeAPIController');

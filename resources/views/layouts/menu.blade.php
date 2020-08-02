@@ -51,3 +51,24 @@
     <a href="{{ route('estados.index') }}"><i class="fa fa-edit"></i><span>Estados</span></a>
 </li>
 
+<li class="{{ Request::is('cCategorias*') ? 'active' : '' }}">
+    <a href="{{ route('cCategorias.index') }}"><i class="fa fa-edit"></i><span>C Categorias</span></a>
+</li>
+
+<li class="{{ Request::is('tBazars*') ? 'active' : '' }}">
+    <a href="{{ route('tBazars.index') }}"><i class="fa fa-edit"></i><span>T Bazars</span></a>
+</li>
+
+
+<li class="{{ Request::is('tImagenBazars*') ? 'active' : '' }}">
+    <a href="{{ route('tImagenBazars.index') }}"><i class="fa fa-edit"></i><span>T Imagen Bazars</span></a>
+</li>
+
+<li class="{{ Request::is('tAprendes*') ? 'active' : '' }}">
+    <a href="{{ route('tAprendes.index') }}"><i class="fa fa-edit"></i><span>T Aprendes</span></a>
+</li>
+
+<li class="{{ Request::is('cCategoriaAprendes*') ? 'active' : '' }}">
+    <a href="{{ route('cCategoriaAprendes.index') }}"><i class="fa fa-edit"></i><span>C Categoria Aprendes</span></a>
+</li>
+

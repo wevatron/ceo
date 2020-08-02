@@ -36,12 +36,12 @@ class T_eventoAPIController extends AppBaseController
      */
     public function index(Request $request)
     {
-        $tEventos = T_evento::Buscar($request->busca)->get();
+        $tEventos = T_evento::Buscar($request->busca)->with('Imagenes')->get();
 
         return $this->sendResponse($tEventos->toArray(), 'Eventos retrieved successfully');
     }
 
-    /**
+    /** 
      * Store a newly created T_evento in storage.
      * POST /tEventos
      *

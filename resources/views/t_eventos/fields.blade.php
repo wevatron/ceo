@@ -1,11 +1,11 @@
 <!-- Nombre Evento Field -->
 <div class="form-group col-sm-6">
-    {!! Form::label('nombre_evento', 'Nombre Evento:') !!}
+    {!! Form::label('nombre_evento', 'Nombre conferencia / panel:') !!}
     {!! Form::text('nombre_evento', null, ['class' => 'form-control']) !!}
 </div>
 
 <div class="form-group col-sm-6">
-    {!! Form::label('nombre_conferencista', 'Nombre del conferencista:') !!}
+    {!! Form::label('nombre_conferencista', 'Nombre del conferencista / moderador') !!}
     {!! Form::text('nombre_conferencista', null, ['class' => 'form-control']) !!}
 </div>
 <div class="form-group col-sm-2">
@@ -58,7 +58,7 @@
 </div>
 
 <div class="form-group col-sm-6">
-    {!! Form::label('bio', 'Biografia del ponente:') !!}
+    {!! Form::label('bio', 'Biografia del ponente / panelistas') !!}
     {!! Form::textarea('bio', null, ['class' => 'form-control']) !!}
 </div>
 
