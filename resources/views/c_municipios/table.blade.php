@@ -9,7 +9,7 @@
         <tbody>
         @foreach($cMunicipios as $cMunicipio)
             <tr>
-                <td>{{ $cMunicipio->nombre }}</td>
+                <td>{{ utf8_decode($cMunicipio->nombre) }}</td>
                 <td>
                     {!! Form::open(['route' => ['cMunicipios.destroy', $cMunicipio->id], 'method' => 'delete']) !!}
                     <div class='btn-group'>

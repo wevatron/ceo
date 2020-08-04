@@ -2,11 +2,10 @@
     <table class="table" id="tEventos-table">
         <thead>
             <tr>
-        <th>Nombre Evento</th>
-        <th>Descripcion de evento</th>
-        <th>Nombre del conforencista</th>
-        <th>Nombre del conforencista</th>
-        <th>Tipo de Evento </th>
+                <th>Nombre Evento</th>
+                <th>Descripcion de evento</th>
+                <th>Nombre del conferencista</th>
+                <th>Tipo de Evento </th>
                 <th colspan="3">Acción</th>
             </tr>
         </thead>
@@ -21,9 +20,9 @@
                     {!! Form::open(['route' => ['tEventos.destroy', $tEvento->id], 'method' => 'delete']) !!}
                     <div class='btn-group'>
                         <a href="{{ route('notificaciones',["evento"=>$tEvento->id])}}" class='btn btn-warning btn-xs'><i class="fa fa-bell"></i></a>
-                        <a href="{{ route('tEventos.show', [$tEvento->id]) }}" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-eye-open"></i></a>
-                        <a href="{{ route('tEventos.edit', [$tEvento->id]) }}" class='btn btn-default btn-xs'><i class="glyphicon glyphicon-edit"></i></a>
-                        {!! Form::button('<i class="glyphicon glyphicon-trash"></i>', ['type' => 'submit', 'class' => 'btn btn-danger btn-xs', 'onclick' => "return confirm('Estas Seguro?')"]) !!}
+                        <a href="{{ route('tEventos.show', [$tEvento->id]) }}" class='btn btn-default btn-s'><i class="fa fa-photo"></i></a>
+                        <a href="{{ route('tEventos.edit', [$tEvento->id]) }}" class='btn btn-default btn-s'><i class="glyphicon glyphicon-edit"></i></a>
+                        {!! Form::button('<i class="glyphicon glyphicon-trash"></i>', ['type' => 'submit', 'class' => 'btn btn-danger btn-s', 'onclick' => "return confirm('Estas Seguro?')"]) !!}
                     </div>
                     {!! Form::close() !!}
                 </td>

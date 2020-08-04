@@ -2,14 +2,14 @@
     <thead>
         <tr>
             <th>Nombre</th>
-    <th>Descripcion</th>
-    <th>Video</th>
-    <th>Facebook</th>
-    <th>Instagram</th>
-    <th>Youtube</th>
-    <th>Twitter</th>
-    <th>Web</th>
-    <th>Categoria</th>
+            <th>Descripcion</th>
+            <th>Video</th>
+            <th>Facebook</th>
+            <th>Instagram</th>
+            <th>Youtube</th>
+            <th>Twitter</th>
+            <th>Web</th>
+            <th>Categoria</th>
         </tr>
     </thead>
     <tbody>

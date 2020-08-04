@@ -3,8 +3,8 @@
         <thead>
             <tr>
                 <th>Nombre</th>
-        <th>Descripcion</th>
-        <th>Categoria</th>
+                <th>Descripcion</th>
+                <th>Categoria</th>
                 <th colspan="3">Action</th>
             </tr>
         </thead>
