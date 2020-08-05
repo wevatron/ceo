@@ -72,4 +72,11 @@
 
 <li class="{{ Request::is('cTipoUsuarios*') ? 'active' : '' }}">
     <a href="{{ route('cTipoUsuarios.index') }}"><i class="fa  fa-sitemap"></i><span>Catálogo tipo usuarios</span></a>
+</li><li class="{{ Request::is('cOcupacions*') ? 'active' : '' }}">
+    <a href="{{ route('cOcupacions.index') }}"><i class="fa  fa-hand-stop-o"></i><span>Ocupaciones</span></a>
 </li>
+
+{{-- <li class="{{ Request::is('cRegions*') ? 'active' : '' }}">
+    <a href="{{ route('cRegions.index') }}"><i class="fa fa-map"></i><span>Regiones</span></a>
+</li> --}}
+

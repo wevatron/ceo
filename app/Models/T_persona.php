@@ -19,7 +19,7 @@ class T_persona extends Model
 
     public $fillable = [
         'name',
-        'curp',
+        'nombre_idea',
         'rfc',
         'apellido_paterno',
         'apellido_materno',
@@ -45,7 +45,7 @@ class T_persona extends Model
         'password'=>'string',
         'apellido_paterno'=>'string',
         'apellido_materno'=>'string',
-        'curp'=>'string',
+        'nombre_idea'=>'string',
         'rfc'=>'string',
         'municipio_id'=>'int',
         'estado_id'=>'int',
@@ -88,7 +88,7 @@ class T_persona extends Model
     }
     public function Giro()
     {
-        return $this->hasOne(C_giro_negocio::class,'id','giro_negocio_id');
+        return $this->hasOne(C_ocupacion::class,'id','giro_negocio_id');
     }
     
 }

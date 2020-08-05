@@ -19,6 +19,12 @@ class CreateTEventosTable extends Migration
             $table->string('descripcion_evento',800)->nullable();
             $table->string('nombre_conferencista')->nullable();
             $table->string('cargo')->nullable();
+            
+            $table->string('panel1')->nullable();
+            $table->string('panel2')->nullable();
+            $table->string('panel3')->nullable();
+            $table->string('panel4')->nullable();
+            
             $table->string('empresa')->nullable();
             $table->string('bio',800)->nullable();
             $table->string('url',800)->nullable();

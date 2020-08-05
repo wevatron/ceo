@@ -17,6 +17,7 @@ class CreateTBazarsTable extends Migration
             $table->increments('id');
             $table->string('nombre');
             $table->string('descripcion');
+            $table->string('telefono')->nullable();
             $table->string('video')->nullable();
             $table->string('facebook')->nullable();
             $table->string('instagram')->nullable();

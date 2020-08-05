@@ -4,7 +4,7 @@ namespace App\Http\Controllers\API;
 
 use App\Http\Requests\API\CreateC_giro_negocioAPIRequest;
 use App\Http\Requests\API\UpdateC_giro_negocioAPIRequest;
-use App\Models\C_giro_negocio;
+use App\Models\C_ocupacion;
 use App\Repositories\C_giro_negocioRepository;
 use Illuminate\Http\Request;
 use App\Http\Controllers\AppBaseController;
@@ -34,11 +34,7 @@ class C_giro_negocioAPIController extends AppBaseController
      */
     public function index(Request $request)
     {
-        $cGiroNegocios = $this->cGiroNegocioRepository->all(
-            $request->except(['skip', 'limit']),
-            $request->get('skip'),
-            $request->get('limit')
-        );
+        $cGiroNegocios = C_ocupacion::get();
 
         return $this->sendResponse($cGiroNegocios->toArray(), 'C Giro Negocios retrieved successfully');
     }

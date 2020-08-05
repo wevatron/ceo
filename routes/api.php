@@ -17,7 +17,7 @@ Route::resource('qr', 'qrController');
 
 Route::resource('c_horarios', 'C_horarioAPIController')->middleware('auth:api');
 
-Route::resource('c_giro_negocios', 'C_giro_negocioAPIController')->middleware('auth:api');
+Route::resource('c_giro_negocios', 'C_giro_negocioAPIController');
 
 Route::resource('t_eventos', 'T_eventoAPIController')->middleware('auth:api');
 

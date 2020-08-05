@@ -9,8 +9,11 @@ use App\Http\Controllers\AppBaseController;
 use Illuminate\Http\Request;
 use Flash;
 use Response;
-use App\Models\T_boleto;
-use App\Models\T_like;
+use App\Models\C_ocupacion;
+use App\Models\C_region;
+use App\Models\C_municipio;
+use App\Models\C_estados_rep;
+use App\Models\C_tipo_usuario;
 
 class T_personaController extends AppBaseController
 {
@@ -58,7 +61,7 @@ class T_personaController extends AppBaseController
     {
         $input = $request->all();
         $tPersona = $this->tPersonaRepository->create($input);
-        $like = 
+      
 
         Flash::success('T Persona saved successfully.');
 
@@ -102,6 +105,11 @@ class T_personaController extends AppBaseController
     public function edit($id)
     {
         $tPersona = $this->tPersonaRepository->find($id);
+        $ocupacion = C_ocupacion::pluck('descripcion','id');
+        $region = C_region::pluck('descripcion','id');
+        $municipios = C_municipio::pluck('nombre','id');
+        $estados = C_estados_rep::pluck('nombre','id');
+        $tipos = C_tipo_usuario::pluck('descripcion','id');
 
         if (empty($tPersona)) {
             Flash::error('No Encontrado');
@@ -109,7 +117,7 @@ class T_personaController extends AppBaseController
             return redirect(route('tPersonas.index'));
         }
 
-        return view('t_personas.edit')->with('tPersona', $tPersona);
+        return view('t_personas.edit',compact('tPersona','ocupacion','region','municipios','estados','tipos'));
     }
 
     /**

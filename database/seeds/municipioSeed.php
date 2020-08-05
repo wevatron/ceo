@@ -19,6 +19,7 @@ class municipioSeed extends Seeder
             'id' => $estado->id,
             'reps_id' => $estado->c_estados_id,
             'clave' => $estado->clave,
+            'region_id' => $estado->region_id,
             'nombre' => $estado->nombre
         ]);
        }

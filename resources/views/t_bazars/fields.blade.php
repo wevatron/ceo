@@ -46,9 +46,15 @@
     {!! Form::text('web', null, ['class' => 'form-control']) !!}
 </div>
 
+<!-- Web Field -->
+<div class="form-group col-sm-6">
+    {!! Form::label('telefono', 'Telefono:') !!}
+    {!! Form::text('telefono', null, ['class' => 'form-control']) !!}
+</div>
+
 <!-- C Categorias Id Field -->
 <div class="form-group col-sm-6">
-    {!! Form::label('c_categorias_id', 'C Categorias Id:') !!}
+    {!! Form::label('c_categorias_id', 'Categorias :') !!}
     {!! Form::select('c_categorias_id', $categorias, null, ['class' => 'form-control']) !!}
 </div>
 

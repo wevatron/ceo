@@ -36,6 +36,10 @@ class T_evento extends Model
         'instagram',
         'youtube',
         'twitter',
+        'panel1',
+        'panel2',
+        'panel3',
+        'panel4',
         'empresa_id'
     ];
 

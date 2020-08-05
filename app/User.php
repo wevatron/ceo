@@ -25,7 +25,7 @@ class User extends Authenticatable implements CanResetPasswordContract
         'password',
         'apellido_paterno',
         'apellido_materno',
-        'curp',
+        'nombre_idea',
         'rfc',
         'tipo_usuario_id',
         'municipio_id',

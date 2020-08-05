@@ -21,6 +21,7 @@ class C_municipio extends Model
 
     public $fillable = [
         'nombre',
+        'region_id',
         'reps_id'
     ];
 
@@ -32,6 +33,7 @@ class C_municipio extends Model
     protected $casts = [
         'id' => 'integer',
         'reps_id' => 'integer',
+        'region_id' => 'integer',
         'nombre' => 'string'
     ];
 
@@ -46,7 +48,11 @@ class C_municipio extends Model
 
     public function Estado()
     {
-        $this->hasOne(C_estados_rep::class,'id');
+       return  $this->hasOne(C_estados_rep::class,'id');
+    }
+    public function Region()
+    {
+        return $this->hasOne(C_region::class,'id','region_id');
     }
 
     

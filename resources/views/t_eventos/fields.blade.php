@@ -92,6 +92,22 @@
     {!! Form::label('youtube', 'Youtube ponente : (Opcional)') !!}
     {!! Form::text('youtube', null, ['class' => 'form-control']) !!}
 </div>
+<div class="form-group col-sm-3">
+    {!! Form::label('panel1', 'Panelista 1 : (Opcional)') !!}
+    {!! Form::text('panel1', null, ['class' => 'form-control']) !!}
+</div>
+<div class="form-group col-sm-3">
+    {!! Form::label('panel2', 'Panelista 2 : (Opcional)') !!}
+    {!! Form::text('panel2', null, ['class' => 'form-control']) !!}
+</div>
+<div class="form-group col-sm-3">
+    {!! Form::label('panel3', 'Panelista 3 : (Opcional)') !!}
+    {!! Form::text('panel3', null, ['class' => 'form-control']) !!}
+</div>
+<div class="form-group col-sm-3">
+    {!! Form::label('panel4', 'Panelista 4 : (Opcional)') !!}
+    {!! Form::text('panel4', null, ['class' => 'form-control']) !!}
+</div>
 
 <!-- Url Img Field -->
 {{-- <div class="form-group col-sm-12 col-lg-12" >

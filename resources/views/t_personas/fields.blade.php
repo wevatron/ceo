@@ -1,19 +1,24 @@
 <!-- Nombre Field -->
-<div class="form-group col-sm-6">
-    {!! Form::label('nombre', 'Nombre:') !!}
-    {!! Form::text('nombre', null, ['class' => 'form-control']) !!}
+<div class="form-group col-sm-4">
+    {!! Form::label('name', 'Nombre:') !!}
+    {!! Form::text('name', null, ['class' => 'form-control']) !!}
 </div>
 
 <!-- Apellido Field -->
-<div class="form-group col-sm-6">
-    {!! Form::label('apellido', 'Apellido:') !!}
-    {!! Form::text('apellido', null, ['class' => 'form-control']) !!}
+<div class="form-group col-sm-4">
+    {!! Form::label('apellido_paterno', 'Apellido paterno:') !!}
+    {!! Form::text('apellido_paterno', null, ['class' => 'form-control']) !!}
+</div>
+<!-- Apellido Field -->
+<div class="form-group col-sm-4">
+    {!! Form::label('apellido_materno', 'Apellido materno:') !!}
+    {!! Form::text('apellido_materno', null, ['class' => 'form-control']) !!}
 </div>
 
 <!-- Curp Field -->
 <div class="form-group col-sm-6">
-    {!! Form::label('curp', 'Curp:') !!}
-    {!! Form::text('curp', null, ['class' => 'form-control']) !!}
+    {!! Form::label('nombre_idea', 'Nombre de la idea:') !!}
+    {!! Form::text('nombre_idea', null, ['class' => 'form-control']) !!}
 </div>
 
 <!-- Rfc Field -->
@@ -22,38 +27,43 @@
     {!! Form::text('rfc', null, ['class' => 'form-control']) !!}
 </div>
 
-<!-- Universidad Id Field -->
+<!-- Tipo Evento Id Field -->
 <div class="form-group col-sm-6">
-    {!! Form::label('universidad_id', 'Universidad Id:') !!}
-    {!! Form::text('universidad_id', null, ['class' => 'form-control']) !!}
+    {!! Form::label('giro_negocio_id', 'Ocupacion:') !!}
+    {!! Form::select('giro_negocio_id', $ocupacion, null, ['class' => 'form-control','disabled']) !!}
+</div>
+<!-- Tipo Evento Id Field -->
+<div class="form-group col-sm-6">
+    {!! Form::label('estado_id', 'Estado:') !!}
+    {!! Form::select('estado_id', $estados, null, ['class' => 'form-control','disabled']) !!}
+</div>
+<!-- Tipo Evento Id Field -->
+<div class="form-group col-sm-6">
+    {!! Form::label('municipio_id', 'Municipio:') !!}
+    {!! Form::select('municipio_id', $municipios, null, ['class' => 'form-control','disabled']) !!}
+</div>
+<!-- Tipo Evento Id Field -->
+
+<!-- Apellido Field -->
+<div class="form-group col-sm-6">
+    {!! Form::label('municipio_id', 'Region:') !!}
+    {!! Form::text('municipio_id', $tPersona->Municipio->Region->descripcion, ['class' => 'form-control', 'disabled']) !!}
 </div>
 
-<!-- Tipo Usuario Id Field -->
 <div class="form-group col-sm-6">
-    {!! Form::label('tipo_usuario_id', 'Tipo Usuario Id:') !!}
-    {!! Form::text('tipo_usuario_id', null, ['class' => 'form-control']) !!}
+    {!! Form::label('sexo', 'Sexo:') !!}
+    {!! Form::select('sexo', array(1=>'Hombre',2=>'Mujer'), null, ['class' => 'form-control','disabled']) !!}
+</div>
+<div class="form-group col-sm-6">
+    {!! Form::label('tipo_usuario_id', 'Tipo de usuario:') !!}
+    {!! Form::select('tipo_usuario_id', $tipos, null, ['class' => 'form-control','disabled']) !!}
 </div>
 
-<!-- Municipio Id Field -->
-<div class="form-group col-sm-6">
-    {!! Form::label('municipio_id', 'Municipio Id:') !!}
-    {!! Form::text('municipio_id', null, ['class' => 'form-control']) !!}
-</div>
 
-<!-- Giro Negocio Id Field -->
-<div class="form-group col-sm-6">
-    {!! Form::label('giro_negocio_id', 'Giro Negocio Id:') !!}
-    {!! Form::text('giro_negocio_id', null, ['class' => 'form-control']) !!}
-</div>
 
-<!-- Evento Id Field -->
-<div class="form-group col-sm-6">
-    {!! Form::label('evento_id', 'Evento Id:') !!}
-    {!! Form::text('evento_id', null, ['class' => 'form-control']) !!}
-</div>
 
 <!-- Submit Field -->
 <div class="form-group col-sm-12">
-    {!! Form::submit('Guardar', ['class' => 'btn btn-primary']) !!}
+    
     <a href="{{ route('tPersonas.index') }}" class="btn btn-default">Cancelar</a>
 </div>

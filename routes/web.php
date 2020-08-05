@@ -78,3 +78,7 @@ Route::resource('tImagenBazars', 'T_imagen_bazarController');
 Route::resource('tAprendes', 'T_aprendeController');
 
 Route::resource('cCategoriaAprendes', 'C_categoria_aprendeController');
+
+Route::resource('cOcupacions', 'C_ocupacionController');
+
+Route::resource('cRegions', 'C_regionController');
