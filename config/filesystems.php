@@ -55,7 +55,7 @@ return [
             'visibility' => 'public',
         ],
 
-        's3' => [
+        'Grakaja' => [
             'driver' => 's3',
             'key' => env('AWS_ACCESS_KEY_ID'),
             'secret' => env('AWS_SECRET_ACCESS_KEY'),
@@ -65,7 +65,7 @@ return [
         ],
 
         #Usar Protocolo FTP Crediciales FTP.Storage
-        'Grakaja' => [
+        'Grakaja2' => [
         'driver' => 'ftp',
         'host' => 'ftp.somosrino.org',
         'username' => 'u387718040.ceo',

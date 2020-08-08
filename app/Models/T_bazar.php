@@ -44,7 +44,7 @@ class T_bazar extends Model
         'youtube' => 'string',
         'twitter' => 'string',
         'web' => 'string',
-        'telefono' => 'string',
+        'telefon' => 'string',
         'c_categorias_id' => 'integer'
     ];
 

@@ -66,15 +66,15 @@ class T_imagen_bazarController extends AppBaseController
     {
         $input = $request->all();
         $tImagenBazar = $this->tImagenBazarRepository->create($input);
-        $x=1920;
-        $y=1080;
+        $x=800;
+        $y=450;
 
         if ($request->relacion == 1) {
-            $x=1920;
-            $y=1080;
+            $x=800;
+            $y=450;
         }else if($request->relacion == 3){
-            $x=1000;
-            $y=1000;
+            $x=512;
+            $y=512;
         }
         else {
             $x=1100;
@@ -98,7 +98,7 @@ class T_imagen_bazarController extends AppBaseController
            
 
             $tImagenBazar->fill([
-                'imagen'=>'http://somosrino.org/storageCeo/fotoEvento/'.$imageName
+                'imagen'=>'https://lizyma-storage.s3.us-east-2.amazonaws.com/storageCeo/fotoEvento/'.$imageName
             ])->save();
             
         }

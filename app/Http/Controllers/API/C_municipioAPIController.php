@@ -34,7 +34,7 @@ class C_municipioAPIController extends AppBaseController
      */
     public function index(Request $request)
     {
-        $municipios = C_municipio::where('reps_id','=',$request->mun)->get();
+        $municipios = C_municipio::selectRaw('id, clave, nombre, resp_id')->where('reps_id','=',$request->mun)->get();
         return $municipios;
     }
 

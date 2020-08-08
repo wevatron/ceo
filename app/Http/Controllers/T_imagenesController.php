@@ -67,16 +67,16 @@ class T_imagenesController extends AppBaseController
         $input = $request->all();
 
         $tImagenes = $this->tImagenesRepository->create($input);
-        $x=1920;
-        $y=1080;
+        $x=800;
+        $y=450;
 
         Flash::success('T Imagenes saved successfully.');
         if ($request->relacion == 1) {
-            $x=1920;
-            $y=1080;
+            $x=800;
+            $y=450;
         }else if($request->relacion == 3){
-            $x=1000;
-            $y=1000;
+            $x=512;
+            $y=512;
         }
         else {
             $x=1100;
@@ -100,7 +100,7 @@ class T_imagenesController extends AppBaseController
            
 
             $tImagenes->fill([
-                'url_img'=>'http://somosrino.org/storageCeo/fotoEvento/'.$imageName
+                'url_img'=>'https://lizyma-storage.s3.us-east-2.amazonaws.com/fotoEvento/'.$imageName
             ])->save();
             
         }
@@ -182,7 +182,7 @@ class T_imagenesController extends AppBaseController
             //Guardar Img Nuevo
             $ruta = Storage::disk('Grakaja')->put('fotoEvento',$request->file('url_img'));
             $tImagenes->fill([
-                'url_img'=>'http://somosrino.org/storageCeo/fotoEvento/'.$ruta
+                'url_img'=>'https://lizyma-storage.s3.us-east-2.amazonaws.com/fotoEvento/'.$ruta
             ])->save();
         }
 
