@@ -22,6 +22,7 @@ class C_municipio extends Model
     public $fillable = [
         'nombre',
         'region_id',
+        'clave',
         'reps_id'
     ];
 
