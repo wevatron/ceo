@@ -100,7 +100,7 @@ class T_imagenesController extends AppBaseController
            
 
             $tImagenes->fill([
-                'url_img'=>'https://lizyma-storage.s3.us-east-2.amazonaws.com/fotoEvento/'.$imageName
+                'url_img'=>'http://somosrino.org/storageCeo/fotoEvento/'.$imageName
             ])->save();
             
         }
@@ -182,7 +182,7 @@ class T_imagenesController extends AppBaseController
             //Guardar Img Nuevo
             $ruta = Storage::disk('Grakaja')->put('fotoEvento',$request->file('url_img'));
             $tImagenes->fill([
-                'url_img'=>'https://lizyma-storage.s3.us-east-2.amazonaws.com/fotoEvento/'.$ruta
+                'url_img'=>'http://somosrino.org/storageCeo/fotoEvento/'.$ruta
             ])->save();
         }
 

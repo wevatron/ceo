@@ -2,7 +2,7 @@
 <html>
 <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <title>Laravel QR Code Example</title>
+    <title>Ceo 2020</title>
 </head>
 <body>
 

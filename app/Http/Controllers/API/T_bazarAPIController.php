@@ -70,8 +70,8 @@ class T_bazarAPIController extends AppBaseController
      */
     public function show($id)
     {
-        /** @var T_bazar $tBazar */
-        $tBazar = $this->tBazarRepository->find($id);
+ 
+        $tBazar = T_bazar::with('Imagenes')->find($id);
 
         if (empty($tBazar)) {
             return $this->sendError('T Bazar not found');

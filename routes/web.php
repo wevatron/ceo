@@ -67,18 +67,18 @@ Route::resource('estados', 'EstadoController')->middleware('auth');
 
 Route::get('notificaciones', 'notificaciones@notificarEvento')->name('notificaciones')->middleware('auth');
 
-Route::resource('cCategorias', 'C_categoriaController');
+Route::resource('cCategorias', 'C_categoriaController')->middleware('auth');
 
-Route::resource('tBazars', 'T_bazarController');
+Route::resource('tBazars', 'T_bazarController')->middleware('auth');
 
 
 
-Route::resource('tImagenBazars', 'T_imagen_bazarController');
+Route::resource('tImagenBazars', 'T_imagen_bazarController')->middleware('auth');
 
-Route::resource('tAprendes', 'T_aprendeController');
+Route::resource('tAprendes', 'T_aprendeController')->middleware('auth');
 
-Route::resource('cCategoriaAprendes', 'C_categoria_aprendeController');
+Route::resource('cCategoriaAprendes', 'C_categoria_aprendeController')->middleware('auth');
 
-Route::resource('cOcupacions', 'C_ocupacionController');
+Route::resource('cOcupacions', 'C_ocupacionController')->middleware('auth');
 
-Route::resource('cRegions', 'C_regionController');
+Route::resource('cRegions', 'C_regionController')->middleware('auth');

@@ -21,5 +21,8 @@ class tipoEventosSeed extends Seeder
         DB::table("c_tipo_eventos")->insert([
             'descripcion' => 'Aliados'
         ]);
+        DB::table("c_tipo_eventos")->insert([
+            'descripcion' => 'Nosotros'
+        ]);
     }
 }

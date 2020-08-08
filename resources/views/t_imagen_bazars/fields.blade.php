@@ -2,6 +2,7 @@
 <div class="form-group col-sm-6">
     {!! Form::label('relacion', 'Tipo de banner:') !!}
     {!! Form::select('relacion', [
+        '1'=>'Banner 1920 x 1080',
         '3'=>'Banner 1000 x 1000'
         ] , null, ['class' => 'form-control']) !!}
 </div>

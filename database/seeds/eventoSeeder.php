@@ -195,13 +195,19 @@ class eventoSeeder extends Seeder
         ]);
         DB::table('t_eventos')->insert([
         'nombre_evento' => 'IODEMC',
-        'tipo_evento_id' => 3,
+        'tipo_evento_id' => 4,
         'created_at' => date('Y-m-d H:i:s'),
         'updated_at' => date('Y-m-d H:i:s')
         ]);
         DB::table('t_eventos')->insert([
-        'nombre_evento' => 'CC2 Diseño',
-        'tipo_evento_id' => 3,
+        'nombre_evento' => 'Anahuac',
+        'tipo_evento_id' => 4,
+        'created_at' => date('Y-m-d H:i:s'),
+        'updated_at' => date('Y-m-d H:i:s')
+        ]);
+        DB::table('t_eventos')->insert([
+        'nombre_evento' => 'City Banamex',
+        'tipo_evento_id' => 4,
         'created_at' => date('Y-m-d H:i:s'),
         'updated_at' => date('Y-m-d H:i:s')
         ]);

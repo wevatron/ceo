@@ -4,7 +4,7 @@
     
     cordova plugin add cordova-plugin-ios-camera-permissions --save
 
-    <title>Ejemplo</title>
+    <title>Ceo</title>
 </head>
 <body>
     

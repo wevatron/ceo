@@ -98,7 +98,7 @@ class T_imagen_bazarController extends AppBaseController
            
 
             $tImagenBazar->fill([
-                'imagen'=>'https://lizyma-storage.s3.us-east-2.amazonaws.com/storageCeo/fotoEvento/'.$imageName
+                'imagen'=>'http://somosrino.org/storageCeo/fotoEvento/'.$imageName
             ])->save();
             
         }
