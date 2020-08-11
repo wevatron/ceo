@@ -65,7 +65,7 @@ class T_eventoAPIController extends AppBaseController
         }
        
        // $tEvento = $this->tEventoRepository->find($id);
-        $tEvento = T_evento::with('Imagenes')->find($id);
+        $tEvento = T_evento::with('Imagenes','TipoEvento')->find($id);
   
         
         
