@@ -78,29 +78,6 @@ $(document).ready(function(){
         }
     });
 
-    $('.slide-bazar').owlCarousel({
-          loop:false,
-          margin:10,
-          rtl:false,
-          autoPlaySpeed: 5000,
-          autoplayTimeout:5000,
-          responsiveClass:true,
-          responsive:{
-              0:{
-                  items:3,
-                  nav:true
-              },
-              600:{
-                  items:4,
-                  nav:true
-              },
-              1000:{
-                  items:7,
-                  nav:true
-              }
-          }
-    }); 
-
 
 	const box_up = $(".box-up")
 	TweenMax.from(box_up, 2, {

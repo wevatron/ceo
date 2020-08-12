@@ -35,7 +35,7 @@
                 <!-- bazar_categorias-->
                 <div class="categories-grid wow fadeInLeft">
                     <nav class="categories bg-white cat-bazar text-center">
-                        <ul class="slide-bazar owl-carousel portfolio_filter">
+                        <ul class="slide-categoria-bazar owl-carousel portfolio_filter">
                             <?php $i = 0; $clase = "active"; ?>
                             @foreach($categorias as $categoria)
                             <?php if($i==0) { $clase = "active"; }else { $clase = "";} ?>
@@ -132,21 +132,21 @@
 
             <div class="row space-20">
                 <div class="col-md-offset-5 thumbs-img text-center col-md-7">
-                    <div class="col-md-4 col-sm-6 col-xs-6">
+                    <div class="col-md-4 col-sm-6 col-xs-6 space-10">
                         @if(isset($bazar->Imagenes[1]->imagen))
                             <img src="{{$bazar->Imagenes[1]->imagen}}" alt="{{$bazar->nombre}}" class="img-responsive" width="100%" />
                         @else
                             <img src="{{ asset('layout/assets/img/general/no-image.jpg')}}" alt="{{$bazar->nombre}}" class="img-responsive" width="100%" />
                         @endif
                     </div>
-                    <div class="col-md-4 col-sm-6 col-xs-6">
+                    <div class="col-md-4 col-sm-6 col-xs-6 space-10">
                         @if(isset($bazar->Imagenes[2]->imagen))
                             <img src="{{$bazar->Imagenes[2]->imagen}}" alt="{{$bazar->nombre}}" class="img-responsive" width="100%" />
                         @else
                             <img src="{{ asset('layout/assets/img/general/no-image.jpg')}}" alt="{{$bazar->nombre}}" class="img-responsive" width="100%" />
                         @endif
                     </div>
-                    <div class="col-md-4 col-sm-6 col-xs-6">
+                    <div class="col-md-4 col-sm-6 col-xs-6 space-10">
                         @if(isset($bazar->Imagenes[3]->imagen))
                         <img src="{{$bazar->Imagenes[3]->imagen}}" alt="{{$bazar->nombre}}" class="img-responsive" width="100%" />
                         @else
@@ -191,7 +191,7 @@
     $(document).ready(function() {
         filtrarBazar('btn-1');
 
-        $('.slide-bazar').owlCarousel({
+        $('.slide-categoria-bazar').owlCarousel({
           loop:false,
           margin:10,
           rtl:false,
