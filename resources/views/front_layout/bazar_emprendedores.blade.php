@@ -35,7 +35,7 @@
                 <!-- bazar_categorias-->
                 <div class="categories-grid wow fadeInLeft">
                     <nav class="categories bg-white cat-bazar text-center">
-                        <ul class="slide-categoria-bazar owl-carousel portfolio_filter">
+                        <ul class="portfolio_filter">
                             <?php $i = 0; $clase = "active"; ?>
                             @foreach($categorias as $categoria)
                             <?php if($i==0) { $clase = "active"; }else { $clase = "";} ?>
