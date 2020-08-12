@@ -238,8 +238,8 @@
         }); 
 
         $('.openModal').click(function(){
+           $('#imagesModal').hide('show'); 
            var imagen = $(this).attr('src');
-           console.log(imagen);
            $("#img-modal").attr("src",imagen);
            $('#imagesModal').modal('show');
         });

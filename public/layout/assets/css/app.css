@@ -1099,10 +1099,10 @@ footer img {
         font-size: 30px !important;
         z-index: 1000 !important;
         top: -5px !important;
-        background: #fdeb00;
-        padding: 2px;
-        width: 35px;
-        height: 35px;
+        padding: 2px !important;
+        width: 35px !important;
+        height: 35px !important;
+        right: 20px !important;
     }
 }
 
@@ -1282,10 +1282,10 @@ footer img {
         font-size: 30px !important;
         z-index: 1000 !important;
         top: -5px !important;
-        background: #fdeb00;
-        padding: 2px;
-        width: 35px;
-        height: 35px;
+        padding: 2px !important;
+        width: 35px !important;
+        height: 35px !important;
+        right: 20px !important;
     }
 }
 
