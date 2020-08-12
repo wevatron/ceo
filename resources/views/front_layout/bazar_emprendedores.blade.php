@@ -7,16 +7,16 @@
 <section id="interior-bazar" class="box-intro">
 <div class="container">
     <div class="row">
-        <div class="col-md-9 col-md-offset-3 space-100"> 
+        <div class="col-md-9 col-md-offset-3 space-80"> 
         	<div class="title-header-bazar">
 	            <h1 class="text-left color-pink weight-900">Bazar Digital </h1>
                 <h1 class="text-left color-pink no-margin-top weight-900">CE0 2020</h1>
    			</div>
         </div>
-        <div class="col-md-6 color-black space-bazar col-md-offset-6"> 
-             <p class="text-left weight-900">"¿Que están creando los Neo Emprendedores?</p> 
+        <div class="col-md-6 color-black bg-white space-bazar col-md-offset-6"> 
+             <p class="text-left weight-900">¿Que están creando los Neo Emprendedores?</p> 
 
-             <p class="text-left">Este año CEO muda su icónico Bazar de Emprendedores a esta plataforma Digital. Descubre y conoce los productos más innovadores de este año, pero no esperes mucho ¡solo están por tiempo limitado!"</p>
+             <p class="text-left">Este año CEO muda su icónico Bazar de Emprendedores a esta plataforma digital. Descubre y conoce los productos más innovadores de este año, pero no esperes mucho ¡solo están por tiempo limitado!</p>
         </div>
     </div>
 
@@ -34,7 +34,7 @@
             <div class="portfolio">
                 <!-- bazar_categorias-->
                 <div class="categories-grid wow fadeInLeft">
-                    <nav class="categories cat-bazar text-center">
+                    <nav class="categories bg-white cat-bazar text-center">
                         <ul class="portfolio_filter">
                             <?php $i = 0; $clase = "active"; ?>
                             @foreach($categorias as $categoria)
@@ -52,11 +52,11 @@
                 <!-- bazar_categorias -->
 
                 <!-- bazar_container -->
-                <div class="no-padding slide-bazar owl-carousel portfolio_container clearfix">
+                <div class="no-padding slide-bazar  portfolio_container clearfix">
 
                     <!-- emprendedor slide -->
                     @foreach($bazares as $bazar)
-                    <div class="item filter btn-{{$bazar->c_categorias_id}}">
+                    <div class="item col-md-3 col-xs-4 space-30 cardview filter btn-{{$bazar->c_categorias_id}}">
                         <a href="#!" onclick="showBazar('bazar_{{$bazar->id}}')" class="portfolio_item">
                             @if(isset($bazar->Imagenes[0]->imagen))
                                 <img src="{{$bazar->Imagenes[0]->imagen}}" alt="image" class="img-responsive" />
@@ -177,14 +177,17 @@
         }
         $("#"+id).addClass("active");
 
-        var owl = $(".owl-carousel").owlCarousel({loop: true, nav: true}); 
-        owl.data('owl.carousel').options.loop = false;
-        owl.data('owl.carousel').options.nav = false;
+        $(".bazares").hide();
+
+        $('#owl-carousel').trigger('remove.owl.carousel',0).trigger('refresh.owl.carousel');
+
     }
     function showBazar(idBazar){
         $(".bazares").removeClass("activarBazar");
         $("."+idBazar).addClass("activarBazar");
-    }
+       
+        window.scrollTo(0, $(".detail-bazar").offset().top);
+    }    
 </script>
 
 @endsection

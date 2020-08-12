@@ -78,7 +78,7 @@ $(document).ready(function(){
         }
     });
 
-    $('.slide-bazar').owlCarousel({
+    /* $('.slide-bazar').owlCarousel({
           loop:false,
           margin:10,
           rtl:false,
@@ -99,7 +99,7 @@ $(document).ready(function(){
                   nav:true
               }
           }
-    });
+    }); */
 
 
 	const box_up = $(".box-up")
@@ -165,6 +165,8 @@ $(document).ready(function(){
       $(element).hover(over, out);
     });
 
-
+    $(document).ready(function() {
+        filtrarBazar('btn-1');
+    });
 
 });

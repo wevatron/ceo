@@ -1856,7 +1856,7 @@ hr{
     font-size: 45px;
 }
 .space-bazar {
-    margin-top:50px;
+    margin-top:30px;
 }
 #interior-bazar{
     background: url('../img/bazar/back_bazar.png');
@@ -1865,13 +1865,16 @@ hr{
     background-position: right bottom;
 }
 .grid-bazar-full{
-    margin-top: -20%;
+    margin-top: -22%;
 }
 .img-auto{
     margin: auto;
 }
 .cat-bazar {
     border-bottom: 1px solid #000;
+}
+.bg-white{
+    background-color: #fff;
 }
 
 

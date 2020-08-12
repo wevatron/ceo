@@ -75,7 +75,7 @@
                           <div class="ponente-border clearfix">
                               <div class="item_info">
                                   <span>{{$p->nombre_conferencista}}</span>
-                                  <em class="cargo-ponente">{{$p->nombre_evento}}</em>
+                                  <em class="cargo-ponente">{{$p->cargo}}/{{$p->empresa}}</em>
                                   <div class="ponente-social">
                                       @if(isset($p->facebook))
                                       <a target="_blank" href="{{$p->facebook}}"><i class="ion-social-facebook"></i></a>

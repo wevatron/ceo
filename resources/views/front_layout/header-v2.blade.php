@@ -35,9 +35,9 @@
                     <li><a href="{{url('/')}}/encuentro-2020">Encuentro 2020</a>  </li>
                     <li><a href="{{url('/')}}/nosotros">Nosotros</a> </li>
                     <li><a href="{{url('/')}}/ponentes">Voces del Futuro</a> </li>
-                    <li class=""><a href="{{url('/')}}/herramientas-emprender">Aprende+ CEO 2020</a> </li>
+                    <li class="hidden"><a href="{{url('/')}}/herramientas-emprender">Aprende+ CEO 2020</a> </li>
                     <li class=""><a href="{{url('/')}}/bazar-digital">Bazar Digital CEO</a> </li>
-                    <li>
+                    <li class="hidden">
                         <form id="logout-form" action="{{ url('/logout') }}" method="POST">
                                 {{ csrf_field() }}
                                 <button type="submit" class="btn">Cerrar Sesión</button>

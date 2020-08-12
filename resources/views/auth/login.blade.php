@@ -3,7 +3,7 @@
 @section("body")
 
 <section class="container container-registro box-intro">
-  <input type="checkbox" name="flipper__checkbox" id="flipper__checkbox" class="flipper__checkbox" hidden />
+
   <div class="form__container">
     
     <!-- Front side -->
@@ -13,8 +13,10 @@
       </div>
       <div class="col-md-8">
       <h1 class="form__header">Login</h1>
+
       <form action="{{url('/login')}}" id="loginForm" method="post" class="form">
         {!! csrf_field() !!}
+        
         <fieldset class="form__group">
           <input id="email" value="{{old('mail')}}" name="email" class="form__element" type="email" placeholder="Email" required />
           @if ($errors->has('email'))
@@ -23,14 +25,17 @@
                 </span>
           @endif
         </fieldset>
+
         <fieldset class="form__group">
           <input id="password" name="password" class="form__element" type="password" placeholder="Password" required />
         </fieldset>
+        
         <fieldset class="form__group">
           <input class="form__button" type="submit" value="Login" />
         </fieldset>
         <a href="{{url('/')}}/register"><label class="">Crear una cuenta</label></a>
       </form>
+
       </div>
     </div>
 

@@ -90,7 +90,7 @@
                                   <div class="ponente-border clearfix">
                                       <div class="item_info">
                                           <span>{{$p->nombre_conferencista}}</span>
-                                          <em class="cargo-ponente">{{$p->nombre_evento}}</em>
+                                          <em class="cargo-ponente">{{$p->cargo}}/{{$p->empresa}}</em>
                                           <div class="ponente-social">
                                             @if(isset($p->facebook))
                                             <a target="_blank" href="{{$p->facebook}}"><i class="ion-social-facebook"></i></a>
@@ -250,7 +250,16 @@
 
                 <div class="newsletter"> Suscríbete a nuestro newsletter. </div>
 
-                <newsletter-component />
+                 <form action="{{url('/newsletter')}}" name="form-newsletter" method="post">
+                    <div class="col-md-8 col-xs-6 text-left border_newsletter_v1"> 
+                      <div class="form-group">
+                         <input type="email" class="form-control mb-2" placeholder="Tu email">
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-xs-6 text-right border_newsletter_v2">
+                        <button class="btn-newsletter" type="submit">Enviar</button>
+                    </div>
+                  </form>
 
                 <div class="space-100 block-mobile"> </div>
 
