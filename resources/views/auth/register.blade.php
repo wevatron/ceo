@@ -1,131 +1,133 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Ceo2020 | Registration Page</title>
+@extends("front_layout.main")
+@include("front_layout.header-v2")
+@section("body")
 
-    <!-- Tell the browser to be responsive to screen width -->
-    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+<section class="container container-registro box-intro">
 
-    <!-- Bootstrap 3.3.7 -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <div class="form__container">
+    
+    <!-- Back side -->
+    <div class="form__signups">
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <div class="col-md-4 no-padding">
+        <img class="img-responsive" src="{{asset('layout/assets/img/herramientas/side-form.png') }}" alt="CEO 2020">
+      </div>
 
-    <!-- Ionicons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-
-    <!-- Theme style -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.4.3/css/AdminLTE.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.4.3/css/skins/_all-skins.min.css">
-
-    <!-- iCheck -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.2/skins/square/_all.css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-</head>
-<body class="hold-transition register-page">
-<div class="register-box">
-    <div class="register-logo">
-        <a href="{{ url('/home') }}"><b> IODEMC </b>CEO</a>
-    </div>
-
-    <div class="register-box-body">
-        <p class="login-box-msg">Registrar una nueva cuenta.</p>
-
-        <form method="post" action="{{ url('/register') }}">
-
+      <div class="col-md-8">
+          <h1 class="form__header">Aprende con los mejores profesionales</h1>
+          <form id="registerForm" action="{{url('/register')}}" method="post" class="form">
             {!! csrf_field() !!}
+            <fieldset class="form__group col-md-12">
+              <input name="name" value="{{old('name')}}" class="form__element" type="text" placeholder="Nombre" required />
+              @if ($errors->has('name'))
+                <span class="help-block">
+                    <strong>{{ $errors->first('name') }}</strong>
+                </span>
+              @endif
+            </fieldset>
+            <fieldset class="form__group col-md-6">
+              <input name="apellido_paterno" value="{{old('apellido_paterno')}}" class="form__element" type="text" placeholder="Apellido Paterno" required />
+              @if ($errors->has('apellido_paterno'))
+                <span class="help-block">
+                    <strong>{{ $errors->first('apellido_paterno') }}</strong>
+                </span>
+              @endif
+            </fieldset>
+            <fieldset class="form__group col-md-6">
+              <input name="apellido_materno" value="{{old('apellido_materno')}}" class="form__element" type="text" placeholder="Apellido Materno" required />
+              @if ($errors->has('apellido_materno'))
+                <span class="help-block">
+                    <strong>{{ $errors->first('apellido_materno') }}</strong>
+                </span>
+              @endif
+            </fieldset>
+            <fieldset class="form__group col-md-6">
+              <!-- Año-Mes-Dia -->
+              <input name="edad" value="{{old('edad')}}" pattern="[0-9]{2}-[0-9]{2}-[0-9]{4}" class="form__element" type="date" placeholder="Año de nacimiento" required />
+              @if ($errors->has('edad'))
+                <span class="help-block">
+                    <strong>{{ $errors->first('edad') }}</strong>
+                </span>
+              @endif
+            </fieldset>
+            <fieldset class="form__group col-md-6">
+              <select id="sexo" name="sexo" value="{{old('sexo')}}" class="form__element" type="text" placeholder="Sexo" required>
+                <option value="1">Hombre</option>
+                <option value="2">Mujer</option>
+                <option value="3">No especificar</option>
+              </select>
+              @if ($errors->has('sexo'))
+                <span class="help-block">
+                    <strong>{{ $errors->first('sexo') }}</strong>
+                </span>
+              @endif
+            </fieldset>
 
-            <div class="form-group has-feedback{{ $errors->has('name') ? ' has-error' : '' }}">
-                <input type="text" class="form-control" name="name" value="{{ old('name') }}" placeholder="Nombre Completo">
-                <span class="glyphicon glyphicon-user form-control-feedback"></span>
+            <h3 class="col-md-12">Ocupación</h3>
 
-                @if ($errors->has('name'))
-                    <span class="help-block">
-                        <strong>{{ $errors->first('name') }}</strong>
-                    </span>
-                @endif
-            </div>
+            <fieldset class="form__group col-md-12">
+              {!! Form::select('giro_negocio_id', $ocupaciones, null, ['class' => 'form__element', 'placeholder' => 'ocupacion', 'required', 'id'=>'ocupacion']) !!}
+              @if ($errors->has('giro_negocio_id'))
+                <span class="help-block">
+                    <strong>{{ $errors->first('giro_negocio_id') }}</strong>
+                </span>
+              @endif
+            </fieldset>
+            <fieldset class="form__group col-md-12">
+              <input name="nombre_ideas" value="{{old('nombre_ideas')}}" class="form__element" type="text" placeholder="Nombre de tu idea o emprendimiento" required />
+              @if ($errors->has('nombre_ideas'))
+                <span class="help-block">
+                    <strong>{{ $errors->first('nombre_ideas') }}</strong>
+                </span>
+              @endif
+            </fieldset>
+            <fieldset class="form__group col-md-12">
+                {!! Form::select('estado_id', $estados, null, ['class' => 'form__element', 'placeholder' => 'Estado', 'required', 'id'=>'estado']) !!}
 
-            <div class="form-group has-feedback{{ $errors->has('email') ? ' has-error' : '' }}">
-                <input type="email" class="form-control" name="email" value="{{ old('email') }}" placeholder="Email">
-                <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+                @if ($errors->has('estado_id'))
+                <span class="help-block">
+                    <strong>{{ $errors->first('estado_id') }}</strong>
+                </span>
+              @endif
+            </fieldset>
+           
+            <fieldset class="form__group col-md-12">
+                {!! Form::select('municipio_id', $municipios, null, ['class' => 'form__element', 'placeholder' => 'Municipio', 'required', 'id'=>'municipio']) !!}
+                @if ($errors->has('municipio_id'))
+                <span class="help-block">
+                    <strong>{{ $errors->first('municipio_id') }}</strong>
+                </span>
+              @endif
+            </fieldset>
+        
+            <fieldset class="form__group col-md-12">
+              <input name="email" value="{{old('email')}}" class="form__element" type="text" placeholder="Correo electrónico" required />
+              @if ($errors->has('email'))
+                <span class="help-block">
+                    <strong>{{ $errors->first('email') }}</strong>
+                </span>
+              @endif
+            </fieldset>
 
-                @if ($errors->has('email'))
-                    <span class="help-block">
-                        <strong>{{ $errors->first('email') }}</strong>
-                    </span>
-                @endif
-            </div>
+            <fieldset class="form__group col-md-12">
+              <input name="password" class="form__element" type="text" placeholder="password" required />
+              @if ($errors->has('password'))
+                <span class="help-block">
+                    <strong>{{ $errors->first('password') }}</strong>
+                </span>
+              @endif
+            </fieldset>
 
-            <div class="form-group has-feedback{{ $errors->has('password') ? ' has-error' : '' }}">
-                <input type="password" class="form-control" name="password" placeholder="Password">
-                <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+            <fieldset class="form__group col-md-12">
+              <input class="form__button" type="submit" value="Crear cuenta" />
+            </fieldset>
 
-                @if ($errors->has('password'))
-                    <span class="help-block">
-                        <strong>{{ $errors->first('password') }}</strong>
-                    </span>
-                @endif
-            </div>
-
-            <div class="form-group has-feedback{{ $errors->has('password_confirmation') ? ' has-error' : '' }}">
-                <input type="password" name="password_confirmation" class="form-control" placeholder="Confirmar password">
-                <span class="glyphicon glyphicon-lock form-control-feedback"></span>
-
-                @if ($errors->has('password_confirmation'))
-                    <span class="help-block">
-                        <strong>{{ $errors->first('password_confirmation') }}</strong>
-                    </span>
-                @endif
-            </div>
-
-            <div class="row">
-                <div class="col-xs-8">
-                    <div class="checkbox icheck">
-                        <label>
-                            <input type="checkbox"> Estoy de acuerdo con los  <a href="#">terminos</a>
-                        </label>
-                    </div>
-                </div>
-                <!-- /.col -->
-                <div class="col-xs-4">
-                    <button type="submit" class="btn btn-primary btn-block btn-flat">Registrar</button>
-                </div>
-                <!-- /.col -->
-            </div>
-        </form>
-
-        <a href="{{ url('/login') }}" class="text-center">Tengo una cuenta</a>
+            <label for="flipper__checkbox" class="form__link">¿Ya tienes cuenta? | Entrar</label>
+          </form>
+       </div>
     </div>
-    <!-- /.form-box -->
-</div>
-<!-- /.register-box -->
+  </div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-<!-- AdminLTE App -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/2.4.3/js/adminlte.min.js"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.2/icheck.min.js"></script>
-
-<script>
-    $(function () {
-        $('input').iCheck({
-            checkboxClass: 'icheckbox_square-blue',
-            radioClass: 'iradio_square-blue',
-            increaseArea: '20%' // optional
-        });
-    });
-</script>
-</body>
-</html>
+</section>
+@endsection
+@include("front_layout.footer")

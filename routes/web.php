@@ -11,16 +11,18 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'FrontController@index')->name('index');
 
+
+Route::get('/encuentro-2020', 'FrontController@encuentro')->name('encuentro-2020');
+Route::get('/nosotros', 'FrontController@nosotros')->name('nosotros');
+Route::get('/ponentes', 'FrontController@ponentes')->name('ponentes');
+Route::get('/bazar-digital', 'FrontController@bazar')->name('bazar-digital');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index');
-
 Route::get('/home', 'HomeController@index')->name('home')->middleware('auth');
+Route::get('/herramientas-emprender', 'HomeController@index')->name('herramientas-emprender')->middleware('auth');
 
 Route::resource('cHorarios', 'C_horarioController')->middleware('auth');
 

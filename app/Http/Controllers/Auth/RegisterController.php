@@ -50,8 +50,16 @@ class RegisterController extends Controller
     {
         return Validator::make($data, [
             'name' => ['required', 'string', 'max:255'],
+            'apellido_paterno' => ['required', 'string', 'max:255'],
+            'apellido_materno' => ['required', 'string', 'max:255'],
+            'edad' => ['required','string'],
+            'sexo' => ['required', 'integer'],
+            'giro_negocio_id' => ['required', 'integer'],
+            'nombre_ideas' => ['required', 'string', 'max:255'],
+            'estado_id' => ['required', 'integer'],
+            'municipio_id' => ['required', 'integer'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
-            'password' => ['required', 'string', 'min:8', 'confirmed'],
+            'password' => ['required', 'string', 'min:8'],
         ]);
     }
 
@@ -62,14 +70,24 @@ class RegisterController extends Controller
      * @return \App\User
      */
     protected function create(array $data)
-    {
+    {   
+        $municipio = 2458;
+        if($data['estado_id'] == 20){
+            $municipio = $data['municipio_id'];
+        }
         return User::create([
             'name' => $data['name'],
+            'apellido_paterno' => $data['apellido_paterno'],
+            'apellido_materno' => $data['apellido_materno'],
+            'edad' => $data['edad'],
+            'sexo' => $data['sexo'],
+            'giro_negocio_id' => $data['giro_negocio_id'],
+            'nombre_ideas' => $data['nombre_ideas'],
+            'estado_id' => $data['estado_id'],
+            'municipio_id' => $municipio,
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
-            'tipo_usuario_id' => 1,
-            'municipio_id' => 2458,
-            'giro_negocio_id' => 1,
+            'tipo_usuario_id' => 3,
             'universidad_id' => 1
         ]);
     }
