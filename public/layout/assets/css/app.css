@@ -1895,7 +1895,7 @@ hr{
 .portfolio .categories-grid .categories ul li a {
     display: inline-block;
     color: #000;
-    padding: 15px 10px;
+    padding: 5px 10px;
     margin: 0 10px;
     -webkit-transition: all .2s ease-in-out .2s;
     transition: all .2s ease-in-out .2s;
@@ -1909,7 +1909,7 @@ hr{
 .portfolio .categories-grid .categories ul li a.active {
     margin-left: 0;
     background-color: #fdeb00;
-    padding: 8px 20px;
+    padding: 2px 20px;
     color: #000;
     border-radius: 25px;
     text-decoration: none;
@@ -1997,7 +1997,7 @@ hr{
 }
 
 .portfolio .categories-grid .categories ul li a {
-    padding: 8px 20px;
+    padding: 2px 20px;
     -webkit-transition: all .2s ease-in-out .2s;
     transition: all .2s ease-in-out .2s;
 }

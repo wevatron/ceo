@@ -78,7 +78,7 @@ $(document).ready(function(){
         }
     });
 
-    /* $('.slide-bazar').owlCarousel({
+    $('.slide-bazar').owlCarousel({
           loop:false,
           margin:10,
           rtl:false,
@@ -87,7 +87,7 @@ $(document).ready(function(){
           responsiveClass:true,
           responsive:{
               0:{
-                  items:2,
+                  items:3,
                   nav:true
               },
               600:{
@@ -95,11 +95,11 @@ $(document).ready(function(){
                   nav:true
               },
               1000:{
-                  items:4,
+                  items:7,
                   nav:true
               }
           }
-    }); */
+    }); 
 
 
 	const box_up = $(".box-up")

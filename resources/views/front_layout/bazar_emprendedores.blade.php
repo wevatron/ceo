@@ -35,13 +35,13 @@
                 <!-- bazar_categorias-->
                 <div class="categories-grid wow fadeInLeft">
                     <nav class="categories bg-white cat-bazar text-center">
-                        <ul class="portfolio_filter">
+                        <ul class="slide-bazar owl-carousel portfolio_filter">
                             <?php $i = 0; $clase = "active"; ?>
                             @foreach($categorias as $categoria)
                             <?php if($i==0) { $clase = "active"; }else { $clase = "";} ?>
-                            <li>
-                            <a href="#!" onclick="filtrarBazar('btn-{{$categoria->id}}')" class="filter-button {{$clase}}" id="btn-{{$categoria->id}}" >      {{$categoria->descripcion}}
-                            </a>
+                            <li class="item">
+                                <a href="#!" onclick="filtrarBazar('btn-{{$categoria->id}}')" class="filter-button {{$clase}}" id="btn-{{$categoria->id}}" >      {{$categoria->descripcion}}
+                                </a>
                             </li>
                             <?php $i++; ?>
                             @endforeach
@@ -52,7 +52,7 @@
                 <!-- bazar_categorias -->
 
                 <!-- bazar_container -->
-                <div class="no-padding slide-bazar  portfolio_container clearfix">
+                <div class="no-padding portfolio_container clearfix">
 
                     <!-- emprendedor slide -->
                     @foreach($bazares as $bazar)
