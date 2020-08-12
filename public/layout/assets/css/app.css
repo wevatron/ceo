@@ -1095,6 +1095,15 @@ footer img {
     .space-mobile-30{
         margin-top: 30px !important
     }
+    #imagesModal .close {
+        font-size: 30px !important;
+        z-index: 1000 !important;
+        top: -5px !important;
+        background: #fdeb00;
+        padding: 2px;
+        width: 35px;
+        height: 35px;
+    }
 }
 
 @media only screen and (max-width: 520px) {
@@ -1272,6 +1281,11 @@ footer img {
     #imagesModal .close {
         font-size: 30px !important;
         z-index: 1000 !important;
+        top: -5px !important;
+        background: #fdeb00;
+        padding: 2px;
+        width: 35px;
+        height: 35px;
     }
 }
 
@@ -2117,13 +2131,18 @@ hr{
 /* The Close Button */
 #imagesModal .close {
   position: absolute;
-  top: -10px;
-  right: 5%;
+  top: -5px;
+  right: 80px;
   color: #fff !important;
   text-shadow: none !important;
   font-size: 40px;
   font-weight: bold;
   transition: 0.3s;
+  background: #fdeb00;
+  padding: 2px;
+  width: 35px;
+  z-index: 1000;
+  height: 35px;
 }
 
 #imagesModal .close:hover,
