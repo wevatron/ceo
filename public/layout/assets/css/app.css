@@ -1269,6 +1269,10 @@ footer img {
     .space-mobile-30{
         margin-top: 30px !important
     }
+    #imagesModal .close {
+        font-size: 30px !important;
+        z-index: 1000 !important;
+    }
 }
 
 @media only screen and (max-width: 480px) {
