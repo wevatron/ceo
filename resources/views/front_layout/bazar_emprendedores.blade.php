@@ -207,6 +207,7 @@
     function showBazar(idBazar){
         $(".bazares").removeClass("activarBazar");
         $("."+idBazar).addClass("activarBazar");
+        stopVideo();
        
         window.scrollTo(0, $(".detail-bazar").offset().top);
     }
@@ -243,6 +244,18 @@
            $("#img-modal").attr("src",imagen);
            $('#imagesModal').modal('show');
         });
+
+        var stopVideo = function ( element ) {
+            var iframe = element.querySelector( 'iframe');
+            var video = element.querySelector( 'video' );
+            if ( iframe ) {
+                var iframeSrc = iframe.src;
+                iframe.src = iframeSrc;
+            }
+            if ( video ) {
+                video.pause();
+            }
+        };
 
     });    
 </script>
