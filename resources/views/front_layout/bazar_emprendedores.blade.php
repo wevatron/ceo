@@ -134,21 +134,21 @@
                 <div class="col-md-offset-5 thumbs-img text-center col-md-7">
                     <div class="col-md-4 col-sm-6 col-xs-4 space-10">
                         @if(isset($bazar->Imagenes[1]->imagen))
-                            <img src="{{$bazar->Imagenes[1]->imagen}}" alt="{{$bazar->nombre}}" class="img-responsive" width="100%" />
+                            <img src="{{$bazar->Imagenes[1]->imagen}}" alt="{{$bazar->nombre}}" class="img-responsive openModal" width="100%" />
                         @else
                             <img src="{{ asset('layout/assets/img/general/no-image.jpg')}}" alt="{{$bazar->nombre}}" class="img-responsive" width="100%" />
                         @endif
                     </div>
                     <div class="col-md-4 col-sm-6 col-xs-4 space-10">
                         @if(isset($bazar->Imagenes[2]->imagen))
-                            <img src="{{$bazar->Imagenes[2]->imagen}}" alt="{{$bazar->nombre}}" class="img-responsive" width="100%" />
+                            <img src="{{$bazar->Imagenes[2]->imagen}}" alt="{{$bazar->nombre}}" class="img-responsive openModal" width="100%" />
                         @else
                             <img src="{{ asset('layout/assets/img/general/no-image.jpg')}}" alt="{{$bazar->nombre}}" class="img-responsive" width="100%" />
                         @endif
                     </div>
                     <div class="col-md-4 col-sm-6 col-xs-4 space-10">
                         @if(isset($bazar->Imagenes[3]->imagen))
-                        <img src="{{$bazar->Imagenes[3]->imagen}}" alt="{{$bazar->nombre}}" class="img-responsive" width="100%" />
+                        <img src="{{$bazar->Imagenes[3]->imagen}}" alt="{{$bazar->nombre}}" class="img-responsive openModal" width="100%" />
                         @else
                         <img src="{{ asset('layout/assets/img/general/no-image.jpg')}}" alt="{{$bazar->nombre}}" class="img-responsive" width="100%" />
                         @endif
@@ -161,6 +161,28 @@
         </div>
         </section>
         <!-- End Detalle Bazar -->
+
+
+        <!-- Modal Img -->
+          <div id="imagesModal" class="modal fade" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-header header-modal">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+              <div class="modal-content">
+                <div class="modal-body">
+                  <div class="container-fluid">
+                  <div class="row">
+                      <div class="col-md-12">
+                          <img id="img-modal" src="" alt="CEO 2020" class="img-responsive" />
+                      </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!-- End Modal Ponente -->
   
 
 </div>
@@ -192,28 +214,36 @@
         filtrarBazar('btn-1');
 
         $('.slide-categoria-bazar').owlCarousel({
-          loop:false,
-          margin:10,
-          rtl:false,
-          doots:false,
-          autoPlaySpeed: 5000,
-          autoplayTimeout:5000,
-          responsiveClass:true,
-          responsive:{
-              0:{
-                  items:3,
-                  nav:true
-              },
-              600:{
-                  items:4,
-                  nav:true
-              },
-              1000:{
-                  items:7,
-                  nav:true
+              loop:false,
+              margin:10,
+              rtl:false,
+              doots:false,
+              autoPlaySpeed: 5000,
+              autoplayTimeout:5000,
+              responsiveClass:true,
+              responsive:{
+                  0:{
+                      items:3,
+                      nav:true
+                  },
+                  600:{
+                      items:4,
+                      nav:true
+                  },
+                  1000:{
+                      items:7,
+                      nav:true
+                  }
               }
-          }
-    }); 
+        }); 
+
+        $('.openModal').click(function(){
+           var imagen = $(this).attr('src');
+           console.log(imagen);
+           $("#img-modal").attr("src",imagen);
+           $('#imagesModal').modal('show');
+        });
+
     });    
 </script>
 
