@@ -61,7 +61,7 @@
                             @if(isset($bazar->Imagenes[0]->imagen))
                                 <img src="{{$bazar->Imagenes[0]->imagen}}" alt="image" class="img-responsive" />
                             @else
-                                <img src="{{ asset('layout/assets/img/home/circulo-invitacion.png')}}" alt="{{$bazar->nombre}}" class="img-responsive" width="100%" />
+                                <img src="{{ asset('layout/assets/img/general/no-image.jpg')}}" alt="{{$bazar->nombre}}" class="img-responsive" width="100%" />
                             @endif
                             <div class="portfolio_item_hover">
                                 <div class="portfolio-border clearfix">
@@ -97,16 +97,30 @@
                 @if(isset($bazar->Imagenes[0]->imagen))
                     <img src="{{$bazar->Imagenes[0]->imagen}}" alt="{{$bazar->nombre}}" class="img-responsive img-auto" width="180" />
                 @else
-                    <img src="{{ asset('layout/assets/img/home/circulo-invitacion.png')}}" alt="{{$bazar->nombre}}" class="img-responsive" width="100%" />
+                    <img src="{{ asset('layout/assets/img/general/no-image.jpg')}}" alt="{{$bazar->nombre}}" class="img-responsive" width="100%" />
                 @endif
                 <p class="text-right space-50 space-mobile-30">{{$bazar->descripcion}}</p>
-                <p class="color-black space-50 space-mobile-30 conoce-mas">Conoce más de la marca  |  <span class="color-pink"><a class="color-pink" href="{{$bazar->web}}" target="_blank">Sitio Web</a></span></p>
+                <p class="color-black space-50 space-mobile-30 conoce-mas">Conoce más de la marca  |  
+                    <span class="color-pink">
+                        @if(isset($bazar->web))
+                            <a class="color-pink" href="{{$bazar->web}}" target="_blank">Sitio Web</a>
+                        @endif
+                    </span>
+                </p>
 
                 <div class="ponente-social">
+                    @if(isset($bazar->facebook))
                     <a target="_blank" href="{{$bazar->facebook}}"><i class="ion-social-facebook"></i></a>
+                    @endif
+                    @if(isset($bazar->twitter))
                     <a target="_blank" href="{{$bazar->twitter}}"><i class="ion-social-twitter"></i></a>
-                    <a target="_blank" href="{{$bazar->linkedin}}"><i class="ion-social-linkedin"></i></a>
+                    @endif
+                    @if(isset($bazar->instagram))
                     <a target="_blank" href="{{$bazar->instagram}}"><i class="ion-social-instagram"></i></a>
+                    @endif
+                    @if(isset($bazar->youtube))
+                    <a target="_blank" href="{{$bazar->youtube}}"><i class="ion-social-youtube"></i></a>
+                    @endif
               </div>
             </div>
             <div class="col-md-7 col-sm-6">
@@ -122,21 +136,21 @@
                         @if(isset($bazar->Imagenes[1]->imagen))
                             <img src="{{$bazar->Imagenes[1]->imagen}}" alt="{{$bazar->nombre}}" class="img-responsive" width="100%" />
                         @else
-                            <img src="{{ asset('layout/assets/img/home/circulo-invitacion.png')}}" alt="{{$bazar->nombre}}" class="img-responsive" width="100%" />
+                            <img src="{{ asset('layout/assets/img/general/no-image.jpg')}}" alt="{{$bazar->nombre}}" class="img-responsive" width="100%" />
                         @endif
                     </div>
                     <div class="col-md-4 col-sm-6 col-xs-2">
                         @if(isset($bazar->Imagenes[2]->imagen))
                             <img src="{{$bazar->Imagenes[2]->imagen}}" alt="{{$bazar->nombre}}" class="img-responsive" width="100%" />
                         @else
-                            <img src="{{ asset('layout/assets/img/home/circulo-invitacion.png')}}" alt="{{$bazar->nombre}}" class="img-responsive" width="100%" />
+                            <img src="{{ asset('layout/assets/img/general/no-image.jpg')}}" alt="{{$bazar->nombre}}" class="img-responsive" width="100%" />
                         @endif
                     </div>
                     <div class="col-md-4 col-sm-6 col-xs-2">
                         @if(isset($bazar->Imagenes[3]->imagen))
                         <img src="{{$bazar->Imagenes[3]->imagen}}" alt="{{$bazar->nombre}}" class="img-responsive" width="100%" />
                         @else
-                        <img src="{{ asset('layout/assets/img/home/circulo-invitacion.png')}}" alt="{{$bazar->nombre}}" class="img-responsive" width="100%" />
+                        <img src="{{ asset('layout/assets/img/general/no-image.jpg')}}" alt="{{$bazar->nombre}}" class="img-responsive" width="100%" />
                         @endif
                     </div>
                 </div>

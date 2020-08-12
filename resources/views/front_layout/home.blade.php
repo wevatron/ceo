@@ -39,8 +39,11 @@
                 <!-- ponente -->
                 <div class="row">
 
-                     <!-- Modal Ponente -->
-                      <div class="modal fade" id="ponenteModal" tabindex="-1" role="dialog" aria-hidden="true">
+                
+                      <div class="row">
+                      @foreach($ponentes as $p)
+                      <!-- Modal Ponente -->
+                      <div class="modal fade ponenteModals" id="ponente_{{$p->id}}" tabindex="-1" role="dialog" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                           <div class="modal-header">
                               <button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -51,13 +54,27 @@
                               <div class="row">
                                   <div class="col-md-5">
                                       <div class="space-20"> </div>
-                                      <img src="" alt="CEO 2020" class="img-responsive" width="100%" />
-                                      <h2 class="text-center titulo-nombre">x</h2>
+                                      <img src="{{$p->Imagenes[0]->url_img}}" alt="CEO 2020" class="img-responsive" width="100%" />
+                                      <h2 class="text-center titulo-nombre">{{$p->nombre_conferencista}}</h2>
+                                      <div class="ponente-social text-center">
+                                          @if(isset($p->facebook))
+                                          <a target="_blank" href="{{$p->facebook}}"><i class="ion-social-facebook"></i></a>
+                                          @endif
+                                          @if(isset($p->twitter))
+                                          <a target="_blank" href="{{$p->twitter}}"><i class="ion-social-twitter"></i></a>
+                                          @endif
+                                          @if(isset($p->youtube))
+                                          <a target="_blank" href="{{$p->youtube}}"><i class="ion-social-linkedin"></i></a>
+                                          @endif
+                                          @if(isset($p->instagram))
+                                          <a target="_blank" href="{{$p->instagram}}"><i class="ion-social-instagram"></i></a>
+                                          @endif
+                                        </div>
                                       
                                   </div>
                                   <div class="col-md-7">
-                                      <h2 class="titulo-ponente-modal">x</h2>
-                                      <div class="semblanza-contener"></div>
+                                      <h2 class="titulo-ponente-modal">{{$p->cargo}}/{{$p->empresa}}</h2>
+                                      <div class="semblanza-contener"><?php echo $p->bio; ?></div>
                                   </div>
                               </div>
                               </div>
@@ -65,9 +82,7 @@
                           </div>
                         </div>
                       </div>
-
-                      <div class="row">
-                      @foreach($ponentes as $p)
+                      <!-- Modal Ponente -->
                       <div class="col-md-4 col-sm-6 col-xs-6 space-bottom-10 space-bottom-ponentes">
                           <div class="ponente_item">
                               <img src="{{$p->Imagenes[0]->url_img}}" alt="CEO 2020" class="img-responsive" width="100%" />
@@ -77,12 +92,20 @@
                                           <span>{{$p->nombre_conferencista}}</span>
                                           <em class="cargo-ponente">{{$p->nombre_evento}}</em>
                                           <div class="ponente-social">
+                                            @if(isset($p->facebook))
                                             <a target="_blank" href="{{$p->facebook}}"><i class="ion-social-facebook"></i></a>
+                                            @endif
+                                            @if(isset($p->twitter))
                                             <a target="_blank" href="{{$p->twitter}}"><i class="ion-social-twitter"></i></a>
-                                            <a target="_blank" href="{{$p->linkedin}}"><i class="ion-social-linkedin"></i></a>
+                                            @endif
+                                            @if(isset($p->youtube))
+                                            <a target="_blank" href="{{$p->youtube}}"><i class="ion-social-linkedin"></i></a>
+                                            @endif
+                                            @if(isset($p->instagram))
                                             <a target="_blank" href="{{$p->instagram}}"><i class="ion-social-instagram"></i></a>
+                                            @endif
                                           </div>
-                                          <em class="ver-ponente" @click="showModals(item)">ver <i class="ion-ios-arrow-right"></i></em>
+                                          <em class="ver-ponente" onclick="showPonente('ponente_{{$p->id}}')">ver <i class="ion-ios-arrow-right"></i></em>
                                       </div>
                                   </div>
                               </div>
@@ -90,6 +113,18 @@
                       </div>
                       @endforeach
                       </div>
+
+                      <div class="row">
+                        <div class="col-md-4 col-md-offset-8">
+                            <div class="text-right coolButton">
+                            <div class="background-btn"></div>
+                                 <a href="/ponentes">
+                                    <div>Ver más</div>
+                                 </a>
+                            </div>
+                        </div>
+                      </div>
+ 
                      
                       <div class="space-30"></div>
 
@@ -183,7 +218,7 @@
                 </div>
         </div>
         <div class="text-center item"> 
-                <video src="{{ asset('assets/video/CEO2018.mp4') }}" width="100%" class="responsive-iframe"  height="310" controls poster="{{ asset('layout/assets/img/home/edicion-2018.png') }}" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                <video src="{{ asset('layout/assets/video/CEO2018.mp4') }}" width="100%" class="responsive-iframe"  height="310" controls poster="{{ asset('layout/assets/img/home/edicion-2018.png') }}" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
                     HTML5 vídeo no es soportado por este navegador
                 </video>
 
@@ -241,6 +276,13 @@
 </section>
 
 <div class="space-80"></div>
+
+<script type="text/javascript">
+  function showPonente(id_ponente){
+        $("#"+id_ponente).modal('show');
+  }
+</script>
+
 @endsection
 
 @include("front_layout.footer")

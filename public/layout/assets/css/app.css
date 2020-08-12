@@ -890,7 +890,7 @@ b i:last-child {
 .modal-backdrop {
     z-index: 100 !important;
 }
-#ponenteModal .modal-content{
+.ponenteModals .modal-content{
     background: #00ffff;
     color: #000;
     -webkit-box-shadow: none !important;

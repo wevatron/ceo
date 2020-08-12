@@ -122,7 +122,7 @@
               <input class="form__button" type="submit" value="Crear cuenta" />
             </fieldset>
 
-            <label for="flipper__checkbox" class="form__link">¿Ya tienes cuenta? | Entrar</label>
+            <a href="{{url('/')}}/login"><label class="">¿Ya tienes cuenta? | Entrar</label></a>
           </form>
        </div>
     </div>

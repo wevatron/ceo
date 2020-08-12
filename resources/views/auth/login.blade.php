@@ -2,7 +2,7 @@
 @include("front_layout.header-v2")
 @section("body")
 
-<section class="container box-intro">
+<section class="container container-registro box-intro">
   <input type="checkbox" name="flipper__checkbox" id="flipper__checkbox" class="flipper__checkbox" hidden />
   <div class="form__container">
     
@@ -29,7 +29,7 @@
         <fieldset class="form__group">
           <input class="form__button" type="submit" value="Login" />
         </fieldset>
-        <label for="flipper__checkbox" class="form__link">Crear una cuenta</label>
+        <a href="{{url('/')}}/register"><label class="">Crear una cuenta</label></a>
       </form>
       </div>
     </div>
