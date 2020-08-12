@@ -85,9 +85,12 @@
         </div>
         </section>
 
+        <section class="block-blue space-20">
+
+        </section>
 
         <!-- Detalle Bazar -->
-        <section class="detail-bazar space-100">
+        <section class="detail-bazar space-80">
         <div class="container">
          @foreach($bazares as $bazar)
             <!-- Bazares row -->
@@ -200,20 +203,22 @@
         $("#"+id).addClass("active");
 
         $(".bazares").hide();
-
         $('#owl-carousel').trigger('remove.owl.carousel',0).trigger('refresh.owl.carousel');
 
     }
     function showBazar(idBazar){
+        $(".block-blue").show();
         $(".bazares").removeClass("activarBazar");
         $("."+idBazar).addClass("activarBazar");
-        stopVideo();
        
         window.scrollTo(0, $(".detail-bazar").offset().top);
     }
+
+
     $(document).ready(function() {
         filtrarBazar('btn-1');
 
+        $(".block-blue").hide();
         $('.slide-categoria-bazar').owlCarousel({
               loop:false,
               margin:10,
@@ -244,19 +249,6 @@
            $("#img-modal").attr("src",imagen);
            $('#imagesModal').modal('show');
         });
-
-        var stopVideo = function ( element ) {
-            var iframe = element.querySelector( 'iframe');
-            var video = element.querySelector( 'video' );
-            if ( iframe ) {
-                var iframeSrc = iframe.src;
-                iframe.src = iframeSrc;
-            }
-            if ( video ) {
-                video.pause();
-            }
-        };
-
     });    
 </script>
 
