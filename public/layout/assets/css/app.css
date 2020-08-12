@@ -2050,7 +2050,9 @@ hr{
 .activarBazar{
     display: block !important;
 }
-
+.slide-categoria-bazar .owl-dots{
+    display: none;
+}
 /* The Modal (background) */
 #imagesModal .modal {
   display: none; /* Hidden by default */
