@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>CEO 2020</title>
+    <title>Conectando Emprendedores en Oaxaca - 2020</title>
   	<link rel="icon" type="image/png" sizes="32x32" href="{{ asset('layout/assets/img/favicon/favicon-32x32.png') }}">
   	<link rel="icon" type="image/png" sizes="96x96" href="{{ asset('layout/assets/img/favicon/favicon-96x96.png') }}">
   	<link rel="icon" type="image/png" sizes="16x16" href="{{ asset('layout/assets/img/favicon/favicon-16x16.png') }}">
@@ -49,6 +49,8 @@
     </noscript>
     <!-- End Facebook Pixel Code -->
 
+    <script src="{{ asset('layout/assets/js/jquery-2.1.1.js') }}"></script>
+
 </head>
 <body>
 
@@ -64,8 +66,6 @@
 @yield("footer")
 
 <script type="text/javascript" src="{{ asset('/js/app.js') }}"></script>
-
-<script src="{{ asset('layout/assets/js/jquery-2.1.1.js') }}"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="{{ asset('layout/assets/js/owl.carousel.js') }}"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>

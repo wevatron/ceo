@@ -187,7 +187,10 @@
         $("."+idBazar).addClass("activarBazar");
        
         window.scrollTo(0, $(".detail-bazar").offset().top);
-    }    
+    }
+    $(document).ready(function() {
+        filtrarBazar('btn-1');
+    });    
 </script>
 
 @endsection

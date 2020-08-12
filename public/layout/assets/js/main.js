@@ -140,33 +140,31 @@ $(document).ready(function(){
 	});
 
 
-    $(".buttonEdiciones").each(function(index, element) {
-      var tl = new TimelineMax({ paused: true });
-      var cov = $(this).find(".background-btn-ediciones");
-      var link = $(this).find("a");
-      var toggle = false;
-      tl.from(cov, dur, { scaleX: 0, transformOrigin: "left center" });
-      tl.to(link, dur, { color: "black" }, 0);
-      tl.addPause(null, function() {
-        if (toggle) tl.play();
-      });
-      tl.to(cov, dur, { scaleX: 0, transformOrigin: "right center" }, "part2");
-      tl.to(link, dur, { color: "black" }, "part2");
+  $(".buttonEdiciones").each(function(index, element) {
+        var tl = new TimelineMax({ paused: true });
+        var cov = $(this).find(".background-btn-ediciones");
+        var link = $(this).find("a");
+        var toggle = false;
+        tl.from(cov, dur, { scaleX: 0, transformOrigin: "left center" });
+        tl.to(link, dur, { color: "black" }, 0);
+        tl.addPause(null, function() {
+          if (toggle) tl.play();
+        });
+        tl.to(cov, dur, { scaleX: 0, transformOrigin: "right center" }, "part2");
+        tl.to(link, dur, { color: "black" }, "part2");
 
-      function over() {
-        toggle = false;
-        tl.play(0);
-      }
-      function out() {
-        toggle = true;
-        tl.resume();
-      }
+        function over() {
+          toggle = false;
+          tl.play(0);
+        }
+        function out() {
+          toggle = true;
+          tl.resume();
+        }
 
-      $(element).hover(over, out);
-    });
+        $(element).hover(over, out);
+  });
 
-    $(document).ready(function() {
-        filtrarBazar('btn-1');
-    });
+    
 
 });
