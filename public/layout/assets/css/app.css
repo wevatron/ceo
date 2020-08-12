@@ -1287,6 +1287,14 @@ footer img {
         height: 35px !important;
         right: 20px !important;
     }
+    .block-blue{
+        background-size: cover !important;
+        height: 100px !important;
+        background-position: center bottom !important;
+    }
+    .detail-bazar{
+        margin-top: 20px !important;
+    }
 }
 
 @media only screen and (max-width: 480px) {
