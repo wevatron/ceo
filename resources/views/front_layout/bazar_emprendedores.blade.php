@@ -57,7 +57,7 @@
                     <!-- emprendedor slide -->
                     @foreach($bazares as $bazar)
                     <div class="item col-md-3 col-xs-4 space-30 cardview filter btn-{{$bazar->c_categorias_id}}">
-                        <a href="#!" onclick="showBazar('bazar_{{$bazar->id}}')" class="portfolio_item">
+                        <a href="#!" onclick="showBazar('bazar_{{$bazar->id}}','{{$bazar->video}}')" class="portfolio_item">
                             @if(isset($bazar->Imagenes[0]->imagen))
                                 <img src="{{$bazar->Imagenes[0]->imagen}}" alt="image" class="img-responsive" />
                             @else
@@ -89,8 +89,9 @@
 
         </section>
 
+
         <!-- Detalle Bazar -->
-        <section class="detail-bazar space-80">
+        <section class="detail-bazar space-50">
         <div class="container">
          @foreach($bazares as $bazar)
             <!-- Bazares row -->
@@ -128,7 +129,7 @@
             </div>
             <div class="col-md-7 col-sm-6">
                 <div class="video-bazar">
-                    <iframe src="https://www.youtube.com/embed/{{$bazar->video}}" frameborder="0" allowfullscreen></iframe>
+                    <iframe class="bazar_{{$bazar->id}}" src="" frameborder="0" allowfullscreen></iframe>
                 </div>
             </div>
             </div>
@@ -206,12 +207,24 @@
         $('#owl-carousel').trigger('remove.owl.carousel',0).trigger('refresh.owl.carousel');
 
     }
-    function showBazar(idBazar){
+    var currentClass = ""; 
+    function showBazar(idBazar, idVideo){
+
+        currentClass = currentClass;
+        
+        if(currentClass != ''){
+            $("iframe."+currentClass)[0].src = "";
+        }
+
+        $(".video-bazar ."+idBazar).attr("src","https://www.youtube.com/embed/"+idVideo);
+
         $(".block-blue").show();
         $(".bazares").removeClass("activarBazar");
         $("."+idBazar).addClass("activarBazar");
        
         window.scrollTo(0, $(".detail-bazar").offset().top);
+
+        currentClass = idBazar;
     }
 
 

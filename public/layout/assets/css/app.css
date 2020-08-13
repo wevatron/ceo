@@ -1295,6 +1295,17 @@ footer img {
     .detail-bazar{
         margin-top: 20px !important;
     }
+    .portfolio .categories-grid .categories ul li {
+        font-size: 16px !important;
+        width: 50% !important;
+        margin: 15px 0 !important;
+    }
+    .portfolio_filter{
+        margin-top: 30px !important;
+    }
+    .ponente-social i {
+        margin-right: 10px;
+    }
 }
 
 @media only screen and (max-width: 480px) {
