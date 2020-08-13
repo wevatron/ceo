@@ -3,104 +3,117 @@ $(document).ready(function(){
   console.log('%c CEO DIGITAL 2020 ', 'background: #ff0fc6; font-size:18px; font-weight: bold; padding: 5px; color: #ffffff');
   console.log('%c BIENVENIDO ', 'background: #fdeb00; font-size:18px; font-weight: bold; padding: 5px; color: #000000');
 
-    $('.ediciones-anteriores').owlCarousel({
-        loop:false,
-        margin:10,
-        rtl:true,
-        autoplay: true,
-        autoPlaySpeed: 5000,
-        autoplayTimeout:5000,
-        responsiveClass:true,
-        responsive:{
-            0:{
-                items:1,
-                nav:true,
-                loop:true
+    $(".ediciones-anteriores").slick({
+        dots: true,
+        arrows: false,
+        infinite: true,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                }
             },
-            600:{
-                items:2,
-                nav:false
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
             },
-            1000:{
-                items:2,
-                nav:false
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    autoplay: true
+                }
             }
-        }
+        ]
+    });
+    $(".aliados-iconos-v1").slick({
+        dots: false,
+        infinite: false,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 4,
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    arrows: false
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    arrows: true
+                }
+            }
+        ]
+    });
+    $(".aliados-iconos-general").slick({
+        dots: false,
+        infinite: false,
+        slidesToShow: 4,
+        slidesToScroll: 4
     });
 
-    $('.aliados-iconos-v1').owlCarousel({
-        loop:false,
-        margin:10,
-        rtl:false,
-        autoplay: true,
-        autoPlaySpeed: 5000,
-        autoPlayTimeout: 5000,
-        responsiveClass:true,
-        responsive:{
-            0:{
-                items:2,
-                nav:true,
-                loop:true
+    /** Module Herramientas Emprender */
+    $(".slide-aprende").slick({
+        dots: false,
+        arrows:true,
+        infinite: true,
+        centerMode: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
+                }
             },
-            600:{
-                items:4,
-                nav:false
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1
+                }
             },
-            1000:{
-                items:4,
-                nav:false,
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    autoplay: true
+                }
             }
-        }
+        ]
     });
 
-    $('.aliados-iconos-v2').owlCarousel({
-        loop:false,
-        margin:10,
-        rtl:false,
-        autoplay: true,
-        autoPlaySpeed: 5000,
-        autoPlayTimeout: 5000,
-        responsiveClass:true,
-        responsive:{
-            0:{
-                items:2,
-                nav:true,
-                loop:true
-            },
-            600:{
-                items:4,
-                nav:false
-            },
-            1000:{
-                items:4,
-                nav:false,
-            }
-        }
-    });
-
-    $('.aliados-iconos-v3').owlCarousel({
-        loop:false,
-        margin:10,
-        rtl:false,
-        autoplay: true,
-        autoPlaySpeed: 5000,
-        autoPlayTimeout: 5000,
-        responsiveClass:true,
-        responsive:{
-            0:{
-                items:2,
-                nav:true,
-                loop:true
-            },
-            600:{
-                items:4,
-                nav:false
-            },
-            1000:{
-                items:4,
-                nav:false,
-            }
-        }
+    $(".vertical-tutoriales").slick({
+        dots: true,
+        arrows: false,
+        vertical: true,
+        verticalSwiping:true,
+        slidesToShow: 3,
+        slidesToScroll: 3
     });
 
 	const box_up = $(".box-up")

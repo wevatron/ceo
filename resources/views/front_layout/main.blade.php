@@ -14,12 +14,12 @@
     <link href="{{ asset('layout/assets/css/ionicons/css/ionicons.min.css') }}" rel="stylesheet">
  	  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Saira:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="{{ asset('layout/assets/css/owl.carousel.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('layout/assets/css/owl.theme.default.css') }}">
     <link href="{{ asset('layout/assets/css/glitch.css') }}" rel="stylesheet">
     <link href="{{ asset('layout/assets/css/tabs.css') }}" rel="stylesheet">
     <link href="{{ asset('layout/assets/css/animation.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@9/dist/sweetalert2.min.css" id="theme-styles">
+    <link rel="stylesheet" type="text/css" href="{{ asset('layout/assets/css/slick/slick.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('layout/assets/css/slick/slick-theme.css') }}">
 
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -49,7 +49,6 @@
     </noscript>
     <!-- End Facebook Pixel Code -->
 
-    <script src="{{ asset('layout/assets/js/jquery-2.1.1.js') }}"></script>
 
 </head>
 <body>
@@ -66,14 +65,14 @@
 @yield("footer")
 
 <script type="text/javascript" src="{{ asset('/js/app.js') }}"></script>
+<script src="{{ asset('layout/assets/js/jquery-2.1.1.js') }}"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="{{ asset('layout/assets/js/owl.carousel.js') }}"></script>
+<script src="{{ asset('layout/assets/js/slick/slick.js') }}" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
 <script type="text/javascript" src="{{ asset('layout/assets/js/isotope.pkgd.min.js') }}"></script>
 <script type="text/javascript" src="{{ asset('layout/assets/js/main.js') }}"></script>
 <script type="text/javascript" src="{{ asset('layout/assets/js/menu.js') }}"></script>
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-
 
 </body>
 </html>

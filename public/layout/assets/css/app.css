@@ -230,7 +230,7 @@ label {
 
 .box-header.is-fixed {
     position: fixed;
-    top: -100px;
+    top: -90px;
     background-color: transparent;
     -webkit-transition: -webkit-transform 0.3s;
     transition: -webkit-transform 0.3s;
@@ -1306,6 +1306,9 @@ footer img {
     .ponente-social i {
         margin-right: 10px;
     }
+    .box-logo {
+        padding-left: 20px !important;
+    }
 }
 
 @media only screen and (max-width: 480px) {
@@ -1465,12 +1468,6 @@ hr{
 }
 .download-resouces:hover{
     color: #000;
-}
-.owl-carousel .owl-item img {
-    width: auto !important;
-    display: flex !important;
-    margin: auto;
-    text-align: center;
 }
 .modal-header .close {
     margin-top: 5px !important;
@@ -1756,26 +1753,29 @@ hr{
 .swal-modal{
     font-family: 'Saira', sans-serif !important;
 }
-.aliados-iconos-v1 .owl-item img{
+.aliados-iconos-general .slick-slide img{
     width: 150px !important;
     text-align: center;
-}
-.aliados-iconos-v2 .owl-item img{
-    width: 150px !important;
-    text-align: center;
-}
-.aliados-iconos-v3 .owl-item img{
-    width: 150px !important;
-    text-align: center;
-}
-.owl-nav span {
-    font-size: 30px;
-}
-.owl-prev{
-    margin-left: 10px;
+    margin:0 auto;
+    border:0;
+    outline : none;
 }
 .cargo-ponente{
     width: 100%;
+}
+.slick-prev:before {
+    color:#000 !important;
+    opacity: 1 !important;
+}
+.slick-next:before{
+    color:#000 !important;
+    opacity: 1 !important;
+}
+.slick-prev {
+    left: 8px !important;
+}
+.slick-next {
+    right: 8px !important;
 }
 
 
@@ -1811,7 +1811,7 @@ hr{
     border-bottom: 2px solid #cccccc !important;
 }
 .astronauta-header {
-    animation: grain 80s steps(50) infinite; 
+    animation: grain 100s steps(80) infinite; 
 }
 
 .contact-info i {
@@ -1931,7 +1931,7 @@ hr{
 ------------------------------------------------*/
 
 #herramientas-emprender{
-    background: url('../img/ceo/back_ceo.jpg');
+    background: url('../img/herramientas/bg_herramientas_emprender.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center bottom;
@@ -1941,8 +1941,24 @@ hr{
     color: #fff;
 }
 #herramientas-emprender .container {
-    padding-top: 8%;
+    padding-top: 6%;
 }
+.portada-recomendamos{
+    height: 100px !important;
+    width: 100%;
+}
+.btn-logout{
+    background: #000;
+    color:#fff !important;
+    border-radius: 0px !important;
+    padding: 10px !important;
+    text-align: center !important;
+    text-shadow: 2px 2px 0 #fb16c1;
+}
+.logout-svg{
+    height: 20px;
+}
+
 
 /* portfolio bazar section
 ==================================================*/
@@ -2118,15 +2134,7 @@ hr{
 .activarBazar{
     display: block !important;
 }
-.slide-categoria-bazar .owl-dots{
-    display: none !important;
-}
-.aliados-iconos-v1 .owl-dots{
-    display: none !important;
-}
-.ediciones-anteriores .owl-dots{
-    display: none !important;
-}
+
 
 /* The Modal (background) */
 #imagesModal .modal {

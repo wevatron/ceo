@@ -5,7 +5,7 @@
     <!-- box header -->
     <header class="box-header">
         <div class="box-logo logo-mobile">
-            <a  href="{{url('/')}}/"><img src="{{ asset('layout/assets/img/general/logo-interno.png') }}" width="150" alt="CEO 2020"></a>
+            <a  href="{{url('/')}}/"><img src="{{ asset('layout/assets/img/general/logo-interno.png') }}" width="120" alt="CEO 2020"></a>
         </div>
         <!-- box-nav -->
         <a class="box-primary-nav-trigger" href="#">

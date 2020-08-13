@@ -23,8 +23,11 @@ class HomeController extends Controller
      * @return \Illuminate\Contracts\Support\Renderable
      */
     public function index()
-    {
-        $aprendes = T_aprende::get();
-        return view('home',compact('aprendes'));
+    {   
+        $cat_aprende         = T_aprende::where('c_categorias_id','=',3)->get();
+        $cat_herramientas    = T_aprende::where('c_categorias_id','=',4)->get();
+        $recomendaciones_ceo = T_aprende::where('c_categorias_id','=',5)->get();
+        
+        return view("home",compact('cat_aprende','cat_herramientas','recomendaciones_ceo'));
     }
 }

@@ -148,7 +148,7 @@
 
         <!-- Carousel Aliados mobile  -->
         <div class="block-mobile">
-          <div class="aliados-iconos-v1 owl-carousel col-md-12 text-center container space-30">
+          <div class="aliados-iconos-v1 slider col-md-12 text-center container space-30">
 
               <div class="item"> 
                       <a href="https://mexicocity.impacthub.net/" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/05_impact.svg') }}"  alt="IMPACT HUB"></a>
@@ -190,7 +190,7 @@
 
         <!-- Carousel Aliados Desktop  -->
         <div class="block-desktop">
-          <div class="aliados-iconos-v1 owl-carousel col-md-12 text-center container space-10">
+          <div class="aliados-iconos-general slider col-md-12 text-center container space-10">
               <div class="item"> 
                       <a href="https://mexicocity.impacthub.net/" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/05_impact.svg') }}"  alt="IMPACT HUB"></a>
               </div>
@@ -204,7 +204,7 @@
                       <a href=" https://www.mercadolibre.com.mx/" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/06_mercado.svg') }}"  alt="MERCADO LIBRE"></a>
               </div>
           </div>
-          <div class="aliados-iconos-v2 owl-carousel col-md-12 text-center container space-30">
+          <div class="aliados-iconos-general slider col-md-12 text-center container space-30">
               <div class="item"> 
                       <a href="https://www.reforestamosmexico.org/" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/07_reforestemos.svg') }}"  alt="REFORESTAMOS"></a>
               </div>
@@ -218,7 +218,7 @@
                       <a href="https://coop.posible.org.mx/" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/12_Posible.png') }}"  alt="Posible"></a>
               </div>
           </div>
-          <div class="aliados-iconos-v3 owl-carousel col-md-12 text-center container space-30">
+          <div class="aliados-iconos-general slider col-md-12 text-center container space-30">
               <div class="item"> 
                       <a href="https://www.facebook.com/" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/11_facebook.svg') }}"  alt="Facebook"></a>
               </div>
@@ -257,17 +257,7 @@
             <p class="weight-900">¡Gracias por tu asistencia!</p>
         </div>
     </div>
-    <div class="ediciones-anteriores  col-md-12 owl-carousel space-50">
-        <div class="text-center item"> 
-              <iframe width="100%" class="responsive-iframe" height="310" src="https://www.youtube.com/embed/6e4K2zZSjtE?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <div class="space-20"> </div>
-                <div class="buttonEdiciones">
-                     <div class="background-btn-ediciones"></div>
-                     <a class="link-ponentes" target="_blank" href="https://www.conectandoemprendedores.mx/2019/">
-                        <div>CEO 2019</div>
-                    </a>
-                </div>
-        </div>
+    <div class="ediciones-anteriores  col-md-12 slider space-50">
         <div class="text-center item"> 
                 <video src="{{ asset('layout/assets/video/CEO2018.mp4') }}" width="100%" class="responsive-iframe"  height="310" controls poster="{{ asset('layout/assets/img/home/edicion-2018.png') }}" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
                     HTML5 vídeo no es soportado por este navegador
@@ -277,6 +267,16 @@
                 <div class="buttonEdiciones">
                      <div class="background-btn-ediciones"></div>
                      <a class="link-ponentes" target="_blank" href="https://www.conectandoemprendedores.mx/2018/"><div>CEO 2018</div></a>
+                </div>
+        </div>
+        <div class="text-center item"> 
+              <iframe width="100%" class="responsive-iframe" height="310" src="https://www.youtube.com/embed/6e4K2zZSjtE?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="space-20"> </div>
+                <div class="buttonEdiciones">
+                     <div class="background-btn-ediciones"></div>
+                     <a class="link-ponentes" target="_blank" href="https://www.conectandoemprendedores.mx/2019/">
+                        <div>CEO 2019</div>
+                    </a>
                 </div>
         </div>
     </div>

@@ -227,34 +227,11 @@
         currentClass = idBazar;
     }
 
-
-    $(document).ready(function() {
+    window.addEventListener("DOMContentLoaded", function(){
+      
         filtrarBazar('btn-1');
 
         $(".block-blue").hide();
-        $('.slide-categoria-bazar').owlCarousel({
-              loop:false,
-              margin:10,
-              rtl:false,
-              doots:false,
-              autoPlaySpeed: 5000,
-              autoplayTimeout:5000,
-              responsiveClass:true,
-              responsive:{
-                  0:{
-                      items:3,
-                      nav:true
-                  },
-                  600:{
-                      items:4,
-                      nav:true
-                  },
-                  1000:{
-                      items:7,
-                      nav:true
-                  }
-              }
-        }); 
 
         $('.openModal').click(function(){
            $('#imagesModal').hide('show'); 
