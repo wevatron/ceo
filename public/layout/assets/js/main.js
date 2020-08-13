@@ -31,7 +31,7 @@ $(document).ready(function(){
     $('.aliados-iconos-v1').owlCarousel({
         loop:false,
         margin:10,
-        rtl:true,
+        rtl:false,
         autoplay: true,
         autoPlaySpeed: 5000,
         autoPlayTimeout: 5000,
@@ -43,11 +43,11 @@ $(document).ready(function(){
                 loop:true
             },
             600:{
-                items:5,
+                items:4,
                 nav:false
             },
             1000:{
-                items:5,
+                items:4,
                 nav:false,
             }
         }
@@ -56,7 +56,7 @@ $(document).ready(function(){
     $('.aliados-iconos-v2').owlCarousel({
         loop:false,
         margin:10,
-        rtl:true,
+        rtl:false,
         autoplay: true,
         autoPlaySpeed: 5000,
         autoPlayTimeout: 5000,
@@ -68,16 +68,40 @@ $(document).ready(function(){
                 loop:true
             },
             600:{
-                items:5,
+                items:4,
                 nav:false
             },
             1000:{
-                items:5,
+                items:4,
                 nav:false,
             }
         }
     });
 
+    $('.aliados-iconos-v3').owlCarousel({
+        loop:false,
+        margin:10,
+        rtl:false,
+        autoplay: true,
+        autoPlaySpeed: 5000,
+        autoPlayTimeout: 5000,
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:2,
+                nav:true,
+                loop:true
+            },
+            600:{
+                items:4,
+                nav:false
+            },
+            1000:{
+                items:4,
+                nav:false,
+            }
+        }
+    });
 
 	const box_up = $(".box-up")
 	TweenMax.from(box_up, 2, {

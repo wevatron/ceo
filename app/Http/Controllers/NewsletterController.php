@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
+use App\Newsletter;
 
 class NewsletterController extends Controller
 {
@@ -15,7 +15,8 @@ class NewsletterController extends Controller
      */
     public function index()
     {
-         
+         $newsletters = Newsletter::get();
+         return $newsletters;
     }
 
     /**
@@ -35,8 +36,14 @@ class NewsletterController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
-    {
-         return DB::connection('roberto')->select('INSERT INTO `newsletters` (`email`) VALUES ('+$request->email+');');
+    {    
+        $this->validate($request, [
+            'email' => 'required|email|unique:users'
+        ]);
+
+         $newsletter = new Newsletter($request->all());
+         $newsletter->save();
+         return redirect()->back();
     }
 
     /**

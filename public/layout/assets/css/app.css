@@ -1425,6 +1425,7 @@ hr{
   -ms-user-select: none,
   padding-left: 0rem;
   list-style-type: none;
+  z-index: 100;
 }
 .rrss img {
     width: 22px;
@@ -1560,6 +1561,10 @@ hr{
     text-align: center;
 }
 .aliados-iconos-v2{
+    margin-top: 20px;
+    text-align: center;
+}
+.aliados-iconos-v3{
     margin-top: 20px;
     text-align: center;
 }
@@ -1759,6 +1764,10 @@ hr{
     width: 150px !important;
     text-align: center;
 }
+.aliados-iconos-v3 .owl-item img{
+    width: 150px !important;
+    text-align: center;
+}
 .owl-nav span {
     font-size: 30px;
 }
@@ -1914,6 +1923,26 @@ hr{
     background-color: #fff;
 }
 
+
+/* ---------------------------------------------
+------------------------------------------------
+           HERRAMIENTAS EMPRENDER
+------------------------------------------------
+------------------------------------------------*/
+
+#herramientas-emprender{
+    background: url('../img/ceo/back_ceo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+}
+#herramientas-emprender .title-header{
+    font-size: 45px;
+    color: #fff;
+}
+#herramientas-emprender .container {
+    padding-top: 8%;
+}
 
 /* portfolio bazar section
 ==================================================*/
@@ -2092,6 +2121,13 @@ hr{
 .slide-categoria-bazar .owl-dots{
     display: none !important;
 }
+.aliados-iconos-v1 .owl-dots{
+    display: none !important;
+}
+.ediciones-anteriores .owl-dots{
+    display: none !important;
+}
+
 /* The Modal (background) */
 #imagesModal .modal {
   display: none; /* Hidden by default */

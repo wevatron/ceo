@@ -32,4 +32,5 @@ class FrontController extends Controller
     function loginFront(){
     	return view("front_layout.login");
     }
+
 }

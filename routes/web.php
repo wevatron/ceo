@@ -18,7 +18,6 @@ Route::get('/nosotros', 'FrontController@nosotros')->name('nosotros');
 Route::get('/ponentes', 'FrontController@ponentes')->name('ponentes');
 Route::get('/bazar-digital', 'FrontController@bazar')->name('bazar-digital');
 
-
 Auth::routes();
 
 Route::resource('/newsletter', 'NewsletterController');

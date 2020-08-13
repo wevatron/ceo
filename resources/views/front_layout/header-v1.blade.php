@@ -34,12 +34,6 @@
                     <li><a href="{{url('/')}}/ponentes">Voces del Futuro</a> </li>
                     <li class="hidden"><a href="{{url('/')}}/herramientas-emprender">Aprende+ CEO 2020</a> </li>
                     <li class=""><a href="{{url('/')}}/bazar-digital">Bazar Digital CEO</a> </li>
-                    <li class="hidden">
-                        <form id="logout-form" action="{{ url('/logout') }}" method="POST">
-                                {{ csrf_field() }}
-                                <button type="submit" class="btn">Cerrar Sesión</button>
-                         </form>
-                    </li>
                 </ul>
                 <ul class="social-icon">
                       <li class="box-social"> <a class="ion-social-facebook"  target="_blank" href="https://www.facebook.com/ConectandoEnOaxaca"></a> </li>
@@ -55,8 +49,6 @@
 
     <!-- box-intro -->
     <section class="box-intro">
-
-        <particulas-component></particulas-component>
 
         <div class="rows mt-100">
             <div class="col-md-5 col-md-offset-1"> 
@@ -79,7 +71,7 @@
             
                     <div class="col-md-12 no-padding">
                         <div class="live-video">
-                             <iframe width="100%" height="100%" src="https://www.youtube.com/embed/zE2ovXhy_Ys?autoplay=1&loop=1&rel=0&showinfo=0&color=white&iv_load_policy=3" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                             <iframe width="100%" height="100%" src="https://www.youtube.com/embed/zE2ovXhy_Ys?autoplay=1&loop=1&rel=0&showinfo=0&iv_load_policy=3" frameborder="0" allow="autoplay; encrypted-media; " allowfullscreen></iframe>
                         </div>
                     </div>
                     <!--

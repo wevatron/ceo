@@ -145,41 +145,92 @@
         <div class="col-md-12">
             <hr>
         </div>
-       
-        <div class="aliados-iconos-v1 owl-carousel col-md-12 text-center container space-30">
-            <div class="item"> 
-                    <a href="https://www.distritoemprendedor.com/" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/02_distrito.svg') }}"  alt="DISTRITO EMPRENDEDOR"></a>
-            </div>
-            <div class="item"> 
-                    <a href="https://www.reforestamosmexico.org/" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/07_reforestemos.svg') }}"  alt="REFORESTAMOS"></a>
-            </div>
-            <div class="item"> 
-                    <a href="https://www.emprendimientosocial.mx/" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/03_esmex.svg') }}"  alt="ESMEX"></a>
-            </div>
-            <div class="item"> 
-                    <a href="https://www.irrazonable.org/" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/09_umx.svg') }}"  alt="UNREASONABLE"></a>
-            </div>
-            <div class="item"> 
-                    <a href="https://mexicocity.impacthub.net/" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/05_impact.svg') }}"  alt="IMPACT HUB"></a>
-            </div>
+
+        <!-- Carousel Aliados mobile  -->
+        <div class="block-mobile">
+          <div class="aliados-iconos-v1 owl-carousel col-md-12 text-center container space-30">
+
+              <div class="item"> 
+                      <a href="https://mexicocity.impacthub.net/" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/05_impact.svg') }}"  alt="IMPACT HUB"></a>
+              </div>
+              <div class="item"> 
+                      <a href="https://www.emprendimientosocial.mx/" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/03_esmex.svg') }}"  alt="ESMEX"></a>
+              </div>
+              <div class="item"> 
+                      <a href="https://www.irrazonable.org/" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/09_umx.svg') }}"  alt="UNREASONABLE"></a>
+              </div>
+              <div class="item"> 
+                      <a href=" https://www.mercadolibre.com.mx/" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/06_mercado.svg') }}"  alt="MERCADO LIBRE"></a>
+              </div>
+              <div class="item"> 
+                      <a href="https://www.reforestamosmexico.org/" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/07_reforestemos.svg') }}"  alt="REFORESTAMOS"></a>
+              </div>
+              <div class="item"> 
+                      <a href="https://www.iadb.org/es" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/01_bid.svg') }}"  alt="BID"></a>
+              </div>
+              <div class="item"> 
+                      <a href="https://www.distritoemprendedor.com/" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/02_distrito.svg') }}"  alt="DISTRITO EMPRENDEDOR"></a>
+              </div>
+              <div class="item"> 
+                      <a href="https://coop.posible.org.mx/" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/12_Posible.png') }}"  alt="Posible"></a>
+              </div>
+              <div class="item"> 
+                      <a href="https://www.facebook.com/" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/11_facebook.svg') }}"  alt="Facebook"></a>
+              </div>
+              <div class="item"> 
+                      <a href="https://someonesomewhere.mx/" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/08_ss.png') }}"  alt="Someone Somewhere"></a>
+              </div>
+              <div class="item"> 
+                      <a href="https://ilab.net/" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/04_ilab.png') }}"  alt="ILAB"></a>
+              </div>
+
+          </div>
         </div>
-        <div class="aliados-iconos-v2 owl-carousel col-md-12 text-center container space-30">
-            <div class="item"> 
-                    <a href="https://www.iadb.org/es" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/01_bid.svg') }}"  alt="BID"></a>
-            </div>
-            <div class="item"> 
-                    <a href=" https://www.mercadolibre.com.mx/" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/06_mercado.svg') }}"  alt="MERCADO LIBRE"></a>
-            </div>
-            <div class="item"> 
-                    <a href="https://ilab.net/" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/04_ilab.png') }}"  alt="ILAB"></a>
-            </div>
-            <div class="item"> 
-                    <a href="https://www.facebook.com/" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/11_facebook.svg') }}"  alt="Facebook"></a>
-            </div>
-            <div class="item"> 
-                    <a href="https://someonesomewhere.mx/" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/08_ss.png') }}"  alt="Someone Somewhere"></a>
-            </div>
+        <!-- Carousel Aliados mobile  -->
+
+        <!-- Carousel Aliados Desktop  -->
+        <div class="block-desktop">
+          <div class="aliados-iconos-v1 owl-carousel col-md-12 text-center container space-10">
+              <div class="item"> 
+                      <a href="https://mexicocity.impacthub.net/" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/05_impact.svg') }}"  alt="IMPACT HUB"></a>
+              </div>
+              <div class="item"> 
+                      <a href="https://www.emprendimientosocial.mx/" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/03_esmex.svg') }}"  alt="ESMEX"></a>
+              </div>
+              <div class="item"> 
+                      <a href="https://www.irrazonable.org/" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/09_umx.svg') }}"  alt="UNREASONABLE"></a>
+              </div>
+              <div class="item"> 
+                      <a href=" https://www.mercadolibre.com.mx/" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/06_mercado.svg') }}"  alt="MERCADO LIBRE"></a>
+              </div>
+          </div>
+          <div class="aliados-iconos-v2 owl-carousel col-md-12 text-center container space-30">
+              <div class="item"> 
+                      <a href="https://www.reforestamosmexico.org/" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/07_reforestemos.svg') }}"  alt="REFORESTAMOS"></a>
+              </div>
+              <div class="item"> 
+                      <a href="https://www.iadb.org/es" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/01_bid.svg') }}"  alt="BID"></a>
+              </div>
+              <div class="item"> 
+                      <a href="https://www.distritoemprendedor.com/" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/02_distrito.svg') }}"  alt="DISTRITO EMPRENDEDOR"></a>
+              </div>
+              <div class="item"> 
+                      <a href="https://coop.posible.org.mx/" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/12_Posible.png') }}"  alt="Posible"></a>
+              </div>
+          </div>
+          <div class="aliados-iconos-v3 owl-carousel col-md-12 text-center container space-30">
+              <div class="item"> 
+                      <a href="https://www.facebook.com/" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/11_facebook.svg') }}"  alt="Facebook"></a>
+              </div>
+              <div class="item"> 
+                      <a href="https://someonesomewhere.mx/" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/08_ss.png') }}"  alt="Someone Somewhere"></a>
+              </div>
+              <div class="item"> 
+                      <a href="https://ilab.net/" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/04_ilab.png') }}"  alt="ILAB"></a>
+              </div>
+          </div>
         </div>
+        <!-- Carousel Aliados Desktop  -->
        
 
         <div class="col-md-12">
@@ -250,16 +301,31 @@
 
                 <div class="newsletter"> Suscríbete a nuestro newsletter. </div>
 
-                 <form action="{{url('/newsletter')}}" name="form-newsletter" method="post">
+                  {!! Form::open(['route' => 'newsletter.store']) !!}
+
+                    {{ csrf_field() }}
                     <div class="col-md-8 col-xs-6 text-left border_newsletter_v1"> 
                       <div class="form-group">
-                         <input type="email" class="form-control mb-2" placeholder="Tu email">
+                         <input type="email" class="form-control mb-2" value="{{old('email')}}" id="newsletter_email" name="email" required="" placeholder="Tu email">
                       </div>
+                      @if(count($errors))
+                          <div class="form-group">
+                              <div class="alert alert-danger">
+                                  <ul>
+                                      @foreach($errors->all() as $error)
+                                          <li>{{$error}}</li>
+                                      @endforeach
+                                  </ul>
+                              </div>
+                          </div>
+                      @endif
                     </div>
                     <div class="col-md-4 col-xs-6 text-right border_newsletter_v2">
                         <button class="btn-newsletter" type="submit">Enviar</button>
                     </div>
-                  </form>
+             
+                  {!! Form::close() !!}
+                    
 
                 <div class="space-100 block-mobile"> </div>
 
@@ -288,7 +354,7 @@
 
 <script type="text/javascript">
   function showPonente(id_ponente){
-        $("#"+id_ponente).modal('show');
+      $("#"+id_ponente).modal('show');
   }
 </script>
 
