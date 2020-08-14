@@ -114,10 +114,9 @@
                       @endforeach
                       </div>
 
-                      <div class="row">
-                        <div class="col-md-4 col-md-offset-8">
-                            <div class="text-right coolButton">
-                            <div class="background-btn"></div>
+                      <div class="row container-btn">
+                        <div class="col-md-4 col-md-offset-8 space-40">
+                            <div class="text-center btna btn-1 btn-1c">
                                  <a href="/ponentes">
                                     <div>Ver más</div>
                                  </a>
@@ -264,19 +263,27 @@
                 </video>
 
                 <div class="space-20"> </div>
-                <div class="buttonEdiciones">
-                     <div class="background-btn-ediciones"></div>
-                     <a class="link-ponentes" target="_blank" href="https://www.conectandoemprendedores.mx/2018/"><div>CEO 2018</div></a>
+              
+                <div class="container-btn">
+                      <div class="text-center btna btn-2 btn-2c">
+                           <a class="link-ponentes" target="_blank" href="https://www.conectandoemprendedores.mx/2018/">
+                              <div>CEO 2018</div>
+                           </a>
+                      </div>
                 </div>
+ 
         </div>
         <div class="text-center item"> 
               <iframe width="100%" class="responsive-iframe" height="310" src="https://www.youtube.com/embed/6e4K2zZSjtE?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+               
                 <div class="space-20"> </div>
-                <div class="buttonEdiciones">
-                     <div class="background-btn-ediciones"></div>
-                     <a class="link-ponentes" target="_blank" href="https://www.conectandoemprendedores.mx/2019/">
-                        <div>CEO 2019</div>
-                    </a>
+               
+                <div class="container-btn">
+                      <div class="text-center btna btn-2 btn-2c">
+                           <a class="link-ponentes" target="_blank" href="https://www.conectandoemprendedores.mx/2019/">
+                              <div>CEO 2019</div>
+                           </a>
+                      </div>
                 </div>
         </div>
     </div>

@@ -23,24 +23,24 @@
                     <div class="col-md-12 px-3"> 
                       <input name="name" value="{{old('name')}}" class="form__element" type="text" placeholder="Nombre Completo" required />
                       @if ($errors->has('name'))
-                        <span class="help-block">
-                            <strong>{{ $errors->first('name') }}</strong>
+                        <span class="help-block-error">
+                            {{ $errors->first('name') }}
                         </span>
                       @endif
                     </div>
                     <div class="col-md-6 px-3"> 
                         <input name="apellido_paterno" value="{{old('apellido_paterno')}}" class="form__element" type="text" placeholder="Apellido Paterno"  />
                         @if ($errors->has('apellido_paterno'))
-                          <span class="help-block">
-                              <strong>{{ $errors->first('apellido_paterno') }}</strong>
+                          <span class="help-block-error">
+                              {{ $errors->first('apellido_paterno') }}
                           </span>
                         @endif
                     </div>
                     <div class="col-md-6 px-3"> 
                         <input name="apellido_materno" value="{{old('apellido_materno')}}" class="form__element" type="text" placeholder="Apellido Materno"  />
                         @if ($errors->has('apellido_materno'))
-                          <span class="help-block">
-                              <strong>{{ $errors->first('apellido_materno') }}</strong>
+                          <span class="help-block-error">
+                              {{ $errors->first('apellido_materno') }}
                           </span>
                         @endif
                     </div>
@@ -48,8 +48,8 @@
                         <!-- Año-Mes-Dia -->
                         <input name="edad" value="{{old('edad')}}" pattern="[0-9]{2}-[0-9]{2}-[0-9]{4}" class="form__element" type="date" placeholder="Año de nacimiento" required />
                         @if ($errors->has('edad'))
-                          <span class="help-block">
-                              <strong>{{ $errors->first('edad') }}</strong>
+                          <span class="help-block-error">
+                              {{ $errors->first('edad') }}
                           </span>
                         @endif
                     </div>
@@ -60,24 +60,24 @@
                         <option value="3">No especificar</option>
                         </select>
                         @if ($errors->has('sexo'))
-                          <span class="help-block">
-                              <strong>{{ $errors->first('sexo') }}</strong>
+                          <span class="help-block-error">
+                              {{ $errors->first('sexo') }}
                           </span>
                         @endif
                     </div>
                     <div class="col-md-12 px-3"> 
                         {!! Form::select('giro_negocio_id', $ocupaciones, null, ['class' => 'form__element', 'placeholder' => 'ocupacion', 'required', 'id'=>'ocupacion']) !!}
                         @if ($errors->has('giro_negocio_id'))
-                          <span class="help-block">
-                              <strong>{{ $errors->first('giro_negocio_id') }}</strong>
+                          <span class="help-block-error">
+                              {{ $errors->first('giro_negocio_id') }}
                           </span>
                         @endif
                     </div>
                     <div class="col-md-12 px-3"> 
                         <input name="nombre_ideas" value="{{old('nombre_ideas')}}" class="form__element" type="text" placeholder="Nombre de tu idea o emprendimiento" required />
                         @if ($errors->has('nombre_ideas'))
-                          <span class="help-block">
-                              <strong>{{ $errors->first('nombre_ideas') }}</strong>
+                          <span class="help-block-error">
+                              {{ $errors->first('nombre_ideas') }}
                           </span>
                         @endif
                     </div>
@@ -85,32 +85,32 @@
                       {!! Form::select('estado_id', $estados, null, ['class' => 'form__element', 'placeholder' => 'Estado', 'required', 'id'=>'estado']) !!}
 
                         @if ($errors->has('estado_id'))
-                        <span class="help-block">
-                            <strong>{{ $errors->first('estado_id') }}</strong>
+                        <span class="help-block-error">
+                            {{ $errors->first('estado_id') }}
                         </span>
                       @endif 
                     </div>
                     <div class="col-md-6 px-3"> 
                         {!! Form::select('municipio_id', $municipios, null, ['class' => 'form__element', 'placeholder' => 'Municipio', 'required', 'id'=>'municipio']) !!}
                         @if ($errors->has('municipio_id'))
-                          <span class="help-block">
-                              <strong>{{ $errors->first('municipio_id') }}</strong>
+                          <span class="help-block-error">
+                              {{ $errors->first('municipio_id') }}
                           </span>
                         @endif
                     </div>
                     <div class="col-md-12 px-3">  
                         <input name="email" value="{{old('email')}}" class="form__element" type="email" placeholder="Correo electrónico" required />
                         @if ($errors->has('email'))
-                          <span class="help-block">
-                              <strong>{{ $errors->first('email') }}</strong>
+                          <span class="help-block-error">
+                              {{ $errors->first('email') }}
                           </span>
                         @endif
                     </div>
                     <div class="col-md-12 px-3"> 
                         <input name="password" class="form__element" type="password" placeholder="password" required />
                         @if ($errors->has('password'))
-                          <span class="help-block">
-                              <strong>{{ $errors->first('password') }}</strong>
+                          <span class="help-block-error">
+                              {{ $errors->first('password') }}
                           </span>
                         @endif
                     </div>

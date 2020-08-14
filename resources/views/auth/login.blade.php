@@ -21,10 +21,20 @@
                     <div class="row px-3"> 
                       <label class="mb-1"><h6 class="mb-0 text-sm">Correo Electrónico</h6></label> 
                       <input class="mb-4" type="text" name="email" value="{{old('mail')}}" placeholder="Correo Electrónico"> 
+                      @if ($errors->has('email'))
+                        <span class="help-block-error">
+                            {{ $errors->first('email') }}
+                        </span>
+                      @endif
                     </div>
                     <div class="row px-3"> 
                       <label class="mb-1"><h6 class="mb-0 text-sm">Contraseña</h6></label> 
                       <input type="password" name="password" placeholder="Contraseña"> 
+                      @if ($errors->has('password'))
+                        <span class="help-block-error">
+                            {{ $errors->first('password') }}
+                        </span>
+                      @endif
                     </div>
                     <div class="row mb-3 px-3 space-20"> 
                       <button type="submit" class="btn btn-black text-center">Entrar</button> 

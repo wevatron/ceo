@@ -69,7 +69,6 @@
 <script src="{{ asset('layout/assets/js/jquery-2.1.1.js') }}"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 <script src="{{ asset('layout/assets/js/slick/slick.js') }}" type="text/javascript" charset="utf-8"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
 <script type="text/javascript" src="{{ asset('layout/assets/js/isotope.pkgd.min.js') }}"></script>
 <script type="text/javascript" src="{{ asset('layout/assets/js/main.js') }}"></script>
 <script type="text/javascript" src="{{ asset('layout/assets/js/menu.js') }}"></script>

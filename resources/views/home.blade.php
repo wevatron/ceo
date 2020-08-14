@@ -6,7 +6,7 @@
 <div class="container">
 	<div class="row">
 		<div class="col-md-8">
-			<h4 class="color-white text-left">Hola Roberto, ¡Que bueno verte!</h4>
+			<h4 class="color-white text-left">Hola {{auth()->user()->name}}, ¡Que bueno verte!</h4>
 		</div>
 		<div class="col-md-4">
 			<form id="logout-form" class="text-right" action="{{ url('/logout') }}" method="POST">
@@ -29,8 +29,8 @@
 		    	 <div class="col-md-6"> 
 		    	 	<img class="img-responsive portada-recomendamos" src="{{ $recomendacion->web }}" alt="{{ $recomendacion->nombre }}">
 		    	 </div>
-		    	 <div class="col-md-6"> 
-		    	 	<small class="color-white">{{ $recomendacion->descripcion }}</small>
+		    	 <div class="col-md-6 no-padding"> 
+		    	 	<p class="color-white text-left text-recomendacion">{{ $recomendacion->nombre }} <br> {{ $recomendacion->descripcion }}</p>
 		    	 </div>
 		   	 </div>
 		   	 @endforeach
@@ -47,8 +47,9 @@
 	    <div class="row">
 	        <div class="col-md-12 slide-aprende text-left"> 
 	        	@foreach($recomendaciones_ceo as $recomendacion)
-	        	<div class="col-md-3"> 
-		    	 	<img class="img-responsive" src="{{ $recomendacion->web }}" alt="{{ $recomendacion->nombre }}">
+	        	<div class="col-md-3 img-holder"> 
+		    	 	<img onclick="showVideo('{{$recomendacion->video}}')" class="img-responsive" src="{{ $recomendacion->web }}" alt="{{ $recomendacion->nombre }}">
+		    	 	<p class="captions-horizontal">{{ $recomendacion->nombre }} / {{ $recomendacion->descripcion }}</p>
 		    	</div>
 		    	@endforeach
 	        </div>
@@ -65,19 +66,23 @@
     <div class="row container">
     	<div class="slide-aprende">
 	    	@foreach($cat_aprende as $aprende)
-	        <div class="col-md-3 text-left"> 
-	        		<img class="img-responsive" src="{{ $aprende->web }}" alt="{{ $aprende->nombre }}">
+	        <div class="col-md-3 text-left img-holder"> 
+	        		<img onclick="showVideo('{{$aprende->video}}')" class="img-responsive" src="{{ $aprende->web }}" alt="{{ $aprende->nombre }}">
+	        		<p class="captions-vertical">{{ $aprende->nombre }} / {{ $aprende->descripcion }}</p>
 	        </div>
 	        @endforeach
     	</div>
     </div>
 
+	<div class="space-40"></div>
+
     <h4>Categoría 2</h4>
     <div class="row container">
     	<div class="slide-aprende">
 	    	@foreach($cat_herramientas as $herramientas)
-	        <div class="col-md-3 text-left"> 
-	        		<img class="img-responsive" src="{{ $herramientas->web }}" alt="{{ $herramientas->nombre }}">
+	        <div class="col-md-3 text-left img-holder"> 
+	        		<img onclick="showVideo('{{$herramientas->video}}')" class="img-responsive" src="{{ $herramientas->web }}" alt="{{ $herramientas->nombre }}">
+	        		<p class="captions-vertical">{{ $herramientas->nombre }} / {{ $herramientas->descripcion }}</p>
 	        </div>
 	        @endforeach
     	</div>
@@ -85,7 +90,56 @@
 </div>
 </section>
 
+<!-- Modal Video -->
+<div id="videoModal" class="modal fade" tabindex="-1" role="dialog">
+<div class="modal-dialog modal-dialog-centered modal-lg">
+  <div class="modal-header header-modal">
+      <button type="button" class="close" data-dismiss="modal">&times;</button>
+  </div>
+  <div class="modal-content">
+    <div class="modal-body">
+      <div class="container-fluid">
+      <div class="row">
+          <div class="col-md-12 no-padding">
+          	  <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+              <div class="video-bazar">
+                    <iframe class="video-herramientas" src="" frameborder="0" allow="autoplay *; fullscreen *" allowfullscreen></iframe>
+              </div>
+          </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- End Modal Video -->
+
 <div class="space-80"></div>
+
+<script type="text/javascript">
+
+	function showVideo(idVideo) {
+		$("iframe.video-herramientas").src = "";
+		$('iframe.video-herramientas').attr('src', '');
+
+		$('.video-bazar').hide();
+		$('.lds-ring').show();
+
+	 	$(".video-herramientas").attr("src","https://www.youtube.com/embed/"+idVideo);
+	 	
+	 	$('.lds-ring').hide();
+	 	$('.video-bazar').show();
+	 	$('#videoModal').modal('show');
+	}
+
+	window.addEventListener("DOMContentLoaded", function(){
+		$("#videoModal").on('hide.bs.modal', function () {
+        	$("iframe.video-herramientas").src = "";
+        	$('iframe.video-herramientas').attr('src', $('iframe').attr('src'));
+        	console.log("stop");
+    	});
+	});
+</script>
 
 @endsection
 

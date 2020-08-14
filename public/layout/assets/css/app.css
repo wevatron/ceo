@@ -1137,7 +1137,7 @@ footer img {
     .margin-left-20 {
         margin-left: 0px !important;
     }
-    .buttonEdiciones{
+    .container-btn .btn-2{
         width: 100% !important;
     }
     .margin-top-mobile-20 {
@@ -1595,72 +1595,104 @@ hr{
     color: #000;
     text-decoration: none;
 }
-.background-btn {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  background-color: #ffed00;
+.container-btn {
+    position: relative;
+    margin: 0;
+    padding: 0em;
+    z-index: 1;
 }
-.coolButton {
-  position: relative;
-  position: relative;
-  margin-top: 12%;
-  background-color: #00ffff;
+/* General button style (reset) */
+.btna {
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background: none;
+    cursor: pointer;
+    padding: 15px 20px;
+    display: inline-block;
+    margin: 0px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    outline: none;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    width: 100%;
 }
-.coolButton a {
-  position: relative;
-  padding: 15px 60px;
-  display: block;
-  font-size: 16px;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  text-decoration: none;
-  position: relative;
-  text-decoration: none;
-  color: black;
-  z-index: 2;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 700;
+.btna a {
+    text-decoration: none !important;   
 }
-.background-btn-ediciones {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  background-color: #fdeb00;
+.btna:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
 }
-.buttonEdiciones {
-  position: relative;
-  position: relative;
-  width: 50%;
-  text-align: center;
-  margin: auto;
-  border: 1px solid #000;
+/* Button 1 */
+.btn-1 {
+    border: 2px solid #fff;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
 }
-.buttonEdiciones a {
-  position: relative;
-  padding: 15px 60px;
-  display: block;
-  font-size: 16px;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  text-decoration: none;
-  position: relative;
-  text-decoration: none;
-  color: black;
-  z-index: 2;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 700;
+/* Button 1c */
+.btn-1c:after {
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #00ffff;
 }
+.btn-1c:hover,
+.btn-1c:active {
+    color: #000;
+    text-decoration: none;
+}
+.btn-1c:hover:after,
+.btn-1c:active:after {
+    width: 100%;
+    text-decoration: none;
+}
+.btn-1 a:hover{
+    color: #000;
+    text-decoration: none;
+}
+/* Button 2 */
+.btn-2 {
+    border: 2px solid #000;
+    color: #000;
+    font-size: 16px;
+    font-weight: 700;
+    width: 50%;
+}
+/* Button 1c */
+.btn-2c:after {
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #fdeb00;
+}
+.btn-2c:hover,
+.btn-2c:active {
+    color: #000;
+    text-decoration: none;
+}
+.btn-2c:hover:after,
+.btn-2c:active:after {
+    width: 100%;
+    text-decoration: none;
+}
+.btn-2 a:hover{
+    color: #000;
+    text-decoration: none;
+}
+
 .title-aliados{
     font-family: 'Saira', sans-serif !important;
 }
@@ -1981,7 +2013,117 @@ hr{
 .logout-svg{
     height: 20px;
 }
-
+#videoModal .modal-body {
+    padding: 0px !important;
+}
+.img-holder .captions-horizontal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.30);
+    color: white;
+    bottom: 0;
+    left: 15px;
+    width: 88%;
+    height: 45%;
+    margin: 0;
+    padding: 10px;
+    text-align: left;
+    font-size: 14px;
+}
+.img-holder .captions-vertical {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.30);
+    color: white;
+    bottom: 0;
+    left: 15px;
+    width: 88%;
+    height: 25%;
+    margin: 0;
+    padding: 10px;
+    text-align: left;
+    font-size: 14px;
+}
+.slide-aprende img:hover {
+    transform: scale(1.1);
+}
+.text-recomendacion{
+    font-size: 15px;
+}
+.lds-ring {
+  display: flex;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin: auto;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid #fb16c1;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #fb16c1 transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.slick-prev::before {
+    font-size: 30px !important;
+    color: #fdeb00 !important;
+}
+.slick-next::before {
+    font-size: 30px !important;
+    color: #fdeb00 !important;
+}
+.slick-prev, .slick-next {
+    z-index: 1000;
+}
+.slide-aprende .slick-prev, .slick-next {
+    width: 50px !important;
+    height: 50px !important;
+}
+.slide-aprende .slick-prev::before {
+    font-size: 35px !important;
+    color: #fdeb00 !important;
+}
+.slide-aprende .slick-next::before {
+    font-size: 35px !important;
+    color: #fdeb00 !important;
+}
+.slide-aprende .slick-prev {
+    left: -10px !important;
+}
+.slide-aprende .slick-next {
+    right: -10px !important;
+}
+.help-block-error{
+    font-size: 15px;
+    font-weight: 300;
+    color:#ee2b2b;
+}
 
 /* portfolio bazar section
 ==================================================*/
