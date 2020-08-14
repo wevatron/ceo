@@ -17,7 +17,7 @@
 	    <div class="col-md-8"> 
 
 	    	<div class="live-video">
-	             <iframe width="100%" height="100%" src="https://www.youtube.com/embed/zE2ovXhy_Ys?autoplay=0&loop=1&rel=0&showinfo=0&color=white&iv_load_policy=3" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	             <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ffmOBadlN-0?autoplay=0&loop=1&rel=0&showinfo=0&color=white&iv_load_policy=3" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	        </div>
 
 	    </div>
@@ -30,7 +30,7 @@
 		    	 	<img class="img-responsive portada-recomendamos" src="{{ $recomendacion->web }}" alt="{{ $recomendacion->nombre }}">
 		    	 </div>
 		    	 <div class="col-md-6"> 
-		    	 	<small class="color-white">{{ $recomendacion->nombre }}</small>
+		    	 	<small class="color-white">{{ $recomendacion->descripcion }}</small>
 		    	 </div>
 		   	 </div>
 		   	 @endforeach

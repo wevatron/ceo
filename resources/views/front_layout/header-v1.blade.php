@@ -71,7 +71,7 @@
             
                     <div class="col-md-12 no-padding">
                         <div class="live-video">
-                             <iframe width="100%" height="100%" src="https://www.youtube.com/embed/zE2ovXhy_Ys?autoplay=1&loop=1&rel=0&showinfo=0&iv_load_policy=3" frameborder="0" allow="autoplay; encrypted-media; " allowfullscreen></iframe>
+                             <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ffmOBadlN-0?autoplay=1&loop=1&rel=0&showinfo=0&iv_load_policy=3" frameborder="0" allow="autoplay; encrypted-media; " allowfullscreen></iframe>
                         </div>
                     </div>
                     <!--

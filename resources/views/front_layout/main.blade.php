@@ -16,6 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Saira:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
     <link href="{{ asset('layout/assets/css/glitch.css') }}" rel="stylesheet">
     <link href="{{ asset('layout/assets/css/tabs.css') }}" rel="stylesheet">
+    <link href="{{ asset('layout/assets/css/form.css') }}" rel="stylesheet">
     <link href="{{ asset('layout/assets/css/animation.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@9/dist/sweetalert2.min.css" id="theme-styles">
     <link rel="stylesheet" type="text/css" href="{{ asset('layout/assets/css/slick/slick.css') }}">

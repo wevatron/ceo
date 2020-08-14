@@ -1922,7 +1922,30 @@ hr{
 .bg-white{
     background-color: #fff;
 }
+.video-bazar {
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    position: relative;
+}
+.video-bazar iframe, .video-bazar object, .video-bazar embed {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.slide-bazar{
+    margin-top: 10px;
+}
 
+.detail-bazar .bazares{
+    display: none;
+}
+.activarBazar{
+    display: block !important;
+}
 
 /* ---------------------------------------------
 ------------------------------------------------
@@ -2110,30 +2133,7 @@ hr{
     height: 130px;
     width: 100%;
 }
-.video-bazar {
-    height: 0;
-    overflow: hidden;
-    padding-bottom: 56.25%;
-    padding-top: 30px;
-    position: relative;
-}
-.video-bazar iframe, .video-bazar object, .video-bazar embed {
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-}
-.slide-bazar{
-    margin-top: 10px;
-}
 
-.detail-bazar .bazares{
-    display: none;
-}
-.activarBazar{
-    display: block !important;
-}
 
 
 /* The Modal (background) */
@@ -2228,208 +2228,3 @@ hr{
     margin: 0 auto;
     cursor: pointer;
 }
-
-
-
-
-/** * Animation keyframes */
- @-webkit-keyframes gradient {
-     0% {
-         background-position: 0% 50%;
-    }
-     50% {
-         background-position: 100% 50%;
-    }
-     100% {
-         background-position: 0% 50%;
-    }
-}
- @-moz-keyframes gradient {
-     0% {
-         background-position: 0% 50%;
-    }
-     50% {
-         background-position: 100% 50%;
-    }
-     100% {
-         background-position: 0% 50%;
-    }
-}
- @keyframes gradient {
-     0% {
-         background-position: 0% 50%;
-    }
-     50% {
-         background-position: 100% 50%;
-    }
-     100% {
-         background-position: 0% 50%;
-    }
-}
-/** * Layout */
- .wrapper_form {
-     position: relative;
-     margin-top: 5rem;
-     margin-right: auto;
-     margin-left: auto;
-     width: 80%;
-     background: #fff;
-     box-shadow: 3px 3px 32px rgba(0, 0, 0, .25);
-     perspective: 1000;
-}
- .flipper__checkbox:checked + .form__container {
-     transform: rotateY(180deg);
-}
- .form__container {
-     position: relative;
-     width: 100%;
-     height: 100%;
-     transform-style: preserve-3d;
-     transition: transform 0.25s ease;
-}
- .form__container--inner {
-     padding: 2rem;
-}
- .form__login, .form__signup {
-     position: absolute;
-     top: 0;
-     left: 0;
-     margin: 0;
-     width: 100%;
-     backface-visibility: hidden;
-     background: #fff;
-     box-shadow: 3px 3px 32px rgba(0, 0, 0, .25);
-}
- .form__login:after, .form__signup:after {
-     content: "";
-     position: absolute;
-     top: 0;
-     left: 0;
-     width: 100%;
-     height: 10px;
-     background: linear-gradient(270deg, #fa15c1, #fdec00);
-     background-size: 400% 400%;
-     animation: gradient 2s ease infinite;
-}
- .form__login {
-     z-index: 2;
-     padding: 0rem;
-    /* for firefox 31 */
-     transform: rotateY(0deg);
-}
- .form__signup {
-     padding: 0rem;
-     margin-left: -3.95rem;
-     transform: rotateY(180deg);
-}
-/** * Form default styling */
- .form__header {
-     margin-bottom: 2rem;
-     font-size: 1.618rem;
-     font-weight: 700;
-     text-align: center;
-}
- .form__group:nth-of-type(n+2) {
-     margin-top: 1.5rem;
-}
- .label__icon {
-     padding: 0.97rem 0;
-     float: left;
-     width: 3rem;
-     font-size: 1.25rem;
-     text-align: center;
-     color: rgba(107, 141, 159, .25);
-     border-top: 1px solid #e1e1e1;
-     border-bottom: 1px solid #e1e1e1;
-     border-left: 1px solid #e1e1e1;
-     border-top-left-radius: 2px;
-     border-bottom-left-radius: 2px;
-}
- .form__element {
-     padding-top: 1.11rem;
-     padding-right: 2rem;
-     padding-left: 2rem;
-     padding-bottom: 1.11rem;
-     width: 100%;
-     border-top: 1px solid #e1e1e1;
-     border-right: 1px solid #e1e1e1;
-     border-bottom: 1px solid #e1e1e1;
-     border-left: 1px solid #e1e1e1;
-     border-top-right-radius: 2px;
-     border-bottom-right-radius: 2px;
-}
- .form__element:focus {
-     outline: 0;
-}
- [type="checkbox"] {
-     position: relative;
-     margin-right: 0.5rem;
-}
- [type="checkbox"]:after {
-     content: "";
-     position: absolute;
-     top: 0;
-     left: 0;
-     border: 1px solid #e1e1e1;
-     width: 16px;
-     height: 16px;
-     background: #fff;
-     border-radius: 2px;
-     cursor: pointer;
-}
- label[for="checkbox"] {
-     position: relative;
-     font-size: 0.9rem;
-     font-weight: 700;
-}
- .checkbox--forget:checked + .icon--checkbox {
-     opacity: 1;
-     transform: scale(1);
-}
- .icon--checkbox {
-     position: absolute;
-     top: 4px;
-     left: 6px;
-     opacity: 0;
-     cursor: pointer;
-     transition: all 0.35s cubic-bezier(0.91, 0.8, 0.84, 2.81);
-     transform: scale(0);
-}
- .form__link {
-     font-size: 0.8rem;
-     font-weight: bold;
-     text-decoration: underline;
-     color: rgba(107, 141, 159, .75);
-     cursor: pointer;
-}
- .form__link:focus, .form__link:hover {
-     color: rgba(107, 141, 159, .95);
-}
- .link--right {
-     float: right;
-}
- .form__button {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    display: inline-block;
-    width: 100%;
-    font-size: 1.4rem;
-    font-weight: 700;
-    text-align: center;
-    color: #fff;
-    background-color: #000;
-    border: 0;
-    border-radius: 0px;
-    cursor: pointer;
-}
- .form__button:focus, .form__button:hover {
-     background-color: #0b74c7;
-}
-.form__group:nth-of-type(n+2) {
-    margin-top: 0rem !important;
-}
-.container-registro{
-    margin-top: 10%;
-}
-
-
