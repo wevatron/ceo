@@ -1034,6 +1034,18 @@ footer img {
     .col-md-6 h3 {
         margin-top: 30px;
     }
+    .grid-ponentes-full {
+        margin-top: 0% !important;
+    }
+    .card0 {
+        padding: 20px !important;
+    }
+    .card1{
+        display: none !important;
+    }
+    .container-formulario {
+        padding-top: 15% !important;
+    }
 }
 
 @media only screen and (max-width: 670px) {
@@ -1103,6 +1115,9 @@ footer img {
         width: 35px !important;
         height: 35px !important;
         right: 20px !important;
+    }
+    #herramientas-emprender .container {
+        padding-top: 20% !important;
     }
 }
 
@@ -2000,7 +2015,7 @@ hr{
 }
 .portada-recomendamos{
     height: 100px !important;
-    width: 100%;
+    width: auto;
 }
 .btn-logout{
     background: #000;

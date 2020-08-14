@@ -47,8 +47,8 @@
 	    <div class="row">
 	        <div class="col-md-12 slide-aprende text-left"> 
 	        	@foreach($recomendaciones_ceo as $recomendacion)
-	        	<div class="col-md-3 img-holder"> 
-		    	 	<img onclick="showVideo('{{$recomendacion->video}}')" class="img-responsive" src="{{ $recomendacion->web }}" alt="{{ $recomendacion->nombre }}">
+	        	<div onclick="showVideo('{{$recomendacion->video}}')" class="col-md-3 img-holder"> 
+		    	 	<img class="img-responsive" src="{{ $recomendacion->web }}" alt="{{ $recomendacion->nombre }}">
 		    	 	<p class="captions-horizontal">{{ $recomendacion->nombre }} / {{ $recomendacion->descripcion }}</p>
 		    	</div>
 		    	@endforeach
@@ -62,12 +62,12 @@
 <section id="section-categorias" class="space-80">
 <div class="container">
 
-    <h4>Categoría 1</h4>
+    <h4>ECONOMÍA DIGITAL</h4>
     <div class="row container">
     	<div class="slide-aprende">
 	    	@foreach($cat_aprende as $aprende)
-	        <div class="col-md-3 text-left img-holder"> 
-	        		<img onclick="showVideo('{{$aprende->video}}')" class="img-responsive" src="{{ $aprende->web }}" alt="{{ $aprende->nombre }}">
+	        <div onclick="showVideo('{{$aprende->video}}')" class="col-md-3 text-left img-holder"> 
+	        		<img class="img-responsive" src="{{ $aprende->web }}" alt="{{ $aprende->nombre }}">
 	        		<p class="captions-vertical">{{ $aprende->nombre }} / {{ $aprende->descripcion }}</p>
 	        </div>
 	        @endforeach
@@ -76,12 +76,68 @@
 
 	<div class="space-40"></div>
 
-    <h4>Categoría 2</h4>
+    <h4>TUS CLIENTES</h4>
     <div class="row container">
     	<div class="slide-aprende">
 	    	@foreach($cat_herramientas as $herramientas)
-	        <div class="col-md-3 text-left img-holder"> 
-	        		<img onclick="showVideo('{{$herramientas->video}}')" class="img-responsive" src="{{ $herramientas->web }}" alt="{{ $herramientas->nombre }}">
+	        <div onclick="showVideo('{{$herramientas->video}}')" class="col-md-3 text-left img-holder"> 
+	        		<img class="img-responsive" src="{{ $herramientas->web }}" alt="{{ $herramientas->nombre }}">
+	        		<p class="captions-vertical">{{ $herramientas->nombre }} / {{ $herramientas->descripcion }}</p>
+	        </div>
+	        @endforeach
+    	</div>
+    </div>
+
+    <div class="space-40"></div>
+
+    <h4>DISEÑANDO NEGOCIOS</h4>
+    <div class="row container">
+    	<div class="slide-aprende">
+	    	@foreach($cat_herramientas as $herramientas)
+	        <div onclick="showVideo('{{$herramientas->video}}')" class="col-md-3 text-left img-holder"> 
+	        		<img class="img-responsive" src="{{ $herramientas->web }}" alt="{{ $herramientas->nombre }}">
+	        		<p class="captions-vertical">{{ $herramientas->nombre }} / {{ $herramientas->descripcion }}</p>
+	        </div>
+	        @endforeach
+    	</div>
+    </div>
+
+    <div class="space-40"></div>
+
+    <h4>ECONOMÍA NARANJA</h4>
+    <div class="row container">
+    	<div class="slide-aprende">
+	    	@foreach($cat_herramientas as $herramientas)
+	        <div onclick="showVideo('{{$herramientas->video}}')" class="col-md-3 text-left img-holder"> 
+	        		<img class="img-responsive" src="{{ $herramientas->web }}" alt="{{ $herramientas->nombre }}">
+	        		<p class="captions-vertical">{{ $herramientas->nombre }} / {{ $herramientas->descripcion }}</p>
+	        </div>
+	        @endforeach
+    	</div>
+    </div>
+
+    <div class="space-40"></div>
+
+    <h4>EMPRENDIMIENTO SOCIAL</h4>
+    <div class="row container">
+    	<div class="slide-aprende">
+	    	@foreach($cat_herramientas as $herramientas)
+	        <div onclick="showVideo('{{$herramientas->video}}')" class="col-md-3 text-left img-holder"> 
+	        		<img class="img-responsive" src="{{ $herramientas->web }}" alt="{{ $herramientas->nombre }}">
+	        		<p class="captions-vertical">{{ $herramientas->nombre }} / {{ $herramientas->descripcion }}</p>
+	        </div>
+	        @endforeach
+    	</div>
+    </div>
+
+    <div class="space-40"></div>
+
+    <h4>POR DONDE EMPEZAR</h4>
+    <div class="row container">
+    	<div class="slide-aprende">
+	    	@foreach($cat_herramientas as $herramientas)
+	        <div onclick="showVideo('{{$herramientas->video}}')" class="col-md-3 text-left img-holder"> 
+	        		<img class="img-responsive" src="{{ $herramientas->web }}" alt="{{ $herramientas->nombre }}">
 	        		<p class="captions-vertical">{{ $herramientas->nombre }} / {{ $herramientas->descripcion }}</p>
 	        </div>
 	        @endforeach
@@ -138,6 +194,19 @@
         	$('iframe.video-herramientas').attr('src', $('iframe').attr('src'));
         	console.log("stop");
     	});
+
+    	/* $('#section-categorias .slide-aprende img').hover(function() {
+		    $('.captions-vertical').css('transform', 'scale(1.1)');
+		  }, function() {
+		    $('.captions-vertical').css('transform', 'scale(1)');
+		});
+
+		$('#herramientas-emprender .slide-aprende img').hover(function() {
+		    $('.captions-horizontal').css('transform', 'scale(1.1)');
+		  }, function() {
+		    $('.captions-horizontal').css('transform', 'scale(1)');
+		}); */
+
 	});
 </script>
 
