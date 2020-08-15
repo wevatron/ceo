@@ -6,8 +6,8 @@
                 <th>Apellido parterno</th>
                 <th>Apellido materno</th>
                 <th>Rfc</th>
-                {{-- <th>Universidad</th> --}}
-                <th>Tipo de Usuario</th>
+                <th>Ocupación</th> 
+                <th>Email</th>
                 <th>Municipio</th>
                 <th colspan="3">Acción</th>
             </tr>
@@ -19,8 +19,8 @@
                 <td>{{ $tPersona->apellido_paterno }}</td>
                 <td>{{ $tPersona->apellido_materno }}</td>
                 <td>{{ $tPersona->rfc }}</td>
-                {{-- <td>{{ $tPersona->Universidad->descripcion }}</td> --}}
-                <td>{{ $tPersona->TipoUsuario->descripcion }}</td>
+                <td>{{ $tPersona->Giro->descripcion }}</td>
+                <td>{{ $tPersona->email }}</td>
                 <td>{{ $tPersona->Municipio->nombre }}</td>
                 <td>{{ $tPersona->evento_id }}</td>
                 <td>

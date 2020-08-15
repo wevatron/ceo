@@ -30,6 +30,7 @@ class User extends Authenticatable implements CanResetPasswordContract
         'tipo_usuario_id',
         'municipio_id',
         'estado_id',
+        'giro_negocio_id',
         'edad',
         'sexo'
     ];

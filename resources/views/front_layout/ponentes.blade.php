@@ -70,7 +70,13 @@
               <!-- Modal Ponente -->
               <div class="col-md-4 col-sm-6 col-xs-6 space-bottom-10 space-bottom-ponentes">
                   <div class="ponente_item">
-                      <img src="{{$p->Imagenes[0]->url_img}}" alt="CEO 2020" class="img-responsive" width="100%" />
+
+                      @if(isset($p->Imagenes[0]->url_img))
+                          <img src="{{$p->Imagenes[0]->url_img}}" alt="CEO 2020" class="img-responsive" />
+                      @else
+                          <img src="{{asset('layout/assets/img/general/no-image.jpg')}}" alt="{{$bazar->nombre}}" class="img-responsive" width="100%" />
+                      @endif
+
                       <div class="ponente_item_hover">
                           <div class="ponente-border clearfix">
                               <div class="item_info">

@@ -14,6 +14,7 @@ use App\Models\C_region;
 use App\Models\C_municipio;
 use App\Models\C_estados_rep;
 use App\Models\C_tipo_usuario;
+use App\Models\T_persona;
 
 class T_personaController extends AppBaseController
 {
@@ -34,7 +35,8 @@ class T_personaController extends AppBaseController
      */
     public function index(Request $request)
     {
-        $tPersonas = $this->tPersonaRepository->all();
+        // $tPersonas = $this->tPersonaRepository->all();
+        $tPersonas = T_persona::paginate(15);
 
         return view('t_personas.index')
             ->with('tPersonas', $tPersonas);

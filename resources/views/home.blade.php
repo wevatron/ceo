@@ -6,7 +6,7 @@
 <div class="container">
 	<div class="row">
 		<div class="col-md-8">
-			<h4 class="color-white text-left">Hola {{auth()->user()->name}}, ¡Que bueno verte!</h4>
+			<h4 class="color-white text-left">Hola {{auth()->user()->name}}, ¡Qué bueno verte!</h4>
 		</div>
 		<div class="col-md-4">
 			<form id="logout-form" class="text-right" action="{{ url('/logout') }}" method="POST">

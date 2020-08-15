@@ -55,9 +55,8 @@ class RegisterController extends Controller
             'edad' => ['required','string'],
             'sexo' => ['required', 'integer'],
             'giro_negocio_id' => ['required', 'integer'],
-            'nombre_ideas' => ['required', 'string', 'max:255'],
+            'nombre_idea' => ['required', 'string', 'max:255'],
             'estado_id' => ['required', 'integer'],
-            'municipio_id' => ['required', 'integer'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8'],
         ]);
@@ -72,17 +71,25 @@ class RegisterController extends Controller
     protected function create(array $data)
     {   
         $municipio = 2458;
+        $rfc = '';
         if($data['estado_id'] == 20){
             $municipio = $data['municipio_id'];
         }
+        if(isset($data['rfc'])){
+            $rfc = $data['rfc'];
+        } 
+        
+        $giro = intval($data['giro_negocio_id']);
+     
         return User::create([
             'name' => $data['name'],
             'apellido_paterno' => $data['apellido_paterno'],
             'apellido_materno' => $data['apellido_materno'],
             'edad' => $data['edad'],
             'sexo' => $data['sexo'],
-            'giro_negocio_id' => $data['giro_negocio_id'],
-            'nombre_ideas' => $data['nombre_ideas'],
+            'rfc' => $rfc,
+            'giro_negocio_id' => $giro,
+            'nombre_idea' => $data['nombre_idea'],
             'estado_id' => $data['estado_id'],
             'municipio_id' => $municipio,
             'email' => $data['email'],

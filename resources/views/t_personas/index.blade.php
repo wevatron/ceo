@@ -19,7 +19,7 @@
             </div>
         </div>
         <div class="text-center">
-        
+            {{$tPersonas->render()}}
         </div>
     </div>
 @endsection

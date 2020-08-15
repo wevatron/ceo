@@ -1,5 +1,5 @@
 .section-formulario{
-    background: #fff url('../img/bazar/back_bazar.png');
+    background: #fff url('../img/herramientas/CEO_registro_bg.jpg');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: right bottom;
@@ -13,11 +13,11 @@
 }
 .imageForm {
     width: auto;
-    height: 500px
+    height: 460px
 }
 .imageRegister{
     width: auto;
-    height: 600px
+    height: 650px
 }
 .card2 {
     margin: 0px 40px
@@ -116,6 +116,17 @@ a {
 .text-dangers{
     color: #fb16c1;
     font-size: 16px;
+}
+.help-block-error{
+    font-size: 15px;
+    font-weight: 300;
+    color:#ee2b2b;
+}
+#municipio {
+    display: none;
+}
+#rfc {
+    display: none;
 }
 
 
