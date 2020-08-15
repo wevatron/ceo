@@ -136,5 +136,17 @@
 
 <div class="space-80"></div>
 
+<script type="text/javascript">
+  window.addEventListener("DOMContentLoaded", function(){
+      $("#estado").change(function(){
+          if($(this).val() == 20){
+            $("#municipio").show();
+          }else{
+            $("#municipio").hide();
+          }
+      });
+  });
+</script>
+
 @endsection
 @include("front_layout.footer")
