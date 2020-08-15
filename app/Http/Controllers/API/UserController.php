@@ -31,16 +31,27 @@ public $successStatus = 200;
     { 
         $messages = [
             'name.required' => 'El nombre es obligatorio',
+            'apellido_paterno.required' => 'El apellido paterno es obligatorio',
+            'apellido_materno.required' => 'El apellido materno es obligatorio',
+            'nombre_idea.required' => 'Falta el nombre de tu idea de negocio',
             'email.unique' => 'El correo electronico ya esta registrado',
             'email.required' => 'El correo es obligatorio',
             'email.email' => 'El formato del correo es incorrecto',
             'password.required' => 'La contraseña es obligatoria',
+            'c_password.required' => 'Las contraseñas deben ser iguales',
             'password.min' => 'La contraseña debe tener mas de :min caracteres',
             'c_password.same' => 'Las contraseñas no son identicas',
             
         ];
         $validator = Validator::make($request->all(), [ 
             'name' => 'required', 
+            'apellido_paterno' => 'required', 
+            'apellido_materno' => 'required', 
+            'giro_negocio_id' => 'required', 
+            'municipio_id' => 'required', 
+            'estado_id' => 'required', 
+            'nombre_idea' => 'required', 
+            'sexo' => 'required', 
             'email' => 'required|email|unique:users', 
             'password' => 'required|min:8', 
             'c_password' => 'required|same:password', 
