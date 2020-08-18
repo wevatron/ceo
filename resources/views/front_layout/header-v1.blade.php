@@ -6,9 +6,9 @@
     <!-- box header -->
     <header class="box-header">
 
-        <div class="dropdown m-account dropleft hidden">
+        <div class="dropdown m-account hidden dropleft">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <img src="{{ asset('layout/assets/img/header/account.svg') }}" class="img-responsive" width="50" alt="CEO 2020">
+                <img src="{{ asset('layout/assets/img/header/account.svg') }}" class="img-responsive" width="45" alt="CEO 2020">
             </a>
             <div class="dropdown-menu">
                 <ul class="drops">

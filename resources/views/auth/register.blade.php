@@ -150,7 +150,8 @@
           if($(this).val() == 20){
             $("#municipio").show();
           }else{
-            $("#municipio").hide();
+           $("#municipio").hide();
+           $('#municipio option:selected').prop('selected', false);
           }
       });
       $("#giro_negocio_id").change(function(){

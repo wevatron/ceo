@@ -77,9 +77,10 @@ $(document).ready(function(){
     $(".slide-aprende").slick({
         dots: false,
         arrows:true,
-        infinite: true,
-        centerMode: true,
+        infinite: false,
+        centerMode: false,
         slidesToShow: 4,
+        rtl: false,
         slidesToScroll: 1,
         responsive: [
             {

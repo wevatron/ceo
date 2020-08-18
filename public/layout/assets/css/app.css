@@ -1324,6 +1324,12 @@ footer img {
     .box-logo {
         padding-left: 20px !important;
     }
+    .btns-2{
+        width: 100% !important;
+    }
+    .img-holder .captions-vertical{
+        height: 40% !important;
+    }
 }
 
 @media only screen and (max-width: 480px) {
@@ -1500,9 +1506,9 @@ hr{
     padding-top: 0px !important; 
 }
 .m-account{
-    float: right;
-    margin-right: 70px;
-    margin-top: 25px;
+    position: absolute !important;
+    right: 70px;
+    top: 28px;
 }
 .drops{
     list-style: none;
@@ -1512,7 +1518,11 @@ hr{
 .drops a{
     font-size: 16px;
 }
-
+.dropdown-menu{
+    box-shadow: 5px 5px 0px #fb16c1 !important;
+    border-radius: 0px !important;
+    border: none !important;
+}
 
 
 
@@ -2064,8 +2074,8 @@ hr{
     justify-content: center;
     align-items: center;
     position: absolute;
-    background: rgba(0, 0, 0, 0.30);
-    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
     bottom: 0;
     left: 15px;
     width: 88%;
@@ -2075,7 +2085,7 @@ hr{
     text-align: left;
     font-size: 14px;
 }
-.slide-aprende img:hover {
+.slide-aprende .img-holder:hover {
     transform: scale(1.1);
 }
 .text-recomendacion{
@@ -2126,7 +2136,7 @@ hr{
     color: #fdeb00 !important;
 }
 .slick-prev, .slick-next {
-    z-index: 1000;
+    z-index: 100;
 }
 .slide-aprende .slick-prev, .slick-next {
     width: 50px !important;
@@ -2146,6 +2156,8 @@ hr{
 .slide-aprende .slick-next {
     right: -10px !important;
 }
+
+
 
 
 /* portfolio bazar section

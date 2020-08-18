@@ -24,10 +24,13 @@ class HomeController extends Controller
      */
     public function index()
     {   
-        $cat_aprende         = T_aprende::where('c_categorias_id','=',3)->get();
-        $cat_herramientas    = T_aprende::where('c_categorias_id','=',4)->get();
-        $recomendaciones_ceo = T_aprende::where('c_categorias_id','=',5)->get();
+        $cat_digital     = T_aprende::where('c_categorias_id','=',1)->get();
+        $cat_cliente     = T_aprende::where('c_categorias_id','=',2)->get();
+        $cat_negocios    = T_aprende::where('c_categorias_id','=',3)->get();
+        $cat_naranja     = T_aprende::where('c_categorias_id','=',4)->get();
+        $cat_social      = T_aprende::where('c_categorias_id','=',5)->get();
+        $cat_empezar     = T_aprende::where('c_categorias_id','=',6)->get();
         
-        return view("home",compact('cat_aprende','cat_herramientas','recomendaciones_ceo'));
+        return view("home",compact('cat_digital','cat_cliente','cat_negocios','cat_naranja','cat_social','cat_empezar'));
     }
 }
