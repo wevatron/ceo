@@ -6,7 +6,7 @@
     <!-- box header -->
     <header class="box-header">
 
-        <div class="dropdown m-account hidden dropleft">
+        <div class="dropdown m-account dropleft">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <img src="{{ asset('layout/assets/img/header/account.svg') }}" class="img-responsive" width="45" alt="CEO 2020">
             </a>
@@ -54,8 +54,8 @@
                     <li><a href="{{url('/')}}/encuentro-2020">Encuentro 2020</a>  </li>
                     <li><a href="{{url('/')}}/nosotros">Nosotros</a> </li>
                     <li><a href="{{url('/')}}/ponentes">Voces del Futuro</a> </li>
-                    <li class="hidden"><a href="{{url('/')}}/herramientas-emprender">Aprende+ CEO 2020</a> </li>
-                    <li class=""><a href="{{url('/')}}/bazar-digital">Bazar Digital CEO</a> </li>
+                    <li><a href="{{url('/')}}/herramientas-emprender">Aprende+ CEO 2020</a> </li>
+                    <li><a href="{{url('/')}}/bazar-digital">Bazar Digital CEO</a> </li>
                 </ul>
                 <ul class="social-icon">
                       <li class="box-social"> <a class="ion-social-facebook"  target="_blank" href="https://www.facebook.com/ConectandoEnOaxaca"></a> </li>

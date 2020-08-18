@@ -13,7 +13,7 @@
                     <div class="px-3 justify-content-center mt-4 mb-5"> <img class="img-responsive imageForm" src="{{asset('layout/assets/img/herramientas/CEO_banner_login.jpg') }}" alt="CEO 2020"> </div>
                 </div>
             </div>
-            <div class="col-lg-7 col-xl-8 mx-auto space-80">
+            <div class="col-lg-7 col-xl-8 mx-auto space-50">
                 <div class="card2 card border-0 px-4 py-5">
                   <form action="{{url('/login')}}" id="loginForm" method="post" class="form">
                   {!! csrf_field() !!}
@@ -40,7 +40,8 @@
                       <button type="submit" class="btn btn-black text-center">Entrar</button> 
                     </div>
                     <div class="row mb-4 px-3 space-50"> 
-                      <small class="font-weight-bold register-account">¿No tienes una cuenta? <a href="{{url('/')}}/register" class="text-dangers ">Registrate</a></small> 
+                      <div><small class="font-weight-bold register-account">¿No tienes una cuenta? <a href="{{url('/')}}/register" class="text-dangers ">Registrate</a></small> </div>
+                      <div><small class="font-weight-bold register-account">¿Olvidaste tu contraseña? <a href="{{url('/')}}/reset" class="text-dangers ">Recuperar</a></small> </div>
                     </div>
 
                   </form>

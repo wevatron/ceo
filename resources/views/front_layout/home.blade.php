@@ -3,22 +3,56 @@
 @section("body")
 <div class="space-50 hidden"> </div>
 <section id="section-bazar" class="container hidden">
+
     <div class="row">
-        <div class="col-md-7"> 
-            <div class="text-left col-md-4 no-padding circle-img">
-                <img class="img-responsives" src="{{ asset('layout/assets/img/home/circulo-invitacion.png') }}" width="420" alt="CEO 2020">
-            </div>
-            <div class="text-left col-md-8 no-padding space-colegas-150">
-                <h1 class="glitch glitch-left weight-300" data-text="INVITA A TUS COLEGAS">INVITA A TUS COLEGAS</h1>
-                <h1 class="glitch glitch-left weight-900 no-margin-top" data-text="Y AMISTADES">Y AMISTADES</h1>
-                <p class="margin-left-20 space-30 weight-500">¡Este año no hay distancia!  </p>
-                <p class="margin-left-20">Estaremos más conectados.</p>
-            </div>
-        </div>
-        <div class="col-md-5"> 
-             <div class="text-left">
+        <div class="col-md-4"> 
+            <div class="text-left col-md-12 no-padding circle-img">
                 <h1 class="color-pink no-margin-top margin-top-mobile-50 weight-900">Explora</h1>
                 <a href="{{url('/')}}/bazar-digital"><img class="img-responsive grayscale overlay_" src="{{ asset('layout/assets/img/home/banner-bazar.gif') }}" width="480" alt="CEO 2020"></a>
+            </div>
+        </div>
+        <div class="col-md-8"> 
+             <div class="text-left">
+                <h1 class="color-pink no-margin-top margin-top-mobile-50 weight-900">Agenda</h1>
+                <div class="agenda-ceo">
+                  <div class="grid-container-agenda color-white fluid">
+                    
+                    <div class="grid-x align-middle">
+                      <div class="medium-2 cell">
+                        <div class="horario">09:00 - 09:50</div>
+                      </div>
+                      <div class="medium-10 cell">
+                        <div data-equalizer-watch="" class="conferencia digital-talk" style="height: auto;">
+                          <p>Canal 1 y 2</p>
+                          <h4>La Experiencia de Educación Superior de Facebook y la Evolución del Marketing Digital</h4>
+                          <p class="conferencista">Rafael Maximo</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="grid-x align-middle">
+                      <div class="medium-2 cell">
+                        <div class="horario">10:00 - 10:20</div>
+                      </div>
+                      <div class="medium-5 cell">
+                        <div data-equalizer-watch="" class="conferencia digital-talk" style="height: auto;">
+                          <p>Canal 1</p>
+                          <h4>Digital nomads: Living between the real, the virtual and the hyperreal worlds </h4>
+                          <p class="conferencista">Artemisa Jaramillo</p>
+                        </div>
+                      </div>
+                      <div class="medium-5 cell">
+                        <div data-equalizer-watch="" class="conferencia digital-talk" style="height: auto;">
+                          <p>Canal 2</p>
+                          <h4>¿Nuevos normales o mejores normales?</h4>
+                          <p class="conferencista">David Arafat</p>
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+
             </div>
         </div>
     </div>
@@ -116,11 +150,11 @@
 
                       <div class="row container-btn">
                         <div class="col-md-4 col-md-offset-8 space-40">
+                            <a href="{{url('/')}}/ponentes">
                             <div class="text-center btna btn-1 btn-1c">
-                                 <a href="/ponentes">
-                                    <div>Ver más</div>
-                                 </a>
+                                <div>Ver más</div>
                             </div>
+                            </a>
                         </div>
                       </div>
  
@@ -265,11 +299,11 @@
                 <div class="space-20"> </div>
               
                 <div class="container-btn">
-                      <div class="text-center btna btns-2 btn-2c">
-                           <a class="link-ponentes" target="_blank" href="https://www.conectandoemprendedores.mx/2018/">
-                              <div>CEO 2018</div>
-                           </a>
-                      </div>
+                      <a class="link-ponentes" target="_blank" href="https://www.conectandoemprendedores.mx/2018/">
+                        <div class="text-center btna btns-2 btn-2c">
+                                <div>CEO 2018</div>
+                        </div>
+                      </a>
                 </div>
  
         </div>
@@ -279,11 +313,11 @@
                 <div class="space-20"> </div>
                
                 <div class="container-btn">
-                      <div class="text-center btna btns-2 btn-2c">
-                           <a class="link-ponentes" target="_blank" href="https://www.conectandoemprendedores.mx/2019/">
-                              <div>CEO 2019</div>
-                           </a>
-                      </div>
+                      <a class="link-ponentes" target="_blank" href="https://www.conectandoemprendedores.mx/2019/">
+                        <div class="text-center btna btns-2 btn-2c">
+                                <div>CEO 2019</div>
+                        </div>
+                      </a>
                 </div>
         </div>
     </div>

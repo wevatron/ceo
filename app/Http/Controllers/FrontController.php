@@ -29,8 +29,8 @@ class FrontController extends Controller
         $bazares    = T_bazar::get();
     	return view("front_layout.bazar_emprendedores",compact('categorias','bazares'));
     }
-    function loginFront(){
-    	return view("front_layout.login");
+    function reset(){
+    	return view("auth.passwords.recovery");
     }
 
 }

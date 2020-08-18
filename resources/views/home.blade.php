@@ -56,7 +56,7 @@
 <section id="section-categorias" class="space-80">
 <div class="container">
 
-    <h4>ECONOMÍA DIGITAL</h4>
+    <h4 class="title-tutoriales">ECONOMÍA DIGITAL</h4>
     <div class="row container">
     	<div class="slide-aprende">
 	    	@foreach($cat_digital as $digital)
@@ -70,7 +70,7 @@
 
 	<div class="space-40"></div>
 
-    <h4>TUS CLIENTES</h4>
+    <h4 class="title-tutoriales">TUS CLIENTES</h4>
     <div class="row container">
     	<div class="slide-aprende">
 	    	@foreach($cat_cliente as $cliente)
@@ -84,7 +84,7 @@
 
     <div class="space-40"></div>
 
-    <h4>DISEÑANDO NEGOCIOS</h4>
+    <h4 class="title-tutoriales">DISEÑANDO NEGOCIOS</h4>
     <div class="row container">
     	<div class="slide-aprende">
 	    	@foreach($cat_negocios as $cliente)
@@ -98,7 +98,7 @@
 
     <div class="space-40"></div>
 
-    <h4>ECONOMÍA NARANJA</h4>
+    <h4 class="title-tutoriales">ECONOMÍA NARANJA</h4>
     <div class="row container">
     	<div class="slide-aprende">
 	    	@foreach($cat_naranja as $naranja)
@@ -112,7 +112,7 @@
 
     <div class="space-40"></div>
 
-    <h4>EMPRENDIMIENTO SOCIAL</h4>
+    <h4 class="title-tutoriales">EMPRENDIMIENTO SOCIAL</h4>
     <div class="row container">
     	<div class="slide-aprende">
 	    	@foreach($cat_social as $social)
@@ -126,7 +126,7 @@
 
     <div class="space-40"></div>
 
-    <h4>POR DONDE EMPEZAR</h4>
+    <h4 class="title-tutoriales">POR DONDE EMPEZAR</h4>
     <div class="row container">
     	<div class="slide-aprende">
 	    	@foreach($cat_empezar as $empezar)

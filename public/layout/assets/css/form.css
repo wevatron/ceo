@@ -5,7 +5,7 @@
     background-position: right bottom;
 }
 .container-formulario{
-    padding-top: 6%;
+    padding-top: 7%;
 }
 .card0 {
     box-shadow: 0px 4px 8px 0px #757575;
@@ -110,12 +110,12 @@ a {
     background-color: #1A237E
 }
 .register-account{
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 500;
 }
 .text-dangers{
     color: #fb16c1;
-    font-size: 16px;
+    font-size: 15px;
 }
 .help-block-error{
     font-size: 15px;
@@ -128,7 +128,9 @@ a {
 #rfc {
     display: none;
 }
-
+.space-recovery-80{
+    margin-top: 80px;
+}
 
 @media screen and (max-width: 991px) {
     .border-line {
@@ -136,6 +138,15 @@ a {
     }
     .card2 {
         border-top: 1px solid #EEEEEE !important;
-        margin: 0px 15px
+        margin: 0px 15px !important
+    }
+}
+@media screen and (max-width: 580px) {
+    .card2 {
+        border-top: 1px solid #EEEEEE !important;
+        margin: 0px 5px !important
+    }
+    .space-recovery-80{
+        margin-top: 20px !important;
     }
 }

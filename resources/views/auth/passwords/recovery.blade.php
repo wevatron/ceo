@@ -13,16 +13,20 @@
                     <div class="px-3 justify-content-center mt-4 mb-5"> <img class="img-responsive imageForm" src="{{asset('layout/assets/img/herramientas/CEO_banner_login.jpg') }}" alt="CEO 2020"> </div>
                 </div>
             </div>
-            <div class="col-lg-7 col-xl-8 mx-auto space-30">
+            <div class="col-lg-7 col-xl-8 mx-auto space-recovery-80">
                 <div class="card2 card border-0 px-4 py-5">
 
-                  <form action="{{ url('/password/reset') }}" id="resetForm" method="post" class="form">
+                  @if (session('status'))
+                    <div class="alert alert-success">
+                        {{ session('status') }}
+                    </div>
+                  @endif
+
+                  <form action="{{ url('/password/email') }}" id="recoveryForm" method="post" class="form">
                   {!! csrf_field() !!}
 
-                    <input type="hidden" name="token" value="{{ $token }}">
-
                     <div class="row px-3"> 
-                      <label class="mb-1"><h6 class="mb-0 text-sm">Correo Electrónico</h6></label> 
+                      <label class="mb-1"><h6 class="mb-0 text-sm">Ingresa tu correo para recuperar tu contraseña</h6></label> 
                       <input class="mb-4" type="text" name="email" value="{{old('mail')}}" placeholder="Correo Electrónico"> 
                       @if ($errors->has('email'))
                         <span class="help-block-error">
@@ -31,28 +35,8 @@
                       @endif
                     </div>
 
-                    <div class="row px-3"> 
-                      <label class="mb-1"><h6 class="mb-0 text-sm">Contraseña</h6></label> 
-                       <input type="password" class="form-control" name="password" placeholder="Contraseña">
-                      @if ($errors->has('password'))
-                            <span class="help-block-error">
-                                <strong>{{ $errors->first('password') }}</strong>
-                            </span>
-                        @endif
-                    </div>
-
-                    <div class="row px-3"> 
-                      <label class="mb-1"><h6 class="mb-0 text-sm">Confirmar Contraseña</h6></label> 
-                      <input type="password" name="password_confirmation" class="form-control" placeholder="Confirmar Contraseña">
-                      @if ($errors->has('password_confirmation'))
-                        <span class="help-block-error">
-                            <strong>{{ $errors->first('password_confirmation') }}</strong>
-                        </span>
-                      @endif
-                    </div>
-
                     <div class="row mb-3 px-3 space-20"> 
-                      <button type="submit" class="btn btn-black text-center">Resetear Contraseña</button> 
+                      <button type="submit" class="btn btn-black text-center">Recuperar</button> 
                     </div>
                     <div class="row mb-4 px-3 space-50"> 
                       <small class="font-weight-bold register-account">¿Ya tienes cuenta? <a href="{{url('/')}}/login" class="text-dangers ">Entrar</a></small> 

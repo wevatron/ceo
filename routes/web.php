@@ -17,6 +17,7 @@ Route::get('/encuentro-2020', 'FrontController@encuentro')->name('encuentro-2020
 Route::get('/nosotros', 'FrontController@nosotros')->name('nosotros');
 Route::get('/ponentes', 'FrontController@ponentes')->name('ponentes');
 Route::get('/bazar-digital', 'FrontController@bazar')->name('bazar-digital');
+Route::get('/reset', 'FrontController@reset')->name('reset');
 
 Auth::routes();
 

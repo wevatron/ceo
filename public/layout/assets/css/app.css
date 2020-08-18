@@ -26,7 +26,21 @@ body {
     color: #999;
     font-size: 17px;
 }
-
+a, a:active, a:focus, 
+button, button:focus, button:active, 
+.btn, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn.focus:active, .btn.active.focus {
+    outline: none;
+}
+input::-moz-focus-inner {
+    border: 0;
+}
+:focus {
+    outline: none !important;
+}
+::-moz-focus-inner {border:0;}
+a {
+   text-decoration:none;
+}
 .no-padding {
     padding-left: 0 !important;
     padding-right: 0 !important;
@@ -1044,7 +1058,15 @@ footer img {
         display: none !important;
     }
     .container-formulario {
-        padding-top: 15% !important;
+        padding-top: 25% !important;
+    }
+    #registerForm .col-md-12{
+        padding-right: 0px !important;
+        padding-left: 0px !important;
+    }
+    #registerForm .col-md-6{
+        padding-right: 0px !important;
+        padding-left: 0px !important;
     }
 }
 
@@ -1328,7 +1350,17 @@ footer img {
         width: 100% !important;
     }
     .img-holder .captions-vertical{
-        height: 40% !important;
+        height: 100% !important;
+        font-size: 13px !important;
+        text-align: center !important;
+    }
+    .img-holder .captions-horizontal{
+        width: 84.5% !important;
+        height: 100% !important;
+        font-size: 13px !important;
+    }
+    .text-recomendacion {
+        font-size: 13px !important;
     }
 }
 
@@ -1342,6 +1374,12 @@ footer img {
     .top-bar h1 {
         font-size: 30px;
         line-height: 30px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .img-holder .captions-horizontal{
+        width: 80% !important;
     }
 }
 
@@ -1553,7 +1591,6 @@ hr{
 .mt-100{
 	margin-top: 2.5%;
 }
-
 .live-video {
     margin-top: 20px;
     overflow: hidden;
@@ -1563,13 +1600,11 @@ hr{
     -moz-box-shadow: 0px 7px 38px -8px rgba(0,0,0,0.8);
     box-shadow: 0px 7px 38px -8px rgba(0,0,0,0.8);
 }
-
 .live-video::after {
     padding-top: 45%;
     display: block;
     content: '';
 }
-
 .live-video iframe {
     position: absolute;
     top: 0;
@@ -2158,7 +2193,9 @@ hr{
 .slide-aprende .slick-next {
     right: -10px !important;
 }
-
+.title-tutoriales{
+    font-weight: 900;
+}
 
 
 /* portfolio bazar section
@@ -2405,4 +2442,73 @@ hr{
 #imagesModal .img-responsive {
     margin: 0 auto;
     cursor: pointer;
+}
+
+
+/* ---------------------------------------------
+------------------------------------------------
+          AGENDA
+------------------------------------------------
+------------------------------------------------*/
+.grid-container-agenda .fluid {
+    padding-right: 0.625rem;
+    padding-left: 0.625rem;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
+}
+.grid-container-agenda {
+    padding-right: 0.625rem;
+    padding-left: 0.625rem;
+    max-width: 73.75rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.grid-x {
+    display: flex;
+    flex-flow: row wrap;
+}
+.agenda-ceo .conferencia {
+    min-height: 2rem;
+    text-align: center;
+    background: #fb16c1;
+    background: -webkit-linear-gradient(top left, #fb16c1 0%,#bf1494 100%);
+    background: linear-gradient(to bottom right, #fb16c1 0%,#bf1494 100%);
+    position: relative;
+    padding: 1rem;
+    border-left: 2px solid #E501FA;
+}
+.agenda-ceo .digital-talk {
+    border-left: 2px solid #FDEB00;
+}
+.agenda-ceo .conferencia .conferencista {
+    font-size: 1rem;
+}
+.agenda-ceo .horario {
+    text-align: center;
+    font-weight: 900;
+    font-size: 1.3rem;
+    color: #fff;
+    padding: 1rem;
+}
+.align-middle {
+    align-items: center;
+}
+.agenda-ceo {
+    max-height: 36rem;
+    position: relative;
+    background: #fb16c1;
+    overflow-y: scroll;
+}
+@media print, screen and (min-width: 40em){
+    .grid-x > .medium-10 {
+        width: 83.3333333333%;
+    }
+    .grid-x > .medium-2 {
+        width: 16.6666666667%;
+    }
+    .grid-x > .medium-5 {
+        width: 41.6666666667%;
+    }
 }
