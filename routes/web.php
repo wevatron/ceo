@@ -25,63 +25,63 @@ Route::resource('/newsletter', 'NewsletterController');
 Route::get('/home', 'HomeController@index')->name('home')->middleware('auth');
 Route::get('/herramientas-emprender', 'HomeController@index')->name('herramientas-emprender')->middleware('auth');
 
-Route::resource('cHorarios', 'C_horarioController')->middleware('auth');
+Route::resource('cHorarios', 'C_horarioController')->middleware(['auth','nivel']);
 
 
 
-Route::resource('cGiroNegocios', 'C_giro_negocioController')->middleware('auth');
+Route::resource('cGiroNegocios', 'C_giro_negocioController')->middleware(['auth','nivel']);
 
-Route::resource('tEventos', 'T_eventoController')->middleware('auth');
-
-
-
-Route::resource('tPersonas', 'T_personaController')->middleware('auth');
+Route::resource('tEventos', 'T_eventoController')->middleware(['auth','nivel']);
 
 
 
-Route::resource('cGiroNegocios', 'C_giro_negocioController')->middleware('auth');
+Route::resource('tPersonas', 'T_personaController')->middleware(['auth','nivel']);
 
 
 
-Route::resource('cTipoUsuarios', 'C_tipo_usuarioController')->middleware('auth');
-
-Route::resource('cUniversidads', 'C_universidadController')->middleware('auth');
-
-Route::resource('cTipoEventos', 'C_tipo_eventoController')->middleware('auth');
-
-Route::resource('cMunicipios', 'C_municipioController')->middleware('auth');
-
-Route::resource('cMunicipios', 'C_municipioController')->middleware('auth');
-
-Route::resource('cMunicipios', 'C_municipioController')->middleware('auth');
-
-Route::resource('tImagenes', 'T_imagenesController')->middleware('auth');
-
-Route::resource('tLikes', 'T_likeController')->middleware('auth');
-
-Route::resource('tLikes', 'T_likeController')->middleware('auth');
-
-Route::resource('tBoletos', 'T_boletoController')->middleware('auth');
-
-Route::resource('cEstadosReps', 'C_estados_repController')->middleware('auth');
-
-Route::resource('estados', 'EstadoController')->middleware('auth');
-
-
-Route::get('notificaciones', 'notificaciones@notificarEvento')->name('notificaciones')->middleware('auth');
-
-Route::resource('cCategorias', 'C_categoriaController')->middleware('auth');
-
-Route::resource('tBazars', 'T_bazarController')->middleware('auth');
+Route::resource('cGiroNegocios', 'C_giro_negocioController')->middleware(['auth','nivel']);
 
 
 
-Route::resource('tImagenBazars', 'T_imagen_bazarController')->middleware('auth');
+Route::resource('cTipoUsuarios', 'C_tipo_usuarioController')->middleware(['auth','nivel']);
 
-Route::resource('tAprendes', 'T_aprendeController')->middleware('auth');
+Route::resource('cUniversidads', 'C_universidadController')->middleware(['auth','nivel']);
 
-Route::resource('cCategoriaAprendes', 'C_categoria_aprendeController')->middleware('auth');
+Route::resource('cTipoEventos', 'C_tipo_eventoController')->middleware(['auth','nivel']);
 
-Route::resource('cOcupacions', 'C_ocupacionController')->middleware('auth');
+Route::resource('cMunicipios', 'C_municipioController')->middleware(['auth','nivel']);
 
-Route::resource('cRegions', 'C_regionController')->middleware('auth');
+Route::resource('cMunicipios', 'C_municipioController')->middleware(['auth','nivel']);
+
+Route::resource('cMunicipios', 'C_municipioController')->middleware(['auth','nivel']);
+
+Route::resource('tImagenes', 'T_imagenesController')->middleware(['auth','nivel']);
+
+Route::resource('tLikes', 'T_likeController')->middleware(['auth','nivel']);
+
+Route::resource('tLikes', 'T_likeController')->middleware(['auth','nivel']);
+
+Route::resource('tBoletos', 'T_boletoController')->middleware(['auth','nivel']);
+
+Route::resource('cEstadosReps', 'C_estados_repController')->middleware(['auth','nivel']);
+
+Route::resource('estados', 'EstadoController')->middleware(['auth','nivel']);
+
+
+Route::get('notificaciones', 'notificaciones@notificarEvento')->name('notificaciones')->middleware(['auth','nivel']);
+
+Route::resource('cCategorias', 'C_categoriaController')->middleware(['auth','nivel']);
+
+Route::resource('tBazars', 'T_bazarController')->middleware(['auth','nivel']);
+
+
+
+Route::resource('tImagenBazars', 'T_imagen_bazarController')->middleware(['auth','nivel']);
+
+Route::resource('tAprendes', 'T_aprendeController')->middleware(['auth','nivel']);
+
+Route::resource('cCategoriaAprendes', 'C_categoria_aprendeController')->middleware(['auth','nivel']);
+
+Route::resource('cOcupacions', 'C_ocupacionController')->middleware(['auth','nivel']);
+
+Route::resource('cRegions', 'C_regionController')->middleware(['auth','nivel']);

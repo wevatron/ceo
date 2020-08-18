@@ -17,7 +17,7 @@ return [
     |-------------------------------------------------------------------------------------------
     |
     */
-    'app_id' => env('ONE_SIGNAL_APP_ID', 'f8eb18dd-d187-4530-bd87-a2fdcbb1543e'),
+    'app_id' => env('ONE_SIGNAL_APP_ID', ''),
 
     /*
     |-------------------------------------------------------------------------------------------
@@ -28,7 +28,7 @@ return [
     |
     */
 
-    'authorize'       => 'ZmEyMGZkYzgtNDcyMC00MWExLTg5ODktYmI2MmE0NDc1OTk2',
+    'authorize'       => env('ONE_SIGNAL_AUTH_KEY',''),
 
     /*
     |-------------------------------------------------------------------------------------------
@@ -47,5 +47,5 @@ return [
     |-------------------------------------------------------------------------------------------
     |
    */
-    'auth_key' => env('ONE_SIGNAL_AUTH_KEY','ZmEyMGZkYzgtNDcyMC00MWExLTg5ODktYmI2MmE0NDc1OTk2')
+    'auth_key' => env('ONE_SIGNAL_AUTH_KEY','')
 ];

@@ -8,7 +8,7 @@ return array(
 	|
 	|
 	*/
-    'app_id' => 'f8eb18dd-d187-4530-bd87-a2fdcbb1543e',
+    'app_id' => env('ONE_SIGNAL_AUTH_KEY',''),
 
     /*
 	|--------------------------------------------------------------------------
@@ -18,6 +18,6 @@ return array(
     |
 	|
 	*/
-    'rest_api_key' => 'ZmEyMGZkYzgtNDcyMC00MWExLTg5ODktYmI2MmE0NDc1OTk2',
-    'user_auth_key' => 'YOUR-USER-AUTH-KEY'
+    'rest_api_key' => env('ONE_SIGNAL_APP_ID',''),
+    'user_auth_key' => env('ONE_SIGNAL_AUTH_KEY','')
 );
