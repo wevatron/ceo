@@ -1847,7 +1847,9 @@ hr{
 .slick-next {
     right: 8px !important;
 }
-
+.slick-slide:hover{
+    cursor: pointer;
+}
 
 
 /* ---------------------------------------------
@@ -2062,7 +2064,7 @@ hr{
     color: white;
     bottom: 0;
     left: 15px;
-    width: 88%;
+    width: 89.5%;
     height: 45%;
     margin: 0;
     padding: 10px;

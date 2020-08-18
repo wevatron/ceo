@@ -19,7 +19,7 @@
 	    	<h4 class="color-white text-left">Te recomendamos estos cursos</h4>
 	    	<div class="row vertical-tutoriales">
 	    	 @foreach($cat_cursos as $curso)
-	    	 <div class="item">
+	    	 <div class="item" onclick="showVideo('{{$curso->video}}')">
 		    	 <div class="col-md-6"> 
 		    	 	<img class="img-responsive portada-recomendamos" src="{{ $curso->web }}" alt="{{ $curso->nombre }}">
 		    	 </div>
