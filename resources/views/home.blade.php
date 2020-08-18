@@ -20,10 +20,10 @@
 	    	<div class="row vertical-tutoriales">
 	    	 @foreach($cat_cursos as $curso)
 	    	 <div class="item" onclick="showVideo('{{$curso->video}}')">
-		    	 <div class="col-md-6"> 
+		    	 <div class="col-md-6 col-xs-6"> 
 		    	 	<img class="img-responsive portada-recomendamos" src="{{ $curso->web }}" alt="{{ $curso->nombre }}">
 		    	 </div>
-		    	 <div class="col-md-6"> 
+		    	 <div class="col-md-6 col-xs-6"> 
 		    	 	<p class="color-white text-left text-recomendacion">{{ $curso->nombre }} <br> {{ $curso->descripcion }}</p>
 		    	 </div>
 		   	 </div>
