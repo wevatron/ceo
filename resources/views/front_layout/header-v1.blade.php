@@ -13,12 +13,12 @@
             <div class="dropdown-menu">
                 <ul class="drops">
                     @auth
-                        <li>
-                            <form id="logout-form" class="" action="{{ url('/logout') }}" method="POST">
-                                    {{ csrf_field() }}
-                                    <button type="submit" class="btn-logout">Cerrar Sesión</button>
-                             </form>
-                        </li>
+                    <li>
+                        <form id="logout-form" class="" action="{{ url('/logout') }}" method="POST">
+                                {{ csrf_field() }}
+                                <button type="submit" class="btn-logout">Cerrar sesión</button>
+                         </form>
+                    </li>
                     @else
                     <li><a href="{{ route('login') }}" class="dropdown-item">Entrar</a></li>
                     <li><a href="{{ route('register') }}" class="dropdown-item">Crear cuenta</a></li>
