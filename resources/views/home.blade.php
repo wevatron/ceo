@@ -18,13 +18,13 @@
 	    <div class="col-md-4"> 
 	    	<h4 class="color-white text-left">Te recomendamos estos cursos</h4>
 	    	<div class="row vertical-tutoriales">
-	    	 @foreach($cat_digital as $digital)
+	    	 @foreach($cat_cursos as $curso)
 	    	 <div class="item">
 		    	 <div class="col-md-6"> 
-		    	 	<img class="img-responsive portada-recomendamos" src="{{ $digital->web }}" alt="{{ $digital->nombre }}">
+		    	 	<img class="img-responsive portada-recomendamos" src="{{ $curso->web }}" alt="{{ $curso->nombre }}">
 		    	 </div>
 		    	 <div class="col-md-6"> 
-		    	 	<p class="color-white text-left text-recomendacion">{{ $digital->nombre }} <br> {{ $digital->descripcion }}</p>
+		    	 	<p class="color-white text-left text-recomendacion">{{ $curso->nombre }} <br> {{ $curso->descripcion }}</p>
 		    	 </div>
 		   	 </div>
 		   	 @endforeach
@@ -40,7 +40,7 @@
 	    </div>
 	    <div class="row">
 	        <div class="col-md-12 slide-aprende text-left"> 
-	        	@foreach($cat_digital as $recomendacion)
+	        	@foreach($cat_recomendaciones as $recomendacion)
 	        	<div onclick="showVideo('{{$recomendacion->video}}')" class="col-md-3 img-holder"> 
 		    	 	<img class="img-responsive" src="{{ $recomendacion->web }}" alt="{{ $recomendacion->nombre }}">
 		    	 	<p class="captions-horizontal">{{ $recomendacion->nombre }}</p>
