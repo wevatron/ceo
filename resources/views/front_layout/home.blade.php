@@ -265,7 +265,7 @@
                 <div class="space-20"> </div>
               
                 <div class="container-btn">
-                      <div class="text-center btna btn-2 btn-2c">
+                      <div class="text-center btna btns-2 btn-2c">
                            <a class="link-ponentes" target="_blank" href="https://www.conectandoemprendedores.mx/2018/">
                               <div>CEO 2018</div>
                            </a>
@@ -279,7 +279,7 @@
                 <div class="space-20"> </div>
                
                 <div class="container-btn">
-                      <div class="text-center btna btn-2 btn-2c">
+                      <div class="text-center btna btns-2 btn-2c">
                            <a class="link-ponentes" target="_blank" href="https://www.conectandoemprendedores.mx/2019/">
                               <div>CEO 2019</div>
                            </a>

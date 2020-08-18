@@ -5,15 +5,9 @@
 <section id="herramientas-emprender" class="box-intro">
 <div class="container">
 	<div class="row">
-		<div class="col-md-8">
+		<div class="col-md-12">
 			<h4 class="color-white text-left">Hola {{auth()->user()->name}}, ¡Qué bueno verte!</h4>
 		</div>
-		<div class="col-md-4">
-			<form id="logout-form" class="text-right" action="{{ url('/logout') }}" method="POST">
-	                {{ csrf_field() }}
-	                <button type="submit" class="btn btn-logout"><img src="{{ asset('layout/assets/img/herramientas/logout.svg') }}" class="logout-svg" /> Cerrar Sesión</button>
-	         </form>
-     	</div>
 	    <div class="col-md-8"> 
 
 	    	<div class="live-video">

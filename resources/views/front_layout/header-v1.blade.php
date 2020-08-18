@@ -5,6 +5,28 @@
 <div class="container-fluid">
     <!-- box header -->
     <header class="box-header">
+
+        <div class="dropdown m-account dropleft hidden">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="{{ asset('layout/assets/img/header/account.svg') }}" class="img-responsive" width="50" alt="CEO 2020">
+            </a>
+            <div class="dropdown-menu">
+                <ul class="drops">
+                    @auth
+                        <li>
+                            <form id="logout-form" class="" action="{{ url('/logout') }}" method="POST">
+                                    {{ csrf_field() }}
+                                    <button type="submit" class="btn-logout">Cerrar Sesión</button>
+                             </form>
+                        </li>
+                    @else
+                    <li><a href="{{ route('login') }}" class="dropdown-item">Entrar</a></li>
+                    <li><a href="{{ route('register') }}" class="dropdown-item">Crear cuenta</a></li>
+                    @endauth
+                </ul>
+            </div>
+        </div>
+
         <!-- box-nav -->
         <a class="box-primary-nav-trigger" href="#">
            <span class="box-menu-icon"></span>

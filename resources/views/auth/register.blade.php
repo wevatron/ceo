@@ -156,10 +156,7 @@
       $("#giro_negocio_id").change(function(){
           $("#rfc").val('');
 
-          if($(this).val() == 1){
-            $('#rfc').attr("placeholder", "CURP");
-            $("#rfc").show();
-          }else if($(this).val() == 2 || $(this).val() == 3){
+          if($(this).val() == 2 || $(this).val() == 3){
             $('#rfc').attr("placeholder", "RFC");
             $("#rfc").show();
           }else{
