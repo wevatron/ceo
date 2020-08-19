@@ -240,7 +240,6 @@ a {
   width: 1em;
   height: 1em;
   font-size: var(--uiToggleSize); /* 1 */
-
   position: absolute;
   left: 0;
   top: 0;
@@ -286,7 +285,6 @@ a {
 
 .toggle__input:not(:disabled):checked ~ .toggle__label .toggle__text::before{
   --uiToggleArrowWidth: var(--toggleArrowWidth, 2px);
-  
   width: .4em;
   height: .2em;
   border-left-width: var(--uiToggleArrowWidth);
@@ -294,8 +292,8 @@ a {
 }
 
 .toggle:focus-within{
-  outline: var(--toggleOutlineWidthFocus, 3px) solid var(--toggleOutlineColorFocus, currentColor);
-  outline-offset: var(--toggleOutlineOffsetFocus, 5px);
+  outline: none;
+  outline-offset: none;
 }
 
 /* disabled state */
