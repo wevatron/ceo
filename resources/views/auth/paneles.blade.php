@@ -94,7 +94,7 @@
 </div>
 </section>
 
-<div class="space-50"></div>
+<div class="space-80"></div>
 
 @endsection
 @include("front_layout.footer")
