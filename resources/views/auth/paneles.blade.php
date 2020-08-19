@@ -10,7 +10,7 @@
         <div class="row d-flex">
             <div class="col-lg-5">
                 <div class="card1 pb-5">
-                    <div class="px-3 justify-content-center mt-4 mb-5"> <img class="img-responsive panelesForm" src="{{asset('layout/assets/img/paneles/CEO_Registro_Paneles_banner.jpg') }}" alt="CEO 2020"> </div>
+                    <div class="px-3 justify-content-center mt-4 mb-5"> <img class="img-responsive panelesForm" src="{{asset('layout/assets/img/paneles/CEO_Registro_Paneles_banner.png') }}" alt="CEO 2020"> </div>
                 </div>
             </div>
             <div class="col-lg-7 col-xl-8 mx-auto top-scroll space-30">
