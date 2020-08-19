@@ -38,11 +38,13 @@ jQuery(document).ready(function($){
 		
 		//in firefox transitions break when parent overflow is changed, so we need to wait for the end of the trasition to give the body an overflow hidden
 		if( $('.box-primary-nav').hasClass('is-visible') ) {
+			$('.m-account').show();
 			$('.box-primary-nav').removeClass('is-visible').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend',function(){
 				$('body').removeClass('overflow-hidden');
 				audio.pause();
 			});
 		} else {
+			$('.m-account').hide();
 			$('.box-primary-nav').addClass('is-visible').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend',function(){
 				$('body').addClass('overflow-hidden');
     			audio.play();
