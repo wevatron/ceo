@@ -35,7 +35,7 @@
 
         $.ajax({
             type: "POST",
-            url  : 'https://www.conectandoemprendedores.mx/api/',
+            url  : 'https://conectandoemprendedores.mx/api/',
             data : data,
             beforeSend: function() {
                 $("#messages").fadeOut();
