@@ -133,6 +133,43 @@ return [
         ],
     ],
 
+    'custom' => array(
+        'name' => array(
+            'required' => 'Nombre es un campo obligatorio',
+        ),
+        'apellido_paterno' => array(
+            'required' => 'Apellido paterno es un campo obligatorio',
+        ),
+        'apellido_materno' => array(
+            'required' => 'Apellido materno es un campo obligatorio',
+        ),
+        'edad' => array(
+            'required' => 'Edad es un campo obligatorio',
+        ),
+        'sexo' => array(
+            'required' => 'Genero es un campo obligatorio',
+        ),
+        'giro_negocio_id' => array(
+            'required' => 'Ocupación es un campo obligatorio',
+        ),
+        'rfc' => array(
+            'required' => 'RFC es un campo obligatorio',
+        ),
+        'nombre_idea' => array(
+            'required' => 'Nombre de tu idea o emprendimiento es un campo obligatorio',
+        ),
+        'estado_id' => array(
+            'required' => 'Estado es un campo obligatorio',
+        ),
+        'email' => array(
+            'required' => 'Correo electrónico es un campo obligatorio',
+            'unique' => 'Esta cuenta de correo electrónico ya fue usada.',
+        ),
+        'password' => array(
+            'required' => 'Contraseña es un campo obligatorio',
+        ),
+    ),
+
     /*
     |--------------------------------------------------------------------------
     | Custom Validation Attributes

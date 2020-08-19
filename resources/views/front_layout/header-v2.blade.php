@@ -10,7 +10,13 @@
 
        <div class="dropdown m-account dropleft">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <img src="{{ asset('layout/assets/img/header/account.svg') }}" class="img-responsive" width="45" alt="CEO 2020">
+                @auth
+                    <img src="{{ asset('layout/assets/img/header/user_online.svg') }}" class="img-responsive" width="45" alt="CEO 2020">
+                    <small class="margin-logout">Salir</small>
+                @else
+                    <img src="{{ asset('layout/assets/img/header/user_offline.svg') }}" class="img-responsive" width="45" alt="CEO 2020">
+                    <small>Ingresar</small>
+                @endauth
             </a>
             <div class="dropdown-menu">
                 <ul class="drops">

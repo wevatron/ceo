@@ -82,7 +82,7 @@
                         @endif
                     </div>
                     <div class="col-md-12 px-3"> 
-                        <input name="nombre_idea" value="{{old('nombre_idea')}}" class="form__element" type="text" placeholder="Nombre de tu idea o emprendimiento" />
+                        <input name="nombre_idea" value="{{old('nombre_idea')}}" class="form__element" required="" type="text" placeholder="Nombre de tu idea o emprendimiento" />
                         @if ($errors->has('nombre_idea'))
                           <span class="help-block-error">
                               {{ $errors->first('nombre_idea') }}
@@ -115,7 +115,7 @@
                         @endif
                     </div>
                     <div class="col-md-12 px-3"> 
-                        <input name="password" class="form__element" type="password" required="" placeholder="password" />
+                        <input name="password" class="form__element" type="password" required="" placeholder="Contraseña" />
                         @if ($errors->has('password'))
                           <span class="help-block-error">
                               {{ $errors->first('password') }}

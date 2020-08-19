@@ -14,7 +14,7 @@ body {
     margin: 0;
     -moz-hyphens: auto;
     -ms-word-break: break-all;
-    width: 100% !important;
+    width: 600px !important;
     -webkit-hyphens: auto;
     -webkit-text-size-adjust: none;
     word-break: break-all;
@@ -85,19 +85,19 @@ img {
     background-color: #F8FAFC;
     margin: 0;
     padding: 0;
-    width: 100%;
+    width: 600px;
     -premailer-cellpadding: 0;
     -premailer-cellspacing: 0;
-    -premailer-width: 100%;
+    -premailer-width: 600px;
 }
 
 .content {
     margin: 0;
     padding: 0;
-    width: 100%;
+    width: 600px;
     -premailer-cellpadding: 0;
     -premailer-cellspacing: 0;
-    -premailer-width: 100%;
+    -premailer-width: 600px;
 }
 
 /* Header */
@@ -105,6 +105,11 @@ img {
 .header {
     padding: 25px 0;
     text-align: center;
+    height: 200px;
+    width: 600px;
+    background: url('https://conectandoemprendedores.mx/img/mail/CEO_Registro_Paneles_correo.png');
+    background-repeat: no-repeat !important;
+    background-size: contain;
 }
 
 .header a {
@@ -220,11 +225,11 @@ img {
 
 .button-blue,
 .button-primary {
-    background-color: #3490DC;
-    border-top: 10px solid #3490DC;
-    border-right: 18px solid #3490DC;
-    border-bottom: 10px solid #3490DC;
-    border-left: 18px solid #3490DC;
+    background-color: #fb16c1;
+    border-top: 10px solid #fb16c1;
+    border-right: 18px solid #fb16c1;
+    border-bottom: 10px solid #fb16c1;
+    border-left: 18px solid #fb16c1;
 }
 
 .button-green,

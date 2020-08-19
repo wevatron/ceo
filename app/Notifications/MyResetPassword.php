@@ -16,12 +16,12 @@ class MyResetPassword extends ResetPassword
     public function toMail($notifiable)
     {
         return (new MailMessage)
-        ->subject('Recuperar contraseña')
-        ->greeting('Hola emprendedor')
-        ->line('Estás recibiendo este correo porque hiciste una solicitud de recuperación de contraseña para tu cuenta.')
+        ->subject('Recuperación de contraseña')
+        ->greeting('¡Saludos Neo Emprendedor!')
+        ->line('Si solicitaste un cambio de contraseña haz "click" en el botón de abajo y sigue las indicaciones.')
         ->action('Recuperar contraseña', route('password.reset', $this->token))
-        ->line('Si no realizaste esta solicitud, no se requiere realizar ninguna otra acción.')
-        ->salutation('Saludos, '. config('app.name'));
+        ->line('En caso de que no hayas hecho la solicitud, haz caso omiso a este correo.')
+        ->salutation('Sigue emprendiendo hacia el futuro.');
     }
 
     
