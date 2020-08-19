@@ -2,7 +2,7 @@
 @include("front_layout.header-v2")
 @section("body")
 
-<section class="box-intro section-formulario">
+<section class="box-intro section-formulario top-scroll">
 <div class="container-formulario">
   <div class="container px-1 px-md-5 px-lg-1 px-xl-5 py-5 mx-auto">
     <div class="col-md-offset-1 col-md-10 col-md-offset-right-1">
@@ -13,7 +13,7 @@
                     <div class="px-3 justify-content-center mt-4 mb-5"> <img class="img-responsive panelesForm" src="{{asset('layout/assets/img/paneles/CEO_Registro_Paneles_banner.png') }}" alt="CEO 2020"> </div>
                 </div>
             </div>
-            <div class="col-lg-7 col-xl-8 mx-auto top-scroll space-30">
+            <div class="col-lg-7 col-xl-8 mx-auto space-30">
                 <div class="card2 card border-0 px-4 py-5">
                   <div id="messages"> </div>
                   <form  id="panelesForm" method="POST" action="">
