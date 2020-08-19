@@ -146,22 +146,34 @@
 
 <script type="text/javascript">
   window.addEventListener("DOMContentLoaded", function(){
+      if($('#estado').val() == 20){
+          $("#municipio").prop('required',true);
+          $("#municipio").show();
+      }
+      if($("#giro_negocio_id").val() == 2 || $("#giro_negocio_id").val() == 3){
+          $('#rfc').attr("placeholder", "RFC");
+          $("#rfc").prop('required',true);
+          $("#rfc").show();
+      }
       $("#estado").change(function(){
           if($(this).val() == 20){
-            $("#municipio").show();
-          }else{
-           $("#municipio").hide();
-           $('#municipio option:selected').prop('selected', false);
+              $("#municipio").prop('required',true);
+              $("#municipio").show();
+          }else{ 
+              $("#municipio").prop('required',false);
+              $('#municipio option:selected').prop('selected', false);
+              $("#municipio").hide();
           }
       });
       $("#giro_negocio_id").change(function(){
           $("#rfc").val('');
-
           if($(this).val() == 2 || $(this).val() == 3){
-            $('#rfc').attr("placeholder", "RFC");
-            $("#rfc").show();
+              $('#rfc').attr("placeholder", "RFC");
+              $("#rfc").prop('required',true);
+              $("#rfc").show();
           }else{
-            $("#rfc").hide();
+              $("#rfc").prop('required',false);
+              $("#rfc").hide();
           }
       });
   });
