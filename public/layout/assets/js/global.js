@@ -39,6 +39,7 @@
             data : data,
             beforeSend: function() {
                 $("#messages").fadeOut();
+                $("#messages").html('');
                 $("#btn-registrarme").html('Registrando...');
             },
             success :  function(data) {
