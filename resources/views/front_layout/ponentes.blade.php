@@ -28,6 +28,7 @@
 
               <div class="row">
               @foreach($ponentes as $p)
+              <?php $url_img = preg_replace("/^http:/i", "https:", $p->Imagenes[0]->url_img); ?>
               <!-- Modal Ponente -->
               <div class="modal fade ponenteModals" id="ponente_{{$p->id}}" tabindex="-1" role="dialog" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
@@ -40,20 +41,20 @@
                       <div class="row">
                           <div class="col-md-5">
                               <div class="space-20"> </div>
-                              <img src="{{$p->Imagenes[0]->url_img}}" alt="CEO 2020" class="img-responsive" width="100%" />
+                              <img src="{{$url_img}}?format=webp&quality=auto" alt="CEO 2020" class="img-responsive" width="100%" />
                               <h2 class="text-center titulo-nombre">{{$p->nombre_conferencista}}</h2>
                               <div class="ponente-social text-center">
                                 @if(isset($p->facebook))
-                                <a target="_blank" href="{{$p->facebook}}"><i class="ion-social-facebook"></i></a>
+                                <a aria-label="Facebook" rel="noreferrer" target="_blank" href="{{$p->facebook}}"><i class="ion-social-facebook"></i></a>
                                 @endif
                                 @if(isset($p->twitter))
-                                <a target="_blank" href="{{$p->twitter}}"><i class="ion-social-twitter"></i></a>
+                                <a aria-label="Twitter" rel="noreferrer" target="_blank" href="{{$p->twitter}}"><i class="ion-social-twitter"></i></a>
                                 @endif
                                 @if(isset($p->youtube))
-                                <a target="_blank" href="{{$p->youtube}}"><i class="ion-social-linkedin"></i></a>
+                                <a aria-label="Linkedin" rel="noreferrer" target="_blank" href="{{$p->youtube}}"><i class="ion-social-linkedin"></i></a>
                                 @endif
                                 @if(isset($p->instagram))
-                                <a target="_blank" href="{{$p->instagram}}"><i class="ion-social-instagram"></i></a>
+                                <a aria-label="Instagram" rel="noreferrer" target="_blank" href="{{$p->instagram}}"><i class="ion-social-instagram"></i></a>
                                 @endif
                               </div>
                           </div>
@@ -67,12 +68,12 @@
                   </div>
                 </div>
               </div>
-              <!-- Modal Ponente -->
+              <!-- End Modal Ponente -->
               <div class="col-md-4 col-sm-6 col-xs-6 space-bottom-10 space-bottom-ponentes">
                   <div class="ponente_item">
 
-                      @if(isset($p->Imagenes[0]->url_img))
-                          <img src="{{$p->Imagenes[0]->url_img}}" alt="CEO 2020" class="img-responsive" />
+                      @if(isset($url_img))
+                          <img src="{{$url_img}}?format=webp&quality=auto" alt="CEO 2020" class="img-responsive" />
                       @else
                           <img src="{{asset('layout/assets/img/general/no-image.jpg')}}" alt="{{$bazar->nombre}}" class="img-responsive" width="100%" />
                       @endif
@@ -84,16 +85,16 @@
                                   <em class="cargo-ponente">{{$p->cargo}}/{{$p->empresa}}</em>
                                   <div class="ponente-social">
                                       @if(isset($p->facebook))
-                                      <a target="_blank" href="{{$p->facebook}}"><i class="ion-social-facebook"></i></a>
+                                      <a aria-label="Facebook" rel="noreferrer" target="_blank" href="{{$p->facebook}}"><i class="ion-social-facebook"></i></a>
                                       @endif
                                       @if(isset($p->twitter))
-                                      <a target="_blank" href="{{$p->twitter}}"><i class="ion-social-twitter"></i></a>
+                                      <a aria-label="Twitter" rel="noreferrer" target="_blank" href="{{$p->twitter}}"><i class="ion-social-twitter"></i></a>
                                       @endif
                                       @if(isset($p->youtube))
-                                      <a target="_blank" href="{{$p->youtube}}"><i class="ion-social-linkedin"></i></a>
+                                      <a aria-label="Linkedin" rel="noreferrer" target="_blank" href="{{$p->youtube}}"><i class="ion-social-linkedin"></i></a>
                                       @endif
                                       @if(isset($p->instagram))
-                                      <a target="_blank" href="{{$p->instagram}}"><i class="ion-social-instagram"></i></a>
+                                      <a aria-label="Instagram" rel="noreferrer" target="_blank" href="{{$p->instagram}}"><i class="ion-social-instagram"></i></a>
                                       @endif
                                     </div>
                                   <em class="ver-ponente" onclick="showPonente('ponente_{{$p->id}}')">ver <i class="ion-ios-arrow-right"></i></em>

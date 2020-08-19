@@ -28,7 +28,7 @@
 <div class="container">
 	<div class="position-relative">
 	<div class="astronauta-absolut text-left"> 
-            <img class="img-responsive" src="{{ asset('layout/assets/img/ceo/astronauta.png') }}" width="400" alt="CEO 2020">
+            <img class="img-responsive" src="{{ asset('layout/assets/img/ceo/astronauta.png?format=webp&quality=auto') }}" width="400" alt="CEO 2020">
     </div>
 	</div>
     <div class="row">
@@ -71,7 +71,7 @@
               <div class="tab-pane active" id="naranja">
                   <div class="row">  
 							<div class="col-md-4">            
-								<img class="img-responsive" src="{{ asset('layout/assets/img/ceo/img-economia.jpg') }}" height="350" alt="CEO 2020">
+								<img class="img-responsive" src="{{ asset('layout/assets/img/ceo/img-economia.jpg?format=webp&quality=auto') }}" height="350" alt="CEO 2020">
 							</div>
 							<div class="col-md-8 text-left">   
 								<h1 class="no-margin-top space-20-mobile">Economía Naranja</h1>   
@@ -91,7 +91,7 @@
               <div class="tab-pane" id="social">
                   <div class="row">  
 							<div class="col-md-4">            
-								<img class="img-responsive" src="{{ asset('layout/assets/img/ceo/img-social.jpg') }}" height="350" alt="CEO 2020">
+								<img class="img-responsive" src="{{ asset('layout/assets/img/ceo/img-social.jpg?format=webp&quality=auto') }}" height="350" alt="CEO 2020">
 							</div>
 							<div class="col-md-8 text-left">   
 								<h1 class="no-margin-top space-20-mobile">Economía Social</h1>   

@@ -5,7 +5,7 @@
     <!-- box header -->
     <header class="box-header">
         <div class="box-logo logo-mobile">
-            <a  href="{{url('/')}}/"><img src="{{ asset('layout/assets/img/general/logo-interno.png') }}" width="120" alt="CEO 2020"></a>
+            <a  href="{{url('/')}}/"><img src="{{ asset('layout/assets/img/general/logo-interno.png?format=webp&quality=auto') }}" width="120" alt="CEO 2020"></a>
         </div>
 
        <div class="dropdown m-account dropleft">
@@ -49,10 +49,10 @@
             <h1 class="tex-center color_yellow detras-ceo weight-900">Detrás <br>de CEO</h1>
             <div class="text-md-left col-2">
                 <div class="col-md-12 col-lg-12 col-xs-6">
-                     <a href="https://www.oaxaca.gob.mx/iodemc/" target="_blank"><img src="{{ asset('layout/assets/img/home/Organizadores_iodemc_white.svg') }}" class="img-responsive" width="220" alt="CEO 2020"></a>
+                     <a href="https://www.oaxaca.gob.mx/iodemc/" rel="noreferrer" target="_blank"><img src="{{ asset('layout/assets/img/home/Organizadores_iodemc_white.svg') }}" class="img-responsive" width="220" alt="CEO 2020"></a>
                 </div>
                 <div class="col-md-12 col-lg-12 col-xs-6">
-                     <a href="https://www.anahuac.mx/oaxaca/" target="_blank"><img src="{{ asset('layout/assets/img/home/Organizadores_anahuac_white.svg') }}" class="img-responsive" width="220" alt="CEO 2020"></a>
+                     <a href="https://www.anahuac.mx/oaxaca/" rel="noreferrer" target="_blank"><img src="{{ asset('layout/assets/img/home/Organizadores_anahuac_white.svg') }}" class="img-responsive" width="220" alt="CEO 2020"></a>
                 </div>
             </div>
         </div>
@@ -67,10 +67,10 @@
                     <li><a href="{{url('/')}}/bazar-digital">Bazar Digital CEO</a> </li>
                 </ul>
                 <ul class="social-icon">
-                    <li class="box-social"> <a class="ion-social-facebook"  target="_blank" href="https://www.facebook.com/ConectandoEnOaxaca"></a> </li>
-                      <li class="box-social"> <a class="ion-social-twitter"   target="_blank" href="https://twitter.com/conectandoenoax"></a> </li>
-                      <li class="box-social"> <a class="ion-social-instagram-outline" target="_blank" href="https://www.instagram.com/conectandoenoaxaca/"></a> </li>
-                      <li class="box-social"> <a class="ion-social-youtube"   target="_blank" href="https://www.youtube.com/channel/UCTyKrM5aXG1iPI1OhG4j3sQ"></a> </li>
+                      <li class="box-social"> <a class="ion-social-facebook"  rel="noreferrer" target="_blank" aria-label="Facebook" href="https://www.facebook.com/ConectandoEnOaxaca"></a> </li>
+                      <li class="box-social"> <a class="ion-social-twitter"   rel="noreferrer" target="_blank" aria-label="Twitter" href="https://twitter.com/conectandoenoax"></a> </li>
+                      <li class="box-social"> <a class="ion-social-instagram-outline" rel="noreferrer" target="_blank" aria-label="Instagram" href="https://www.instagram.com/conectandoenoaxaca/"></a> </li>
+                      <li class="box-social"> <a class="ion-social-youtube"   rel="noreferrer" target="_blank" aria-label="Youtube" href="https://www.youtube.com/channel/UCTyKrM5aXG1iPI1OhG4j3sQ"></a> </li>
                 </ul>
             </nav>
             <!-- end nav -->

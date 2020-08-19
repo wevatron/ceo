@@ -9,7 +9,7 @@
     <div class="rows">
         <div class="col-md-3 space-100"> 
              <div class="text-left texter-to-center col-md-4 no-padding">
-                <img class="img-responsives astronauta-header" src="{{ asset('layout/assets/img/quienes-somos/astronauta-header.png') }}" width="400" alt="CEO 2020">
+                <img class="img-responsives astronauta-header" src="{{ asset('layout/assets/img/quienes-somos/astronauta-header.png?format=webp&quality=auto') }}" width="400" alt="CEO 2020">
             </div>
         </div>
         <div class="col-md-9 space-quienes"> 
@@ -42,7 +42,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-4 text-left"> 
-                <img class="img-responsive" src="{{ asset('layout/assets/img/quienes-somos/ceo-mision.png') }}" width="390" alt="CEO 2020">
+                <img class="img-responsive" src="{{ asset('layout/assets/img/quienes-somos/ceo-mision.jpg?format=webp&quality=auto') }}" width="390" alt="CEO 2020">
         </div>
         <div class="col-md-4 col-md-offset-right-4 text-left"> 
         		<h2 class="weight-500">Misión</h2>
@@ -57,7 +57,7 @@ espacio en el sur del país, que sirva de encuentro entre miembros del ecosistem
                 <p>Ser el punto de encuentro hacia un ecosistema emprendedor de la región sur del país, en donde se detonen sinergias que generen desarrollo.</p>
         </div>
         <div class="col-md-4 text-left"> 
-        		 <img class="img-responsive" src="{{ asset('layout/assets/img/quienes-somos/ceo-vision.png') }}" width="390" alt="CEO 2020">
+        		 <img class="img-responsive" src="{{ asset('layout/assets/img/quienes-somos/ceo-vision.jpg?format=webp&quality=auto') }}" width="390" alt="CEO 2020">
         </div>
     </div>
 
@@ -91,7 +91,7 @@ espacio en el sur del país, que sirva de encuentro entre miembros del ecosistem
               <div class="tab-pane active" id="iodemc">
                   <div class="row">  
 							<div class="col-md-12 text-left"> 
-								<img class="img-responsive" src="{{ asset('layout/assets/img/quienes-somos/Logo_IODEMC.png') }}" width="380" alt="CEO 2020">
+								<img class="img-responsive" src="{{ asset('layout/assets/img/quienes-somos/Logo_IODEMC.png?format=webp&quality=auto') }}" width="380" alt="CEO 2020">
 	               <p class="space-50">Somos una institución especializada en la política pública de apoyo a nuevos
 	emprendimientos de base sólida y tecnológica para consolidar a las micro
 	y pequeñas empresas. Funcionamos como un organismo descentralizado,
@@ -113,7 +113,7 @@ espacio en el sur del país, que sirva de encuentro entre miembros del ecosistem
               <div class="tab-pane" id="anahuac">
                   <div class="row"> 
 							<div class="col-md-12 text-left"> 
-								<img class="img-responsive" src="{{ asset('layout/assets/img/quienes-somos/Logo_anahuac.jpg') }}" width="250" alt="CEO 2020">
+								<img class="img-responsive" src="{{ asset('layout/assets/img/quienes-somos/Logo_anahuac.jpg?format=webp&quality=auto') }}" width="250" alt="CEO 2020">
 	               <p class="space-50">Somos una institución particular de educación superior que tiene por objetivo
 	primordial elevar la condición humana y social de los hombres y mujeres 
 	de Oaxaca. Comprometidos con una formación integral, a través de un enfoque 

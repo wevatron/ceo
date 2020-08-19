@@ -8,7 +8,7 @@
         <div class="col-md-4"> 
             <div class="text-left col-md-12 no-padding circle-img">
                 <h1 class="color-pink no-margin-top margin-top-mobile-50 weight-900">Explora</h1>
-                <a href="{{url('/')}}/bazar-digital"><img class="img-responsive grayscale overlay_" src="{{ asset('layout/assets/img/home/banner-bazar.gif') }}" width="480" alt="CEO 2020"></a>
+                <a href="{{url('/')}}/bazar-digital"><img class="img-responsive grayscale overlay_" src="{{ asset('layout/assets/img/home/banner-bazar.gif?format=webp&quality=auto') }}" width="480" alt="CEO 2020"></a>
             </div>
         </div>
         <div class="col-md-8"> 
@@ -76,6 +76,7 @@
                 
                       <div class="row">
                       @foreach($ponentes as $p)
+                      <?php $url_img = preg_replace("/^http:/i", "https:", $p->Imagenes[0]->url_img); ?>
                       <!-- Modal Ponente -->
                       <div class="modal fade ponenteModals" id="ponente_{{$p->id}}" tabindex="-1" role="dialog" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
@@ -88,20 +89,20 @@
                               <div class="row">
                                   <div class="col-md-5">
                                       <div class="space-20"> </div>
-                                      <img src="{{$p->Imagenes[0]->url_img}}" alt="CEO 2020" class="img-responsive" width="100%" />
+                                      <img src="{{$url_img}}?format=webp&quality=auto" alt="CEO 2020" class="img-responsive" width="100%" />
                                       <h2 class="text-center titulo-nombre">{{$p->nombre_conferencista}}</h2>
                                       <div class="ponente-social text-center">
                                           @if(isset($p->facebook))
-                                          <a target="_blank" href="{{$p->facebook}}"><i class="ion-social-facebook"></i></a>
+                                          <a aria-label="Facebook" rel="noreferrer" target="_blank" href="{{$p->facebook}}"><i class="ion-social-facebook"></i></a>
                                           @endif
                                           @if(isset($p->twitter))
-                                          <a target="_blank" href="{{$p->twitter}}"><i class="ion-social-twitter"></i></a>
+                                          <a aria-label="Twitter" rel="noreferrer" target="_blank" href="{{$p->twitter}}"><i class="ion-social-twitter"></i></a>
                                           @endif
                                           @if(isset($p->youtube))
-                                          <a target="_blank" href="{{$p->youtube}}"><i class="ion-social-linkedin"></i></a>
+                                          <a aria-label="Linkedin" rel="noreferrer" target="_blank" href="{{$p->youtube}}"><i class="ion-social-linkedin"></i></a>
                                           @endif
                                           @if(isset($p->instagram))
-                                          <a target="_blank" href="{{$p->instagram}}"><i class="ion-social-instagram"></i></a>
+                                          <a aria-label="Instagram" rel="noreferrer" target="_blank" href="{{$p->instagram}}"><i class="ion-social-instagram"></i></a>
                                           @endif
                                         </div>
                                       
@@ -116,10 +117,10 @@
                           </div>
                         </div>
                       </div>
-                      <!-- Modal Ponente -->
+                      <!-- End Modal Ponente -->
                       <div class="col-md-4 col-sm-6 col-xs-6 space-bottom-10 space-bottom-ponentes">
                           <div class="ponente_item">
-                              <img src="{{$p->Imagenes[0]->url_img}}" alt="CEO 2020" class="img-responsive" width="100%" />
+                              <img src="{{$url_img}}?format=webp&quality=auto" alt="CEO 2020" class="img-responsive" width="100%" />
                               <div class="ponente_item_hover">
                                   <div class="ponente-border clearfix">
                                       <div class="item_info">
@@ -127,16 +128,16 @@
                                           <em class="cargo-ponente">{{$p->cargo}}/{{$p->empresa}}</em>
                                           <div class="ponente-social">
                                             @if(isset($p->facebook))
-                                            <a target="_blank" href="{{$p->facebook}}"><i class="ion-social-facebook"></i></a>
+                                            <a aria-label="Facebook" rel="noreferrer" target="_blank" href="{{$p->facebook}}"><i class="ion-social-facebook"></i></a>
                                             @endif
                                             @if(isset($p->twitter))
-                                            <a target="_blank" href="{{$p->twitter}}"><i class="ion-social-twitter"></i></a>
+                                            <a aria-label="Twitter" rel="noreferrer" target="_blank" href="{{$p->twitter}}"><i class="ion-social-twitter"></i></a>
                                             @endif
                                             @if(isset($p->youtube))
-                                            <a target="_blank" href="{{$p->youtube}}"><i class="ion-social-linkedin"></i></a>
+                                            <a aria-label="Linkedin" rel="noreferrer" target="_blank" href="{{$p->youtube}}"><i class="ion-social-linkedin"></i></a>
                                             @endif
                                             @if(isset($p->instagram))
-                                            <a target="_blank" href="{{$p->instagram}}"><i class="ion-social-instagram"></i></a>
+                                            <a aria-label="Instagram" rel="noreferrer" target="_blank" href="{{$p->instagram}}"><i class="ion-social-instagram"></i></a>
                                             @endif
                                           </div>
                                           <em class="ver-ponente" onclick="showPonente('ponente_{{$p->id}}')">ver <i class="ion-ios-arrow-right"></i></em>
@@ -184,37 +185,37 @@
           <div class="aliados-iconos-v1 slider col-md-12 text-center container space-30">
 
               <div class="item"> 
-                      <a href="https://mexicocity.impacthub.net/" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/05_impact.svg') }}"  alt="IMPACT HUB"></a>
+                      <a href="https://mexicocity.impacthub.net/" rel="noreferrer" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/05_impact.svg') }}"  alt="IMPACT HUB"></a>
               </div>
               <div class="item"> 
-                      <a href="https://www.emprendimientosocial.mx/" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/03_esmex.svg') }}"  alt="ESMEX"></a>
+                      <a href="https://www.emprendimientosocial.mx/" rel="noreferrer" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/03_esmex.svg') }}"  alt="ESMEX"></a>
               </div>
               <div class="item"> 
-                      <a href="https://www.irrazonable.org/" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/09_umx.svg') }}"  alt="UNREASONABLE"></a>
+                      <a href="https://www.irrazonable.org/" rel="noreferrer" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/09_umx.svg') }}"  alt="UNREASONABLE"></a>
               </div>
               <div class="item"> 
-                      <a href=" https://www.mercadolibre.com.mx/" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/06_mercado.svg') }}"  alt="MERCADO LIBRE"></a>
+                      <a href=" https://www.mercadolibre.com.mx/" rel="noreferrer" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/06_mercado.svg') }}"  alt="MERCADO LIBRE"></a>
               </div>
               <div class="item"> 
-                      <a href="https://www.reforestamosmexico.org/" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/07_reforestemos.svg') }}"  alt="REFORESTAMOS"></a>
+                      <a href="https://www.reforestamosmexico.org/" rel="noreferrer" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/07_reforestemos.svg') }}"  alt="REFORESTAMOS"></a>
               </div>
               <div class="item"> 
-                      <a href="https://www.iadb.org/es" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/01_bid.svg') }}"  alt="BID"></a>
+                      <a href="https://www.iadb.org/es" rel="noreferrer" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/01_bid.svg') }}"  alt="BID"></a>
               </div>
               <div class="item"> 
-                      <a href="https://www.distritoemprendedor.com/" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/02_distrito.svg') }}"  alt="DISTRITO EMPRENDEDOR"></a>
+                      <a href="https://www.distritoemprendedor.com/" rel="noreferrer" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/02_distrito.svg') }}"  alt="DISTRITO EMPRENDEDOR"></a>
               </div>
               <div class="item"> 
-                      <a href="https://coop.posible.org.mx/" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/12_Posible.png') }}"  alt="Posible"></a>
+                      <a href="https://coop.posible.org.mx/" rel="noreferrer" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/12_Posible.png?format=webp&quality=auto') }}"  alt="Posible"></a>
               </div>
               <div class="item"> 
-                      <a href="https://www.facebook.com/" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/11_facebook.svg') }}"  alt="Facebook"></a>
+                      <a href="https://www.facebook.com/" rel="noreferrer" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/11_facebook.svg') }}"  alt="Facebook"></a>
               </div>
               <div class="item"> 
-                      <a href="https://someonesomewhere.mx/" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/08_ss.png') }}"  alt="Someone Somewhere"></a>
+                      <a href="https://someonesomewhere.mx/" rel="noreferrer" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/08_ss.png?format=webp&quality=auto') }}"  alt="Someone Somewhere"></a>
               </div>
               <div class="item"> 
-                      <a href="https://ilab.net/" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/04_ilab.png') }}"  alt="ILAB"></a>
+                      <a href="https://ilab.net/" rel="noreferrer" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/04_ilab.png?format=webp&quality=auto') }}"  alt="ILAB"></a>
               </div>
 
           </div>
@@ -225,41 +226,41 @@
         <div class="block-desktop">
           <div class="aliados-iconos-general slider col-md-12 text-center container space-10">
               <div class="item"> 
-                      <a href="https://mexicocity.impacthub.net/" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/05_impact.svg') }}"  alt="IMPACT HUB"></a>
+                      <a href="https://mexicocity.impacthub.net/" rel="noreferrer" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/05_impact.svg') }}"  alt="IMPACT HUB"></a>
               </div>
               <div class="item"> 
-                      <a href="https://www.emprendimientosocial.mx/" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/03_esmex.svg') }}"  alt="ESMEX"></a>
+                      <a href="https://www.emprendimientosocial.mx/" rel="noreferrer" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/03_esmex.svg') }}"  alt="ESMEX"></a>
               </div>
               <div class="item"> 
-                      <a href="https://www.irrazonable.org/" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/09_umx.svg') }}"  alt="UNREASONABLE"></a>
+                      <a href="https://www.irrazonable.org/" rel="noreferrer" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/09_umx.svg') }}"  alt="UNREASONABLE"></a>
               </div>
               <div class="item"> 
-                      <a href=" https://www.mercadolibre.com.mx/" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/06_mercado.svg') }}"  alt="MERCADO LIBRE"></a>
-              </div>
-          </div>
-          <div class="aliados-iconos-general slider col-md-12 text-center container space-30">
-              <div class="item"> 
-                      <a href="https://www.reforestamosmexico.org/" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/07_reforestemos.svg') }}"  alt="REFORESTAMOS"></a>
-              </div>
-              <div class="item"> 
-                      <a href="https://www.iadb.org/es" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/01_bid.svg') }}"  alt="BID"></a>
-              </div>
-              <div class="item"> 
-                      <a href="https://www.distritoemprendedor.com/" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/02_distrito.svg') }}"  alt="DISTRITO EMPRENDEDOR"></a>
-              </div>
-              <div class="item"> 
-                      <a href="https://coop.posible.org.mx/" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/12_Posible.png') }}"  alt="Posible"></a>
+                      <a href=" https://www.mercadolibre.com.mx/" rel="noreferrer" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/06_mercado.svg') }}"  alt="MERCADO LIBRE"></a>
               </div>
           </div>
           <div class="aliados-iconos-general slider col-md-12 text-center container space-30">
               <div class="item"> 
-                      <a href="https://www.facebook.com/" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/11_facebook.svg') }}"  alt="Facebook"></a>
+                      <a href="https://www.reforestamosmexico.org/" rel="noreferrer" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/07_reforestemos.svg') }}"  alt="REFORESTAMOS"></a>
               </div>
               <div class="item"> 
-                      <a href="https://someonesomewhere.mx/" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/08_ss.png') }}"  alt="Someone Somewhere"></a>
+                      <a href="https://www.iadb.org/es" rel="noreferrer" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/01_bid.svg') }}"  alt="BID"></a>
               </div>
               <div class="item"> 
-                      <a href="https://ilab.net/" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/04_ilab.png') }}"  alt="ILAB"></a>
+                      <a href="https://www.distritoemprendedor.com/" rel="noreferrer" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/02_distrito.svg') }}"  alt="DISTRITO EMPRENDEDOR"></a>
+              </div>
+              <div class="item"> 
+                      <a href="https://coop.posible.org.mx/" rel="noreferrer" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/12_Posible.png?format=webp&quality=auto') }}"  alt="Posible"></a>
+              </div>
+          </div>
+          <div class="aliados-iconos-general slider col-md-12 text-center container space-30">
+              <div class="item"> 
+                      <a href="https://www.facebook.com/" rel="noreferrer" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/11_facebook.svg') }}"  alt="Facebook"></a>
+              </div>
+              <div class="item"> 
+                      <a href="https://someonesomewhere.mx/" rel="noreferrer" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/08_ss.png?format=webp&quality=auto') }}"  alt="Someone Somewhere"></a>
+              </div>
+              <div class="item"> 
+                      <a href="https://ilab.net/" rel="noreferrer" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/04_ilab.png?format=webp&quality=auto') }}"  alt="ILAB"></a>
               </div>
           </div>
         </div>
@@ -282,7 +283,7 @@
                 <h1 class="glitch glitch-left weight-900" data-text="EN EDICIONES ANTERIORES?">EN EDICIONES ANTERIORES?</h1>
         </div>
         <div class="col-md-4"> 
-             <img class="img-responsive float-right-ediciones" src="{{ asset('layout/assets/img/general/logo-interno.png') }}" width="150" alt="CEO 2020">
+             <img class="img-responsive float-right-ediciones" src="{{ asset('layout/assets/img/general/logo-interno.png?format=webp&quality=auto') }}" width="150" alt="CEO 2020">
         </div>
         <div class="col-md-offset-2 col-md-8 col-md-offset-right-2 space-50 text-left"> 
             <p>
@@ -292,14 +293,14 @@
     </div>
     <div class="ediciones-anteriores  col-md-12 slider space-50">
         <div class="text-center item"> 
-                <video src="{{ asset('layout/assets/video/CEO2018.mp4') }}" width="100%" class="responsive-iframe"  height="310" controls poster="{{ asset('layout/assets/img/home/edicion-2018.png') }}" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                <video title="CEO 2018" src="{{ asset('layout/assets/video/CEO2018.mp4') }}" width="100%" class="responsive-iframe"  height="310" controls poster="{{ asset('layout/assets/img/home/edicion-2018.png?format=webp&quality=auto') }}" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
                     HTML5 vídeo no es soportado por este navegador
                 </video>
 
                 <div class="space-20"> </div>
               
                 <div class="container-btn">
-                      <a class="link-ponentes" target="_blank" href="https://www.conectandoemprendedores.mx/2018/">
+                      <a class="link-ponentes" rel="noreferrer" target="_blank" href="https://www.conectandoemprendedores.mx/2018/">
                         <div class="text-center btna btns-2 btn-2c">
                                 <div>CEO 2018</div>
                         </div>
@@ -308,12 +309,12 @@
  
         </div>
         <div class="text-center item"> 
-              <iframe width="100%" class="responsive-iframe" height="310" src="https://www.youtube.com/embed/6e4K2zZSjtE?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe title="CEO 2019" width="100%" class="responsive-iframe" height="310" src="https://www.youtube.com/embed/6e4K2zZSjtE?controls=0" frameborder="0" allow="autoplay;" allowfullscreen></iframe>
                
                 <div class="space-20"> </div>
                
                 <div class="container-btn">
-                      <a class="link-ponentes" target="_blank" href="https://www.conectandoemprendedores.mx/2019/">
+                      <a class="link-ponentes" rel="noreferrer" target="_blank" href="https://www.conectandoemprendedores.mx/2019/">
                         <div class="text-center btna btns-2 btn-2c">
                                 <div>CEO 2019</div>
                         </div>
@@ -384,7 +385,7 @@
               </div>
               <div class="col-md-6 space-20-mobile"> 
                    
-                   <script type="application/javascript" src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="https://cdn.lightwidget.com/widgets/84c4db91a6265ba8b34bd51436495224.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+                   <script type="application/javascript" src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe title="Instagram Feed" src="https://cdn.lightwidget.com/widgets/84c4db91a6265ba8b34bd51436495224.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
 
               </div>
         </div>

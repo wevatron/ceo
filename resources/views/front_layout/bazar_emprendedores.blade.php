@@ -56,10 +56,11 @@
 
                     <!-- emprendedor slide -->
                     @foreach($bazares as $bazar)
+                    <?php $url_img = preg_replace("/^http:/i", "https:", $bazar->Imagenes[0]->imagen); ?>
                     <div class="item col-md-3 col-xs-4 space-30 cardview filter btn-{{$bazar->c_categorias_id}}">
                         <a href="#!" onclick="showBazar('bazar_{{$bazar->id}}','{{$bazar->video}}')" class="portfolio_item">
-                            @if(isset($bazar->Imagenes[0]->imagen))
-                                <img src="{{$bazar->Imagenes[0]->imagen}}" alt="image" class="img-responsive" />
+                            @if(isset($url_img))
+                                <img src="{{$url_img}}?format=webp&quality=auto" alt="image" class="img-responsive" />
                             @else
                                 <img src="{{ asset('layout/assets/img/general/no-image.jpg')}}" alt="{{$bazar->nombre}}" class="img-responsive" width="100%" />
                             @endif
@@ -94,14 +95,21 @@
         <section class="detail-bazar space-50">
         <div class="container">
          @foreach($bazares as $bazar)
+         <?php 
+            $url_img = preg_replace("/^http:/i", "https:", $bazar->Imagenes[0]->imagen); 
+            $url_img_v1 = preg_replace("/^http:/i", "https:", $bazar->Imagenes[1]->imagen); 
+            $url_img_v2 = preg_replace("/^http:/i", "https:", $bazar->Imagenes[2]->imagen); 
+            $url_img_v3 = preg_replace("/^http:/i", "https:", $bazar->Imagenes[3]->imagen); 
+
+         ?>
             <!-- Bazares row -->
             <div class="bazares bazar_{{$bazar->id}}"> 
             <div class="row">
             <div class="col-md-5 col-sm-6 text-right">
-                @if(isset($bazar->Imagenes[0]->imagen))
-                    <img src="{{$bazar->Imagenes[0]->imagen}}" alt="{{$bazar->nombre}}" class="img-responsive img-auto" width="180" />
+                @if(isset($url_img))
+                    <img src="{{$url_img}}?format=webp&quality=auto" alt="{{$bazar->nombre}}" class="img-responsive img-auto" width="180" />
                 @else
-                    <img src="{{ asset('layout/assets/img/general/no-image.jpg')}}" alt="{{$bazar->nombre}}" class="img-responsive" width="100%" />
+                    <img src="{{ asset('layout/assets/img/general/no-image.jpg?format=webp&quality=auto')}}" alt="{{$bazar->nombre}}" class="img-responsive" width="100%" />
                 @endif
                 <p class="text-right space-50 space-mobile-30">{{$bazar->descripcion}}</p>
                 <p class="color-black space-50 space-mobile-30 conoce-mas">Conoce más de la marca  |  
@@ -137,24 +145,24 @@
             <div class="row space-20">
                 <div class="col-md-offset-5 thumbs-img text-center col-md-7">
                     <div class="col-md-4 col-sm-6 col-xs-4 space-10">
-                        @if(isset($bazar->Imagenes[1]->imagen))
-                            <img src="{{$bazar->Imagenes[1]->imagen}}" alt="{{$bazar->nombre}}" class="img-responsive openModal" width="100%" />
+                        @if(isset($url_img_v1))
+                            <img src="{{$url_img_v1}}?format=webp&quality=auto" alt="{{$bazar->nombre}}" class="img-responsive openModal" width="100%" />
                         @else
-                            <img src="{{ asset('layout/assets/img/general/no-image.jpg')}}" alt="{{$bazar->nombre}}" class="img-responsive" width="100%" />
+                            <img src="{{ asset('layout/assets/img/general/no-image.jpg?format=webp&quality=auto')}}" alt="{{$bazar->nombre}}" class="img-responsive" width="100%" />
                         @endif
                     </div>
                     <div class="col-md-4 col-sm-6 col-xs-4 space-10">
-                        @if(isset($bazar->Imagenes[2]->imagen))
-                            <img src="{{$bazar->Imagenes[2]->imagen}}" alt="{{$bazar->nombre}}" class="img-responsive openModal" width="100%" />
+                        @if(isset($url_img_v2))
+                            <img src="{{$url_img_v2}}?format=webp&quality=auto" alt="{{$bazar->nombre}}" class="img-responsive openModal" width="100%" />
                         @else
-                            <img src="{{ asset('layout/assets/img/general/no-image.jpg')}}" alt="{{$bazar->nombre}}" class="img-responsive" width="100%" />
+                            <img src="{{ asset('layout/assets/img/general/no-image.jpg?format=webp&quality=auto')}}" alt="{{$bazar->nombre}}" class="img-responsive" width="100%" />
                         @endif
                     </div>
                     <div class="col-md-4 col-sm-6 col-xs-4 space-10">
-                        @if(isset($bazar->Imagenes[3]->imagen))
-                        <img src="{{$bazar->Imagenes[3]->imagen}}" alt="{{$bazar->nombre}}" class="img-responsive openModal" width="100%" />
+                        @if(isset($url_img_v3))
+                        <img src="{{$url_img_v3}}?format=webp&quality=auto" alt="{{$bazar->nombre}}" class="img-responsive openModal" width="100%" />
                         @else
-                        <img src="{{ asset('layout/assets/img/general/no-image.jpg')}}" alt="{{$bazar->nombre}}" class="img-responsive" width="100%" />
+                        <img src="{{ asset('layout/assets/img/general/no-image.jpg?format=webp&quality=auto')}}" alt="{{$bazar->nombre}}" class="img-responsive" width="100%" />
                         @endif
                     </div>
                 </div>
