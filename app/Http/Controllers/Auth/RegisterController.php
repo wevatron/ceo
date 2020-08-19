@@ -71,9 +71,13 @@ class RegisterController extends Controller
     protected function create(array $data)
     {   
         $municipio = 2458;
-        $rfc = '';
+        $rfc       = '';
         if($data['estado_id'] == 20){
-            $municipio = $data['municipio_id'];
+            if(isset($data['municipio_id'])){
+                $municipio = $data['municipio_id'];
+            } else {
+                $municipio = 2458;
+            }
         }
         if(isset($data['rfc'])){
             $rfc = $data['rfc'];
