@@ -9,6 +9,7 @@
       content="Conectando Emprendedores en Oaxaca
            Evento Digital CEO 2020.">
     <title>Conectando Emprendedores en Oaxaca - 2020</title>
+    <meta name="theme-color" content="#fdeb00"/>
   	<link rel="icon" type="image/png" sizes="32x32" href="{{ asset('layout/assets/img/favicon/favicon-32x32.png') }}">
   	<link rel="icon" type="image/png" sizes="96x96" href="{{ asset('layout/assets/img/favicon/favicon-96x96.png') }}">
   	<link rel="icon" type="image/png" sizes="16x16" href="{{ asset('layout/assets/img/favicon/favicon-16x16.png') }}">

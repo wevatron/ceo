@@ -309,7 +309,7 @@
  
         </div>
         <div class="text-center item"> 
-              <iframe title="CEO 2019" width="100%" class="responsive-iframe" height="310" src="https://www.youtube.com/embed/6e4K2zZSjtE?controls=0" frameborder="0" allow="autoplay;" allowfullscreen></iframe>
+              <iframe title="CEO 2019" id="ceo_2019" width="100%" class="responsive-iframe" height="310" src="" frameborder="0" allow="autoplay;" allowfullscreen></iframe>
                
                 <div class="space-20"> </div>
                
@@ -374,13 +374,6 @@
         </div>
         <div class="col-md-6 text-center container-rrss border-left-contenido"> 
               <div class="col-md-6 space-80-mobile"> 
-                    <script type="application/javascript">(function(d, s, id) {
-                                var js, fjs = d.getElementsByTagName(s)[0];
-                                if (d.getElementById(id)) return;
-                                js = d.createElement(s); js.id = id;
-                                js.src = 'https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v3.0';
-                                fjs.parentNode.insertBefore(js, fjs);
-                            }(document, 'script', 'facebook-jssdk'));</script>
                         <div class="fb-page" data-href="https://www.facebook.com/ConectandoEnOaxaca/" data-tabs="timeline" data-height="500" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/ConectandoEnOaxaca/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/ConectandoEnOaxaca/">Conectando Emprendedores</a></blockquote></div>
               </div>
               <div class="col-md-6 space-20-mobile"> 
@@ -398,6 +391,22 @@
   function showPonente(id_ponente){
       $("#"+id_ponente).modal('show');
   }
+  window.addEventListener("DOMContentLoaded", function(){
+      
+      $("#live_ceo_2020").attr("src","https://www.youtube.com/embed/tiUzMejT-58?autoplay=1&loop=1&rel=0&showinfo=0&iv_load_policy=3");
+      
+      $("#ceo_2019").attr("src","https://www.youtube.com/embed/6e4K2zZSjtE?controls=0");
+
+
+      (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = 'https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v3.0';
+          fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+      
+  });
 </script>
 
 @endsection

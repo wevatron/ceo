@@ -99,7 +99,7 @@
             
                     <div class="col-md-12 no-padding">
                         <div class="live-video">
-                             <iframe title="Live CEO 2020" width="100%" height="100%" src="https://www.youtube.com/embed/tiUzMejT-58?autoplay=1&loop=1&rel=0&showinfo=0&iv_load_policy=3" frameborder="0" allow="autoplay;" allowfullscreen></iframe>
+                             <iframe title="Live CEO 2020" id="live_ceo_2020" width="100%" height="100%" src="" frameborder="0" allow="autoplay;" allowfullscreen></iframe>
                         </div>
                     </div>
                     <!--
