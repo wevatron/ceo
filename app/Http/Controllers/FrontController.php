@@ -32,5 +32,8 @@ class FrontController extends Controller
     function reset(){
     	return view("auth.passwords.recovery");
     }
+    function paneles(){
+        return view("auth.paneles");
+    }
 
 }

@@ -74,5 +74,8 @@
 <script type="text/javascript" src="{{ asset('layout/assets/js/menu.js') }}"></script>
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/jquery.validate.min.js"></script>
+<script type="text/javascript" src="{{ asset('layout/assets/js/global.js') }}"></script>
+
 </body>
 </html>
