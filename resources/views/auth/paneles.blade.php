@@ -37,7 +37,7 @@
                           <label class="toggle">
                             <input class="toggle__input" type="checkbox" value="1" name="paneles[]" checked="">
                             <span class="toggle__label">
-                              <span class="toggle__text">La economía solidaria como emprendimiento - <small>Lunes 24 de agosto 2020  18:00 hrs</small></span>
+                              <span class="toggle__text">Emprendimiento colaborativo para un nuevo futuro - <small>Lunes 24 de agosto 2020  18:00 hrs</small></span>
                             </span>
                           </label>
                         </div>
