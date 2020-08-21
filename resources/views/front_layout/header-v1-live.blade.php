@@ -105,7 +105,7 @@
                     
                     <div class="col-md-3 no-padding">
                         <div class="live-video live-chat">
-                              <iframe title="Chat CEO 2020" src="https://www.youtube.com/live_chat?v=P6MhGhVq_vc&#038;embed_domain=conectandoemprendedores.mx" class="live-show-chat" frameborder="0" scrolling="0" scrolling="0" width="100%"  height="100%"></iframe>
+                              <iframe title="Chat CEO 2020" src="https://www.youtube.com/live_chat?v=P6MhGhVq_vc&embed_domain=conectandoemprendedores.mx" class="live-show-chat" frameborder="0" scrolling="0" scrolling="0" width="100%"  height="100%"></iframe>
                         </div>
                     </div> 
             
