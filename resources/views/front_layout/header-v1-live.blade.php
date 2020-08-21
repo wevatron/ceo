@@ -98,7 +98,7 @@
         <div class="col-md-offset-1 col-md-10 col-md-offset-right-1">
             
                     <div class="col-md-9 no-padding">
-                        <div class="live-video">
+                        <div class="live-video live-live">
                              <iframe title="Live CEO 2020" id="live_ceo_2020" width="100%" height="100%" src="" frameborder="0" allow="autoplay;" allowfullscreen></iframe>
                         </div>
                     </div>

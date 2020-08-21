@@ -1840,7 +1840,10 @@ hr{
     text-align: center; 
 }
 .live-chat{
-    padding-top: 118%;
+    padding-top: 127.5%;
+}
+.live-live{
+    padding-top: 12.5%;
 }
 .border_newsletter_v1 .form-control{
     border-radius: 0px;
