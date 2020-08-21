@@ -35,5 +35,9 @@ class FrontController extends Controller
     function paneles(){
         return view("auth.paneles");
     }
+    function live(){
+        $ponentes = T_evento::where('tipo_evento_id','=',5)->skip(0)->take(6)->get();
+        return view("front_layout.live",compact('ponentes'));
+    }
 
 }
