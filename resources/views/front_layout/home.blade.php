@@ -183,15 +183,20 @@
         <!-- Carousel Aliados mobile  -->
         <div class="block-mobile">
           <div class="aliados-iconos-v1 slider col-md-12 text-center container space-30">
-
               <div class="item"> 
-                      <a href="https://mexicocity.impacthub.net/" rel="noreferrer" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/05_impact.svg') }}"  alt="IMPACT HUB"></a>
+                      <a href="https://www.iadb.org/es" rel="noreferrer" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/01_bid.svg') }}"  alt="BID"></a>
+              </div>
+              <div class="item"> 
+                      <a href="https://www.distritoemprendedor.com/" rel="noreferrer" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/02_distrito.svg') }}"  alt="DISTRITO EMPRENDEDOR"></a>
               </div>
               <div class="item"> 
                       <a href="https://www.emprendimientosocial.mx/" rel="noreferrer" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/03_esmex.svg') }}"  alt="ESMEX"></a>
               </div>
               <div class="item"> 
-                      <a href="https://www.irrazonable.org/" rel="noreferrer" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/09_umx.svg') }}"  alt="UNREASONABLE"></a>
+                      <a href="https://ilab.net/" rel="noreferrer" target="_blank"><img class="img-responsive img-grayscale" style="height: 80px; width: auto !important;" src="{{ asset('layout/assets/img/home/aliados/04_ilab-f.png?format=webp&quality=auto') }}"  alt="ILAB"></a>
+              </div>
+              <div class="item"> 
+                      <a href="https://mexicocity.impacthub.net/" rel="noreferrer" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/05_impact.svg') }}"  alt="IMPACT HUB"></a>
               </div>
               <div class="item"> 
                       <a href=" https://www.mercadolibre.com.mx/" rel="noreferrer" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/06_mercado.svg') }}"  alt="MERCADO LIBRE"></a>
@@ -200,37 +205,37 @@
                       <a href="https://www.reforestamosmexico.org/" rel="noreferrer" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/07_reforestemos.svg') }}"  alt="REFORESTAMOS"></a>
               </div>
               <div class="item"> 
-                      <a href="https://www.iadb.org/es" rel="noreferrer" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/01_bid.svg') }}"  alt="BID"></a>
+                      <a href="https://someonesomewhere.mx/" rel="noreferrer" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/08_ssw.png?format=webp&quality=auto') }}"  alt="Someone Somewhere"></a>
               </div>
               <div class="item"> 
-                      <a href="https://www.distritoemprendedor.com/" rel="noreferrer" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/02_distrito.svg') }}"  alt="DISTRITO EMPRENDEDOR"></a>
-              </div>
-              <div class="item"> 
-                      <a href="https://coop.posible.org.mx/" rel="noreferrer" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/12_Posible.png?format=webp&quality=auto') }}"  alt="Posible"></a>
+                      <a href="https://www.irrazonable.org/" rel="noreferrer" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/09_umx.svg') }}"  alt="UNREASONABLE"></a>
               </div>
               <div class="item"> 
                       <a href="https://www.facebook.com/" rel="noreferrer" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/11_facebook.svg') }}"  alt="Facebook"></a>
               </div>
               <div class="item"> 
-                      <a href="https://ilab.net/" rel="noreferrer" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/04_ilab-f.png?format=webp&quality=auto') }}"  alt="ILAB"></a>
-              </div>
-              <div class="item"> 
-                      <a href="https://someonesomewhere.mx/" rel="noreferrer" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/08_ssw.png?format=webp&quality=auto') }}"  alt="Someone Somewhere"></a>
-              </div>
-              <div class="item"> 
-                      <a href="https://www.facebook.com/BlancosyBancos/" rel="noreferrer" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/14_blancos.png?format=webp&quality=auto') }}" style="height: 80px; width: auto !important;"  alt="Blancos y Bancos"></a>
-              </div>
-              <div class="item"> 
-                      <a href="https://lacana.mx/" rel="noreferrer" target="_blank"><img style="height: 80px; width: auto !important;" class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/16_lacana.png?format=webp&quality=auto') }}"  alt="La Cana"></a>
+                      <a href="https://coop.posible.org.mx/" rel="noreferrer" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/12_Posible.png?format=webp&quality=auto') }}"  alt="Posible"></a>
               </div>
               <div class="item"> 
                       <a href="https://www.viximexico.com/" rel="noreferrer" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/13_vixi.png?format=webp&quality=auto') }}"  alt="Vixi"></a>
               </div>
               <div class="item"> 
-                      <a href="https://www.ikea.com/es/es/" rel="noreferrer" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/17_ikea.png?format=webp&quality=auto') }}"  alt="Ikea"></a>
+                      <a href="https://www.facebook.com/BlancosyBancos/" rel="noreferrer" target="_blank"><img class="img-responsive img-grayscale img-aliados-custome" style="height: 80px; width: auto !important;" src="{{ asset('layout/assets/img/home/aliados/14_blancos.png?format=webp&quality=auto') }}" alt="Blancos y Bancos"></a>
               </div>
               <div class="item"> 
-                      <a href="https://svx.mx/" rel="noreferrer" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/18_svx.png?format=webp&quality=auto') }}"  alt="SVX"></a>
+                      <a href="https://lacana.mx/" rel="noreferrer" target="_blank"><img class="img-responsive img-grayscale img-aliados-custome" style="height: 80px; width: auto !important;" src="{{ asset('layout/assets/img/home/aliados/15_lacana.png?format=webp&quality=auto') }}"  alt="La Cana"></a>
+              </div>
+              <div class="item"> 
+                      <a href="https://www.ikea.com/es/es/" rel="noreferrer" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/16_ikea.svg?format=webp&quality=auto') }}"  alt="Ikea"></a>
+              </div>
+              <div class="item"> 
+                      <a href="https://svx.mx/" rel="noreferrer" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/17_svx.png?format=webp&quality=auto') }}"  alt="SVX"></a>
+              </div>
+              <div class="item"> 
+                      <a href="https://www.psm.org.mx/" rel="noreferrer" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/18_psm.svg?format=webp&quality=auto') }}"  alt="PSM"></a>
+              </div>
+              <div class="item"> 
+                      <a href="http://fairconnection.cl/" rel="noreferrer" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/19_fair.svg?format=webp&quality=auto') }}"  alt="Fair Connection"></a>
               </div>
           </div>
         </div>
@@ -248,8 +253,8 @@
               <div class="item"> 
                       <a href="https://www.irrazonable.org/" rel="noreferrer" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/09_umx.svg') }}"  alt="UNREASONABLE"></a>
               </div>
-              <div class="item"> 
-                      <a href=" https://www.mercadolibre.com.mx/" rel="noreferrer" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/06_mercado.svg') }}"  alt="MERCADO LIBRE"></a>
+               <div class="item"> 
+                      <a href="https://coop.posible.org.mx/" rel="noreferrer" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/12_Posible.png?format=webp&quality=auto') }}"  alt="Posible Coop"></a>
               </div>
           </div>
           <div class="aliados-iconos-general slider col-md-12 text-center container space-30">
@@ -263,7 +268,7 @@
                       <a href="https://www.distritoemprendedor.com/" rel="noreferrer" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/02_distrito.svg') }}"  alt="DISTRITO EMPRENDEDOR"></a>
               </div>
               <div class="item"> 
-                      <a href="https://coop.posible.org.mx/" rel="noreferrer" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/12_Posible.png?format=webp&quality=auto') }}"  alt="Posible Coop"></a>
+                      <a href=" https://www.mercadolibre.com.mx/" rel="noreferrer" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/06_mercado.svg') }}"  alt="MERCADO LIBRE"></a>
               </div>
           </div>
           <div class="aliados-iconos-general slider col-md-12 text-center container space-30">
@@ -271,28 +276,36 @@
                       <a href="https://www.facebook.com/" rel="noreferrer" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/11_facebook.svg') }}"  alt="Facebook"></a>
               </div>
               <div class="item"> 
-                      <a href="https://ilab.net/" rel="noreferrer" target="_blank"><img style="height: 80px; width: auto !important;" class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/04_ilab-f.png?format=webp&quality=auto') }}"  alt="ILAB"></a>
+                      <a href="https://ilab.net/" rel="noreferrer" target="_blank"><img class="img-responsive img-grayscale img-aliados-custome" style="height: 80px; width: auto !important;"  src="{{ asset('layout/assets/img/home/aliados/04_ilab-f.png?format=webp&quality=auto') }}"  alt="ILAB"></a>
               </div>
               <div class="item"> 
                       <a href="https://someonesomewhere.mx/" rel="noreferrer" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/08_ssw.png?format=webp&quality=auto') }}"  alt="Someone Somewhere"></a>
               </div>
               <div class="item"> 
-                      <a href="https://www.facebook.com/BlancosyBancos/" rel="noreferrer" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/14_blancos.png?format=webp&quality=auto') }}" style="height: 80px; width: auto !important;"  alt="Blancos y Bancos"></a>
+                      <a href="https://www.facebook.com/BlancosyBancos/" rel="noreferrer" target="_blank"><img class="img-responsive img-grayscale img-aliados-custome" style="height: 80px; width: auto !important;" src="{{ asset('layout/assets/img/home/aliados/14_blancos.png?format=webp&quality=auto') }}" alt="Blancos y Bancos"></a>
               </div>
               
           </div>
           <div class="aliados-iconos-general slider col-md-12 text-center container space-30">
               <div class="item"> 
-                      <a href="https://lacana.mx/" rel="noreferrer" target="_blank"><img style="height: 80px; width: auto !important;" class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/16_lacana.png?format=webp&quality=auto') }}"  alt="La Cana"></a>
+                      <a href="https://lacana.mx/" rel="noreferrer" target="_blank"><img class="img-responsive img-grayscale img-aliados-custome" style="height: 80px; width: auto !important;"  src="{{ asset('layout/assets/img/home/aliados/15_lacana.png?format=webp&quality=auto') }}"  alt="La Cana"></a>
               </div>
               <div class="item"> 
                       <a href="https://www.viximexico.com/" rel="noreferrer" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/13_vixi.png?format=webp&quality=auto') }}"  alt="Vixi"></a>
               </div>
               <div class="item"> 
-                      <a href="https://www.ikea.com/es/es/" rel="noreferrer" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/17_ikea.png?format=webp&quality=auto') }}"  alt="Ikea"></a>
+                      <a href="https://www.ikea.com/es/es/" rel="noreferrer" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/16_ikea.svg?format=webp&quality=auto') }}"  alt="Ikea"></a>
               </div>
               <div class="item"> 
-                      <a href="https://svx.mx/" rel="noreferrer" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/18_svx.png?format=webp&quality=auto') }}"  alt="SVX"></a>
+                      <a href="http://fairconnection.cl/" rel="noreferrer" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/19_fair.svg?format=webp&quality=auto') }}"  alt="Fair Connection"></a>
+              </div>
+          </div>
+          <div class="aliados-iconos-general slider col-md-12 text-center container space-30">
+              <div class="item"> 
+                      <a href="https://www.psm.org.mx/" rel="noreferrer" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/18_psm.svg?format=webp&quality=auto') }}"  alt="PSM"></a>
+              </div>
+              <div class="item"> 
+                      <a href="https://svx.mx/" rel="noreferrer" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/17_svx.png?format=webp&quality=auto') }}"  alt="SVX"></a>
               </div>
           </div>
         </div>

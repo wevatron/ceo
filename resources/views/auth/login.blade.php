@@ -40,7 +40,7 @@
                       <button type="submit" class="btn btn-black text-center">Entrar</button> 
                     </div>
                     <div class="row mb-4 px-3 space-50"> 
-                      <div><small class="font-weight-bold register-account">¿No tienes una cuenta? <a href="{{url('/')}}/register" class="text-dangers ">Registrate</a></small> </div>
+                      <div><small class="font-weight-bold register-account">¿No tienes una cuenta? <a href="{{url('/')}}/register" class="text-dangers ">Regístrate</a></small> </div>
                       <div><small class="font-weight-bold register-account">¿Olvidaste tu contraseña? <a href="{{url('/')}}/reset" class="text-dangers ">Recuperar</a></small> </div>
                     </div>
 
