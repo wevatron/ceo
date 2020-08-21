@@ -288,7 +288,7 @@
           </div>
           <div class="aliados-iconos-general slider col-md-12 text-center container space-30">
               <div class="item"> 
-                      <a href="https://lacana.mx/" rel="noreferrer" target="_blank"><img class="img-responsive img-grayscale img-aliados-custome" style="height: 80px; width: auto !important;"  src="{{ asset('layout/assets/img/home/aliados/15_lacana.png?format=webp&quality=auto') }}"  alt="La Cana"></a>
+                      <a href="https://svx.mx/" rel="noreferrer" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/17_svx.png?format=webp&quality=auto') }}"  alt="SVX"></a>
               </div>
               <div class="item"> 
                       <a href="https://www.viximexico.com/" rel="noreferrer" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/13_vixi.png?format=webp&quality=auto') }}"  alt="Vixi"></a>
@@ -305,8 +305,10 @@
                       <a href="https://www.psm.org.mx/" rel="noreferrer" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/18_psm.svg?format=webp&quality=auto') }}"  alt="PSM"></a>
               </div>
               <div class="item"> 
-                      <a href="https://svx.mx/" rel="noreferrer" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/17_svx.png?format=webp&quality=auto') }}"  alt="SVX"></a>
+                      <a href="https://lacana.mx/" rel="noreferrer" target="_blank"><img class="img-responsive img-grayscale img-aliados-custome" style="height: 80px; width: auto !important;"  src="{{ asset('layout/assets/img/home/aliados/15_lacana.png?format=webp&quality=auto') }}"  alt="La Cana"></a>
               </div>
+              <div class="item">  </div>
+              <div class="item">  </div>
           </div>
         </div>
         <!-- Carousel Aliados Desktop  -->
