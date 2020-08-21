@@ -13,23 +13,23 @@
                     <div class="px-3 justify-content-center mt-4 mb-5"> <img class="img-responsive panelesForm" src="{{asset('layout/assets/img/paneles/CEO_Registro_Paneles_banner.png') }}" alt="CEO 2020"> </div>
                 </div>
             </div>
-            <div class="col-lg-7 col-xl-8 mx-auto space-30">
+            <div class="col-lg-7 col-xl-8 mx-auto space-20">
                 <div class="card2 card border-0 px-4 py-5">
                   <div id="messages"> </div>
                   <form  id="panelesForm" method="POST" action="">
                   {!! csrf_field() !!}
 
                     <div class="row px-3 text-left"> 
-                      <label class="mb-1"><h6 class="mb-0 text-sm">Nombre</h6></label> 
+                      <label class="mb-1"><h6 class="mb-0 text-sm">Nombre:</h6></label> 
                       <input type="text" name="nombre" placeholder="Nombre"> 
                     </div>
 
                     <div class="row px-3 text-left"> 
-                      <label class="mb-1"><h6 class="mb-0 text-sm">Correo Electrónico</h6></label> 
+                      <label class="mb-1"><h6 class="mb-0 text-sm">Correo Electrónico:</h6></label> 
                       <input class="mb-4" type="text" name="correo" placeholder="Correo Electrónico"> 
                     </div>
 
-                    <div class="row px-3 space-20 text-left"> 
+                    <div class="row px-3 space-10 text-left"> 
                       <label class="mb-1"><h6 class="mb-0 text-sm">Selecciona los paneles de tu interés:</h6></label> 
                       
                       <div class="col-md-12 no-padding">
