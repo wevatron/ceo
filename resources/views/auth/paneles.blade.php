@@ -30,7 +30,7 @@
                     </div>
 
                     <div class="row px-3 space-20 text-left"> 
-                      <label class="mb-1"><h6 class="mb-0 text-sm">Paneles:</h6></label> 
+                      <label class="mb-1"><h6 class="mb-0 text-sm">Selecciona los paneles de tu interés:</h6></label> 
                       
                       <div class="col-md-12 no-padding">
                         <div class="page__toggle">
