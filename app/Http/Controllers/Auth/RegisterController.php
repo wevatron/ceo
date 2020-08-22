@@ -83,7 +83,8 @@ class RegisterController extends Controller
             $rfc = $data['rfc'];
         } 
         
-        $giro = intval($data['giro_negocio_id']);
+        $giro  = intval($data['giro_negocio_id']);
+        $email = str_replace(' ','',$data['email']);
      
         return User::create([
             'name' => $data['name'],
@@ -96,7 +97,7 @@ class RegisterController extends Controller
             'nombre_idea' => $data['nombre_idea'],
             'estado_id' => $data['estado_id'],
             'municipio_id' => $municipio,
-            'email' => $data['email'],
+            'email' => $email,
             'password' => Hash::make($data['password']),
             'tipo_usuario_id' => 3,
             'universidad_id' => 1
