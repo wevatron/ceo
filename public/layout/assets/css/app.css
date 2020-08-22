@@ -2521,7 +2521,7 @@ hr{
     align-items: center;
 }
 .agenda-ceo {
-    max-height: 74rem;
+    max-height: 45rem;
     position: relative;
     background: #fb16c1;
     overflow-y: scroll;
