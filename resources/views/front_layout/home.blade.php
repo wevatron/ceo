@@ -1,17 +1,14 @@
 @extends("front_layout.main")
 @include("front_layout.header-v1")
 @section("body")
-<div class="space-50 hidden"> </div>
-<section id="section-bazar" class="container hidden">
+<div class="space-50"> </div>
+<section id="section-bazar" class="container">
 
     <div class="row">
         <div class="col-md-4"> 
-            <div class="text-left col-md-12 no-padding circle-img">
+            <div class="text-left col-md-12 no-padding circle-img" data-aos="fade-right">
                 <h1 class="color-pink no-margin-top weight-900">Explora</h1>
                 <div class="slide-banner slider">
-                    <div class="item">
-                          <a href="{{url('/')}}/bazar-digital"><img class="img-responsive grayscale overlay_" src="{{ asset('layout/assets/img/home/banner-bazar.gif?format=webp&quality=auto') }}" width="480" alt="CEO 2020"></a>
-                    </div>
                     <div class="item">
                           <a href="{{url('/')}}/bazar-digital"><img class="img-responsive grayscale overlay_" src="{{ asset('layout/assets/img/home/banner-bazar.gif?format=webp&quality=auto') }}" width="480" alt="CEO 2020"></a>
                     </div>
@@ -24,29 +21,32 @@
                 <h1 class="color-pink no-margin-top margin-top-mobile-50 weight-900">Agenda</h1>
 
                 <div class="space-10"> </div>
+                <div class="space-20 block-mobile"> </div>
 
-                <ul class="nav nav-tabs" id="myTab" role="tablist">
-                  <li class="nav-item nav-uno">
-                    <a class="nav-link" id="primero-tab" data-toggle="tab" href="#primero" role="tab" aria-controls="primero"
-                      aria-selected="true">24 agosto</a>
-                  </li>
-                  <li class="nav-item nav-dos">
-                    <a class="nav-link" id="segundo-tab" data-toggle="tab" href="#segundo" role="tab" aria-controls="segundo"
-                      aria-selected="false">25 agosto</a>
-                  </li>
-                  <li class="nav-item nav-tres">
-                    <a class="nav-link" id="tercero-tab" data-toggle="tab" href="#tercero" role="tab" aria-controls="tercero"
-                      aria-selected="false">26 agosto</a>
-                  </li>
-                  <li class="nav-item nav-cuatro">
-                    <a class="nav-link" id="cuarto-tab" data-toggle="tab" href="#cuarto" role="tab" aria-controls="cuarto"
-                      aria-selected="false">27 agosto</a>
-                  </li>
-                  <li class="nav-item nav-cinco">
-                    <a class="nav-link" id="quinto-tab" data-toggle="tab" href="#quinto" role="tab" aria-controls="quinto"
-                      aria-selected="false">28 agosto</a>
-                  </li>
-                </ul>
+                  <div class="nav-tabs-responsive">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                      <li class="nav-item nav-uno">
+                        <a class="nav-link" id="primero-tab" data-toggle="tab" href="#primero" role="tab" aria-controls="primero"
+                          aria-selected="true">24 agosto</a>
+                      </li>
+                      <li class="nav-item nav-dos">
+                        <a class="nav-link" id="segundo-tab" data-toggle="tab" href="#segundo" role="tab" aria-controls="segundo"
+                          aria-selected="false">25 agosto</a>
+                      </li>
+                      <li class="nav-item nav-tres">
+                        <a class="nav-link" id="tercero-tab" data-toggle="tab" href="#tercero" role="tab" aria-controls="tercero"
+                          aria-selected="false">26 agosto</a>
+                      </li>
+                      <li class="nav-item nav-cuatro">
+                        <a class="nav-link" id="cuarto-tab" data-toggle="tab" href="#cuarto" role="tab" aria-controls="cuarto"
+                          aria-selected="false">27 agosto</a>
+                      </li>
+                      <li class="nav-item nav-cinco">
+                        <a class="nav-link" id="quinto-tab" data-toggle="tab" href="#quinto" role="tab" aria-controls="quinto"
+                          aria-selected="false">28 agosto</a>
+                      </li>
+                    </ul>
+                  </div>
 
 
                   <div class="agenda-ceo">
@@ -60,6 +60,7 @@
                           <div class="horario">18:00 - 19:00</div>
                         </div>
                         <div class="medium-10 cell">
+                          <a href="{{url('/')}}/paneles">
                           <div data-equalizer-watch="" class="conferencia digital-talk" style="height: auto;">
                             <p>Zoom</p>
                             <h4>Emprendimiento colaborativo para un nuevo futuro</h4>
@@ -68,6 +69,7 @@
                             <p class="conferencista">Greta Spota - WWF</p>
                             <p class="conferencista">Blanca Sánchez - Mbis Bin</p>
                           </div>
+                          </a>
                         </div>
                       </div>
                     </div>
@@ -77,6 +79,7 @@
                             <div class="horario">18:00 - 19:00</div>
                           </div>
                           <div class="medium-10 cell">
+                            <a href="{{url('/')}}/paneles">
                             <div data-equalizer-watch="" class="conferencia digital-talk" style="height: auto;">
                               <p>Zoom</p>
                               <h4>Emprendimientos desde las industrias creativas</h4>
@@ -85,6 +88,7 @@
                               <p class="conferencista">Gabriel Reyes - Vixi México</p>
                               <p class="conferencista">Raquel Aguirre - La Cana</p>
                             </div>
+                            </a>
                           </div>
                         </div>
                     </div>
@@ -94,6 +98,7 @@
                             <div class="horario">16:00 - 17:00</div>
                           </div>
                           <div class="medium-10 cell">
+                            <a href="{{url('/')}}/paneles">
                             <div data-equalizer-watch="" class="conferencia digital-talk" style="height: auto;">
                               <p>Zoom</p>
                               <h4>Inversión de impacto para lograr desarrollo sostenible</h4>
@@ -102,6 +107,7 @@
                               <p class="conferencista">Laura Ortiz- SVX</p>
                               <p class="conferencista">María Inés Miranda - Fair Connection</p>
                             </div>
+                            </a>
                           </div>
                         </div>
                         <div class="grid-x align-middle">
@@ -109,6 +115,7 @@
                             <div class="horario">18:00 - 19:00</div>
                           </div>
                           <div class="medium-10 cell">
+                            <a href="{{url('/')}}/paneles">
                             <div data-equalizer-watch="" class="conferencia digital-talk" style="height: auto;">
                               <p>Zoom</p>
                               <h4>Redefiniendo la ruta del Emprendedor Social</h4>
@@ -117,6 +124,7 @@
                               <p class="conferencista">Aída Chávez - Hola Code</p>
                               <p class="conferencista">Enrique Rodríguez- Someone Somewhere</p>
                             </div>
+                            </a>
                           </div>
                         </div>
                     </div>
@@ -126,11 +134,13 @@
                             <div class="horario">10:00 - 11:00</div>
                           </div>
                           <div class="medium-10 cell">
+                            <a href="https://www.youtube.com/channel/UCTyKrM5aXG1iPI1OhG4j3sQ" target="_blank" rel="noreferrer">
                             <div data-equalizer-watch="" class="conferencia digital-talk" style="height: auto;">
                               <p>YouTube</p>
                               <h4>Comercio electrónico, motor de recuperación económica</h4>
                               <p class="conferencista">David Geisen - Mercado Libre</p>
                             </div>
+                            </a>
                           </div>
                         </div>
                         <div class="grid-x align-middle">
@@ -138,11 +148,13 @@
                             <div class="horario">12:30 - 13:30</div>
                           </div>
                           <div class="medium-10 cell">
+                            <a href="https://www.youtube.com/channel/UCTyKrM5aXG1iPI1OhG4j3sQ" target="_blank" rel="noreferrer">
                             <div data-equalizer-watch="" class="conferencia digital-talk" style="height: auto;">
                               <p>YouTube</p>
                               <h4>El usuario 🐭 de tu producto no eres tú 🙀</h4>
                               <p class="conferencista">Victor Tavares / Arturo Robles Maloof | Citibanamex</p>
                             </div>
+                            </a>
                           </div>
                         </div>
                         <div class="grid-x align-middle">
@@ -150,11 +162,13 @@
                             <div class="horario">18:00 - 19:00</div>
                           </div>
                           <div class="medium-10 cell">
+                            <a href="https://www.youtube.com/channel/UCTyKrM5aXG1iPI1OhG4j3sQ" target="_blank" rel="noreferrer">
                             <div data-equalizer-watch="" class="conferencia digital-talk" style="height: auto;">
                               <p>YouTube</p>
                               <h4>DESAPRENDER</h4>
                               <p class="conferencista">Zarina Rivera - Tümu</p>
                             </div>
+                            </a>
                           </div>
                         </div>
                     </div>
@@ -164,11 +178,13 @@
                             <div class="horario">10:00 - 11:00</div>
                           </div>
                           <div class="medium-10 cell">
+                            <a href="https://www.youtube.com/channel/UCTyKrM5aXG1iPI1OhG4j3sQ" target="_blank" rel="noreferrer">
                             <div data-equalizer-watch="" class="conferencia digital-talk" style="height: auto;">
                               <p>YouTube</p>
                               <h4>Innovando para resolver PPUs (Pin***s Problemas Urgentes)</h4>
                               <p class="conferencista">Raúl de Anda - Irrazonable</p>
                             </div>
+                            </a>
                           </div>
                         </div>
                         <div class="grid-x align-middle">
@@ -176,11 +192,13 @@
                             <div class="horario">12:30 - 13:30</div>
                           </div>
                           <div class="medium-10 cell">
+                            <a href="https://www.youtube.com/channel/UCTyKrM5aXG1iPI1OhG4j3sQ" target="_blank" rel="noreferrer">
                             <div data-equalizer-watch="" class="conferencia digital-talk" style="height: auto;">
                               <p>YouTube</p>
                               <h4>Emprendimiento creativo para salvar el mundo</h4>
                               <p class="conferencista">Alejandra Luzardo - BID</p>
                             </div>
+                            </a>
                           </div>
                         </div>
                         <div class="grid-x align-middle">
@@ -188,11 +206,13 @@
                             <div class="horario">18:00 - 19:00</div>
                           </div>
                           <div class="medium-10 cell">
+                            <a href="https://www.youtube.com/channel/UCTyKrM5aXG1iPI1OhG4j3sQ" target="_blank" rel="noreferrer">
                             <div data-equalizer-watch="" class="conferencia digital-talk" style="height: auto;">
                               <p>YouTube</p>
                               <h4>Black Bot inteligencia de negocios </h4>
                               <p class="conferencista">Jonathan Álvarez - Blackbot Inteligence</p>
                             </div>
+                            </a>
                           </div>
                         </div>
                     </div>
@@ -205,13 +225,13 @@
     </div>
 </section>
 
-<div class="space-50 hidden"> </div>
+<div class="space-50"> </div>
 
 <section id="section-ponentes" class="ponentes-home">
 <div class="container">
     <div class="row">
         <div class="col-md-4 text-left col-md-offset-right-8"> 
-            <h1 class="color-white title-ponentes">VOCES DEL FUTURO</h1>
+            <h1 class="color-white title-ponentes" data-aos="zoom-in">VOCES DEL FUTURO</h1>
             <div class="space-20"> </div>
             <p>¿Qué significa ser un Neo Emprendedor? Es atreverse a emprender en estos tiempos de cambios y retos.</p>
             <p>CEO te trae personas experimentadas y llenas de conocimiento, para compartirte herramientas y puedas alcanzar tus metas.</p>
