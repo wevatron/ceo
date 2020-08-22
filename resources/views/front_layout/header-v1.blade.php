@@ -88,7 +88,7 @@
                     <h1 class="glitch glitch-left-black weight-900 hidden" data-text="Streaming">Streaming</h1>
                 </div>
             </div>
-            <div class="col-md-5 col-xs-offset-right-1 block-desktop"> 
+            <div class="col-md-5 col-xs-offset-right-1 block-desktop dateCEO"> 
                  <div class="text-right col-2">
                     <img src="{{ asset('layout/assets/img/home/Date_CEO.png?format=webp&quality=auto') }}" height="100" alt="CEO 2020">
                 </div>

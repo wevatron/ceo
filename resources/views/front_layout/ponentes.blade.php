@@ -12,7 +12,7 @@
                 <h1 class="glitch text-left glitch-left-white weight-900" data-text="Voces del Futuro">Voces del Futuro</h1>
             </div>
         </div>
-        <div class="col-md-8 color-white space-ponentes col-md-offset-4"> 
+        <div class="col-md-8 color-white space-ponentes col-md-offset-4" data-aos="fade-up"> 
              <p class="text-right">En 2020 nuestro mundo se transformó, el futuro llegó y ahora queremos hacer uno nuevo, ¿pero por dónde empezar? Los aliados de CEO 2020 tienen mucho que compartirte;  son expertos en distintas áreas del emprendimiento, son las voces que en este tiempo se necesitan. <b>Neo Emprendedor</b>, no te pierdas esta gran oportunidad de conectar con las mentes del futuro.</p>
         </div>
     </div>

@@ -1146,7 +1146,7 @@ footer img {
     }
 }
 
-@media only screen and (max-width: 520px) {
+@media only screen and (max-width: 568px) {
     .box-headline {
         font-size: 80px;
     }
@@ -1368,6 +1368,17 @@ footer img {
     #section-ediciones .slick-slide {
         padding-left: 0px !important;
     }
+    .tab-agenda .nav-tabs .nav-link {
+        margin: 0rem !important;
+    }
+    .agenda-ceo .digital-talk {
+        border-left: none !important;
+    }
+    .dateCEO {
+        display: none !important;
+    }
+    .nav-tabs-responsive .nav-tabs { min-width: 600px; }
+    .nav-tabs-responsive { overflow: auto; }
 }
 
 @media only screen and (max-width: 480px) {
@@ -1894,10 +1905,10 @@ hr{
     opacity: 1 !important;
 }
 .slick-prev {
-    left: 8px !important;
+    left: 15px !important;
 }
 .slick-next {
-    right: 8px !important;
+    right: 22px !important;
 }
 .slick-slide:hover{
     cursor: pointer;
@@ -2188,6 +2199,17 @@ hr{
     transform: rotate(360deg);
   }
 }
+.aliados-iconos-v1 .slick-prev::before {
+    font-size: 25px !important;
+    color: #000 !important;
+}
+.aliados-iconos-v1 .slick-prev {
+    left: 15px !important;
+}
+.aliados-iconos-v1 .slick-next::before {
+    font-size: 25px !important;
+    color: #000 !important;
+}
 .slick-prev::before {
     font-size: 30px !important;
     color: #fdeb00 !important;
@@ -2199,23 +2221,27 @@ hr{
 .slick-prev, .slick-next {
     z-index: 100;
 }
-.slide-aprende .slick-prev, .slick-next {
+.slide-aprende .slick-prev {
+    width: 50px !important;
+    height: 50px !important;
+}
+.slide-aprende .slick-next {
     width: 50px !important;
     height: 50px !important;
 }
 .slide-aprende .slick-prev::before {
-    font-size: 35px !important;
+    font-size: 30px !important;
     color: #fdeb00 !important;
 }
 .slide-aprende .slick-next::before {
-    font-size: 35px !important;
+    font-size: 30px !important;
     color: #fdeb00 !important;
 }
 .slide-aprende .slick-prev {
-    left: -10px !important;
+    left: -8px !important;
 }
 .slide-aprende .slick-next {
-    right: -10px !important;
+    right: -8px !important;
 }
 .title-tutoriales{
     font-weight: 900;
@@ -2489,6 +2515,18 @@ hr{
     max-width: 73.75rem;
     margin-left: auto;
     margin-right: auto;
+}
+.grid-container-agenda a:hover{
+    color: #fff;
+    text-decoration: none;
+}
+.grid-container-agenda a:active{
+    color: #fff;
+    text-decoration: none;
+}
+.grid-container-agenda a:visited{
+    color: #fff;
+    text-decoration: none;
 }
 .grid-x {
     display: flex;

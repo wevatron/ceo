@@ -8,12 +8,12 @@
 <div class="container">
     <div class="row">
         <div class="col-md-9 col-md-offset-3 space-80"> 
-        	<div class="title-header-bazar">
+        	<div class="title-header-bazar" >
 	            <h1 class="text-left color-pink weight-900">Bazar Digital </h1>
                 <h1 class="text-left color-pink no-margin-top weight-900">CE0 2020</h1>
    			</div>
         </div>
-        <div class="col-md-6 color-black bg-white space-bazar col-md-offset-6"> 
+        <div class="col-md-6 color-black bg-white space-bazar col-md-offset-6" data-aos="fade-up"> 
              <p class="text-left weight-900">¿Que están creando los Neo Emprendedores?</p> 
 
              <p class="text-left">Este año CEO muda su icónico Bazar de Emprendedores a esta plataforma digital. Descubre y conoce los productos más innovadores de este año, pero no esperes mucho ¡solo están por tiempo limitado!</p>

@@ -11,13 +11,13 @@
 	   			<h1 class="text-left color-white no-margin-top weight-900">CEO Digital?</h1>
    			</div>
         </div>
-        <div class="col-md-8 color-white space-ceo col-md-offset-4"> 
+        <div class="col-md-8 color-white space-ceo col-md-offset-4" data-aos="fade-up"> 
              <p class="text-left">
                 Es el encuentro de emprendimiento más emocionante del país, un puente para conectar a emprendedores y empresarios de la región con el ecosistema nacional e internacional, quienes comparten la pasión y la energía con socios y aliados que están comprometidos con transformar a través de su trabajo y esfuerzo la realidad de nuestro país. </p>
-			 <p class="text-left">
+			       <p class="text-left">
 				Un espacio digital que conjunta las ideas de unos con las experiencias de otros en un entorno de innovación para compartir al mundo.</p>
- 			<p class="text-left">Creaciones y creadores conectando entre sí, que hacen posible este espacio.</p>
-        </div>
+ 			      <p class="text-left">Creaciones y creadores conectando entre sí, que hacen posible este espacio.</p>
+      </div>
     </div>
 
 </div>
@@ -74,7 +74,7 @@
 								<img class="img-responsive" src="{{ asset('layout/assets/img/ceo/img-economia.jpg?format=webp&quality=auto') }}" height="350" alt="CEO 2020">
 							</div>
 							<div class="col-md-8 text-left">   
-								<h1 class="no-margin-top space-20-mobile">Economía Naranja</h1>   
+								<h1 class="no-margin-top space-20-mobile" data-aos="fade-up">Economía Naranja</h1>   
 	               				<p class="space-20">"La economía creativa, herencia cultural e intangible de la región. </p>
 	               				<p>Es el conjunto de actividades que de manera encadenada permiten que las ideas se transformen en bienes y servicios culturales, cuyo valor está determinado por su contenido de propiedad intelectual." </p>
                         <p class="subtexto">Banco Interamericano de Desarrollo. La economía naranja: una oportunidad infinita. Bogotá, Colombia: Editorial Puntoaparte</p>
@@ -94,7 +94,7 @@
 								<img class="img-responsive" src="{{ asset('layout/assets/img/ceo/img-social.jpg?format=webp&quality=auto') }}" height="350" alt="CEO 2020">
 							</div>
 							<div class="col-md-8 text-left">   
-								<h1 class="no-margin-top space-20-mobile">Economía Social</h1>   
+								<h1 class="no-margin-top space-20-mobile" data-aos="fade-up">Economía Social</h1>   
 	               				<p class="space-20">"Lograr mejores resultados en pro del bien común.</p>
 								<p>La economía social es un movimiento integrado por actores cuyo objetivo principal es generar un impacto significativo sobre la sociedad, el medio ambiente y la comunidad local. </p>
 							</div>
