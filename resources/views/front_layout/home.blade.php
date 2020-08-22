@@ -63,7 +63,7 @@
                           <a href="{{url('/')}}/paneles">
                           <div data-equalizer-watch="" class="conferencia digital-talk" style="height: auto;">
                             <p>Zoom</p>
-                            <h4>Emprendimiento colaborativo para un nuevo futuro</h4>
+                            <h4>Panel: Emprendimiento colaborativo para un nuevo futuro</h4>
                             <p class="conferencista">Itzel Villa - Posible Coop</p>
                             <p class="conferencista">Carlos Pérez - IKEA</p>
                             <p class="conferencista">Greta Spota - WWF</p>
@@ -82,7 +82,7 @@
                             <a href="{{url('/')}}/paneles">
                             <div data-equalizer-watch="" class="conferencia digital-talk" style="height: auto;">
                               <p>Zoom</p>
-                              <h4>Emprendimientos desde las industrias creativas</h4>
+                              <h4>Panel: Emprendimientos desde las industrias creativas</h4>
                               <p class="conferencista">Mario Romero - Impact Hub CDMX</p>
                               <p class="conferencista">Martha Jiménez - Blancos & Bancos</p>
                               <p class="conferencista">Gabriel Reyes - Vixi México</p>
@@ -101,7 +101,7 @@
                             <a href="{{url('/')}}/paneles">
                             <div data-equalizer-watch="" class="conferencia digital-talk" style="height: auto;">
                               <p>Zoom</p>
-                              <h4>Inversión de impacto para lograr desarrollo sostenible</h4>
+                              <h4>Panel: Inversión de impacto para lograr desarrollo sostenible</h4>
                               <p class="conferencista">Ernesto Herrera - Reforestamos México</p>
                               <p class="conferencista">Vanessa González - Fomento Social Citibanamex</p>
                               <p class="conferencista">Laura Ortiz- SVX</p>
@@ -118,7 +118,7 @@
                             <a href="{{url('/')}}/paneles">
                             <div data-equalizer-watch="" class="conferencia digital-talk" style="height: auto;">
                               <p>Zoom</p>
-                              <h4>Redefiniendo la ruta del Emprendedor Social</h4>
+                              <h4>Panel: Redefiniendo la ruta del Emprendedor Social</h4>
                               <p class="conferencista">Juan Carlos Díaz Bilbao - PSM</p>
                               <p class="conferencista">Germán Santillán - Oaxacanita</p>
                               <p class="conferencista">Aída Chávez - Hola Code</p>
