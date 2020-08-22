@@ -17,7 +17,7 @@
     <link href="{{ asset('layout/assets/css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('layout/assets/css/offset-right.css') }}" rel="stylesheet">
     <link href="{{ asset('layout/assets/css/ionicons/css/ionicons.min.css') }}" rel="stylesheet">
- 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+ 	  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Saira:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
     <link href="{{ asset('layout/assets/css/glitch.css') }}" rel="stylesheet">
     <link href="{{ asset('layout/assets/css/tabs.css') }}" rel="stylesheet">
@@ -25,7 +25,7 @@
     <link href="{{ asset('layout/assets/css/animation.css') }}" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{{ asset('layout/assets/css/slick/slick.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('layout/assets/css/slick/slick-theme.css') }}">
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172329568-1"></script>
@@ -78,6 +78,10 @@
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/jquery.validate.min.js"></script>
 <script type="text/javascript" src="{{ asset('layout/assets/js/global.js') }}"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 
 </body>
 </html>

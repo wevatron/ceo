@@ -24,7 +24,7 @@
 <section class="grid-ponentes">
 <div class="container">
     <div class="space-50"> </div>
-    <div class="grid-ponentes-full"> 
+    <div class="grid-ponentes-full" data-aos="zoom-in"> 
 
               <div class="row">
               @foreach($ponentes as $p)

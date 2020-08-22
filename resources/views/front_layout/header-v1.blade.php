@@ -6,7 +6,7 @@
     <!-- box header -->
     <header class="box-header">
 
-        <div class="dropdown m-account dropleft">
+        <div class="dropdown m-account dropleft" data-aos="zoom-in-down">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 @auth
                     <img src="{{ asset('layout/assets/img/header/user_online.svg') }}" class="img-responsive" width="45" alt="CEO 2020">

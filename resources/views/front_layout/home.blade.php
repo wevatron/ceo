@@ -68,7 +68,7 @@
             <p>¿Qué significa ser un Neo Emprendedor? Es atreverse a emprender en estos tiempos de cambios y retos.</p>
             <p>CEO te trae personas experimentadas y llenas de conocimiento, para compartirte herramientas y puedas alcanzar tus metas.</p>
         </div>
-        <div class="col-md-8 grid-ponentes margin-top-mobile-30 col-md-offset-4"> 
+        <div data-aos="fade-left" class="col-md-8 grid-ponentes margin-top-mobile-30 col-md-offset-4"> 
                 
                 <!-- ponente -->
                 <div class="row">
@@ -181,7 +181,7 @@
         </div>
 
         <!-- Carousel Aliados mobile  -->
-        <div class="block-mobile">
+        <div class="block-mobile" data-aos="fade-up">
           <div class="aliados-iconos-v1 slider col-md-12 text-center container space-30">
               <div class="item"> 
                       <a href="https://www.iadb.org/es" rel="noreferrer" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/01_bid.svg') }}"  alt="BID"></a>
@@ -210,6 +210,9 @@
               <div class="item"> 
                       <a href="https://www.irrazonable.org/" rel="noreferrer" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/09_umx.svg') }}"  alt="UNREASONABLE"></a>
               </div>
+              <div class="item">  
+                      <a href="https://www.wwf.org.mx/" rel="noreferrer" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/10_wwf.svg?format=webp&quality=auto') }}"  alt="WWF"></a>
+              </div>
               <div class="item"> 
                       <a href="https://www.facebook.com/" rel="noreferrer" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/11_facebook.svg') }}"  alt="Facebook"></a>
               </div>
@@ -237,12 +240,24 @@
               <div class="item"> 
                       <a href="http://fairconnection.cl/" rel="noreferrer" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/19_fair.svg?format=webp&quality=auto') }}"  alt="Fair Connection"></a>
               </div>
+              <div class="item">  
+                      <a href="https://holacode.com/" rel="noreferrer" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/20_website.png?format=webp&quality=auto') }}"  alt="Hola Code"></a>
+              </div>
+              <div class="item"> 
+                      <a href="https://www.tumu.mx/" rel="noreferrer" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/21_tumu.png?format=webp&quality=auto') }}"  alt="TUMU"></a>
+              </div>
+              <div class="item"> 
+                      <a href="#" rel="noreferrer" target="_blank"><img class="img-responsive img-grayscale img-aliados-custome" src="{{ asset('layout/assets/img/home/aliados/22_agile.png?format=webp&quality=auto') }}"  alt="Dojo Agile"></a>
+              </div>
+              <div class="item">  
+                      <a href="https://oaxacanitachocolate.com/" rel="noreferrer" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/23_Oaxacanita.svg?format=webp&quality=auto') }}"  alt="Oaxacanita"></a>
+              </div>
           </div>
         </div>
         <!-- Carousel Aliados mobile  -->
 
         <!-- Carousel Aliados Desktop  -->
-        <div class="block-desktop">
+        <div class="block-desktop" data-aos="fade-up">
           <div class="aliados-iconos-general slider col-md-12 text-center container space-10">
               <div class="item"> 
                       <a href="https://mexicocity.impacthub.net/" rel="noreferrer" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/05_impact.svg') }}"  alt="IMPACT HUB"></a>
@@ -307,7 +322,23 @@
               <div class="item"> 
                       <a href="https://lacana.mx/" rel="noreferrer" target="_blank"><img class="img-responsive img-grayscale img-aliados-custome" style="height: 80px; width: auto !important;"  src="{{ asset('layout/assets/img/home/aliados/15_lacana.png?format=webp&quality=auto') }}"  alt="La Cana"></a>
               </div>
-              <div class="item">  </div>
+              <div class="item">  
+                      <a href="https://www.wwf.org.mx/" rel="noreferrer" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/10_wwf.svg?format=webp&quality=auto') }}"  alt="WWF"></a>
+              </div>
+              <div class="item">  
+                      <a href="https://holacode.com/" rel="noreferrer" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/20_website.png?format=webp&quality=auto') }}"  alt="Hola Code"></a>
+              </div>
+          </div>
+          <div class="aliados-iconos-general slider col-md-12 text-center container space-30">
+              <div class="item"> 
+                      <a href="https://www.tumu.mx/" rel="noreferrer" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/21_tumu.png?format=webp&quality=auto') }}"  alt="TUMU"></a>
+              </div>
+              <div class="item"> 
+                      <a href="#" rel="noreferrer" target="_blank"><img class="img-responsive img-grayscale img-aliados-custome" src="{{ asset('layout/assets/img/home/aliados/22_agile.png?format=webp&quality=auto') }}"  alt="Dojo Agile"></a>
+              </div>
+              <div class="item">  
+                      <a href="https://oaxacanitachocolate.com/" rel="noreferrer" target="_blank"><img class="img-responsive img-grayscale" src="{{ asset('layout/assets/img/home/aliados/23_Oaxacanita.svg?format=webp&quality=auto') }}"  alt="Oaxacanita"></a>
+              </div>
               <div class="item">  </div>
           </div>
         </div>
@@ -330,7 +361,7 @@
                 <h1 class="glitch glitch-left weight-900" data-text="EN EDICIONES ANTERIORES?">EN EDICIONES ANTERIORES?</h1>
         </div>
         <div class="col-md-4"> 
-             <img class="img-responsive float-right-ediciones" src="{{ asset('layout/assets/img/general/logo-interno.png?format=webp&quality=auto') }}" width="150" alt="CEO 2020">
+             <img data-aos="zoom-in-left" class="img-responsive float-right-ediciones" src="{{ asset('layout/assets/img/general/logo-interno.png?format=webp&quality=auto') }}" width="150" alt="CEO 2020">
         </div>
         <div class="col-md-offset-2 col-md-8 col-md-offset-right-2 space-50 text-left"> 
             <p>
@@ -386,10 +417,10 @@
 
                 <p class="text-right">Estaremos actualizándote constantemente sobre ponentes, horarios, actividades y mucho más por medio de nuestras redes sociales, síguenos en Facebook, Instagram, Twitter, TikTok y escucha nuestras playlists temáticas en Spotify.</p>
 
-                <div class="space-50"> </div>
+                <div class="space-30"> </div>
 
                 <div class="newsletter"> Suscríbete a nuestro newsletter. </div>
-
+                <div class="container-newsletter"> 
                   {!! Form::open(['route' => 'newsletter.store']) !!}
 
                     {{ csrf_field() }}
@@ -414,9 +445,12 @@
                     </div>
              
                   {!! Form::close() !!}
-                    
-
-                <div class="space-100 block-mobile"> </div>
+                </div>
+              
+                <div data-aos="zoom-in-up" class="space-80">
+                  <a href="{{url('/')}}/paneles"><img class="img-responsive" src="{{ asset('layout/assets/img/home/CEO_Banner_Registro_Paneles.gif?format=webp&quality=auto') }}"  alt="Paneles CEO"></a>
+                </div>
+                
 
         </div>
         <div class="col-md-6 text-center container-rrss border-left-contenido"> 
