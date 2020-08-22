@@ -7,51 +7,198 @@
     <div class="row">
         <div class="col-md-4"> 
             <div class="text-left col-md-12 no-padding circle-img">
-                <h1 class="color-pink no-margin-top margin-top-mobile-50 weight-900">Explora</h1>
-                <a href="{{url('/')}}/bazar-digital"><img class="img-responsive grayscale overlay_" src="{{ asset('layout/assets/img/home/banner-bazar.gif?format=webp&quality=auto') }}" width="480" alt="CEO 2020"></a>
+                <h1 class="color-pink no-margin-top weight-900">Explora</h1>
+                <div class="slide-banner slider">
+                    <div class="item">
+                          <a href="{{url('/')}}/bazar-digital"><img class="img-responsive grayscale overlay_" src="{{ asset('layout/assets/img/home/banner-bazar.gif?format=webp&quality=auto') }}" width="480" alt="CEO 2020"></a>
+                    </div>
+                    <div class="item">
+                          <a href="{{url('/')}}/bazar-digital"><img class="img-responsive grayscale overlay_" src="{{ asset('layout/assets/img/home/banner-bazar.gif?format=webp&quality=auto') }}" width="480" alt="CEO 2020"></a>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="col-md-8"> 
-             <div class="text-left">
-                <h1 class="color-pink no-margin-top margin-top-mobile-50 weight-900">Agenda</h1>
-                <div class="agenda-ceo">
-                  <div class="grid-container-agenda color-white fluid">
-                    
-                    <div class="grid-x align-middle">
-                      <div class="medium-2 cell">
-                        <div class="horario">09:00 - 09:50</div>
-                      </div>
-                      <div class="medium-10 cell">
-                        <div data-equalizer-watch="" class="conferencia digital-talk" style="height: auto;">
-                          <p>Canal 1 y 2</p>
-                          <h4>La Experiencia de Educación Superior de Facebook y la Evolución del Marketing Digital</h4>
-                          <p class="conferencista">Rafael Maximo</p>
-                        </div>
-                      </div>
-                    </div>
+             <div class="text-left tab-agenda">
 
-                    <div class="grid-x align-middle">
-                      <div class="medium-2 cell">
-                        <div class="horario">10:00 - 10:20</div>
-                      </div>
-                      <div class="medium-5 cell">
-                        <div data-equalizer-watch="" class="conferencia digital-talk" style="height: auto;">
-                          <p>Canal 1</p>
-                          <h4>Digital nomads: Living between the real, the virtual and the hyperreal worlds </h4>
-                          <p class="conferencista">Artemisa Jaramillo</p>
+                <h1 class="color-pink no-margin-top margin-top-mobile-50 weight-900">Agenda</h1>
+
+                <div class="space-10"> </div>
+
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                  <li class="nav-item nav-uno">
+                    <a class="nav-link" id="primero-tab" data-toggle="tab" href="#primero" role="tab" aria-controls="primero"
+                      aria-selected="true">24 agosto</a>
+                  </li>
+                  <li class="nav-item nav-dos">
+                    <a class="nav-link" id="segundo-tab" data-toggle="tab" href="#segundo" role="tab" aria-controls="segundo"
+                      aria-selected="false">25 agosto</a>
+                  </li>
+                  <li class="nav-item nav-tres">
+                    <a class="nav-link" id="tercero-tab" data-toggle="tab" href="#tercero" role="tab" aria-controls="tercero"
+                      aria-selected="false">26 agosto</a>
+                  </li>
+                  <li class="nav-item nav-cuatro">
+                    <a class="nav-link" id="cuarto-tab" data-toggle="tab" href="#cuarto" role="tab" aria-controls="cuarto"
+                      aria-selected="false">27 agosto</a>
+                  </li>
+                  <li class="nav-item nav-cinco">
+                    <a class="nav-link" id="quinto-tab" data-toggle="tab" href="#quinto" role="tab" aria-controls="quinto"
+                      aria-selected="false">28 agosto</a>
+                  </li>
+                </ul>
+
+
+                  <div class="agenda-ceo">
+                  <div class="grid-container-agenda color-white fluid">
+                  
+                  <div class="tab-content" id="myTabContent">
+
+                    <div class="tab-pane fade" id="primero" role="tabpanel" aria-labelledby="primero-tab">
+                      <div class="grid-x align-middle">
+                        <div class="medium-2 cell">
+                          <div class="horario">18:00 - 19:00</div>
                         </div>
-                      </div>
-                      <div class="medium-5 cell">
-                        <div data-equalizer-watch="" class="conferencia digital-talk" style="height: auto;">
-                          <p>Canal 2</p>
-                          <h4>¿Nuevos normales o mejores normales?</h4>
-                          <p class="conferencista">David Arafat</p>
+                        <div class="medium-10 cell">
+                          <div data-equalizer-watch="" class="conferencia digital-talk" style="height: auto;">
+                            <p>Zoom</p>
+                            <h4>Emprendimiento colaborativo para un nuevo futuro</h4>
+                            <p class="conferencista">Itzel Villa - Posible Coop</p>
+                            <p class="conferencista">Carlos Pérez - IKEA</p>
+                            <p class="conferencista">Greta Spota - WWF</p>
+                            <p class="conferencista">Blanca Sánchez - Mbis Bin</p>
+                          </div>
                         </div>
                       </div>
                     </div>
-                    
+                    <div class="tab-pane fade" id="segundo" role="tabpanel" aria-labelledby="segundo-tab"> 
+                        <div class="grid-x align-middle">
+                          <div class="medium-2 cell">
+                            <div class="horario">18:00 - 19:00</div>
+                          </div>
+                          <div class="medium-10 cell">
+                            <div data-equalizer-watch="" class="conferencia digital-talk" style="height: auto;">
+                              <p>Zoom</p>
+                              <h4>Emprendimientos desde las industrias creativas</h4>
+                              <p class="conferencista">Mario Romero - Impact Hub CDMX</p>
+                              <p class="conferencista">Martha Jiménez - Blancos & Bancos</p>
+                              <p class="conferencista">Gabriel Reyes - Vixi México</p>
+                              <p class="conferencista">Raquel Aguirre - La Cana</p>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="tercero" role="tabpanel" aria-labelledby="tercero-tab"> 
+                        <div class="grid-x align-middle">
+                          <div class="medium-2 cell">
+                            <div class="horario">16:00 - 17:00</div>
+                          </div>
+                          <div class="medium-10 cell">
+                            <div data-equalizer-watch="" class="conferencia digital-talk" style="height: auto;">
+                              <p>Zoom</p>
+                              <h4>Inversión de impacto para lograr desarrollo sostenible</h4>
+                              <p class="conferencista">Ernesto Herrera - Reforestamos México</p>
+                              <p class="conferencista">Vanessa González - Fomento Social Citibanamex</p>
+                              <p class="conferencista">Laura Ortiz- SVX</p>
+                              <p class="conferencista">María Inés Miranda - Fair Connection</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="grid-x align-middle">
+                          <div class="medium-2 cell">
+                            <div class="horario">18:00 - 19:00</div>
+                          </div>
+                          <div class="medium-10 cell">
+                            <div data-equalizer-watch="" class="conferencia digital-talk" style="height: auto;">
+                              <p>Zoom</p>
+                              <h4>Redefiniendo la ruta del Emprendedor Social</h4>
+                              <p class="conferencista">Juan Carlos Díaz Bilbao - PSM</p>
+                              <p class="conferencista">Germán Santillán - Oaxacanita</p>
+                              <p class="conferencista">Aída Chávez - Hola Code</p>
+                              <p class="conferencista">Enrique Rodríguez- Someone Somewhere</p>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="cuarto" role="tabpanel" aria-labelledby="cuarto-tab">
+                        <div class="grid-x align-middle">
+                          <div class="medium-2 cell">
+                            <div class="horario">10:00 - 11:00</div>
+                          </div>
+                          <div class="medium-10 cell">
+                            <div data-equalizer-watch="" class="conferencia digital-talk" style="height: auto;">
+                              <p>YouTube</p>
+                              <h4>Comercio electrónico, motor de recuperación económica</h4>
+                              <p class="conferencista">David Geisen - Mercado Libre</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="grid-x align-middle">
+                          <div class="medium-2 cell">
+                            <div class="horario">12:30 - 13:30</div>
+                          </div>
+                          <div class="medium-10 cell">
+                            <div data-equalizer-watch="" class="conferencia digital-talk" style="height: auto;">
+                              <p>YouTube</p>
+                              <h4>El usuario 🐭 de tu producto no eres tú 🙀</h4>
+                              <p class="conferencista">Victor Tavares / Arturo Robles Maloof | Citibanamex</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="grid-x align-middle">
+                          <div class="medium-2 cell">
+                            <div class="horario">18:00 - 19:00</div>
+                          </div>
+                          <div class="medium-10 cell">
+                            <div data-equalizer-watch="" class="conferencia digital-talk" style="height: auto;">
+                              <p>YouTube</p>
+                              <h4>DESAPRENDER</h4>
+                              <p class="conferencista">Zarina Rivera - Tümu</p>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="quinto" role="tabpanel" aria-labelledby="quinto-tab">
+                        <div class="grid-x align-middle">
+                          <div class="medium-2 cell">
+                            <div class="horario">10:00 - 11:00</div>
+                          </div>
+                          <div class="medium-10 cell">
+                            <div data-equalizer-watch="" class="conferencia digital-talk" style="height: auto;">
+                              <p>YouTube</p>
+                              <h4>Innovando para resolver PPUs (Pin***s Problemas Urgentes)</h4>
+                              <p class="conferencista">Raúl de Anda - Irrazonable</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="grid-x align-middle">
+                          <div class="medium-2 cell">
+                            <div class="horario">12:30 - 13:30</div>
+                          </div>
+                          <div class="medium-10 cell">
+                            <div data-equalizer-watch="" class="conferencia digital-talk" style="height: auto;">
+                              <p>YouTube</p>
+                              <h4>Emprendimiento creativo para salvar el mundo</h4>
+                              <p class="conferencista">Alejandra Luzardo - BID</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="grid-x align-middle">
+                          <div class="medium-2 cell">
+                            <div class="horario">18:00 - 19:00</div>
+                          </div>
+                          <div class="medium-10 cell">
+                            <div data-equalizer-watch="" class="conferencia digital-talk" style="height: auto;">
+                              <p>YouTube</p>
+                              <h4>Black Bot inteligencia de negocios </h4>
+                              <p class="conferencista">Jonathan Álvarez - Blackbot Inteligence</p>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                  </div> <!-- tabcontent -->
                   </div>
-                </div>
+                  </div> <!-- agenda -->
 
             </div>
         </div>
@@ -59,6 +206,7 @@
 </section>
 
 <div class="space-50 hidden"> </div>
+
 <section id="section-ponentes" class="ponentes-home">
 <div class="container">
     <div class="row">
@@ -449,11 +597,11 @@
                 <div data-aos="zoom-in-up" class="space-80">
                   <a href="{{url('/')}}/paneles"><img class="img-responsive" src="{{ asset('layout/assets/img/home/CEO_Banner_Registro_Paneles.gif?format=webp&quality=auto') }}"  alt="Paneles CEO"></a>
                 </div>
-                
+
 
         </div>
         <div class="col-md-6 text-center container-rrss border-left-contenido"> 
-              <div class="col-md-6 space-80-mobile"> 
+              <div class="col-md-6"> 
                         <div class="fb-page" data-href="https://www.facebook.com/ConectandoEnOaxaca/" data-tabs="timeline" data-height="500" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/ConectandoEnOaxaca/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/ConectandoEnOaxaca/">Conectando Emprendedores</a></blockquote></div>
               </div>
               <div class="col-md-6 space-20-mobile"> 
@@ -467,12 +615,48 @@
 
 <div class="space-80"></div>
 
+  <!-- Modal Paneles -->
+<div class="modal fade panelesModals" id="paneles_ceo" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered modal-xs" role="document">
+  <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal">&times;</button>
+  </div>
+  <div class="modal-content">
+    <div class="modal-body">
+      <div class="container-fluid">
+            <a href="{{url('/')}}/paneles"><img class="img-responsive" src="{{ asset('layout/assets/img/home/CEO_POP_PANEL.png?format=webp&quality=auto') }}" width="auto" alt="Paneles CEO 2020"></a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
 <script type="text/javascript">
   function showPonente(id_ponente){
       $("#"+id_ponente).modal('show');
   }
   window.addEventListener("DOMContentLoaded", function(){
       
+      $("#paneles_ceo").modal('show');
+
+      let today = new Date().toISOString().slice(0, 10);
+
+      if(today=="2020-08-25"){
+        $("#segundo").addClass("in active");
+        $(".nav-dos").addClass("active");
+      }else if(today=="2020-08-26"){
+        $("#tercero").addClass("in active");
+        $(".nav-tres").addClass("active");
+      }else if(today=="2020-08-27"){
+        $("#cuarto").addClass("in active");
+        $(".nav-cuatro").addClass("active");
+      }else if(today=="2020-08-28"){
+        $("#quinto").addClass("in active");
+        $(".nav-cinco").addClass("active");
+      }else{
+        $("#primero").addClass("in active");
+        $(".nav-uno").addClass("active");
+      }
+     
       $("#live_ceo_2020").attr("src","https://www.youtube.com/embed/tiUzMejT-58?autoplay=1&loop=1&rel=0&showinfo=0&iv_load_policy=3");
       
       $("#ceo_2019").attr("src","https://www.youtube.com/embed/6e4K2zZSjtE?controls=0");

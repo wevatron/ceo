@@ -1238,14 +1238,14 @@ footer img {
     .live-chat{
         display: none !important; 
     }
-    .circle-img{
-        display: none !important; 
+    .agenda-ceo .grid-x{
+        display: block !important;
     }
     .space-100-newsletter{
         margin-top: 50px !important;
     }
     .container-rrss{
-        margin-top: 80px;
+        margin-top: 40px;
     }
     .detras-ceo {
         font-size: 5rem;
@@ -1364,6 +1364,9 @@ footer img {
     }
     .text-recomendacion {
         font-size: 13px !important;
+    }
+    #section-ediciones .slick-slide {
+        padding-left: 0px !important;
     }
 }
 
@@ -1899,6 +1902,13 @@ hr{
 .slick-slide:hover{
     cursor: pointer;
 }
+.modal-content{
+    border-radius: 0px !important;
+    border: 1px solid #fff !important;
+}
+
+
+
 
 
 /* ---------------------------------------------
@@ -2495,7 +2505,7 @@ hr{
     border-left: 2px solid #E501FA;
 }
 .agenda-ceo .digital-talk {
-    border-left: 2px solid #FDEB00;
+    border-left: 2px solid #0ff;
 }
 .agenda-ceo .conferencia .conferencista {
     font-size: 1rem;
@@ -2503,7 +2513,7 @@ hr{
 .agenda-ceo .horario {
     text-align: center;
     font-weight: 900;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     color: #fff;
     padding: 1rem;
 }
@@ -2511,11 +2521,15 @@ hr{
     align-items: center;
 }
 .agenda-ceo {
-    max-height: 36rem;
+    max-height: 74rem;
     position: relative;
     background: #fb16c1;
     overflow-y: scroll;
 }
+.tab-agenda .nav-tabs {
+    border-bottom: 1px solid #fb16c1 !important;
+}
+
 @media print, screen and (min-width: 40em){
     .grid-x > .medium-10 {
         width: 83.3333333333%;

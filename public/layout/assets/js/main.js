@@ -34,6 +34,14 @@ $(document).ready(function(){
             }
         ]
     });
+    $(".slide-banner").slick({
+        dots: true,
+        arrows: false,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true
+    });
     $(".aliados-iconos-v1").slick({
         dots: false,
         infinite: false,
