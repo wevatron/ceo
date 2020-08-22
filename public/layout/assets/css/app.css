@@ -1377,8 +1377,12 @@ footer img {
     .dateCEO {
         display: none !important;
     }
-    .nav-tabs-responsive .nav-tabs { min-width: 600px; }
-    .nav-tabs-responsive { overflow: auto; }
+    .nav-tabs-responsive .nav-tabs .nav-item{ 
+        float: none;
+        display: inline-block;
+        width: 48%;
+    }
+   
 }
 
 @media only screen and (max-width: 480px) {
