@@ -68,12 +68,11 @@
             <p>¿Qué significa ser un Neo Emprendedor? Es atreverse a emprender en estos tiempos de cambios y retos.</p>
             <p>CEO te trae personas experimentadas y llenas de conocimiento, para compartirte herramientas y puedas alcanzar tus metas.</p>
         </div>
-        <div data-aos="fade-left" class="col-md-8 grid-ponentes margin-top-mobile-30 col-md-offset-4"> 
+        <div class="col-md-8 grid-ponentes margin-top-mobile-30 col-md-offset-4"> 
                 
                 <!-- ponente -->
                 <div class="row">
 
-                
                       <div class="row">
                       @foreach($ponentes as $p)
                       <?php $url_img = preg_replace("/^http:/i", "https:", $p->Imagenes[0]->url_img); ?>
