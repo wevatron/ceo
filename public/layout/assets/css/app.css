@@ -1144,6 +1144,12 @@ footer img {
     #herramientas-emprender .container {
         padding-top: 20% !important;
     }
+    .padding-bottom-80{
+        padding-bottom: 50px !important;
+    }
+    .padding-top-80{
+        padding-top: 50px !important;
+    }
 }
 
 @media only screen and (max-width: 568px) {
@@ -1634,6 +1640,22 @@ hr{
     display: block;
     content: '';
 }
+@media screen and (min-device-width: 680px) and (max-device-width: 736px) and (orientation : landscape){
+  .live-video::after {
+    padding-top: 42% !important;
+  }
+  .grid-ponentes {
+    margin-top: 0% !important;
+  }
+}
+@media screen and (min-device-width: 737px) and (max-device-width: 812px) and (orientation : landscape){
+  .live-video::after {
+    padding-top: 34% !important;
+  }
+  .grid-ponentes {
+    margin-top: 0% !important;
+  }
+}
 .live-video iframe {
     position: absolute;
     top: 0;
@@ -1653,8 +1675,13 @@ hr{
     background-size: cover;
     background-attachment: fixed;
     background-position: center top;
-    padding:80px;
     min-height: 500px;
+}
+.padding-bottom-80{
+    padding-bottom: 80px;
+}
+.padding-top-80{
+    padding-top: 80px;
 }
 .aliados-iconos-v1{
     text-align: center;
@@ -2208,7 +2235,10 @@ hr{
     color: #000 !important;
 }
 .aliados-iconos-v1 .slick-prev {
-    left: 15px !important;
+    left: 5px !important;
+}
+.aliados-iconos-v1 .slick-next {
+    right: 10px !important;
 }
 .aliados-iconos-v1 .slick-next::before {
     font-size: 25px !important;

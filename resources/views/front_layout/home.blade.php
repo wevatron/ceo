@@ -227,9 +227,12 @@
 
 <div class="space-50"> </div>
 
-<section id="section-ponentes" class="ponentes-home">
-<div class="container">
+<div class="ponentes-home">
+<section id="section-ponentes" class="container">
+
+    <div class="row padding-top-80"> </div>
     <div class="row">
+
         <div class="col-md-4 text-left col-md-offset-right-8"> 
             <h1 class="color-white title-ponentes" data-aos="zoom-in">VOCES DEL FUTURO</h1>
             <div class="space-20"> </div>
@@ -241,7 +244,6 @@
                 <!-- ponente -->
                 <div class="row">
 
-                      <div class="row">
                       @foreach($ponentes as $p)
                       <?php $url_img = preg_replace("/^http:/i", "https:", $p->Imagenes[0]->url_img); ?>
                       <!-- Modal Ponente -->
@@ -285,9 +287,10 @@
                         </div>
                       </div>
                       <!-- End Modal Ponente -->
+
                       <div class="col-md-4 col-sm-6 col-xs-6 space-bottom-10 space-bottom-ponentes">
                           <div class="ponente_item">
-                              <img src="{{$url_img}}?format=webp&quality=auto" alt="CEO 2020" class="img-responsive" width="100%" />
+                              <img src="{{$url_img}}?format=webp&quality=auto" alt="CEO 2020" class="mx-auto img-responsive" width="100%" />
                               <div class="ponente_item_hover">
                                   <div class="ponente-border clearfix">
                                       <div class="item_info">
@@ -314,28 +317,28 @@
                           </div>
                       </div>
                       @endforeach
-                      </div>
-
-                      <div class="row container-btn">
-                        <div class="col-md-4 col-md-offset-8 space-40">
-                            <a href="{{url('/')}}/ponentes">
-                            <div class="text-center btna btn-1 btn-1c">
-                                <div>Ver más</div>
-                            </div>
-                            </a>
-                        </div>
-                      </div>
- 
                      
-                      <div class="space-30"></div>
+                      
 
                 </div>
                 <!-- end ponente -->
+
+                <div class="row container-btn">
+                  <div class="col-md-4 col-md-offset-8 space-40">
+                      <a href="{{url('/')}}/ponentes">
+                      <div class="text-center btna btn-1 btn-1c">
+                          <div>Ver más</div>
+                      </div>
+                      </a>
+                  </div>
+                </div>
+
                
         </div>
     </div>
-</div>
+    <div class="row padding-bottom-80"> </div>
 </section>
+</div>
 
 <div class="space-50"> </div>
 <section id="section-aliados" class="container">
