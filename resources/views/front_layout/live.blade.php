@@ -682,7 +682,7 @@
      
       $("#live_ceo_2020").attr("src","https://www.youtube.com/embed/YosFO-gvRUI?autoplay=1&loop=1&rel=0&showinfo=0&iv_load_policy=3");
 
-      $("#live_ceo_chat").attr("src","https://www.youtube.com/live_chat?v=ObGlJ4q5y_w&embed_domain="+window.location.hostname);
+      $("#live_ceo_chat").attr("src","https://www.youtube.com/live_chat?v=YosFO-gvRUI&embed_domain="+window.location.hostname);
       
       $("#ceo_2019").attr("src","https://www.youtube.com/embed/6e4K2zZSjtE?controls=0");
 
