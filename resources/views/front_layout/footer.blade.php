@@ -25,7 +25,7 @@
     <div class="container-fluid">
     <div class="row">
         <div class="col-md-5 text-left col-md-offset-1"> 
-               <a class="color-black download-resouces hidden" href="https://drive.google.com/drive/folders/1uuMutuFgJ3x3nzOmbfy69MG4pwnhwGLk" rel="noreferrer" target="_blank"><p>¡Muestra que eres un Neo Emprendedor! Descarga el material aquí. <i class="ion-ios-download color-pink weight-900"></i></p></a>
+               <a class="color-black download-resouces" href="https://drive.google.com/drive/folders/1uuMutuFgJ3x3nzOmbfy69MG4pwnhwGLk" rel="noreferrer" target="_blank"><p>¡Muestra que eres un Neo Emprendedor! Descarga el material aquí. <i class="ion-ios-download color-pink weight-900"></i></p></a>
         </div>
         <div class="col-md-5 text-center col-md-offset-1"> 
               <p class="copyright"><span class="ceo-copyright">CEO 2020</span> | Todos los derechos reservados.</p>
