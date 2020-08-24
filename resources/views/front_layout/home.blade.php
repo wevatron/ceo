@@ -12,6 +12,9 @@
                     <div class="item">
                           <a href="{{url('/')}}/bazar-digital"><img class="img-responsive grayscale overlay_" src="{{ asset('layout/assets/img/home/banner-bazar.gif?format=webp&quality=auto') }}" width="480" alt="CEO 2020"></a>
                     </div>
+                    <div class="item">
+                          <a href="{{url('/')}}/herramientas-emprender"><img class="img-responsive grayscale overlay_" src="{{ asset('layout/assets/img/home/CEO_Banner_Aprende.jpg?format=webp&quality=auto') }}" width="480" alt="CEO 2020"></a>
+                    </div>
                 </div>
             </div>
         </div>

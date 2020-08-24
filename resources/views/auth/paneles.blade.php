@@ -35,7 +35,7 @@
                       <div class="col-md-12 no-padding">
                         <div class="page__toggle">
                           <label class="toggle">
-                            <input class="toggle__input" type="checkbox" value="1" name="paneles[]" disabled="">
+                            <input class="toggle__input" type="checkbox" value="1" name="paneles[]" checked="">
                             <span class="toggle__label">
                               <span class="toggle__text">Emprendimiento colaborativo para un nuevo futuro - <small>Lunes 24 de agosto 2020  18:00 hrs</small></span>
                             </span>
@@ -46,7 +46,7 @@
                       <div class="col-md-12 no-padding">
                         <div class="page__toggle">
                           <label class="toggle">
-                            <input class="toggle__input" type="checkbox" value="2" name="paneles[]" checked="">
+                            <input class="toggle__input" type="checkbox" value="2" name="paneles[]">
                             <span class="toggle__label">
                               <span class="toggle__text">Emprendimientos desde las industrias creativas - <small>Martes 25 de agosto 2020 18:00 hrs.</small></span>
                             </span>
