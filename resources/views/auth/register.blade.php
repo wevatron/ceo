@@ -46,7 +46,8 @@
                     </div>
                     <div class="col-md-6 px-3"> 
                         <!-- Año-Mes-Dia -->
-                        <input name="edad" value="{{old('edad')}}" pattern="[0-9]{2}-[0-9]{2}-[0-9]{4}" class="form__element" type="date" placeholder="Año de nacimiento" required="" />
+                        <small class="block-mobile text-left">Año de nacimiento</small> 
+                        <input name="edad" value="{{old('edad')}}" pattern="[0-9]{2}-[0-9]{2}-[0-9]{4}" class="form__element width_100" type="date" placeholder="Año de nacimiento" required="" />
                         @if ($errors->has('edad'))
                           <span class="help-block-error">
                               {{ $errors->first('edad') }}
@@ -54,6 +55,7 @@
                         @endif
                     </div>
                     <div class="col-md-6 px-3"> 
+                        <small class="block-mobile text-left">Sexo</small> 
                         <select id="sexo" name="sexo" value="{{old('sexo')}}" required="" class="form__element" type="text" placeholder="Sexo">
                         <option value="1">Hombre</option>
                         <option value="2">Mujer</option>
@@ -66,6 +68,7 @@
                         @endif
                     </div>
                     <div class="col-md-12 px-3"> 
+                        <small class="block-mobile text-left">Ocupación</small> 
                         {!! Form::select('giro_negocio_id', $ocupaciones, null, ['class' => 'form__element', 'placeholder' => 'ocupacion', 'required', 'id'=>'giro_negocio_id']) !!}
                         @if ($errors->has('giro_negocio_id'))
                           <span class="help-block-error">
