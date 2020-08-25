@@ -680,9 +680,9 @@
         $(".nav-uno").addClass("active");
       }
      
-      $("#live_ceo_2020").attr("src","https://www.youtube.com/embed/YosFO-gvRUI?autoplay=1&loop=1&rel=0&showinfo=0&iv_load_policy=3");
+      $("#live_ceo_2020").attr("src","https://www.youtube.com/embed/NhNWI6lS1ho?autoplay=1&loop=1&rel=0&showinfo=0&iv_load_policy=3");
 
-      $("#live_ceo_chat").attr("src","https://www.youtube.com/live_chat?v=YosFO-gvRUI&embed_domain="+window.location.hostname);
+      $("#live_ceo_chat").attr("src","https://www.youtube.com/live_chat?v=NhNWI6lS1ho&embed_domain="+window.location.hostname);
       
       $("#ceo_2019").attr("src","https://www.youtube.com/embed/6e4K2zZSjtE?controls=0");
 
