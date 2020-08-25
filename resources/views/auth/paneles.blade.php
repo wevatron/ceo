@@ -32,21 +32,11 @@
                     <div class="row px-3 space-10 text-left"> 
                       <label class="mb-1"><h6 class="mb-0 text-sm">Selecciona los paneles de tu interés:</h6></label> 
 
+                      
                       <div class="col-md-12 no-padding">
                         <div class="page__toggle">
                           <label class="toggle">
-                            <input class="toggle__input" type="checkbox" value="2" name="paneles[]" checked="">
-                            <span class="toggle__label">
-                              <span class="toggle__text">Emprendimientos desde las industrias creativas - <small>Martes 25 de agosto 2020 18:00 hrs.</small></span>
-                            </span>
-                          </label>
-                        </div>
-                      </div>
-
-                      <div class="col-md-12 no-padding">
-                        <div class="page__toggle">
-                          <label class="toggle">
-                            <input class="toggle__input" type="checkbox" value="3" name="paneles[]">
+                            <input class="toggle__input" type="checkbox" value="3" name="paneles[]" checked="">
                             <span class="toggle__label">
                               <span class="toggle__text">Inversión de impacto para lograr desarrollo sostenible - <small>Miércoles 26 de agosto  16:00 hrs </small></span>
                             </span>
