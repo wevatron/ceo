@@ -199,10 +199,6 @@ a {
 #btn-registrarme {
     float: right;
 }
-.width_100{
-  width: 100%;
-  width: 100vw;
-}
 
 input[type='date'], input[type='time'] {
   -webkit-appearance: none;
