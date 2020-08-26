@@ -659,6 +659,8 @@
   }
   window.addEventListener("DOMContentLoaded", function(){
       
+      let id_video = 'OdVXOUnfW7w';
+
       $("#paneles_ceo").modal('show');
       
       let today = new Date().toISOString().slice(0, 10);
@@ -680,9 +682,9 @@
         $(".nav-uno").addClass("active");
       }
      
-      $("#live_ceo_2020").attr("src","https://www.youtube.com/embed/iCxBHIDdEAc?autoplay=1&loop=1&rel=0&showinfo=0&iv_load_policy=3");
+      $("#live_ceo_2020").attr("src","https://www.youtube.com/embed/"+id_video+"?autoplay=1&loop=1&rel=0&showinfo=0&iv_load_policy=3");
 
-      $("#live_ceo_chat").attr("src","https://www.youtube.com/live_chat?v=iCxBHIDdEAc&embed_domain="+window.location.hostname);
+      $("#live_ceo_chat").attr("src","https://www.youtube.com/live_chat?v="+id_video+"&embed_domain="+window.location.hostname);
       
       $("#ceo_2019").attr("src","https://www.youtube.com/embed/6e4K2zZSjtE?controls=0");
 
