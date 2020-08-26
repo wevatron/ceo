@@ -84,8 +84,8 @@
                     <img src="{{ asset('layout/assets/img/home/CEO_logo.png?format=webp&quality=auto') }}" height="110" alt="CEO 2020">
                 </div>
                 <div class="text-left col-md-9 block-desktop">
-                    <h1 class="glitch glitch-left-black weight-900 hidden" data-text="Live">Live</h1>
-                    <h1 class="glitch glitch-left-black weight-900 hidden" data-text="Streaming">Streaming</h1>
+                    <h1 class="glitch glitch-left-black weight-900" data-text="Live">Live</h1>
+                    <h1 class="glitch glitch-left-black weight-900 live-left" data-text="Streaming">Streaming</h1>
                 </div>
             </div>
             <div class="col-md-5 col-xs-offset-right-1 block-desktop"> 

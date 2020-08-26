@@ -658,7 +658,7 @@
       $("#"+id_ponente).modal('show');
   }
 
-  function updateYutube(id_video) {
+  function updateYoutube(id_video) {
        var d = new Date();
        console.log("update "+d.getHours()+":"+d.getMinutes()+" = " +id_video);
        

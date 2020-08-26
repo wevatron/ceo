@@ -22,7 +22,7 @@ firebase.initializeApp(firebaseConfig);
 	    youtuber=datos.val();
 	    $.each(youtuber, function(indice,valor) {
 	        id_video = valor;
-	        updateYutube(id_video);
+	        updateYoutube(id_video);
 	    });
   },function(objetoError){
         console.log('Error read:'+objetoError.code);

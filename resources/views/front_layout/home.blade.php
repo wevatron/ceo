@@ -660,6 +660,10 @@
   function showPonente(id_ponente){
       $("#"+id_ponente).modal('show');
   }
+
+  function updateYoutube(id_video) {
+    
+  }
   window.addEventListener("DOMContentLoaded", function(){
       
       $("#paneles_ceo").modal('show');
