@@ -47,7 +47,7 @@
                       <div class="col-md-12 no-padding">
                         <div class="page__toggle">
                           <label class="toggle">
-                            <input class="toggle__input" type="checkbox" value="4" name="paneles[]" checked="">
+                            <input class="toggle__input" type="checkbox" value="4" name="paneles[]" disabled="">
                             <span class="toggle__label">
                               <span class="toggle__text">Redefiniendo la ruta del Emprendedor Social - <small>Miércoles 26 de agosto  18:00 hrs</small></span>
                             </span>
@@ -59,7 +59,7 @@
 
                     
                     <div class="row mb-3 px-3 space-20"> 
-                      <button type="submit" id="btn-registrarme" class="btn btn-black text-center">Registrarme</button> 
+                      <button type="submit" id="btn-registrarme" disabled="" class="btn btn-black text-center">Registrarme</button> 
                     </div>
 
                   </form>
