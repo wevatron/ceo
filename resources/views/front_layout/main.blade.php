@@ -75,13 +75,13 @@
 <script type="text/javascript" src="{{ asset('layout/assets/js/isotope.pkgd.min.js') }}"></script>
 <script type="text/javascript" src="{{ asset('layout/assets/js/main.js') }}"></script>
 <script type="text/javascript" src="{{ asset('layout/assets/js/menu.js') }}"></script>
-
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/jquery.validate.min.js"></script>
 <script type="text/javascript" src="{{ asset('layout/assets/js/global.js') }}"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
+
+<script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-database.js"></script>
+<script type="text/javascript" src="{{ asset('layout/assets/js/firebase.js') }}"></script>
 
 </body>
 </html>

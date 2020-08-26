@@ -150,5 +150,7 @@ $(document).ready(function(){
         ]
     });
     
+    // Animate Elements
+    AOS.init();
 
 });
