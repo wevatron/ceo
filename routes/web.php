@@ -19,7 +19,7 @@ Route::get('/ponentes', 'FrontController@ponentes')->name('ponentes');
 Route::get('/bazar-digital', 'FrontController@bazar')->name('bazar-digital');
 Route::get('/reset', 'FrontController@reset')->name('reset');
 Route::get('/paneles', 'FrontController@paneles')->name('paneles');
-Route::get('/live', 'FrontController@live')->name('live');
+Route::get('/live', 'FrontController@live')->name('live')->middleware('auth');
 
 Auth::routes();
 
