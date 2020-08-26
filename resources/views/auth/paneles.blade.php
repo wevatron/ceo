@@ -36,7 +36,7 @@
                       <div class="col-md-12 no-padding">
                         <div class="page__toggle">
                           <label class="toggle">
-                            <input class="toggle__input" type="checkbox" value="3" name="paneles[]" checked="">
+                            <input class="toggle__input" type="checkbox" value="3" name="paneles[]" disabled="">
                             <span class="toggle__label">
                               <span class="toggle__text">Inversión de impacto para lograr desarrollo sostenible - <small>Miércoles 26 de agosto  16:00 hrs </small></span>
                             </span>
@@ -47,7 +47,7 @@
                       <div class="col-md-12 no-padding">
                         <div class="page__toggle">
                           <label class="toggle">
-                            <input class="toggle__input" type="checkbox" value="4" name="paneles[]">
+                            <input class="toggle__input" type="checkbox" value="4" name="paneles[]" checked="">
                             <span class="toggle__label">
                               <span class="toggle__text">Redefiniendo la ruta del Emprendedor Social - <small>Miércoles 26 de agosto  18:00 hrs</small></span>
                             </span>
