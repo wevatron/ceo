@@ -25,9 +25,9 @@ class FrontController extends Controller
     	return view("front_layout.ponentes");
     }
     function bazar(){
-        $categorias = C_categoria::get();
-        $bazares    = T_bazar::get();
-    	return view("front_layout.bazar_emprendedores",compact('categorias','bazares'));
+        //$categorias = C_categoria::get();
+        //$bazares    = T_bazar::get();
+    	return view("front_layout.bazar_emprendedores");
     }
     function reset(){
     	return view("auth.passwords.recovery");

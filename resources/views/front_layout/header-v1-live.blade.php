@@ -35,7 +35,7 @@
                     <li><a href="{{url('/')}}/encuentro-2020">Encuentro 2020</a>  </li>
                     <li><a href="{{url('/')}}/nosotros">Nosotros</a> </li>
                     <li><a href="{{url('/')}}/ponentes">Voces del Futuro</a> </li>
-                    <li><a href="{{url('/')}}/herramientas-emprender">Aprende+ CEO 2020</a> </li>
+                    <li class="hidden"><a href="{{url('/')}}/herramientas-emprender">Aprende+ CEO 2020</a> </li>
                     <li><a href="{{url('/')}}/bazar-digital">Bazar Digital CEO</a> </li>
                 </ul>
                 <ul class="social-icon">
