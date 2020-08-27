@@ -6,7 +6,7 @@
 
     <div class="row">
         <div class="col-md-4"> 
-            <div class="text-left col-md-12 no-padding circle-img" data-aos="fade-right">
+            <div class="text-left col-md-12 no-padding circle-img">
                 <h1 class="color-pink no-margin-top weight-900">Explora</h1>
                 <div class="slide-banner slider">
                     <div class="item">
