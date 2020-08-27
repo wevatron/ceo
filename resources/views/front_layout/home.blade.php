@@ -660,7 +660,7 @@
 
   function updateYoutube(id_video,live_show) {
        var d = new Date();
-
+       
        if(live_show==11){
           $(".label-live").show();
           $(".live_streaming_ceo").show();
