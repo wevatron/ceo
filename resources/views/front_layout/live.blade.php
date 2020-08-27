@@ -658,27 +658,45 @@
       $("#"+id_ponente).modal('show');
   }
 
-  function updateYoutube(id_video) {
+  function updateYoutube(id_video,live_show) {
        var d = new Date();
        console.log("update "+d.getHours()+":"+d.getMinutes()+" = " +id_video);
-       
-       $("#live_ceo_2020").attr("src","https://www.youtube.com/embed/"+id_video+"?autoplay=1&loop=1&rel=0&showinfo=0");
-       $("#live_ceo_chat").attr("src","https://www.youtube.com/live_chat?v="+id_video+"&embed_domain="+window.location.hostname);
+       console.log("Live Show = "+live_show );
+
+       if(live_show==1){
+          $(".label-live").show();
+          $(".live_streaming_ceo").show();
+          $(".offline_streaming_ceo").hide();
+          $("#live_ceo_2020").attr("src","https://www.youtube.com/embed/"+id_video+"?autoplay=1&loop=1&rel=0&showinfo=0");
+          $("#live_ceo_chat").attr("src","https://www.youtube.com/live_chat?v="+id_video+"&embed_domain="+window.location.hostname);
+       } else {
+          $(".label-live").hide();
+          $(".live_streaming_ceo").hide();
+          $(".offline_streaming_ceo").show();
+          $("#offline_ceo_2020").attr("src","https://www.youtube.com/embed/"+id_video+"?autoplay=1&loop=1&rel=0&showinfo=0");
+       }
   }
 
   window.addEventListener("DOMContentLoaded", function(){
       
       let id_video   = '';
+      let live_show  = 0;
       var database   = firebase.database();
       var referencia = database.ref("youtube");
       var youtuber   = {};
+      let response;
 
       referencia.on('value',function(datos) {
           youtuber=datos.val();
           $.each(youtuber, function(indice,valor) {
-              id_video = valor;
-              updateYoutube(id_video);
+                response = valor;
           });
+      
+          response   = response.split(",");
+          live_show  = response[0];
+          id_video   = response[1];
+
+          updateYoutube(id_video,live_show);
       },function(objetoError){
             console.log('Error read:'+objetoError.code);
       });

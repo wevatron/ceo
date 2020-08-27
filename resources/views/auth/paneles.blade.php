@@ -112,7 +112,7 @@
           </div>
         </div> <!-- end row -->
 
-        <div class="row d-flex hidden">
+        <div class="row d-flex">
             <div class="col-lg-5">
                 <div class="card1 pb-5">
                     <div class="px-3 justify-content-center mt-4 mb-5"> <img class="img-responsive panelesForm" src="{{asset('layout/assets/img/paneles/CEO_Registro_Paneles_banner.png') }}" alt="CEO 2020"> </div>

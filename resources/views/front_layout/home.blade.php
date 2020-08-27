@@ -1,5 +1,5 @@
 @extends("front_layout.main")
-@include("front_layout.header-v1")
+@include("front_layout.header-v1-live")
 @section("body")
 <div class="space-50"> </div>
 <section id="section-bazar" class="container">
@@ -13,7 +13,7 @@
                           <a href="{{url('/')}}/bazar-digital"><img class="img-responsive grayscale overlay_" src="{{ asset('layout/assets/img/home/banner-bazar.gif?format=webp&quality=auto') }}" width="480" alt="CEO 2020"></a>
                     </div>
                     <div class="item">
-                          <a href="{{url('/')}}/herramientas-emprender"><img class="img-responsive grayscale overlay_" src="{{ asset('layout/assets/img/home/CEO_Banner_Aprende.jpg?format=webp&quality=auto') }}" width="480" alt="CEO 2020"></a>
+                          <a href="{{url('/')}}/bazar-digital"><img class="img-responsive grayscale overlay_" src="{{ asset('layout/assets/img/home/banner-bazar.gif?format=webp&quality=auto') }}" width="480" alt="CEO 2020"></a>
                     </div>
                 </div>
             </div>
@@ -213,7 +213,7 @@
                             <div data-equalizer-watch="" class="conferencia digital-talk" style="height: auto;">
                               <p>YouTube</p>
                               <h4>Black Bot inteligencia de negocios </h4>
-                              <p class="conferencista">Jonathan Álvarez / Fernanda Rocha - Blackbot Inteligence</p>
+                              <p class="conferencista">Jonathan Álvarez - Blackbot Inteligence</p>
                             </div>
                             </a>
                           </div>
@@ -230,12 +230,9 @@
 
 <div class="space-50"> </div>
 
-<div class="ponentes-home">
-<section id="section-ponentes" class="container">
-
-    <div class="row padding-top-80"> </div>
+<section id="section-ponentes" class="ponentes-home">
+<div class="container">
     <div class="row">
-
         <div class="col-md-4 text-left col-md-offset-right-8"> 
             <h1 class="color-white title-ponentes" data-aos="zoom-in">VOCES DEL FUTURO</h1>
             <div class="space-20"> </div>
@@ -247,6 +244,7 @@
                 <!-- ponente -->
                 <div class="row">
 
+                      <div class="row">
                       @foreach($ponentes as $p)
                       <?php $url_img = preg_replace("/^http:/i", "https:", $p->Imagenes[0]->url_img); ?>
                       <!-- Modal Ponente -->
@@ -290,10 +288,9 @@
                         </div>
                       </div>
                       <!-- End Modal Ponente -->
-
                       <div class="col-md-4 col-sm-6 col-xs-6 space-bottom-10 space-bottom-ponentes">
                           <div class="ponente_item">
-                              <img src="{{$url_img}}?format=webp&quality=auto" alt="CEO 2020" class="mx-auto img-responsive" width="100%" />
+                              <img src="{{$url_img}}?format=webp&quality=auto" alt="CEO 2020" class="img-responsive" width="100%" />
                               <div class="ponente_item_hover">
                                   <div class="ponente-border clearfix">
                                       <div class="item_info">
@@ -320,28 +317,28 @@
                           </div>
                       </div>
                       @endforeach
+                      </div>
+
+                      <div class="row container-btn">
+                        <div class="col-md-4 col-md-offset-8 space-40">
+                            <a href="{{url('/')}}/ponentes">
+                            <div class="text-center btna btn-1 btn-1c">
+                                <div>Ver más</div>
+                            </div>
+                            </a>
+                        </div>
+                      </div>
+ 
                      
-                      
+                      <div class="space-30"></div>
 
                 </div>
                 <!-- end ponente -->
-
-                <div class="row container-btn">
-                  <div class="col-md-4 col-md-offset-8 space-40">
-                      <a href="{{url('/')}}/ponentes">
-                      <div class="text-center btna btn-1 btn-1c">
-                          <div>Ver más</div>
-                      </div>
-                      </a>
-                  </div>
-                </div>
-
                
         </div>
     </div>
-    <div class="row padding-bottom-80"> </div>
-</section>
 </div>
+</section>
 
 <div class="space-50"> </div>
 <section id="section-aliados" class="container">
@@ -661,10 +658,51 @@
       $("#"+id_ponente).modal('show');
   }
 
+  function updateYoutube(id_video,live_show) {
+       var d = new Date();
+       console.log("update "+d.getHours()+":"+d.getMinutes()+" = " +id_video);
+       console.log("Live Show = "+live_show );
+
+       if(live_show==11){
+          $(".label-live").show();
+          $(".live_streaming_ceo").show();
+          $(".offline_streaming_ceo").hide();
+          $("#live_ceo_2020").attr("src","https://www.youtube.com/embed/"+id_video+"?autoplay=1&loop=1&rel=0&showinfo=0");
+          $("#live_ceo_chat").attr("src","https://www.youtube.com/live_chat?v="+id_video+"&embed_domain="+window.location.hostname);
+       } else {
+          $(".label-live").hide();
+          $(".live_streaming_ceo").hide();
+          $(".offline_streaming_ceo").show();
+          $("#offline_ceo_2020").attr("src","https://www.youtube.com/embed/"+id_video+"?autoplay=1&loop=1&rel=0&showinfo=0");
+       }
+  }
+
   window.addEventListener("DOMContentLoaded", function(){
       
-      // $("#paneles_ceo").modal('show');
+      let id_video   = '';
+      let live_show  = 0;
+      var database   = firebase.database();
+      var referencia = database.ref("youtube");
+      var youtuber   = {};
+      let response;
 
+      referencia.on('value',function(datos) {
+          youtuber=datos.val();
+          $.each(youtuber, function(indice,valor) {
+                response = valor;
+          });
+      
+          response   = response.split(",");
+          live_show  = response[0];
+          id_video   = response[1];
+
+          updateYoutube(id_video,live_show);
+      },function(objetoError){
+            console.log('Error read:'+objetoError.code);
+      });
+
+      // $("#paneles_ceo").modal('show');
+      
       let today = new Date().toISOString().slice(0, 10);
 
       if(today=="2020-08-25"){
@@ -684,8 +722,6 @@
         $(".nav-uno").addClass("active");
       }
      
-      $("#live_ceo_2020").attr("src","https://www.youtube.com/embed/tiUzMejT-58?autoplay=1&loop=1&rel=0&showinfo=0&iv_load_policy=3");
-      
       $("#ceo_2019").attr("src","https://www.youtube.com/embed/6e4K2zZSjtE?controls=0");
 
 

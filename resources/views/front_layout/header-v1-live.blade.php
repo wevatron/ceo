@@ -83,7 +83,7 @@
                  <div class="text-left col-md-3 col-xs-6 no-padding">
                     <img src="{{ asset('layout/assets/img/home/CEO_logo.png?format=webp&quality=auto') }}" height="110" alt="CEO 2020">
                 </div>
-                <div class="text-left col-md-9 block-desktop">
+                <div class="text-left col-md-9 block-desktop label-live">
                     <h1 class="glitch glitch-left-black weight-900" data-text="Live">Live</h1>
                     <h1 class="glitch glitch-left-black weight-900 live-left" data-text="Streaming">Streaming</h1>
                 </div>
@@ -97,17 +97,23 @@
          <!-- Live -->
         <div class="col-md-offset-1 col-md-10 col-md-offset-right-1">
             
-                    <div class="col-md-9 no-padding">
-                        <div class="live-video live-live">
-                             <iframe title="Live CEO 2020" id="live_ceo_2020" width="100%" height="100%" src="" frameborder="0" allow="autoplay;" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                    
-                    <div class="col-md-3 no-padding">
-                        <div class="live-video live-chat">
-                              <iframe title="Chat CEO 2020" id="live_ceo_chat" src="" class="live-show-chat" frameborder="0" scrolling="0" scrolling="0" width="100%"  height="100%"></iframe>
-                        </div>
-                    </div> 
+            <div class="col-md-9 no-padding live_streaming_ceo">
+                <div class="live-video live-live">
+                     <iframe title="Live Streaming CEO 2020" id="live_ceo_2020" width="100%" height="100%" src="" frameborder="0" allow="autoplay;" allowfullscreen></iframe>
+                </div>
+            </div>
+            
+            <div class="col-md-3 no-padding live_streaming_ceo">
+                <div class="live-video live-chat">
+                      <iframe title="Chat CEO 2020" id="live_ceo_chat" src="" class="live-show-chat" frameborder="0" scrolling="0" scrolling="0" width="100%"  height="100%"></iframe>
+                </div>
+            </div> 
+
+            <div class="col-md-12 no-padding offline_streaming_ceo">
+                <div class="live-video">
+                     <iframe title="CEO 2020" id="offline_ceo_2020" width="100%" height="100%" src="" frameborder="0" allow="autoplay;" allowfullscreen></iframe>
+                </div>
+            </div>
             
         </div>
 
