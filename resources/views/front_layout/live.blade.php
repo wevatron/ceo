@@ -230,7 +230,115 @@
 
 <div class="space-50"> </div>
 
+<section id="section-ponentes" class="ponentes-home">
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 text-left col-md-offset-right-8"> 
+            <h1 class="color-white title-ponentes" data-aos="zoom-in">VOCES DEL FUTURO</h1>
+            <div class="space-20"> </div>
+            <p>¿Qué significa ser un Neo Emprendedor? Es atreverse a emprender en estos tiempos de cambios y retos.</p>
+            <p>CEO te trae personas experimentadas y llenas de conocimiento, para compartirte herramientas y puedas alcanzar tus metas.</p>
+        </div>
+        <div class="col-md-8 grid-ponentes margin-top-mobile-30 col-md-offset-4"> 
+                
+                <!-- ponente -->
+                <div class="row">
 
+                      <div class="row">
+                      @foreach($ponentes as $p)
+                      <?php $url_img = preg_replace("/^http:/i", "https:", $p->Imagenes[0]->url_img); ?>
+                      <!-- Modal Ponente -->
+                      <div class="modal fade ponenteModals" id="ponente_{{$p->id}}" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                          <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          </div>
+                          <div class="modal-content">
+                            <div class="modal-body">
+                              <div class="container-fluid">
+                              <div class="row">
+                                  <div class="col-md-5">
+                                      <div class="space-20"> </div>
+                                      <img src="{{$url_img}}?format=webp&quality=auto" alt="CEO 2020" class="img-responsive" width="100%" />
+                                      <h2 class="text-center titulo-nombre">{{$p->nombre_conferencista}}</h2>
+                                      <div class="ponente-social text-center">
+                                          @if(isset($p->facebook))
+                                          <a aria-label="Facebook" rel="noreferrer" target="_blank" href="{{$p->facebook}}"><i class="ion-social-facebook"></i></a>
+                                          @endif
+                                          @if(isset($p->twitter))
+                                          <a aria-label="Twitter" rel="noreferrer" target="_blank" href="{{$p->twitter}}"><i class="ion-social-twitter"></i></a>
+                                          @endif
+                                          @if(isset($p->youtube))
+                                          <a aria-label="Linkedin" rel="noreferrer" target="_blank" href="{{$p->youtube}}"><i class="ion-social-linkedin"></i></a>
+                                          @endif
+                                          @if(isset($p->instagram))
+                                          <a aria-label="Instagram" rel="noreferrer" target="_blank" href="{{$p->instagram}}"><i class="ion-social-instagram"></i></a>
+                                          @endif
+                                        </div>
+                                      
+                                  </div>
+                                  <div class="col-md-7">
+                                      <h2 class="titulo-ponente-modal">{{$p->cargo}}/{{$p->empresa}}</h2>
+                                      <div class="semblanza-contener"><?php echo $p->bio; ?></div>
+                                  </div>
+                              </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- End Modal Ponente -->
+                      <div class="col-md-4 col-sm-6 col-xs-6 space-bottom-10 space-bottom-ponentes">
+                          <div class="ponente_item">
+                              <img src="{{$url_img}}?format=webp&quality=auto" alt="CEO 2020" class="img-responsive" width="100%" />
+                              <div class="ponente_item_hover">
+                                  <div class="ponente-border clearfix">
+                                      <div class="item_info">
+                                          <span>{{$p->nombre_conferencista}}</span>
+                                          <em class="cargo-ponente">{{$p->cargo}}/{{$p->empresa}}</em>
+                                          <div class="ponente-social">
+                                            @if(isset($p->facebook))
+                                            <a aria-label="Facebook" rel="noreferrer" target="_blank" href="{{$p->facebook}}"><i class="ion-social-facebook"></i></a>
+                                            @endif
+                                            @if(isset($p->twitter))
+                                            <a aria-label="Twitter" rel="noreferrer" target="_blank" href="{{$p->twitter}}"><i class="ion-social-twitter"></i></a>
+                                            @endif
+                                            @if(isset($p->youtube))
+                                            <a aria-label="Linkedin" rel="noreferrer" target="_blank" href="{{$p->youtube}}"><i class="ion-social-linkedin"></i></a>
+                                            @endif
+                                            @if(isset($p->instagram))
+                                            <a aria-label="Instagram" rel="noreferrer" target="_blank" href="{{$p->instagram}}"><i class="ion-social-instagram"></i></a>
+                                            @endif
+                                          </div>
+                                          <em class="ver-ponente" onclick="showPonente('ponente_{{$p->id}}')">ver <i class="ion-ios-arrow-right"></i></em>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      @endforeach
+                      </div>
+
+                      <div class="row container-btn">
+                        <div class="col-md-4 col-md-offset-8 space-40">
+                            <a href="{{url('/')}}/ponentes">
+                            <div class="text-center btna btn-1 btn-1c">
+                                <div>Ver más</div>
+                            </div>
+                            </a>
+                        </div>
+                      </div>
+ 
+                     
+                      <div class="space-30"></div>
+
+                </div>
+                <!-- end ponente -->
+               
+        </div>
+    </div>
+</div>
+</section>
 
 <div class="space-50"> </div>
 <section id="section-aliados" class="container">

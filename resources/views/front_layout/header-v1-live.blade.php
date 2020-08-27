@@ -6,7 +6,32 @@
     <!-- box header -->
     <header class="box-header">
 
-      
+        <div class="dropdown m-account dropleft" data-aos="zoom-in-down">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                @auth
+                    <img src="{{ asset('layout/assets/img/header/user_online.svg') }}" class="img-responsive" width="45" alt="CEO 2020">
+                    <small class="margin-logout">Salir</small>
+                @else
+                    <img src="{{ asset('layout/assets/img/header/user_offline.svg') }}" class="img-responsive" width="45" alt="CEO 2020">
+                    <small>Ingresar</small>
+                @endauth
+            </a>
+            <div class="dropdown-menu">
+                <ul class="drops">
+                    @auth
+                    <li>
+                        <form id="logout-form" class="" action="{{ url('/logout') }}" method="POST">
+                                {{ csrf_field() }}
+                                <button type="submit" class="btn-logout">Cerrar sesión</button>
+                         </form>
+                    </li>
+                    @else
+                    <li><a href="{{ route('login') }}" class="dropdown-item">Entrar</a></li>
+                    <li><a href="{{ route('register') }}" class="dropdown-item">Crear cuenta</a></li>
+                    @endauth
+                </ul>
+            </div>
+        </div>
 
         <!-- box-nav -->
         <a class="box-primary-nav-trigger" href="#">
@@ -35,7 +60,7 @@
                     <li><a href="{{url('/')}}/encuentro-2020">Encuentro 2020</a>  </li>
                     <li><a href="{{url('/')}}/nosotros">Nosotros</a> </li>
                     <li><a href="{{url('/')}}/ponentes">Voces del Futuro</a> </li>
-                    <li class="hidden"><a href="{{url('/')}}/herramientas-emprender">Aprende+ CEO 2020</a> </li>
+                    <li><a href="{{url('/')}}/herramientas-emprender">Aprende+ CEO 2020</a> </li>
                     <li><a href="{{url('/')}}/bazar-digital">Bazar Digital CEO</a> </li>
                 </ul>
                 <ul class="social-icon">
