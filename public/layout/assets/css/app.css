@@ -2661,6 +2661,9 @@ hr{
     text-align: center;
     font-weight: 400;
 }
+.live_streaming_ceo {
+    display: none;
+}
 .offline_streaming_ceo{
     display: none;
 }

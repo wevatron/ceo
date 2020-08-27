@@ -660,8 +660,6 @@
 
   function updateYoutube(id_video,live_show) {
        var d = new Date();
-       console.log("update "+d.getHours()+":"+d.getMinutes()+" = " +id_video);
-       console.log("Live Show = "+live_show );
 
        if(live_show==1){
           $(".label-live").show();
