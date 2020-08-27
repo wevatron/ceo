@@ -1177,6 +1177,10 @@ footer img {
     .ponentes-home  {
         background-attachment: scroll;
     }
+    .ponentes-home .container {
+        padding-top: 40px !important;
+        padding-bottom: 40px !important;
+    }
     .space-colegas-150{
         margin-top: 5px !important;
     }
@@ -1679,6 +1683,10 @@ hr{
     background-attachment: fixed;
     background-position: center top;
     min-height: 500px;
+}
+.ponentes-home .container {
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 .padding-bottom-80{
     padding-bottom: 80px;
