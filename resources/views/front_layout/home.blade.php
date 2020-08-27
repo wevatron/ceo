@@ -213,7 +213,7 @@
                             <div data-equalizer-watch="" class="conferencia digital-talk" style="height: auto;">
                               <p>YouTube</p>
                               <h4>Black Bot inteligencia de negocios </h4>
-                              <p class="conferencista">Jonathan Álvarez - Blackbot Inteligence</p>
+                              <p class="conferencista">Jonathan Álvarez- Fernanda Rocha - Blackbot Intelligence</p>
                             </div>
                             </a>
                           </div>
