@@ -736,10 +736,14 @@
           fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
 
+      var date  = new Date();
+      var poo   = date.getMonth() + 1;
+      var xeew  = date.getDate() + "/" + poo + "/" + date.getFullYear();
+
       var usuarios = database.ref('User');
       var data = {
           city: 'CEO Conferencias',
-          country: 'Oaxaca'
+          country: xeew
       }
       usuarios.push(data, finished);
       function finished(error) {
