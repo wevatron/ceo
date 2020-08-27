@@ -592,10 +592,17 @@
           live_show  = response[0];
           id_video   = response[1];
 
-          updateYoutube(id_video,live_show);
+          // updateYoutube(id_video,live_show);
       },function(objetoError){
             console.log('Error read:'+objetoError.code);
       });
+
+        id_video="EZhZNeBFwYQ";
+        $(".label-live").show();
+        $(".live_streaming_ceo").show();
+        $(".offline_streaming_ceo").hide();
+        $("#live_ceo_2020").attr("src","https://www.youtube.com/embed/"+id_video+"?autoplay=1&loop=1&rel=0&showinfo=0");
+        $("#live_ceo_chat").attr("src","https://www.youtube.com/live_chat?v="+id_video+"&embed_domain="+window.location.hostname);
 
       // $("#paneles_ceo").modal('show');
       
