@@ -617,7 +617,7 @@
                   {!! Form::close() !!}
                 </div>
               
-                <div data-aos="zoom-in-up" class="space-80">
+                <div class="space-80">
                   <a href="{{url('/')}}/paneles"><img class="img-responsive" src="{{ asset('layout/assets/img/home/CEO_Banner_Registro_Paneles.gif?format=webp&quality=auto') }}"  alt="Paneles CEO"></a>
                 </div>
 
