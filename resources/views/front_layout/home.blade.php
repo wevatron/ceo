@@ -669,7 +669,6 @@
           $("#live_ceo_chat").attr("src","https://www.youtube.com/live_chat?v="+id_video+"&embed_domain="+window.location.hostname);
        } else {
           initLive(id_video);
-          id_video = "tiUzMejT-58";
           $("#offline_ceo_2020").attr("src","https://www.youtube.com/embed/"+id_video+"?autoplay=1&loop=1&rel=0&showinfo=0");
        }
   }
@@ -728,7 +727,6 @@
       }
      
       $("#ceo_2019").attr("src","https://www.youtube.com/embed/6e4K2zZSjtE?controls=0");
-
 
       (function(d, s, id) {
           var js, fjs = d.getElementsByTagName(s)[0];
