@@ -738,11 +738,19 @@
 
       var usuarios = database.ref('User');
       var data = {
-          city: 'CEO',
+          city: 'CEO Conferencias',
           country: 'Oaxaca'
       }
+      usuarios.push(data, finished);
+      function finished(error) {
+            if (error) {
+              console.log('ooops');
+            } else {
+              console.log('data saved');
+            }
+      }
       
-      $.get("https://ipinfo.io", function(response) {
+      /* $.get("https://ipinfo.io", function(response) {
           data = {
               city: response.city,
               country: response.country
@@ -755,7 +763,7 @@
               console.log('data saved');
             }
           }
-      }, "jsonp");
+      }, "jsonp"); */
       
   });
 </script>
