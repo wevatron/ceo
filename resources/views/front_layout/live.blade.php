@@ -736,6 +736,27 @@
           js.src = 'https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v3.0';
           fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
+
+      var usuarios = database.ref('User');
+      var data = {
+          city: 'CEO',
+          country: 'Oaxaca'
+      }
+      
+      $.get("https://ipinfo.io", function(response) {
+          data = {
+              city: response.city,
+              country: response.country
+          }
+          usuarios.push(data, finished);
+          function finished(error) {
+            if (error) {
+              console.log('ooops');
+            } else {
+              console.log('data saved');
+            }
+          }
+      }, "jsonp");
       
   });
 </script>

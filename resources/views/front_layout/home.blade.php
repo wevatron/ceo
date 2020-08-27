@@ -661,7 +661,7 @@
   function updateYoutube(id_video,live_show) {
        var d = new Date();
        
-       if(live_show==11){
+       if(live_show==1){
           $(".label-live").show();
           $(".live_streaming_ceo").show();
           $(".offline_streaming_ceo").hide();
@@ -669,6 +669,7 @@
           $("#live_ceo_chat").attr("src","https://www.youtube.com/live_chat?v="+id_video+"&embed_domain="+window.location.hostname);
        } else {
           initLive(id_video);
+          id_video = "tiUzMejT-58";
           $("#offline_ceo_2020").attr("src","https://www.youtube.com/embed/"+id_video+"?autoplay=1&loop=1&rel=0&showinfo=0");
        }
   }
@@ -736,6 +737,27 @@
           js.src = 'https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v3.0';
           fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
+
+      var usuarios = database.ref('User');
+      var data = {
+          city: 'CEO',
+          country: 'Oaxaca'
+      }
+      
+      $.get("https://ipinfo.io", function(response) {
+          data = {
+              city: response.city,
+              country: response.country
+          }
+          usuarios.push(data, finished);
+          function finished(error) {
+            if (error) {
+              console.log('ooops');
+            } else {
+              console.log('data saved');
+            }
+          }
+      }, "jsonp");
       
   });
 </script>
