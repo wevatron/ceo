@@ -744,9 +744,9 @@
       usuarios.push(data, finished);
       function finished(error) {
             if (error) {
-              console.log('ooops');
+              console.log('Ooops');
             } else {
-              console.log('data saved');
+              console.log('Success');
             }
       }
       
