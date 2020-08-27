@@ -3,11 +3,116 @@
 @section("body")
 
 <section class="box-intro section-formulario top-scroll">
-<div class="container-formulario">
-  <div class="container px-1 px-md-5 px-lg-1 px-xl-5 py-5 mx-auto">
-    <div class="col-md-offset-1 col-md-10 col-md-offset-right-1">
-    <div class="card card0 bg-white border-0">
-        <div class="row d-flex">
+<div class="container px-1 px-md-5 px-lg-1 px-xl-5 py-5 mx-auto">
+
+    <div class="row streaming-card-mobile">
+        <div class="col-md-8 space-ceo col-md-offset-4" data-aos="fade-up"> 
+             <div class="text-left">
+                <h1 class="glitch glitch-left weight-900" data-text="Muchas Gracias">Muchas Gracias</h1>
+             </div>
+             <p class="text-left space-20">
+                Por haber sido parte de nuestros paneles en #CEODigital2020, ahora viene el plato fuerte, nos vemos en las conferencias en vivo.
+              </p>
+              <p class="text-left space-10">Conoce a las voces del futuro que estarán con nosotros.</p>
+        </div>
+    </div>
+
+    <div class="col-md-12">
+    <div class="card bg-white border-0">
+
+        <!-- 27 de agosto -->
+        <div class="row">
+          <div class="col-md-4">
+            <div class="streaming-card">
+              <div class="streaming-tumb">
+                <img class="img-responsive" src="https://somosrino.org/storageCeo/fotoEvento/1597197795.jpg?format=webp&quality=auto" alt="David Geisen-Mercado Libre">
+              </div>
+              <div class="streaming-details">
+                <h4>"Comercio electrónico, motor de recuperación económica".</h4>
+                <p>David Geisen-Mercado Libre</p><br>
+                <div class="streaming-bottom-details">
+                  <div class="streaming-date">Jueves 27 de agosto 10:00 hrs.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="streaming-card">
+              <div class="streaming-tumb">
+                <img class="img-responsive" src="https://somosrino.org/storageCeo/fotoEvento/1598054167.jpg?format=webp&quality=auto" alt="Víctor Tavares/Arturo Robles - Citibanamex">
+              </div>
+              <div class="streaming-details">
+                <h4>"El usuario 🐭 de tu producto no eres tú 🙀".</h4>
+                <p>Víctor Tavares/Arturo Robles - Citibanamex</p>
+                <div class="streaming-bottom-details">
+                  <div class="streaming-date">Jueves 27 de agosto 12:30 hrs.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="streaming-card">
+              <div class="streaming-tumb">
+                <img class="img-responsive" src="https://somosrino.org/storageCeo/fotoEvento/1598120161.jpg?format=webp&quality=auto" alt="Zarina Rivera / Tümu">
+              </div>
+              <div class="streaming-details">
+                <h4>"DESAPRENDER".</h4><br>
+                <p>Zarina Rivera / Tümu</p><br>
+                <div class="streaming-bottom-details">
+                  <div class="streaming-date">Jueves 27 de agosto 18:00 hrs.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- end row -->
+
+        <!-- 28 de agosto -->
+        <div class="row">
+          <div class="col-md-4">
+            <div class="streaming-card">
+              <div class="streaming-tumb">
+                <img class="img-responsive" src="https://somosrino.org/storageCeo/fotoEvento/1597184240.jpg?format=webp&quality=auto" alt="Raúl de Anda / Irrazonable">
+              </div>
+              <div class="streaming-details">
+                <h4>"Innovando para resolver PPUs (Pin***s Problemas Urgentes)".</h4>
+                <p>Raúl de Anda / Irrazonable</p><br>
+                <div class="streaming-bottom-details">
+                  <div class="streaming-date">Viernes 28 de agosto 10:00 hrs.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="streaming-card">
+              <div class="streaming-tumb">
+                <img class="img-responsive" src="https://somosrino.org/storageCeo/fotoEvento/1597184325.jpg?format=webp&quality=auto" alt="Alejandra Luzardo / BID">
+              </div>
+              <div class="streaming-details">
+                <h4>"Emprendimiento creativo para salvar el mundo".</h4>
+                <p>Alejandra Luzardo / BID</p><br>
+                <div class="streaming-bottom-details">
+                  <div class="streaming-date">Viernes 28 de agosto 12:30 hrs.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="streaming-card">
+              <div class="streaming-tumb">
+                <img class="img-responsive" src="https://somosrino.org/storageCeo/fotoEvento/1598276962.jpg?format=webp&quality=auto" alt="Jonathan Álvarez- Fernanda Rocha /Blackbot intelligence">
+              </div>
+              <div class="streaming-details">
+                <h4>"Black Bot inteligencia de negocios".</h4>
+                <p>Jonathan Álvarez- Fernanda Rocha /Blackbot intelligence</p>
+                <div class="streaming-bottom-details">
+                  <div class="streaming-date">Viernes 28 de agosto 18:00 hrs.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- end row -->
+
+        <div class="row d-flex hidden">
             <div class="col-lg-5">
                 <div class="card1 pb-5">
                     <div class="px-3 justify-content-center mt-4 mb-5"> <img class="img-responsive panelesForm" src="{{asset('layout/assets/img/paneles/CEO_Registro_Paneles_banner.png') }}" alt="CEO 2020"> </div>
@@ -70,8 +175,9 @@
     </div>
     </div>
 </div>
-</div>
 </section>
+
+<section id="section-ediciones" class="container"> </section>
 
 <div class="space-80"></div>
 

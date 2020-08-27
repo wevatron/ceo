@@ -661,12 +661,9 @@
       $("#"+id_ponente).modal('show');
   }
 
-  function updateYoutube(id_video) {
-    
-  }
   window.addEventListener("DOMContentLoaded", function(){
       
-      $("#paneles_ceo").modal('show');
+      // $("#paneles_ceo").modal('show');
 
       let today = new Date().toISOString().slice(0, 10);
 

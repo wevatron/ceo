@@ -668,7 +668,22 @@
 
   window.addEventListener("DOMContentLoaded", function(){
       
-      $("#paneles_ceo").modal('show');
+      let id_video   = '';
+      var database   = firebase.database();
+      var referencia = database.ref("youtube");
+      var youtuber   = {};
+
+      referencia.on('value',function(datos) {
+          youtuber=datos.val();
+          $.each(youtuber, function(indice,valor) {
+              id_video = valor;
+              updateYoutube(id_video);
+          });
+      },function(objetoError){
+            console.log('Error read:'+objetoError.code);
+      });
+
+      // $("#paneles_ceo").modal('show');
       
       let today = new Date().toISOString().slice(0, 10);
 
