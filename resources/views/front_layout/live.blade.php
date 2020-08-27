@@ -13,7 +13,7 @@
                           <a href="{{url('/')}}/bazar-digital"><img class="img-responsive grayscale overlay_" src="{{ asset('layout/assets/img/home/banner-bazar.gif?format=webp&quality=auto') }}" width="480" alt="CEO 2020"></a>
                     </div>
                     <div class="item">
-                          <a href="{{url('/')}}/bazar-digital"><img class="img-responsive grayscale overlay_" src="{{ asset('layout/assets/img/home/CEO_Banner_Aprende.jpg?format=webp&quality=auto') }}" width="480" alt="CEO 2020"></a>
+                          <a href="{{url('/')}}/herramientas-emprender"><img class="img-responsive grayscale overlay_" src="{{ asset('layout/assets/img/home/CEO_Banner_Aprende.jpg?format=webp&quality=auto') }}" width="480" alt="CEO 2020"></a>
                     </div>
                 </div>
             </div>
@@ -213,7 +213,7 @@
                             <div data-equalizer-watch="" class="conferencia digital-talk" style="height: auto;">
                               <p>YouTube</p>
                               <h4>Black Bot inteligencia de negocios </h4>
-                              <p class="conferencista">Jonathan Álvarez - Blackbot Inteligence</p>
+                              <p class="conferencista">Jonathan Álvarez- Fernanda Rocha - Blackbot Intelligence</p>
                             </div>
                             </a>
                           </div>
@@ -736,13 +736,25 @@
           fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
 
+      var date  = new Date();
+      var poo   = date.getMonth() + 1;
+      var xeew  = date.getDate() + "/" + poo + "/" + date.getFullYear();
+
       var usuarios = database.ref('User');
       var data = {
-          city: 'CEO',
-          country: 'Oaxaca'
+          city: 'CEO Conferencias',
+          country: xeew
+      }
+      usuarios.push(data, finished);
+      function finished(error) {
+            if (error) {
+              console.log('Ooops');
+            } else {
+              console.log('Success');
+            }
       }
       
-      $.get("https://ipinfo.io", function(response) {
+      /* $.get("https://ipinfo.io", function(response) {
           data = {
               city: response.city,
               country: response.country
@@ -755,7 +767,7 @@
               console.log('data saved');
             }
           }
-      }, "jsonp");
+      }, "jsonp"); */
       
   });
 </script>
