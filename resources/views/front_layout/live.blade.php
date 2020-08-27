@@ -668,15 +668,21 @@
           $("#live_ceo_2020").attr("src","https://www.youtube.com/embed/"+id_video+"?autoplay=1&loop=1&rel=0&showinfo=0");
           $("#live_ceo_chat").attr("src","https://www.youtube.com/live_chat?v="+id_video+"&embed_domain="+window.location.hostname);
        } else {
-          $(".label-live").hide();
-          $(".live_streaming_ceo").hide();
-          $(".offline_streaming_ceo").show();
+          initLive(id_video);
           $("#offline_ceo_2020").attr("src","https://www.youtube.com/embed/"+id_video+"?autoplay=1&loop=1&rel=0&showinfo=0");
        }
   }
 
+  function initLive(){
+      $(".label-live").hide();
+      $(".live_streaming_ceo").hide();
+      $(".offline_streaming_ceo").show();
+  }
+
   window.addEventListener("DOMContentLoaded", function(){
-      
+
+      initLive();
+
       let id_video   = '';
       let live_show  = 0;
       var database   = firebase.database();
