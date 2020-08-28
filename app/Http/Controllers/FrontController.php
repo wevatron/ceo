@@ -10,7 +10,7 @@ use App\Models\T_bazar;
 class FrontController extends Controller
 {
     function index(){
-        $ponentes = T_evento::where('tipo_evento_id','=',5)->skip(0)->take(6)->get();
+        $ponentes = T_evento::where('tipo_evento_id','=',5)->skip(0)->take(6)->orderBy('orden','ASC')->get();
         return view("front_layout.home",compact('ponentes'));
     }
     function encuentro(){
@@ -20,7 +20,7 @@ class FrontController extends Controller
     	return view("front_layout.nosotros");
     }
     function ponentes(){
-        $ponentes = T_evento::where('tipo_evento_id','=',5)->get();
+        $ponentes = T_evento::where('tipo_evento_id','=',5)->orderBy('orden','ASC')->get();
        // dd($ponentes);
     	return view("front_layout.ponentes",compact('ponentes'));
     }
@@ -36,7 +36,7 @@ class FrontController extends Controller
         return view("auth.paneles");
     }
     function live(){
-        $ponentes = T_evento::where('tipo_evento_id','=',5)->skip(0)->take(6)->get();
+        $ponentes = T_evento::where('tipo_evento_id','=',5)->skip(0)->take(6)->orderBy('orden','ASC')->get();
         return view("front_layout.live",compact('ponentes'));
     }
 
