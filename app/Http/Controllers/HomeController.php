@@ -32,7 +32,8 @@ class HomeController extends Controller
         $cat_empezar            = T_aprende::where('c_categorias_id','=',6)->get();
         $cat_cursos             = T_aprende::where('c_categorias_id','=',7)->get();
         $cat_recomendaciones    = T_aprende::where('c_categorias_id','=',8)->get();
+        $cat_conferencias       = T_aprende::where('c_categorias_id','=',9)->get();
         
-        return view("home",compact('cat_digital','cat_cliente','cat_negocios','cat_naranja','cat_social','cat_empezar','cat_cursos','cat_recomendaciones'));
+        return view("home",compact('cat_digital','cat_cliente','cat_negocios','cat_naranja','cat_social','cat_empezar','cat_cursos','cat_recomendaciones','cat_conferencias'));
     }
 }

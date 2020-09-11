@@ -137,6 +137,21 @@
 	        @endforeach
     	</div>
     </div>
+
+    <div class="space-40"></div>
+
+    <h4 class="title-tutoriales">PANELES Y CONFERENCIAS 2020</h4>
+    <div class="row container">
+    	<div class="slide-aprende">
+	    	@foreach($cat_conferencias as $conferencias)
+	        <div onclick="showVideo('{{$conferencias->video}}')" class="col-md-3 text-left img-holder"> 
+	        		<img class="img-responsive" src="{{ $conferencias->web }}" alt="{{ $conferencias->nombre }}">
+	        		<p class="captions-vertical">{{ $conferencias->nombre }}</p>
+	        </div>
+	        @endforeach
+    	</div>
+    </div>
+
 </div>
 </section>
 
